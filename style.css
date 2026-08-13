@@ -1260,4 +1260,248 @@ h3 {
     }
 
 }
+/* =========================================
+   ABOUT PAGE
+========================================= */
+
+.about-page-hero {
+    max-width: 1300px;
+    margin: 0 auto;
+
+    padding: 150px 6% 100px;
+}
+
+.about-page-hero h1 {
+    font-size: clamp(65px, 9vw, 120px);
+    line-height: .95;
+
+    margin-bottom: 40px;
+}
+
+.about-page-intro {
+    max-width: 700px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 24px;
+    line-height: 1.6;
+
+    color: #5d5a52;
+}
+
+
+/* LARGE GALLERY IMAGE */
+
+.about-hero-image {
+    padding: 0 5% 140px;
+}
+
+.about-image-placeholder {
+    min-height: 70vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #d9d4ca;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-style: italic;
+
+    color: #77736b;
+}
+
+
+/* STORY */
+
+.about-story {
+    max-width: 1300px;
+
+    margin: 0 auto;
+
+    padding: 20px 6% 150px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 100px;
+}
+
+.about-story-heading h2 {
+    font-size: clamp(45px, 5vw, 70px);
+    line-height: 1.05;
+}
+
+.about-story-text {
+    padding-top: 35px;
+}
+
+.about-story-text p {
+    margin-bottom: 28px;
+
+    font-size: 17px;
+    line-height: 1.9;
+
+    color: #57544c;
+}
+
+
+/* STATEMENT */
+
+.about-statement {
+    padding: 160px 6%;
+
+    text-align: center;
+
+    background-color: #23241f;
+    color: white;
+}
+
+.about-statement blockquote {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(50px, 7vw, 100px);
+
+    line-height: 1.05;
+
+    font-style: normal;
+}
+
+
+/* HISTORY */
+
+.history-section {
+    max-width: 1300px;
+
+    margin: 0 auto;
+
+    padding: 150px 6%;
+}
+
+.history-heading {
+    margin-bottom: 100px;
+}
+
+.history-heading h2 {
+    font-size: clamp(50px, 6vw, 85px);
+    line-height: 1;
+}
+
+.history-timeline {
+    border-top: 1px solid #aaa59b;
+}
+
+.history-item {
+    display: grid;
+
+    grid-template-columns: 150px 1fr 1.3fr;
+
+    gap: 50px;
+
+    padding: 45px 0;
+
+    border-bottom: 1px solid #aaa59b;
+}
+
+.history-year {
+    font-size: 12px;
+
+    letter-spacing: 2px;
+}
+
+.history-item h3 {
+    font-size: 28px;
+}
+
+.history-item > p:last-child {
+    color: #5d5a52;
+
+    line-height: 1.8;
+}
+
+
+/* CLOSING */
+
+.about-closing {
+    padding: 150px 6%;
+
+    text-align: center;
+
+    background-color: #e7e1d7;
+}
+
+.about-closing h2 {
+    max-width: 900px;
+
+    margin: 0 auto 35px;
+
+    font-size: clamp(50px, 6vw, 85px);
+
+    line-height: 1.05;
+}
+
+.about-closing > p:not(.eyebrow) {
+    max-width: 650px;
+
+    margin: 0 auto 40px;
+
+    line-height: 1.8;
+
+    color: #57544c;
+}
+
+
+/* ABOUT TABLET / MOBILE */
+
+@media (max-width: 800px) {
+
+    .about-story {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+    .history-item {
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .about-page-hero {
+        padding: 100px 25px 70px;
+    }
+
+    .about-hero-image {
+        padding: 0 25px 90px;
+    }
+
+    .about-image-placeholder {
+        min-height: 55vh;
+    }
+
+    .about-story {
+        padding: 0 25px 100px;
+    }
+
+    .about-statement {
+        padding: 110px 25px;
+    }
+
+    .history-section {
+        padding: 100px 25px;
+    }
+
+    .history-heading {
+        margin-bottom: 60px;
+    }
+
+    .about-closing {
+        padding: 100px 25px;
+    }
+
+}
 }
