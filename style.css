@@ -954,8 +954,7 @@ h3 {
    MOBILE
 ========================================= */
 
-@media (max-width: 650px) {
-
+@media (max-width: 650px)  {
     .site-header {
         padding-left: 20px;
         padding-right: 20px;
@@ -1097,6 +1096,8 @@ h3 {
 
         padding: 10px 0;
     }
+}
+
 /* =========================================
    COLLECTION PAGE
 ========================================= */
@@ -1504,4 +1505,304 @@ h3 {
     }
 
 }
+/* =========================================
+   INDIVIDUAL ARTIST PAGE
+========================================= */
+
+.artist-page-header {
+    max-width: 1300px;
+    margin: 0 auto;
+
+    padding: 140px 6% 80px;
+}
+
+.artist-page-header h1 {
+    font-size: clamp(70px, 10vw, 140px);
+    line-height: .9;
+
+    margin-bottom: 28px;
+}
+
+.artist-medium {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 22px;
+
+    color: #656158;
+}
+
+
+/* LARGE ARTIST IMAGE */
+
+.artist-page-image {
+    padding: 0 5% 150px;
+}
+
+.artist-large-placeholder {
+    min-height: 78vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #d8d3ca;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 24px;
+    font-style: italic;
+
+    color: #77736b;
+}
+
+.artist-page-image img {
+    width: 100%;
+    max-height: 90vh;
+
+    object-fit: cover;
+}
+
+
+/* BIOGRAPHY */
+
+.artist-biography {
+    max-width: 1300px;
+
+    margin: 0 auto;
+
+    padding: 0 6% 150px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 100px;
+}
+
+.artist-biography-heading h2 {
+    font-size: clamp(45px, 5vw, 72px);
+
+    line-height: 1.05;
+}
+
+.artist-biography-text p {
+    font-size: 17px;
+
+    line-height: 1.9;
+
+    margin-bottom: 28px;
+
+    color: #555249;
+}
+
+
+/* ARTIST QUOTE */
+
+.artist-quote {
+    padding: 160px 6%;
+
+    text-align: center;
+
+    background-color: #23241f;
+    color: white;
+}
+
+.artist-quote blockquote {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(50px, 8vw, 105px);
+
+    font-style: normal;
+
+    line-height: 1.05;
+}
+
+.quote-credit {
+    margin-top: 35px;
+
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: rgba(255, 255, 255, .55);
+}
+
+
+/* AMBLESIDE STORY */
+
+.artist-gallery-story {
+    max-width: 1300px;
+
+    margin: 0 auto;
+
+    padding: 150px 6%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 100px;
+}
+
+.artist-gallery-story h2 {
+    font-size: clamp(45px, 5vw, 72px);
+
+    line-height: 1.05;
+}
+
+.artist-gallery-story-text p {
+    font-size: 17px;
+
+    line-height: 1.9;
+
+    margin-bottom: 27px;
+
+    color: #555249;
+}
+
+
+/* SELECTED WORKS */
+
+.artist-works {
+    padding: 140px 5% 160px;
+
+    background-color: #e8e2d8;
+}
+
+.artist-works-heading {
+    max-width: 1300px;
+
+    margin: 0 auto 70px;
+}
+
+.artist-works-heading h2 {
+    font-size: clamp(50px, 6vw, 85px);
+}
+
+.artist-works-grid {
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 80px 30px;
+}
+
+.work-placeholder {
+    width: 100%;
+
+    aspect-ratio: 4 / 5;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #d6d0c5;
+
+    margin-bottom: 22px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-style: italic;
+
+    color: #77736b;
+}
+
+.artist-work h3 {
+    font-size: 25px;
+
+    margin-bottom: 4px;
+}
+
+.artist-work p {
+    font-size: 11px;
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    color: #77736b;
+}
+
+
+/* INQUIRE */
+
+.artist-inquire {
+    padding: 150px 6%;
+
+    text-align: center;
+}
+
+.artist-inquire h2 {
+    font-size: clamp(50px, 7vw, 90px);
+
+    line-height: 1.05;
+
+    margin-bottom: 45px;
+}
+
+
+/* ARTIST PAGE MOBILE */
+
+@media (max-width: 800px) {
+
+    .artist-biography,
+    .artist-gallery-story {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .artist-page-header {
+        padding: 100px 25px 65px;
+    }
+
+    .artist-page-image {
+        padding: 0 25px 100px;
+    }
+
+    .artist-large-placeholder {
+        min-height: 60vh;
+    }
+
+    .artist-biography {
+        padding: 0 25px 100px;
+    }
+
+    .artist-gallery-story {
+        padding: 100px 25px;
+    }
+
+    .artist-quote {
+        padding: 110px 25px;
+    }
+
+    .artist-works {
+        padding: 100px 25px;
+    }
+
+    .artist-works-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .artist-inquire {
+        padding: 100px 25px;
+    }
+
+}
+    .artist-inquire {
+        padding: 100px 25px;
+    }
+
+}
+
+
+/* =========================================
+   ARTIST CV / EXHIBITIONS
+========================================= */
+
+.artist-cv-section {
+    /* new Karl CV styling starts here */
 }
