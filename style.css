@@ -1998,3 +1998,90 @@ h3 {
     }
 
 }
+/* =========================================
+   MUSIC PAGE — MOBILE FIX
+========================================= */
+
+@media (max-width: 700px) {
+
+    .music-performer-section {
+        padding: 80px 24px;
+    }
+
+    .music-performer-inner {
+        max-width: 100%;
+    }
+
+    .music-performer-section h2 {
+        font-size: 42px;
+        line-height: 1.1;
+        margin-bottom: 28px;
+    }
+
+    .music-performer-section p {
+        font-size: 16px;
+        line-height: 1.75;
+        margin-bottom: 20px;
+    }
+
+    .music-performer-section .button {
+        width: 100%;
+        text-align: center;
+        margin-top: 24px;
+    }
+
+
+    .performer-inquiries {
+        padding: 90px 24px;
+    }
+
+    .performer-inquiries-header {
+        margin-bottom: 50px;
+    }
+
+    .performer-inquiries-header h2 {
+        font-size: 42px;
+        line-height: 1.1;
+    }
+
+    .performer-inquiry-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        border-top: 1px solid #aaa59b;
+    }
+
+    .performer-inquiry-item,
+    .performer-inquiry-item:nth-child(odd),
+    .performer-inquiry-item:nth-child(even) {
+        padding: 28px 0;
+
+        border-right: none;
+        border-bottom: 1px solid #aaa59b;
+
+        min-height: auto;
+    }
+
+    .performer-number {
+        display: block;
+
+        font-size: 10px;
+        letter-spacing: 2px;
+
+        margin-bottom: 12px;
+
+        color: #8b877e;
+    }
+
+    .performer-inquiry-item h3 {
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+
+    .performer-inquiry-item p {
+        font-size: 16px;
+        line-height: 1.6;
+        margin: 0;
+    }
+
+}
