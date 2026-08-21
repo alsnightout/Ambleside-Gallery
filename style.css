@@ -2085,3 +2085,82 @@ h3 {
     }
 
 }
+.artist-page-image figcaption {
+    margin-top: 14px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.artist-page-image figcaption strong {
+    font-family: Georgia, serif;
+    font-size: 18px;
+    font-weight: normal;
+}
+.artist-page-image {
+    display: flex;
+    justify-content: center;
+    padding: 60px 8%;
+}
+
+.artist-page-image img {
+    width: auto;
+    max-width: 750px;
+    max-height: 80vh;
+    height: auto;
+    display: block;
+}
+/* =========================================
+   ARTWORK INTERACTIVE GALLERY
+========================================= */
+
+.artwork-gallery-trigger {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: none;
+    background: none;
+    text-align: left;
+    font: inherit;
+}
+
+.artwork-image-wrap {
+    position: relative;
+    overflow: hidden;
+    cursor: zoom-in;
+}
+
+.artwork-image-wrap img {
+    width: 100%;
+    display: block;
+    transition: transform 0.7s ease;
+}
+
+.artwork-gallery-trigger:hover img {
+    transform: scale(1.045);
+}
+
+.artwork-view-label {
+    position: absolute;
+    right: 20px;
+    bottom: 18px;
+
+    padding: 8px 12px;
+
+    background: rgba(245, 242, 235, 0.92);
+
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+    opacity: 0;
+    transform: translateY(5px);
+
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
+}
+
+.artwork-gallery-trigger:hover .artwork-view-label {
+    opacity: 1;
+    transform: translateY(0);
+}
