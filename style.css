@@ -2164,3 +2164,332 @@ h3 {
     opacity: 1;
     transform: translateY(0);
 }
+/* =========================================
+   LISA ETHIER — FEATURED WORK
+========================================= */
+
+.lisa-featured-work {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 6% 150px;
+
+    display: grid;
+    grid-template-columns: 1.25fr 0.75fr;
+    align-items: center;
+
+    gap: 90px;
+}
+
+.lisa-featured-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.lisa-featured-info {
+    max-width: 430px;
+}
+
+.lisa-featured-info h2 {
+    font-size: clamp(52px, 6vw, 85px);
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.lisa-featured-artist {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+
+.lisa-featured-details {
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    line-height: 1.7;
+
+    color: #77736b;
+
+    margin-bottom: 30px;
+}
+
+.lisa-featured-description {
+    max-width: 350px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    line-height: 1.7;
+
+    color: #57544c;
+}
+
+
+/* =========================================
+   LISA ETHIER — COLLECTION
+========================================= */
+
+.lisa-works-grid {
+    max-width: 1300px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+    row-gap: 140px;
+}
+
+.lisa-work {
+    position: relative;
+}
+
+.lisa-work-left {
+    grid-column: 1 / 8;
+}
+
+.lisa-work-right {
+    grid-column: 6 / 13;
+}
+
+.lisa-work-center {
+    grid-column: 3 / 10;
+}
+
+.lisa-work-image {
+    position: relative;
+    overflow: hidden;
+
+    cursor: zoom-in;
+}
+
+.lisa-work-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+
+    transition:
+        transform 0.8s ease,
+        filter 0.5s ease;
+}
+
+.lisa-work:hover img {
+    transform: scale(1.02);
+}
+
+.lisa-view-work {
+    position: absolute;
+    right: 20px;
+    bottom: 18px;
+
+    padding: 8px 13px;
+
+    background: rgba(245, 242, 235, 0.93);
+
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+    opacity: 0;
+    transform: translateY(5px);
+
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
+}
+
+.lisa-work:hover .lisa-view-work {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.lisa-work-info {
+    margin-top: 18px;
+}
+
+.lisa-work-info h3 {
+    font-size: 27px;
+    margin-bottom: 4px;
+}
+
+.lisa-work-info p {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+    color: #77736b;
+}
+
+
+/* =========================================
+   LISA ETHIER — MOBILE
+========================================= */
+
+@media (max-width: 800px) {
+
+    .lisa-featured-work {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 100px;
+    }
+
+    .lisa-featured-info {
+        max-width: 100%;
+    }
+
+    .lisa-works-grid {
+        display: block;
+    }
+
+    .lisa-work {
+        margin-bottom: 90px;
+    }
+
+    .lisa-work:last-child {
+        margin-bottom: 0;
+    }
+
+}
+/* =========================================
+   LISA ETHIER — ARTWORK VIEWPORT SIZING
+========================================= */
+
+.lisa-work-image img {
+    width: auto;
+    max-width: 100%;
+    max-height: 76vh;
+    height: auto;
+    object-fit: contain;
+}
+
+.lisa-work-image {
+    display: flex;
+}
+
+/* preserve the editorial positioning */
+
+.lisa-work-left .lisa-work-image {
+    justify-content: flex-start;
+}
+
+.lisa-work-right .lisa-work-image {
+    justify-content: flex-end;
+}
+
+.lisa-work-center .lisa-work-image {
+    justify-content: center;
+}
+/* =========================================
+   LISA ETHIER — FEATURED WORK VIEWPORT
+========================================= */
+
+.lisa-featured-work {
+    min-height: 80vh;
+    align-items: center;
+}
+
+.lisa-featured-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lisa-featured-image img {
+    width: auto;
+    height: auto;
+
+    max-width: 100%;
+    max-height: 68vh;
+
+    object-fit: contain;
+    display: block;
+}
+/* =========================================
+   CAVINESS — HERO IMAGE SIZING
+========================================= */
+
+.artist-page-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.artist-page-image figure {
+    width: auto;
+    max-width: 100%;
+    margin: 0;
+}
+
+.artist-page-image img {
+    width: auto;
+    height: auto;
+
+    max-width: 100%;
+    max-height: 62vh;
+
+    object-fit: contain;
+    display: block;
+}
+/* =========================================
+   CAVINESS — HERO IMAGE
+========================================= */
+
+.caviness-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caviness-hero figure {
+    width: auto;
+    max-width: 100%;
+    margin: 0;
+}
+
+.caviness-hero img {
+    width: auto;
+    height: auto;
+
+    max-width: 100%;
+    max-height: 62vh;
+
+    object-fit: contain;
+    display: block;
+}
+/* =========================================
+   CAVINESS — FEATURED WORK
+========================================= */
+
+.caviness-featured-work {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 40px 6% 100px;
+}
+
+.caviness-featured-work > .eyebrow {
+    margin-bottom: 28px;
+}
+
+.caviness-featured-caption {
+    margin-top: 18px;
+}
+
+.caviness-featured-caption h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 28px;
+    font-weight: 400;
+    margin: 0 0 7px;
+}
+
+.caviness-featured-caption p {
+    margin: 0;
+
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+    color: #77736b;
+}
