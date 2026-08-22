@@ -729,10 +729,32 @@ h3 {
 
     gap: 75px 28px;
 }
-
 .artist-card {
-    color: inherit;
     text-decoration: none;
+color: inherit; 
+    
+}   
+
+.artist-card-image {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+    margin-bottom: 22px;
+
+    background-color: #dfdbd2;
+}
+
+.artist-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+
+    transition: transform 0.6s ease;
+}
+
+.artist-card:hover .artist-card-image img {
+    transform: scale(1.025);
 }
 
 .artist-placeholder {
@@ -2644,4 +2666,27 @@ h3 {
         max-height: 70vh;
     }
 
+}
+/* =========================================
+   ARTIST DIRECTORY — FEATURED ARTWORK IMAGES
+========================================= */
+
+.artist-card-image {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+    margin-bottom: 22px;
+    background-color: #dfdbd2;
+}
+
+.artist-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s ease;
+}
+
+.artist-card:hover .artist-card-image img {
+    transform: scale(1.025);
 }
