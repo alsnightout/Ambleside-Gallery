@@ -2493,3 +2493,155 @@ h3 {
 
     color: #77736b;
 }
+/* =========================================
+   ARTWORK LIGHTBOX
+========================================= */
+
+.artwork-lightbox {
+    position: fixed;
+    inset: 0;
+
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 50px 80px;
+
+    background: rgba(24, 25, 23, 0.97);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition:
+        opacity 0.35s ease,
+        visibility 0.35s ease;
+}
+
+.artwork-lightbox.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.lightbox-content {
+    max-width: 1100px;
+    width: 100%;
+
+    text-align: center;
+}
+
+
+.lightbox-content img {
+    width: auto;
+    max-width: 100%;
+    max-height: 78vh;
+
+    margin: 0 auto;
+
+    object-fit: contain;
+}
+
+
+.lightbox-info {
+    margin-top: 18px;
+
+    color: #f5f2eb;
+}
+
+
+.lightbox-info h2 {
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+
+
+.lightbox-info p {
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: rgba(255, 255, 255, 0.55);
+}
+
+
+.lightbox-close {
+    position: absolute;
+    top: 25px;
+    right: 35px;
+
+    border: none;
+    background: transparent;
+
+    color: #f5f2eb;
+
+    font-size: 38px;
+    font-weight: 300;
+
+    cursor: pointer;
+}
+
+
+.lightbox-arrow {
+    position: absolute;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    border: none;
+    background: transparent;
+
+    color: #f5f2eb;
+
+    font-size: 35px;
+
+    cursor: pointer;
+
+    opacity: 0.65;
+
+    transition: opacity 0.25s ease;
+}
+
+
+.lightbox-arrow:hover {
+    opacity: 1;
+}
+
+
+.lightbox-prev {
+    left: 35px;
+}
+
+
+.lightbox-next {
+    right: 35px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .artwork-lightbox {
+        padding: 60px 20px 35px;
+    }
+
+    .lightbox-arrow {
+        top: auto;
+        bottom: 20px;
+    }
+
+    .lightbox-prev {
+        left: 30%;
+    }
+
+    .lightbox-next {
+        right: 30%;
+    }
+
+    .lightbox-content img {
+        max-height: 70vh;
+    }
+
+}

@@ -97,7 +97,7 @@
         <figure>
 
             <img
-                src="../images/caviness-thegreatwall.jpg"
+                src="../images/caviness-thegreatwall-01.jpg"
                 alt="The Great Wall by Brad and Bryan Caviness"
             >
 
@@ -289,7 +289,7 @@
                 <article class="artist-work">
 
                     <img
-                        src="../images/caviness-thegreatwall.jpg"
+                        src="../images/caviness-thegreatwall-01.jpg"
                         alt="The Great Wall by Brad and Bryan Caviness"
                     >
 
@@ -306,12 +306,23 @@
 
 
                 <article class="artist-work">
-
+                 <button class="artwork-gallery-trigger"
+                    type="button"
+                    data-title="Roman Bathhouse"
+                    data-images="
+                    ../images/caviness-romanbathhouse-01.jpg,
+                    ../images/caviness-romanbathhouse-detail-01.jpg"
+                    >
+                    <div class="artwork-image-wrap">
                   <img
-                        src="../images/caviness-romanbathhouse.jpg"
+                        src="../images/caviness-romanbathhouse-01.jpg"
                         alt="Roman Bathhouse by Brad and Bryan Caviness"
                     >
-
+<span class="artwork-view-label">
+                    View Artwork
+                </span>
+                </div>  
+                </button>
                     <h3>
                         "Roman Bathhouse"
                     </h3>
@@ -338,7 +349,7 @@
                     <div
                         class="artwork-image-wrap">
                     <img
-                        src="../images/caviness-egyptian-temple1.jpg"
+                        src="../images/caviness-egyptian-temple2.jpg"
                         alt="Egyptian Temple by Brad and Bryan Caviness"
                     >   
                     <span class="artwork-view-label">
@@ -363,7 +374,7 @@
                 <article class="artist-work">
 
                     <img
-                        src="../images/caviness-mediterranean-coastal-villa-01.jpg"
+                        src="../images/caviness-mediterranean-coastal-villa-02.jpg"
                         alt="Mediterranean Coastal Villa by Brad and Bryan Caviness"
                     >
 
@@ -669,6 +680,195 @@
 
 
     </footer>
+    <!-- =========================================
+     ARTWORK LIGHTBOX
+========================================= -->
+
+<div class="artwork-lightbox" id="artworkLightbox">
+
+    <button
+        class="lightbox-close"
+        type="button"
+        aria-label="Close artwork gallery"
+    >
+        ×
+    </button>
+
+    <button
+        class="lightbox-arrow lightbox-prev"
+        type="button"
+        aria-label="Previous image"
+    >
+        ←
+    </button>
+
+    <div class="lightbox-content">
+
+        <img
+            id="lightboxImage"
+            src=""
+            alt=""
+        >
+
+        <div class="lightbox-info">
+
+            <h2 id="lightboxTitle"></h2>
+
+            <p id="lightboxCounter"></p>
+
+        </div>
+
+    </div>
+
+    <button
+        class="lightbox-arrow lightbox-next"
+        type="button"
+        aria-label="Next image"
+    >
+        →
+    </button>
+
+</div>
+
+
+<script>
+
+const galleryButtons =
+    document.querySelectorAll(".artwork-gallery-trigger");
+
+const lightbox =
+    document.getElementById("artworkLightbox");
+
+const lightboxImage =
+    document.getElementById("lightboxImage");
+
+const lightboxTitle =
+    document.getElementById("lightboxTitle");
+
+const lightboxCounter =
+    document.getElementById("lightboxCounter");
+
+const closeButton =
+    document.querySelector(".lightbox-close");
+
+const prevButton =
+    document.querySelector(".lightbox-prev");
+
+const nextButton =
+    document.querySelector(".lightbox-next");
+
+
+let currentImages = [];
+let currentIndex = 0;
+let currentTitle = "";
+
+
+function showImage() {
+
+    lightboxImage.src =
+        currentImages[currentIndex];
+
+    lightboxImage.alt =
+        `${currentTitle} - image ${currentIndex + 1}`;
+
+    lightboxTitle.textContent =
+        currentTitle;
+
+    lightboxCounter.textContent =
+        `${currentIndex + 1} / ${currentImages.length}`;
+
+}
+
+
+galleryButtons.forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        currentImages =
+            button.dataset.images
+                .split(",")
+                .map(image => image.trim())
+                .filter(Boolean);
+
+        currentTitle =
+            button.dataset.title;
+
+        currentIndex = 0;
+
+        showImage();
+
+        lightbox.classList.add("open");
+
+        document.body.style.overflow = "hidden";
+
+    });
+
+});
+
+
+nextButton.addEventListener("click", () => {
+
+    currentIndex =
+        (currentIndex + 1) % currentImages.length;
+
+    showImage();
+
+});
+
+
+prevButton.addEventListener("click", () => {
+
+    currentIndex =
+        (currentIndex - 1 + currentImages.length)
+        % currentImages.length;
+
+    showImage();
+
+});
+
+
+closeButton.addEventListener("click", closeLightbox);
+
+
+lightbox.addEventListener("click", event => {
+
+    if (event.target === lightbox) {
+        closeLightbox();
+    }
+
+});
+
+
+document.addEventListener("keydown", event => {
+
+    if (!lightbox.classList.contains("open")) {
+        return;
+    }
+
+    if (event.key === "Escape") {
+        closeLightbox();
+    }
+
+    if (event.key === "ArrowRight") {
+        nextButton.click();
+    }
+
+    if (event.key === "ArrowLeft") {
+        prevButton.click();
+    }
+
+});
+
+
+function closeLightbox() {
+
+    lightbox.classList.remove("open");
+
+    document.body.style.overflow = "";
+
+}
+
+</script>
 
 
 </body>
