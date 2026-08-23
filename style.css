@@ -2927,3 +2927,117 @@ color: inherit;
 
     margin-top: 35px;
 }
+/* =========================================
+   LISA CAROUSEL — MOBILE REFINEMENT
+========================================= */
+
+@media (max-width: 700px) {
+
+    .lisa-carousel {
+        display: block;
+        position: relative;
+    }
+
+    .lisa-carousel-stage {
+        width: 100%;
+        margin: 0;
+    }
+
+    .lisa-carousel-image-wrap {
+        width: 100%;
+    }
+
+    .lisa-carousel-image-wrap img {
+        width: 100%;
+        height: auto;
+        max-height: none;
+        object-fit: contain;
+    }
+
+
+    /* Artwork title */
+
+    .lisa-carousel-caption h3 {
+        font-style: italic;
+        font-size: 28px;
+        margin-bottom: 8px;
+    }
+
+
+    /* Catalogue information */
+
+    .lisa-carousel-caption {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        margin-top: 18px;
+    }
+
+    .lisa-carousel-details {
+        line-height: 1.55;
+    }
+
+
+    /* Counter */
+
+    .lisa-carousel-counter {
+        align-self: flex-end;
+        padding-bottom: 3px;
+    }
+
+
+    /* Arrows sit over the artwork */
+
+    .lisa-carousel-prev,
+    .lisa-carousel-next {
+        position: absolute;
+        top: 42%;
+
+        width: 42px;
+        height: 42px;
+
+        margin: 0;
+
+        transform: translateY(-50%);
+
+        background: rgba(245, 242, 235, 0.92);
+    }
+
+    .lisa-carousel-prev {
+        left: 10px;
+    }
+
+    .lisa-carousel-next {
+        right: 10px;
+    }
+
+
+    /* Smaller, quieter pagination */
+
+    .lisa-carousel-dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        gap: 10px;
+
+        margin-top: 28px;
+    }
+
+    .lisa-carousel-dot {
+        width: 6px;
+        height: 6px;
+
+        border: none;
+        border-radius: 50%;
+
+        background: #aaa59b;
+    }
+
+    .lisa-carousel-dot.active {
+        background: #24231f;
+        transform: scale(1.3);
+    }
+
+}
