@@ -276,10 +276,10 @@
 
         </section>
   <!-- =========================================
-     SELECTED WORKS
-========================================== -->
+     SELECTED WORKS — CAROUSEL
+========================================= -->
 
-<section class="artist-works">
+<section class="artist-works lisa-carousel-section">
 
     <div class="artist-works-heading">
 
@@ -293,105 +293,120 @@
 
     </div>
 
-<div class="lisa-works-grid">
 
-    <!-- ETHEREA -->
+    <div class="lisa-carousel" id="lisaCarousel">
 
-    <article class="lisa-work lisa-work-left">
+        <!-- PREVIOUS -->
 
-        <div class="lisa-work-image">
-
-            <img
-                src="../images/lisa-ethier-etherea1.jpg"
-                alt="Etherea by Lisa Ethier"
-            >
-
-            <span class="lisa-view-work">
-                View work
-            </span>
-
-        </div>
-
-        <div class="lisa-work-info">
-
-            <h3>
-                Etherea
-            </h3>
-
-            <p>
-                Lisa Ethier
-            </p>
-
-        </div>
-
-    </article>
+        <button
+            class="lisa-carousel-arrow lisa-carousel-prev"
+            type="button"
+            aria-label="Previous artwork"
+        >
+            ←
+        </button>
 
 
-    <!-- NOCTURNA -->
+        <!-- ARTWORK -->
 
-    <article class="lisa-work lisa-work-right">
+        <div class="lisa-carousel-stage">
 
-        <div class="lisa-work-image">
+            <div class="lisa-carousel-image-wrap">
 
-            <img
-                src="../images/lisa-ethier-nocturna1.jpg"
-                alt="Nocturna by Lisa Ethier"
-            >
+                <img
+                    id="lisaCarouselImage"
+                    src="../images/lisa-ethier-etherea1.jpg"
+                    alt="Etherea by Lisa Ethier"
+                >
 
-            <span class="lisa-view-work">
-                View work
-            </span>
-
-        </div>
-
-        <div class="lisa-work-info">
-
-            <h3>
-                Nocturna
-            </h3>
-
-            <p>
-                Lisa Ethier
-            </p>
-
-        </div>
-
-    </article>
+            </div>
 
 
-    <!-- SOLARA -->
+  <div class="lisa-carousel-caption">
 
-    <article class="lisa-work lisa-work-center">
+    <div class="lisa-carousel-details">
 
-        <div class="lisa-work-image">
+        <h3 id="lisaCarouselTitle">
+            Etherea
+        </h3>
 
-            <img
-                src="../images/lisa-ethier-solara1.jpg"
-                alt="Solara by Lisa Ethier"
-            >
+        <p
+            class="lisa-carousel-artist"
+            id="lisaCarouselArtist"
+        >
+            Lisa Ethier
+        </p>
 
-            <span class="lisa-view-work">
-                View work
-            </span>
+        <p
+            class="lisa-carousel-medium"
+            id="lisaCarouselMedium"
+        >
+            Cold Wax + Oil on Board
+        </p>
 
-        </div>
+        <p
+            class="lisa-carousel-dimensions"
+            id="lisaCarouselDimensions"
+        >
+            40 × 30 in.
+        </p>
 
-        <div class="lisa-work-info">
-
-            <h3>
-                Solara
-            </h3>
-
-            <p>
-                Lisa Ethier
-            </p>
-
-        </div>
-
-    </article>
+        <p
+            class="lisa-carousel-price"
+            id="lisaCarouselPrice"
+        >
+            $3,450
+        </p>
 
     </div>
 
+
+    <p
+        class="lisa-carousel-counter"
+        id="lisaCarouselCounter"
+    >
+        01 / 03
+    </p>
+
+</div>
+
+        <!-- NEXT -->
+
+        <button
+            class="lisa-carousel-arrow lisa-carousel-next"
+            type="button"
+            aria-label="Next artwork"
+        >
+            →
+        </button>
+
+    </div>
+
+
+    <div class="lisa-carousel-dots">
+
+        <button
+            class="lisa-carousel-dot active"
+            type="button"
+            aria-label="View Etherea"
+            data-index="0"
+        ></button>
+
+        <button
+            class="lisa-carousel-dot"
+            type="button"
+            aria-label="View Nocturna"  
+            data-index="1"
+        ></button>
+
+        <button
+            class="lisa-carousel-dot"
+            type="button"
+            aria-label="View Solara"
+            data-index="2"
+        ></button>
+
+    </div>
 </section>
         <section class="artist-cv-section">
 
@@ -721,7 +736,169 @@
 
     </footer>
 
+<script>
 
+const lisaWorks = [
+
+    {
+        image: "../images/lisa-ethier-etherea1.jpg",
+        title: "Etherea",
+        artist: "Lisa Ethier",
+        medium: "Oil & Cold Wax on Board",
+        dimensions: "40 × 30 in.",
+        price: "$3,450"
+    },
+
+    {
+        image: "../images/lisa-ethier-nocturna1.jpg",
+        title: "Nocturna",
+        artist: "Lisa Ethier",
+        medium: "Oil & Cold Wax on Board",
+        dimensions: "36 × 24 in.",
+        price: "$3,250" 
+    },
+
+    {
+        image: "../images/lisa-ethier-solara1.jpg",
+        title: "Solara",
+        artist: "Lisa Ethier",
+        medium: "Oil & Cold Wax on Board",
+        dimensions: "40 × 30 in.",
+        price: "$3,450"
+    }
+
+];
+
+
+const lisaCarouselImage =
+    document.getElementById("lisaCarouselImage");
+
+const lisaCarouselTitle =
+    document.getElementById("lisaCarouselTitle");
+
+const lisaCarouselArtist =
+    document.getElementById("lisaCarouselArtist");
+
+const lisaCarouselMedium =
+    document.getElementById("lisaCarouselMedium");
+
+const lisaCarouselDimensions =
+    document.getElementById("lisaCarouselDimensions");
+
+const lisaCarouselPrice =
+    document.getElementById("lisaCarouselPrice");
+
+const lisaCarouselCounter =
+    document.getElementById("lisaCarouselCounter");
+
+const lisaPrev =
+    document.querySelector(".lisa-carousel-prev");
+
+const lisaNext =
+    document.querySelector(".lisa-carousel-next");
+
+const lisaDots =
+    document.querySelectorAll(".lisa-carousel-dot");
+
+
+let lisaCurrentIndex = 0;
+
+
+function updateLisaCarousel(index) {
+
+    lisaCurrentIndex = index;
+
+    const work = lisaWorks[lisaCurrentIndex];
+
+    lisaCarouselImage.style.opacity = "0";
+
+    setTimeout(() => {
+
+        lisaCarouselImage.src = work.image;
+
+        lisaCarouselImage.alt =
+            `${work.title} by ${work.artist}`;
+
+        lisaCarouselTitle.textContent =
+            work.title;
+
+        lisaCarouselArtist.textContent =
+            work.artist;
+        lisaCarouselMedium.textContent =
+            work.medium;
+
+        lisaCarouselDimensions.textContent =
+            work.dimensions;
+
+        lisaCarouselPrice.textContent =
+            work.price;
+
+        lisaCarouselCounter.textContent =
+            `${String(lisaCurrentIndex + 1).padStart(2, "0")} / ${String(lisaWorks.length).padStart(2, "0")}`;
+
+        lisaDots.forEach((dot, dotIndex) => {
+
+            dot.classList.toggle(
+                "active",
+                dotIndex === lisaCurrentIndex
+            );
+
+        });
+
+        lisaCarouselImage.style.opacity = "1";
+
+    }, 180);
+
+}
+
+
+lisaNext.addEventListener("click", () => {
+
+    const nextIndex =
+        (lisaCurrentIndex + 1) % lisaWorks.length;
+
+    updateLisaCarousel(nextIndex);
+
+});
+
+
+lisaPrev.addEventListener("click", () => {
+
+    const previousIndex =
+        (lisaCurrentIndex - 1 + lisaWorks.length)
+        % lisaWorks.length;
+
+    updateLisaCarousel(previousIndex);
+
+});
+
+
+lisaDots.forEach(dot => {
+
+    dot.addEventListener("click", () => {
+
+        updateLisaCarousel(
+            Number(dot.dataset.index)
+        );
+
+    });
+
+});
+
+
+document.addEventListener("keydown", event => {
+
+    if (event.key === "ArrowRight") {
+        lisaNext.click();
+    }
+
+    if (event.key === "ArrowLeft") {
+        lisaPrev.click();
+    }
+
+});
+
+</script>
 </body>
 
 </html>
