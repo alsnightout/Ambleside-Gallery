@@ -3041,3 +3041,59 @@ color: inherit;
     }
 
 }
+/* =========================================
+   ARTIST WORK DETAILS + PRICING
+========================================= */
+
+.artwork-details {
+    padding-top: 18px;
+}
+
+.artwork-details h3 {
+    margin: 0 0 8px;
+    font-weight: normal;
+}
+
+
+/* Medium + price on same line */
+
+.artwork-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 20px;
+}
+
+.artwork-meta p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.5;
+    opacity: 0.7;
+}
+
+.artwork-meta p:last-child {
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   VIEW ARTWORK — IMAGE COUNT
+========================================= */
+
+.artwork-view-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.artwork-view-label small {
+    font-size: 9px;
+    letter-spacing: 0.12em;
+    opacity: 0.75;
+}
+.featured-work-price {
+    margin-top: 6px;
+    font-size: 14px;
+    opacity: 0.7;
+}
