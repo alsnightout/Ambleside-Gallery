@@ -3050,31 +3050,37 @@ color: inherit;
 }
 
 .artwork-details h3 {
-    margin: 0 0 8px;
+    margin: 0 0 10px;
     font-weight: normal;
 }
 
 
-/* Medium + price on same line */
+/* Medium + dimensions + price */
 
 .artwork-meta {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
-    gap: 20px;
+    align-items: flex-start;
+    gap: 24px;
 }
 
-.artwork-meta p {
+.artwork-meta-info {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.artwork-meta-info p,
+.artwork-price {
     margin: 0;
     font-size: 13px;
     line-height: 1.5;
     opacity: 0.7;
 }
 
-.artwork-meta p:last-child {
+.artwork-price {
     white-space: nowrap;
 }
-
 
 /* =========================================
    VIEW ARTWORK — IMAGE COUNT
