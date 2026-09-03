@@ -3473,3 +3473,68 @@ color: inherit;
     }
 
 }
+/* =========================================
+   MOBILE — FEATURED WORK CAPTIONS
+========================================= */
+
+@media (max-width: 700px) {
+
+    /* Featured artwork captions */
+
+    .schillaci-featured-caption,
+    .hillier-featured-caption,
+    .houghton-featured-caption,
+    .squier-featured-caption,
+    .caviness-featured-caption {
+        padding: 0 20px;
+        margin-top: 16px;
+    }
+
+
+    /* Featured artwork titles */
+
+    .schillaci-featured-caption h2,
+    .hillier-featured-caption h2,
+    .houghton-featured-caption h2,
+    .squier-featured-caption h2,
+    .caviness-featured-caption h2 {
+        margin: 0 0 8px;
+        font-size: clamp(30px, 9vw, 42px);
+        line-height: 1.02;
+        font-weight: normal;
+        overflow-wrap: break-word;
+    }
+
+
+    /* Artist name / medium beneath title */
+
+    .schillaci-featured-caption p,
+    .hillier-featured-caption p,
+    .houghton-featured-caption p,
+    .squier-featured-caption p,
+    .caviness-featured-caption p {
+        margin: 0;
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+}
+@media (max-width: 700px) {
+
+    .schillaci-featured-caption h2 {
+        font-size: clamp(27px, 8vw, 36px);
+        line-height: 1.05;
+    }
+
+}
+@media (max-width: 700px) {
+
+    .schillaci-featured-heading,
+    .hillier-featured-heading,
+    .houghton-featured-heading,
+    .squier-featured-heading {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+}
