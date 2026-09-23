@@ -2,21 +2,28 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <meta
         name="description"
-        content="Explore the fine art collection represented by Ambleside Gallery."
+        content="Explore paintings, watercolor, photography and sculpture represented by Ambleside Gallery."
     >
 
     <title>Collection | Ambleside Gallery</title>
 
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 
 <body>
+
 
     <!-- =========================================
          HEADER
@@ -25,26 +32,22 @@
     <header class="site-header">
 
         <div class="logo">
+
             <a href="index.html">
                 AMBLESIDE
             </a>
+
         </div>
 
 
         <nav class="main-nav">
 
             <a href="index.html">Home</a>
-
             <a href="artists.html">Artists</a>
-
             <a href="collection.html">Collection</a>
-
             <a href="exhibitions.html">Exhibitions</a>
-
             <a href="music.html">Music at Ambleside</a>
-
             <a href="about.html">About</a>
-
             <a href="contact.html">Contact Us</a>
 
         </nav>
@@ -72,9 +75,9 @@
 
             <p class="collection-intro">
 
-                Discover paintings, sculpture and photography
-                selected for their exceptional artistry,
-                originality and enduring presence.
+                Discover paintings, watercolor, photography
+                and sculpture selected for their exceptional
+                artistry, originality and enduring presence.
 
             </p>
 
@@ -83,28 +86,55 @@
 
 
         <!-- =========================================
-             COLLECTION CATEGORIES
+             FILTERS
         ========================================== -->
 
-        <section class="collection-categories">
+        <section
+            class="collection-categories"
+            aria-label="Filter the collection"
+        >
 
-            <button class="collection-filter">
+            <button
+                class="collection-filter active"
+                type="button"
+                data-filter="all"
+            >
                 All Works
             </button>
 
-            <button class="collection-filter">
+
+            <button
+                class="collection-filter"
+                type="button"
+                data-filter="painting"
+            >
                 Painting
             </button>
 
-            <button class="collection-filter">
+
+            <button
+                class="collection-filter"
+                type="button"
+                data-filter="watercolor"
+            >
                 Watercolor
             </button>
 
-            <button class="collection-filter">
+
+            <button
+                class="collection-filter"
+                type="button"
+                data-filter="photography"
+            >
                 Photography
             </button>
 
-            <button class="collection-filter">
+
+            <button
+                class="collection-filter"
+                type="button"
+                data-filter="sculpture"
+            >
                 Sculpture
             </button>
 
@@ -113,167 +143,27 @@
 
 
         <!-- =========================================
-             ARTWORK GRID
+             COUNT
         ========================================== -->
 
-        <section class="collection-grid">
+        <div class="collection-count-wrap">
 
+            <p id="collectionCount"></p>
 
-            <!-- ARTWORK 1 -->
+        </div>
 
-            <article class="artwork-card">
 
-                <div class="artwork-placeholder">
-                    Artwork
-                </div>
 
-                <div class="artwork-info">
+        <!-- =========================================
+             ARTWORK GRID
 
-                    <h2>Artwork Title</h2>
+             JavaScript generates the cards here.
+        ========================================== -->
 
-                    <p class="artwork-artist">
-                        Guan Weixing
-                    </p>
-
-                    <p>
-                        Watercolor
-                    </p>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- ARTWORK 2 -->
-
-            <article class="artwork-card">
-
-                <div class="artwork-placeholder">
-                    Artwork
-                </div>
-
-                <div class="artwork-info">
-
-                    <h2>Artwork Title</h2>
-
-                    <p class="artwork-artist">
-                        Fred Stein
-                    </p>
-
-                    <p>
-                        Photography
-                    </p>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- ARTWORK 3 -->
-
-            <article class="artwork-card">
-
-                <div class="artwork-placeholder">
-                    Artwork
-                </div>
-
-                <div class="artwork-info">
-
-                    <h2>Artwork Title</h2>
-
-                    <p class="artwork-artist">
-                        Lisa Ethier
-                    </p>
-
-                    <p>
-                        Oil & Cold Wax
-                    </p>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- ARTWORK 4 -->
-
-            <article class="artwork-card">
-
-                <div class="artwork-placeholder">
-                    Artwork
-                </div>
-
-                <div class="artwork-info">
-
-                    <h2>Artwork Title</h2>
-
-                    <p class="artwork-artist">
-                        Frank Eber
-                    </p>
-
-                    <p>
-                        Watercolor
-                    </p>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- ARTWORK 5 -->
-
-            <article class="artwork-card">
-
-                <div class="artwork-placeholder">
-                    Artwork
-                </div>
-
-                <div class="artwork-info">
-
-                    <h2>Artwork Title</h2>
-
-                    <p class="artwork-artist">
-                        Noe Katz
-                    </p>
-
-                    <p>
-                        Oil
-                    </p>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- ARTWORK 6 -->
-
-            <article class="artwork-card">
-
-                <div class="artwork-placeholder">
-                    Artwork
-                </div>
-
-                <div class="artwork-info">
-
-                    <h2>Artwork Title</h2>
-
-                    <p class="artwork-artist">
-                        Pat Dews
-                    </p>
-
-                    <p>
-                        Watercolor & Acrylic
-                    </p>
-
-                </div>
-
-            </article>
-
-
+        <section
+            class="collection-grid"
+            id="collectionGrid"
+        >
         </section>
 
 
@@ -287,7 +177,9 @@
 
     <footer class="site-footer">
 
+
         <div class="footer-top">
+
 
             <div class="footer-brand">
 
@@ -304,32 +196,51 @@
 
             <div class="footer-links">
 
+
                 <div>
 
-                    <h3>Explore</h3>
+                    <h3>
+                        Explore
+                    </h3>
 
-                    <a href="artists.html">Artists</a>
+                    <a href="artists.html">
+                        Artists
+                    </a>
 
-                    <a href="collection.html">Collection</a>
+                    <a href="collection.html">
+                        Collection
+                    </a>
 
-                    <a href="exhibitions.html">Exhibitions</a>
+                    <a href="exhibitions.html">
+                        Exhibitions
+                    </a>
 
                 </div>
 
 
                 <div>
 
-                    <h3>Gallery</h3>
+                    <h3>
+                        Gallery
+                    </h3>
 
-                    <a href="about.html">About</a>
+                    <a href="about.html">
+                        About
+                    </a>
 
-                    <a href="contact.html">Contact</a>
+                    <a href="contact.html">
+                        Contact
+                    </a>
 
-                    <a href="music.html">Music at Ambleside</a>
+                    <a href="music.html">
+                        Music at Ambleside
+                    </a>
 
                 </div>
+
 
             </div>
+
 
         </div>
 
@@ -340,13 +251,266 @@
                 © 2026 Ambleside Gallery
             </p>
 
-            <p>
-                Asheville, North Carolina
-            </p>
-
         </div>
 
+
     </footer>
+
+
+
+    <!-- =========================================
+         MASTER ARTWORK DATABASE
+    ========================================== -->
+
+    <script src="artwork-data.js"></script>
+
+
+
+    <!-- =========================================
+         COLLECTION PAGE LOGIC
+    ========================================== -->
+
+    <script>
+
+        const collectionGrid =
+            document.getElementById("collectionGrid");
+
+        const collectionCount =
+            document.getElementById("collectionCount");
+
+        const filterButtons =
+            document.querySelectorAll(".collection-filter");
+
+
+
+        /* =========================================
+           FORMAT PRICE
+        ========================================== */
+
+        function formatPrice(price) {
+
+            if (
+                price === null ||
+                price === undefined ||
+                price === ""
+            ) {
+                return "";
+            }
+
+            return new Intl.NumberFormat(
+                "en-US",
+                {
+                    style: "currency",
+                    currency: "USD",
+                    maximumFractionDigits: 0
+                }
+            ).format(price);
+
+        }
+
+
+
+        /* =========================================
+           BUILD COLLECTION
+        ========================================== */
+
+        function renderCollection(filter = "all") {
+
+
+            collectionGrid.innerHTML = "";
+
+
+            /*
+            Only show works that currently have
+            a website image assigned.
+            */
+
+            const availableWorks =
+                window.artworks.filter((artwork) => {
+
+                    return artwork.image;
+
+                });
+
+
+
+            const visibleWorks =
+                availableWorks.filter((artwork) => {
+
+                    return (
+                        filter === "all" ||
+                        artwork.category === filter
+                    );
+
+                });
+
+
+
+            visibleWorks.forEach((artwork) => {
+
+
+                const article =
+                    document.createElement("article");
+
+
+                article.className =
+                    "artwork-card";
+
+
+
+                const dimensionMarkup =
+                    artwork.dimensions
+                        ? `
+                            <p class="artwork-dimensions">
+                                ${artwork.dimensions}
+                            </p>
+                          `
+                        : "";
+
+
+
+                const priceMarkup =
+                    artwork.price
+                        ? `
+                            <p class="artwork-price">
+                                ${formatPrice(artwork.price)}
+                            </p>
+                          `
+                        : "";
+
+
+
+                article.innerHTML = `
+
+                    <a
+                        href="${artwork.artistPage}"
+                        class="collection-artwork-link"
+                    >
+
+                        <div class="collection-artwork-image">
+
+                            <img
+                                src="${artwork.image}"
+                                alt="${artwork.title} by ${artwork.artist}"
+                                loading="lazy"
+                            >
+
+                            <span class="collection-view-label">
+                                View Artwork
+                            </span>
+
+                        </div>
+
+
+                        <div class="artwork-info">
+
+                            <h2>
+                                ${artwork.title}
+                            </h2>
+
+
+                            <p class="artwork-artist">
+                                ${artwork.artist}
+                            </p>
+
+
+                            <p class="artwork-medium">
+                                ${artwork.medium}
+                            </p>
+
+
+                            ${dimensionMarkup}
+
+
+                            ${priceMarkup}
+
+                        </div>
+
+                    </a>
+
+                `;
+
+
+
+                collectionGrid.appendChild(article);
+
+            });
+
+
+
+            collectionCount.textContent =
+                `${visibleWorks.length} ${
+                    visibleWorks.length === 1
+                        ? "work"
+                        : "works"
+                }`;
+
+        }
+
+
+
+        /* =========================================
+           FILTER BUTTONS
+        ========================================== */
+
+        filterButtons.forEach((button) => {
+
+
+            button.addEventListener(
+                "click",
+                () => {
+
+
+                    filterButtons.forEach(
+                        (otherButton) => {
+
+                            otherButton
+                                .classList
+                                .remove("active");
+
+                        }
+                    );
+
+
+                    button
+                        .classList
+                        .add("active");
+
+
+                    renderCollection(
+                        button.dataset.filter
+                    );
+
+                }
+            );
+
+        });
+
+
+
+        /* =========================================
+           INITIAL PAGE LOAD
+        ========================================== */
+
+        if (
+            window.artworks &&
+            Array.isArray(window.artworks)
+        ) {
+
+            renderCollection();
+
+        } else {
+
+            collectionCount.textContent =
+                "Collection data could not be loaded.";
+
+            console.error(
+                "artwork-data.js did not load correctly."
+            );
+
+        }
+
+    </script>
 
 
 </body>

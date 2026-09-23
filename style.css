@@ -2,6 +2,29 @@
    AMBLESIDE GALLERY
    MAIN STYLESHEET
 ========================================= */
+@font-face {
+    font-family: "University Roman";
+    src: url("fonts/UniversityRomanStdRegular.OTF") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "University Roman";
+    src: url("fonts/UniversityRomanStdItalic.OTF") format("opentype");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "University Roman";
+    src: url("fonts/UniversityRomanStdBold.OTF") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
 
 
 /* =========================================
@@ -82,10 +105,9 @@ h3 {
 }
 
 .logo a {
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 24px;
-    letter-spacing: 6px;
-
+    font-family: "University Roman", serif;
+    font-size: 40px;
+    letter-spacing: 2px;
     text-decoration: none;
 }
 
@@ -132,17 +154,50 @@ h3 {
 ========================================= */
 
 .hero {
+    position: relative;
     min-height: 86vh;
+    overflow: hidden;
+}
 
-    background-image:
-        linear-gradient(
-            rgba(15, 15, 12, 0.22),
-            rgba(15, 15, 12, 0.30)
-        ),
-        url("images/hero.jpg");
+.hero-artwork {
+    position: absolute;
+    inset: 0;
 
-    background-size: cover;
-    background-position: center;
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    z-index: 0;
+    opacity: 1;
+
+    transition:
+        opacity 1.2s ease,
+        transform 8s ease;
+}
+
+.hero::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        rgba(15, 15, 12, 0.22),
+        rgba(15, 15, 12, 0.30)
+    );
+
+    z-index: 1;
+    pointer-events: none;
+}
+
+.hero-artwork.hero-fade {
+    opacity: 0;
+}
+
+.hero-artwork.hero-zoom {
+    transform: scale(1.025);
 }
 
 .hero-overlay {
@@ -3537,4 +3592,4164 @@ color: inherit;
         padding-right: 20px;
     }
 
+}
+#collectionShuffle,
+#featuredShuffle,
+#representedArtistShuffle {
+    transition: opacity 0.7s ease;
+}
+
+#collectionShuffle.shuffle-fade,
+#featuredShuffle.shuffle-fade,
+#representedArtistShuffle.shuffle-fade {
+    opacity: 0;
+}
+/* =========================================
+   COLLECTION PAGE CLEANUP
+========================================= */
+
+.collection-grid a,
+.collection-grid a:visited,
+.collection-grid a:hover,
+.collection-grid a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* artwork card */
+
+.artwork-card {
+    min-width: 0;
+}
+
+
+.collection-artwork-link {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* image area */
+
+.collection-artwork-image {
+    position: relative;
+
+    width: 100%;
+    aspect-ratio: 1 / 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    background: #f1efea;
+}
+
+
+.collection-artwork-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    padding: 18px;
+
+    transition:
+        transform 0.45s ease,
+        opacity 0.3s ease;
+}
+
+
+.collection-artwork-link:hover
+.collection-artwork-image img {
+    transform: scale(1.015);
+}
+
+
+/* "View Artwork" overlay */
+
+.collection-view-label {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    padding: 14px 18px;
+
+    background: rgba(25, 25, 25, 0.88);
+    color: #ffffff;
+
+    font-size: 0.67rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+
+    opacity: 0;
+    transform: translateY(100%);
+
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.collection-artwork-link:hover
+.collection-view-label {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* artwork information */
+
+.artwork-info {
+    padding-top: 18px;
+}
+
+
+.artwork-info h2 {
+    margin: 0 0 8px;
+
+    color: #1f1f1f;
+
+    font-size: 1.45rem;
+    font-weight: 400;
+    line-height: 1.15;
+
+    text-decoration: none;
+}
+
+
+.artwork-artist {
+    margin: 0 0 8px;
+
+    color: #333;
+
+    font-size: 0.92rem;
+
+    text-decoration: none;
+}
+
+
+.artwork-medium {
+    margin: 0 0 5px;
+
+    color: #777;
+
+    font-size: 0.68rem;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+
+    text-decoration: none;
+}
+
+
+.artwork-dimensions {
+    margin: 0 0 5px;
+
+    color: #777;
+
+    font-size: 0.78rem;
+
+    text-decoration: none;
+}
+
+
+.artwork-price {
+    margin: 8px 0 0;
+
+    color: #222;
+
+    font-size: 0.86rem;
+
+    text-decoration: none;
+}
+
+
+/* count */
+
+.collection-count-wrap {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 7% 28px;
+}
+
+
+#collectionCount {
+    margin: 0;
+
+    color: #777;
+
+    font-size: 0.68rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+
+/* grid spacing */
+
+.collection-grid {
+    max-width: 1400px;
+    margin: 0 auto;
+
+    padding: 0 7% 130px;
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    column-gap: 30px;
+    row-gap: 70px;
+}
+
+
+/* tablet */
+
+@media (max-width: 1000px) {
+
+    .collection-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+/* mobile */
+
+@media (max-width: 650px) {
+
+    .collection-grid {
+        grid-template-columns: 1fr;
+        row-gap: 55px;
+    }
+
+}
+/* =========================================
+   HOMEPAGE ROTATING HERO
+========================================= */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+
+.hero-artwork {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    z-index: 0;
+
+    opacity: 1;
+
+    transition:
+        opacity 1.2s ease,
+        transform 8s ease;
+}
+
+
+.hero-artwork.hero-fade {
+    opacity: 0;
+}
+
+
+.hero-overlay {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    height: 100%;
+}
+
+
+/* optional subtle cinematic movement */
+
+.hero-artwork.hero-zoom {
+    transform: scale(1.025);
+}
+
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #24231f;
+    background-color: #f5f2eb;
+    line-height: 1.6;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+a {
+    color: inherit;
+}
+
+
+/* =========================================
+   TYPOGRAPHY
+========================================= */
+
+h1,
+h2,
+h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 400;
+}
+
+.eyebrow {
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+.large-paragraph {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 25px;
+    line-height: 1.55;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.site-header {
+    min-height: 92px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 5%;
+
+    background-color: rgba(245, 242, 235, 0.97);
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+
+    position: relative;
+    z-index: 100;
+}
+
+.logo a {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 24px;
+    letter-spacing: 6px;
+
+    text-decoration: none;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.main-nav a {
+    position: relative;
+
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    text-decoration: none;
+
+    padding: 10px 0;
+}
+
+.main-nav a::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: 4px;
+
+    width: 0;
+    height: 1px;
+
+    background-color: #24231f;
+
+    transition: width 0.3s ease;
+}
+
+.main-nav a:hover::after {
+    width: 100%;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+    position: relative;
+    min-height: 86vh;
+    overflow: hidden;
+}
+
+.hero-artwork {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    z-index: 0;
+    opacity: 1;
+
+    transition:
+        opacity 1.2s ease,
+        transform 8s ease;
+}
+
+.hero::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        rgba(15, 15, 12, 0.22),
+        rgba(15, 15, 12, 0.30)
+    );
+
+    z-index: 1;
+    pointer-events: none;
+}
+
+.hero-artwork.hero-fade {
+    opacity: 0;
+}
+
+.hero-artwork.hero-zoom {
+    transform: scale(1.025);
+}
+
+.hero-overlay {
+    min-height: 86vh;
+
+    display: flex;
+    align-items: flex-end;
+
+    padding: 8% 6%;
+}
+
+.hero-content {
+    color: white;
+    max-width: 900px;
+}
+
+.hero-content .eyebrow {
+    margin-bottom: 24px;
+}
+
+.hero h1 {
+    font-size: clamp(55px, 7vw, 105px);
+
+    line-height: 0.98;
+
+    letter-spacing: -2px;
+
+    margin-bottom: 45px;
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.button {
+    display: inline-block;
+
+    padding: 14px 24px;
+
+    text-decoration: none;
+
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+}
+
+.button-light {
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    color: white;
+}
+
+.button-light:hover {
+    background-color: white;
+    color: #24231f;
+}
+
+.button-dark {
+    border: 1px solid #24231f;
+    color: #24231f;
+}
+
+.button-dark:hover {
+    background-color: #24231f;
+    color: white;
+}
+
+.text-link {
+    display: inline-block;
+
+    margin-top: 15px;
+
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    text-decoration: none;
+
+    border-bottom: 1px solid #777;
+
+    padding-bottom: 4px;
+}
+
+.text-link:hover {
+    opacity: 0.55;
+}
+
+
+/* =========================================
+   GENERAL SECTIONS
+========================================= */
+
+.section {
+    padding: 120px 6%;
+}
+
+.section-container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.section-container.narrow {
+    max-width: 850px;
+}
+
+
+/* =========================================
+   WELCOME
+========================================= */
+
+.welcome {
+    text-align: center;
+
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.welcome h2 {
+    font-size: clamp(45px, 5vw, 70px);
+
+    margin-bottom: 35px;
+}
+
+.welcome p {
+    max-width: 720px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 22px;
+
+    color: #555249;
+}
+
+
+/* =========================================
+   FEATURED LINKS
+========================================= */
+
+.featured-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 1px;
+
+    background-color: #d7d2c7;
+
+    border-top: 1px solid #d7d2c7;
+    border-bottom: 1px solid #d7d2c7;
+}
+
+.feature-card {
+    background-color: #f5f2eb;
+}
+
+.feature-card > a {
+    display: block;
+    text-decoration: none;
+}
+
+.feature-image {
+    height: 600px;
+    overflow: hidden;
+}
+
+.feature-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 1s ease;
+}
+
+.feature-card:hover .feature-image img {
+    transform: scale(1.025);
+}
+
+.feature-info {
+    padding: 35px 40px 50px;
+}
+
+.feature-info h3 {
+    font-size: 39px;
+
+    margin-bottom: 12px;
+}
+
+.feature-info p:last-child {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
+
+
+/* =========================================
+   SEARCH
+========================================= */
+
+.search-section {
+    text-align: center;
+
+    background-color: #e9e4da;
+}
+
+.search-section h2 {
+    font-size: clamp(40px, 5vw, 65px);
+
+    line-height: 1.05;
+
+    margin-bottom: 45px;
+}
+
+.search-form {
+    display: flex;
+
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    border-bottom: 1px solid #79756c;
+}
+
+.search-form input {
+    flex: 1;
+
+    padding: 17px 8px;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    font-size: 15px;
+}
+
+.search-form button {
+    border: none;
+
+    background: transparent;
+
+    padding: 0 10px;
+
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    cursor: pointer;
+}
+
+
+/* =========================================
+   ABOUT SECTIONS
+========================================= */
+
+.about-block {
+    min-height: 720px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    background-color: #272821;
+    color: #f5f2eb;
+}
+
+.about-image {
+    min-height: 720px;
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 10%;
+}
+
+.about-content h2 {
+    font-size: clamp(43px, 5vw, 70px);
+
+    line-height: 1.05;
+
+    margin-bottom: 35px;
+}
+
+.about-content p {
+    max-width: 560px;
+
+    margin-bottom: 20px;
+
+    color: rgba(255, 255, 255, 0.76);
+}
+
+.about-content .text-link {
+    color: white;
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.artists-about {
+    background-color: #ebe6dc;
+    color: #24231f;
+}
+
+.artists-about .about-content p {
+    color: #57544c;
+}
+
+.artists-about .text-link {
+    color: #24231f;
+    border-color: #77736a;
+}
+
+
+/* =========================================
+   FEATURED ARTIST
+========================================= */
+
+.featured-artist {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.featured-artist-heading {
+    margin-bottom: 55px;
+}
+
+.featured-artist-heading h2 {
+    font-size: clamp(55px, 7vw, 95px);
+
+    line-height: 1;
+}
+
+.featured-artist-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+
+    min-height: 650px;
+
+    background-color: #e7e1d7;
+}
+
+.artist-artwork {
+    min-height: 650px;
+}
+
+.artist-artwork img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.artist-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 12%;
+}
+
+.artist-description h3 {
+    font-size: 38px;
+
+    margin-bottom: 25px;
+}
+
+.artist-description p {
+    line-height: 1.9;
+
+    margin-bottom: 35px;
+
+    color: #57544c;
+}
+
+
+/* =========================================
+   TESTIMONIALS
+========================================= */
+
+.testimonials {
+    padding: 150px 6%;
+
+    text-align: center;
+
+    background-color: #23241f;
+    color: white;
+}
+
+.testimonials h2 {
+    font-size: clamp(42px, 5vw, 68px);
+
+    line-height: 1.05;
+
+    margin-bottom: 60px;
+}
+
+.testimonial {
+    max-width: 800px;
+
+    margin: 0 auto 40px;
+}
+
+.testimonial p {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(22px, 2.5vw, 31px);
+
+    line-height: 1.55;
+
+    color: rgba(255, 255, 255, 0.84);
+}
+
+.testimonials .button {
+    margin-top: 30px;
+}
+
+
+/* =========================================
+   VISIT
+========================================= */
+
+.visit {
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+
+.visit-grid {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+
+    align-items: end;
+
+    gap: 60px;
+}
+
+.visit h2 {
+    font-size: clamp(48px, 6vw, 82px);
+
+    line-height: 1;
+}
+
+.visit-details {
+    border-left: 1px solid #aaa59b;
+
+    padding-left: 45px;
+}
+
+.visit-details p {
+    margin-bottom: 7px;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.site-footer {
+    padding: 85px 6% 35px;
+
+    background-color: #191a17;
+    color: #eeeae2;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+
+    gap: 70px;
+
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    padding-bottom: 75px;
+}
+
+.footer-brand h2 {
+    font-size: 33px;
+
+    letter-spacing: 6px;
+
+    margin-bottom: 8px;
+}
+
+.footer-brand p {
+    color: #aaa79e;
+}
+
+.footer-links {
+    display: flex;
+
+    gap: 100px;
+}
+
+.footer-links h3 {
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    margin-bottom: 22px;
+
+    color: #88857e;
+}
+
+.footer-links a {
+    display: block;
+
+    margin-bottom: 12px;
+
+    text-decoration: none;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+}
+
+.footer-links a:hover {
+    opacity: 0.55;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    padding-top: 25px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+
+    font-size: 11px;
+    letter-spacing: 0.5px;
+
+    color: #77756f;
+}
+
+
+/* =========================================
+   ARTISTS PAGE
+========================================= */
+
+.artists-header {
+    max-width: 1300px;
+
+    margin: 0 auto;
+
+    padding: 150px 6% 90px;
+}
+
+.artists-header h1 {
+    font-size: clamp(60px, 8vw, 110px);
+
+    line-height: 1;
+
+    margin-bottom: 25px;
+}
+
+.artists-header > p:last-child {
+    max-width: 500px;
+
+    color: #5e5a51;
+}
+
+.artists-grid {
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    padding: 0 5% 150px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 75px 28px;
+}
+.artist-card {
+    text-decoration: none;
+color: inherit; 
+    
+}   
+
+.artist-card-image {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+    margin-bottom: 22px;
+
+    background-color: #dfdbd2;
+}
+
+.artist-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+
+    transition: transform 0.6s ease;
+}
+
+.artist-card:hover .artist-card-image img {
+    transform: scale(1.025);
+}
+
+.artist-placeholder {
+    width: 100%;
+
+    aspect-ratio: 4 / 5;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 22px;
+
+    background-color: #dfdbd2;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-style: italic;
+
+    color: #77736b;
+
+    transition: background-color 0.3s ease;
+}
+
+.artist-card:hover .artist-placeholder {
+    background-color: #d4cfc5;
+}
+
+.artist-card h2 {
+    font-size: 27px;
+
+    margin-bottom: 4px;
+
+    transition: opacity 0.3s ease;
+}
+
+.artist-card p {
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    color: #77736b;
+}
+
+.artist-card:hover h2 {
+    opacity: 0.55;
+}
+
+
+/* =========================================
+   CONNECT PAGE
+========================================= */
+
+.connect-hero {
+    max-width: 1300px;
+
+    margin: 0 auto;
+
+    padding: 150px 6% 110px;
+}
+
+.connect-hero h1 {
+    max-width: 950px;
+
+    font-size: clamp(60px, 8vw, 110px);
+
+    line-height: 1;
+
+    margin-bottom: 30px;
+}
+
+.connect-hero > p:last-child {
+    max-width: 600px;
+
+    font-size: 18px;
+
+    color: #5d5a52;
+}
+
+.connect-section {
+    max-width: 1300px;
+
+    margin: 0 auto;
+
+    padding: 90px 6%;
+
+    border-top: 1px solid #c9c4ba;
+}
+
+.connect-section h2 {
+    font-size: clamp(38px, 5vw, 65px);
+
+    margin-bottom: 25px;
+}
+
+.connect-section > p {
+    max-width: 650px;
+
+    margin-bottom: 25px;
+
+    color: #5d5a52;
+}
+
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 45px;
+
+    margin-top: 35px;
+}
+
+.social-links a {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 26px;
+
+    text-decoration: none;
+
+    border-bottom: 1px solid #969187;
+
+    padding-bottom: 4px;
+}
+
+.social-links a:hover {
+    opacity: 0.55;
+}
+
+.newsletter-form {
+    max-width: 650px;
+
+    display: flex;
+
+    margin-top: 35px;
+
+    border-bottom: 1px solid #77736a;
+}
+
+.newsletter-form input {
+    flex: 1;
+
+    padding: 17px 5px;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    font-size: 15px;
+}
+
+.newsletter-form button {
+    border: none;
+
+    background: transparent;
+
+    padding: 0 5px;
+
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    cursor: pointer;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 950px) {
+
+    .site-header {
+        flex-direction: column;
+
+        padding-top: 25px;
+        padding-bottom: 25px;
+
+        gap: 18px;
+    }
+
+    .main-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+
+        gap: 12px 20px;
+    }
+
+    .featured-links {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-image {
+        height: 520px;
+    }
+
+    .about-block {
+        grid-template-columns: 1fr;
+    }
+
+    .about-image {
+        min-height: 550px;
+    }
+
+    .featured-artist-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .artist-artwork {
+        min-height: 550px;
+    }
+
+    .artists-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px)  {
+    .site-header {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .logo a {
+        font-size: 21px;
+        letter-spacing: 5px;
+    }
+
+    .main-nav {
+        gap: 8px 14px;
+    }
+
+    .main-nav a {
+        font-size: 10px;
+    }
+
+    .hero,
+    .hero-overlay {
+        min-height: 76vh;
+    }
+
+    .hero-overlay {
+        padding: 50px 25px;
+    }
+
+    .hero h1 {
+        font-size: 52px;
+    }
+
+    .section {
+        padding: 90px 25px;
+    }
+
+    .welcome {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .feature-image {
+        height: 430px;
+    }
+
+    .feature-info {
+        padding: 27px 25px 40px;
+    }
+
+    .about-image {
+        min-height: 430px;
+    }
+
+    .about-content {
+        padding: 80px 25px;
+    }
+
+    .featured-artist {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .artist-artwork {
+        min-height: 430px;
+    }
+
+    .artist-description {
+        padding: 65px 25px;
+    }
+
+    .visit-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .visit-details {
+        border-left: none;
+        border-top: 1px solid #aaa59b;
+
+        padding-left: 0;
+        padding-top: 30px;
+    }
+
+    .footer-top {
+        flex-direction: column;
+    }
+
+    .footer-links {
+        flex-direction: column;
+
+        gap: 45px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+    .artists-header {
+        padding-top: 100px;
+    }
+
+    .artists-grid {
+        grid-template-columns: 1fr;
+
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .connect-hero {
+        padding-top: 100px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .connect-section {
+        padding: 70px 25px;
+    }
+
+    .social-links {
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+
+        border-bottom: none;
+    }
+
+    .newsletter-form input {
+        border-bottom: 1px solid #77736a;
+
+        margin-bottom: 20px;
+    }
+
+    .newsletter-form button {
+        align-self: flex-start;
+
+        padding: 10px 0;
+    }
+}
+
+/* =========================================
+   COLLECTION PAGE
+========================================= */
+
+.collection-header {
+    max-width: 1300px;
+    margin: 0 auto;
+
+    padding: 150px 6% 80px;
+}
+
+.collection-header h1 {
+    font-size: clamp(60px, 8vw, 110px);
+    line-height: 1;
+
+    margin-bottom: 30px;
+}
+
+.collection-intro {
+    max-width: 650px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 22px;
+    line-height: 1.6;
+
+    color: #5d5a52;
+}
+
+
+/* FILTERS */
+
+.collection-categories {
+    max-width: 1300px;
+
+    margin: 0 auto 70px;
+
+    padding: 0 6% 25px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    border-bottom: 1px solid #c9c4ba;
+}
+
+.collection-filter {
+    border: none;
+    background: transparent;
+
+    padding: 5px 0;
+
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+    color: #555249;
+
+    cursor: pointer;
+}
+
+.collection-filter:first-child {
+    border-bottom: 1px solid #24231f;
+    color: #24231f;
+}
+
+.collection-filter:hover {
+    color: #000;
+}
+
+
+/* ARTWORK GRID */
+
+.collection-grid {
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    padding: 0 5% 150px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 80px 30px;
+}
+
+.artwork-placeholder {
+    width: 100%;
+
+    aspect-ratio: 4 / 5;
+
+    background-color: #dfdbd2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 22px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-style: italic;
+
+    color: #77736b;
+}
+
+.artwork-info h2 {
+    font-size: 25px;
+
+    margin-bottom: 4px;
+}
+
+.artwork-artist {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 17px;
+
+    margin-bottom: 2px;
+}
+
+.artwork-info p:last-child {
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    color: #77736b;
+}
+
+
+/* COLLECTION TABLET */
+
+@media (max-width: 950px) {
+
+    .collection-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* COLLECTION PHONE */
+
+@media (max-width: 650px) {
+
+    .collection-header {
+        padding-top: 100px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .collection-categories {
+        padding-left: 25px;
+        padding-right: 25px;
+
+        gap: 18px;
+    }
+
+    .collection-grid {
+        grid-template-columns: 1fr;
+
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+}
+/* =========================================
+   ABOUT PAGE
+========================================= */
+
+.about-page-hero {
+    max-width: 1300px;
+    margin: 0 auto;
+
+    padding: 150px 6% 100px;
+}
+
+.about-page-hero h1 {
+    font-size: clamp(65px, 9vw, 120px);
+    line-height: .95;
+
+    margin-bottom: 40px;
+}
+
+.about-page-intro {
+    max-width: 700px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 24px;
+    line-height: 1.6;
+
+    color: #5d5a52;
+}
+
+
+/* LARGE GALLERY IMAGE */
+
+.about-hero-image {
+    padding: 0 5% 140px;
+}
+
+.about-image-placeholder {
+    min-height: 70vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #d9d4ca;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-style: italic;
+
+    color: #77736b;
+}
+
+
+/* STORY */
+
+.about-story {
+    max-width: 1300px;
+
+    margin: 0 auto;
+
+    padding: 20px 6% 150px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 100px;
+}
+
+.about-story-heading h2 {
+    font-size: clamp(45px, 5vw, 70px);
+    line-height: 1.05;
+}
+
+.about-story-text {
+    padding-top: 35px;
+}
+
+.about-story-text p {
+    margin-bottom: 28px;
+
+    font-size: 17px;
+    line-height: 1.9;
+
+    color: #57544c;
+}
+
+
+/* STATEMENT */
+
+.about-statement {
+    padding: 160px 6%;
+
+    text-align: center;
+
+    background-color: #23241f;
+    color: white;
+}
+
+.about-statement blockquote {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(50px, 7vw, 100px);
+
+    line-height: 1.05;
+
+    font-style: normal;
+}
+
+
+/* HISTORY */
+
+.history-section {
+    max-width: 1300px;
+
+    margin: 0 auto;
+
+    padding: 150px 6%;
+}
+
+.history-heading {
+    margin-bottom: 100px;
+}
+
+.history-heading h2 {
+    font-size: clamp(50px, 6vw, 85px);
+    line-height: 1;
+}
+
+.history-timeline {
+    border-top: 1px solid #aaa59b;
+}
+
+.history-item {
+    display: grid;
+
+    grid-template-columns: 150px 1fr 1.3fr;
+
+    gap: 50px;
+
+    padding: 45px 0;
+
+    border-bottom: 1px solid #aaa59b;
+}
+
+.history-year {
+    font-size: 12px;
+
+    letter-spacing: 2px;
+}
+
+.history-item h3 {
+    font-size: 28px;
+}
+
+.history-item > p:last-child {
+    color: #5d5a52;
+
+    line-height: 1.8;
+}
+
+
+/* CLOSING */
+
+.about-closing {
+    padding: 150px 6%;
+
+    text-align: center;
+
+    background-color: #e7e1d7;
+}
+
+.about-closing h2 {
+    max-width: 900px;
+
+    margin: 0 auto 35px;
+
+    font-size: clamp(50px, 6vw, 85px);
+
+    line-height: 1.05;
+}
+
+.about-closing > p:not(.eyebrow) {
+    max-width: 650px;
+
+    margin: 0 auto 40px;
+
+    line-height: 1.8;
+
+    color: #57544c;
+}
+
+
+/* ABOUT TABLET / MOBILE */
+
+@media (max-width: 800px) {
+
+    .about-story {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+    .history-item {
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .about-page-hero {
+        padding: 100px 25px 70px;
+    }
+
+    .about-hero-image {
+        padding: 0 25px 90px;
+    }
+
+    .about-image-placeholder {
+        min-height: 55vh;
+    }
+
+    .about-story {
+        padding: 0 25px 100px;
+    }
+
+    .about-statement {
+        padding: 110px 25px;
+    }
+
+    .history-section {
+        padding: 100px 25px;
+    }
+
+    .history-heading {
+        margin-bottom: 60px;
+    }
+
+    .about-closing {
+        padding: 100px 25px;
+    }
+
+}
+/* =========================================
+   INDIVIDUAL ARTIST PAGE
+========================================= */
+
+.artist-page-header {
+    max-width: 1300px;
+    margin: 0 auto;
+
+    padding: 140px 6% 80px;
+}
+
+.artist-page-header h1 {
+    font-size: clamp(70px, 10vw, 140px);
+    line-height: .9;
+
+    margin-bottom: 28px;
+}
+
+.artist-medium {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 22px;
+
+    color: #656158;
+}
+
+
+/* LARGE ARTIST IMAGE */
+
+.artist-page-image {
+    padding: 0 5% 150px;
+}
+
+.artist-large-placeholder {
+    min-height: 78vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #d8d3ca;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 24px;
+    font-style: italic;
+
+    color: #77736b;
+}
+
+.artist-page-image img {
+    width: 100%;
+    max-height: 90vh;
+
+    object-fit: cover;
+}
+
+
+/* BIOGRAPHY */
+
+.artist-biography {
+    max-width: 1300px;
+
+    margin: 0 auto;
+
+    padding: 0 6% 150px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 100px;
+}
+
+.artist-biography-heading h2 {
+    font-size: clamp(45px, 5vw, 72px);
+
+    line-height: 1.05;
+}
+
+.artist-biography-text p {
+    font-size: 17px;
+
+    line-height: 1.9;
+
+    margin-bottom: 28px;
+
+    color: #555249;
+}
+
+
+/* ARTIST QUOTE */
+
+.artist-quote {
+    padding: 160px 6%;
+
+    text-align: center;
+
+    background-color: #23241f;
+    color: white;
+}
+
+.artist-quote blockquote {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(50px, 8vw, 105px);
+
+    font-style: normal;
+
+    line-height: 1.05;
+}
+
+.quote-credit {
+    margin-top: 35px;
+
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: rgba(255, 255, 255, .55);
+}
+
+
+/* AMBLESIDE STORY */
+
+.artist-gallery-story {
+    max-width: 1300px;
+
+    margin: 0 auto;
+
+    padding: 150px 6%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 100px;
+}
+
+.artist-gallery-story h2 {
+    font-size: clamp(45px, 5vw, 72px);
+
+    line-height: 1.05;
+}
+
+.artist-gallery-story-text p {
+    font-size: 17px;
+
+    line-height: 1.9;
+
+    margin-bottom: 27px;
+
+    color: #555249;
+}
+
+
+/* SELECTED WORKS */
+
+.artist-works {
+    padding: 140px 5% 160px;
+
+    background-color: #e8e2d8;
+}
+
+.artist-works-heading {
+    max-width: 1300px;
+
+    margin: 0 auto 70px;
+}
+
+.artist-works-heading h2 {
+    font-size: clamp(50px, 6vw, 85px);
+}
+
+.artist-works-grid {
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 80px 30px;
+}
+
+.work-placeholder {
+    width: 100%;
+
+    aspect-ratio: 4 / 5;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #d6d0c5;
+
+    margin-bottom: 22px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-style: italic;
+
+    color: #77736b;
+}
+
+.artist-work h3 {
+    font-size: 25px;
+
+    margin-bottom: 4px;
+}
+
+.artist-work p {
+    font-size: 11px;
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    color: #77736b;
+}
+
+
+/* INQUIRE */
+
+.artist-inquire {
+    padding: 150px 6%;
+
+    text-align: center;
+}
+
+.artist-inquire h2 {
+    font-size: clamp(50px, 7vw, 90px);
+
+    line-height: 1.05;
+
+    margin-bottom: 45px;
+}
+
+
+/* ARTIST PAGE MOBILE */
+
+@media (max-width: 800px) {
+
+    .artist-biography,
+    .artist-gallery-story {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .artist-page-header {
+        padding: 100px 25px 65px;
+    }
+
+    .artist-page-image {
+        padding: 0 25px 100px;
+    }
+
+    .artist-large-placeholder {
+        min-height: 60vh;
+    }
+
+    .artist-biography {
+        padding: 0 25px 100px;
+    }
+
+    .artist-gallery-story {
+        padding: 100px 25px;
+    }
+
+    .artist-quote {
+        padding: 110px 25px;
+    }
+
+    .artist-works {
+        padding: 100px 25px;
+    }
+
+    .artist-works-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .artist-inquire {
+        padding: 100px 25px;
+    }
+}
+
+/* =========================================
+   ARTIST CV / EXHIBITIONS
+========================================= */
+
+.artist-cv-section {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 140px 6%;
+}
+
+.artist-cv-alt {
+    max-width: none;
+    background-color: #e8e2d8;
+}
+
+.artist-cv-heading {
+    max-width: 1300px;
+    margin: 0 auto 70px;
+}
+
+.artist-cv-heading h2 {
+    font-size: clamp(48px, 6vw, 80px);
+    line-height: 1.05;
+}
+
+.artist-cv-list {
+    max-width: 1300px;
+    margin: 0 auto;
+    border-top: 1px solid #aaa59b;
+}
+
+.artist-cv-item {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 40px;
+
+    padding: 25px 0;
+
+    border-bottom: 1px solid #aaa59b;
+}
+
+.artist-cv-item span {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+    color: #77736b;
+}
+
+.artist-cv-item p {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+
+    .artist-cv-section {
+        padding: 100px 25px;
+    }
+
+    .artist-cv-heading {
+        margin-bottom: 50px;
+    }
+
+    .artist-cv-item {
+        grid-template-columns: 1fr;
+        gap: 8px;
+
+        padding: 22px 0;
+    }
+
+}
+/* =========================================
+   MUSIC PAGE — PERFORMER SECTIONS
+========================================= */
+
+.music-performer-section {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 130px 6%;
+
+    background-color: #e8e2d8;
+}
+
+.music-performer-inner {
+    max-width: 850px;
+}
+
+.music-performer-section h2 {
+    font-size: clamp(48px, 6vw, 78px);
+    line-height: 1.05;
+
+    margin-bottom: 35px;
+}
+
+.music-performer-section p {
+    font-size: 17px;
+    line-height: 1.9;
+
+    margin-bottom: 24px;
+
+    color: #57544c;
+}
+
+.music-performer-section .button {
+    margin-top: 18px;
+}
+
+
+/* PERFORMER REQUIREMENTS */
+
+.performer-inquiries {
+    max-width: 1300px;
+    margin: 0 auto;
+
+    padding: 140px 6%;
+}
+
+.performer-inquiries-header {
+    max-width: 750px;
+
+    margin-bottom: 70px;
+}
+
+.performer-inquiries-header h2 {
+    font-size: clamp(48px, 6vw, 78px);
+    line-height: 1.05;
+}
+
+.performer-inquiry-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    border-top: 1px solid #aaa59b;
+}
+
+.performer-inquiry-item {
+    min-height: 180px;
+
+    padding: 35px 35px 40px 0;
+
+    border-bottom: 1px solid #aaa59b;
+}
+
+.performer-inquiry-item:nth-child(odd) {
+    border-right: 1px solid #aaa59b;
+
+    padding-right: 50px;
+}
+
+.performer-inquiry-item:nth-child(even) {
+    padding-left: 50px;
+}
+
+.performer-number {
+    display: block;
+
+    margin-bottom: 25px;
+
+    font-size: 11px;
+    letter-spacing: 2px;
+
+    color: #88847b;
+}
+
+.performer-inquiry-item h3 {
+    font-size: 27px;
+
+    margin-bottom: 10px;
+}
+
+.performer-inquiry-item p {
+    max-width: 480px;
+
+    line-height: 1.7;
+
+    color: #5d5a52;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .music-performer-section,
+    .performer-inquiries {
+        padding: 90px 25px;
+    }
+
+    .performer-inquiry-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .performer-inquiry-item,
+    .performer-inquiry-item:nth-child(odd),
+    .performer-inquiry-item:nth-child(even) {
+        border-right: none;
+
+        padding: 30px 0;
+    }
+
+}
+/* =========================================
+   MUSIC PAGE — MOBILE FIX
+========================================= */
+
+@media (max-width: 700px) {
+
+    .music-performer-section {
+        padding: 80px 24px;
+    }
+
+    .music-performer-inner {
+        max-width: 100%;
+    }
+
+    .music-performer-section h2 {
+        font-size: 42px;
+        line-height: 1.1;
+        margin-bottom: 28px;
+    }
+
+    .music-performer-section p {
+        font-size: 16px;
+        line-height: 1.75;
+        margin-bottom: 20px;
+    }
+
+    .music-performer-section .button {
+        width: 100%;
+        text-align: center;
+        margin-top: 24px;
+    }
+
+
+    .performer-inquiries {
+        padding: 90px 24px;
+    }
+
+    .performer-inquiries-header {
+        margin-bottom: 50px;
+    }
+
+    .performer-inquiries-header h2 {
+        font-size: 42px;
+        line-height: 1.1;
+    }
+
+    .performer-inquiry-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        border-top: 1px solid #aaa59b;
+    }
+
+    .performer-inquiry-item,
+    .performer-inquiry-item:nth-child(odd),
+    .performer-inquiry-item:nth-child(even) {
+        padding: 28px 0;
+
+        border-right: none;
+        border-bottom: 1px solid #aaa59b;
+
+        min-height: auto;
+    }
+
+    .performer-number {
+        display: block;
+
+        font-size: 10px;
+        letter-spacing: 2px;
+
+        margin-bottom: 12px;
+
+        color: #8b877e;
+    }
+
+    .performer-inquiry-item h3 {
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+
+    .performer-inquiry-item p {
+        font-size: 16px;
+        line-height: 1.6;
+        margin: 0;
+    }
+
+}
+.artist-page-image figcaption {
+    margin-top: 14px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.artist-page-image figcaption strong {
+    font-family: Georgia, serif;
+    font-size: 18px;
+    font-weight: normal;
+}
+.artist-page-image {
+    display: flex;
+    justify-content: center;
+    padding: 60px 8%;
+}
+
+.artist-page-image img {
+    width: auto;
+    max-width: 750px;
+    max-height: 80vh;
+    height: auto;
+    display: block;
+}
+/* =========================================
+   ARTWORK INTERACTIVE GALLERY
+========================================= */
+
+.artwork-gallery-trigger {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: none;
+    background: none;
+    text-align: left;
+    font: inherit;
+}
+
+.artwork-image-wrap {
+    position: relative;
+    overflow: hidden;
+    cursor: zoom-in;
+}
+
+.artwork-image-wrap img {
+    width: 100%;
+    display: block;
+    transition: transform 0.7s ease;
+}
+
+.artwork-gallery-trigger:hover img {
+    transform: scale(1.045);
+}
+
+.artwork-view-label {
+    position: absolute;
+    right: 20px;
+    bottom: 18px;
+
+    padding: 8px 12px;
+
+    background: rgba(245, 242, 235, 0.92);
+
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+    opacity: 0;
+    transform: translateY(5px);
+
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
+}
+
+.artwork-gallery-trigger:hover .artwork-view-label {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* =========================================
+   LISA ETHIER — FEATURED WORK
+========================================= */
+
+.lisa-featured-work {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 6% 150px;
+
+    display: grid;
+    grid-template-columns: 1.25fr 0.75fr;
+    align-items: center;
+
+    gap: 90px;
+}
+
+.lisa-featured-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.lisa-featured-info {
+    max-width: 430px;
+}
+
+.lisa-featured-info h2 {
+    font-size: clamp(52px, 6vw, 85px);
+    font-style:italic;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.lisa-featured-artist {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+
+.lisa-featured-details {
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    line-height: 1.7;
+
+    color: #77736b;
+
+    margin-bottom: 30px;
+}
+
+.lisa-featured-description {
+    max-width: 350px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    line-height: 1.7;
+
+    color: #57544c;
+}
+
+
+/* =========================================
+   LISA ETHIER — COLLECTION
+========================================= */
+
+.lisa-works-grid {
+    max-width: 1300px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+    row-gap: 140px;
+}
+
+.lisa-work {
+    position: relative;
+}
+
+.lisa-work-left {
+    grid-column: 1 / 8;
+}
+
+.lisa-work-right {
+    grid-column: 6 / 13;
+}
+
+.lisa-work-center {
+    grid-column: 3 / 10;
+}
+
+.lisa-work-image {
+    position: relative;
+    overflow: hidden;
+
+    cursor: zoom-in;
+}
+
+.lisa-work-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+
+    transition:
+        transform 0.8s ease,
+        filter 0.5s ease;
+}
+
+.lisa-work:hover img {
+    transform: scale(1.02);
+}
+
+.lisa-view-work {
+    position: absolute;
+    right: 20px;
+    bottom: 18px;
+
+    padding: 8px 13px;
+
+    background: rgba(245, 242, 235, 0.93);
+
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+    opacity: 0;
+    transform: translateY(5px);
+
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
+}
+
+.lisa-work:hover .lisa-view-work {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.lisa-work-info {
+    margin-top: 18px;
+}
+
+.lisa-work-info h3 {
+    font-size: 27px;
+    margin-bottom: 4px;
+}
+
+.lisa-work-info p {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+    color: #77736b;
+}
+
+
+/* =========================================
+   LISA ETHIER — MOBILE
+========================================= */
+
+@media (max-width: 800px) {
+
+    .lisa-featured-work {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 100px;
+    }
+
+    .lisa-featured-info {
+        max-width: 100%;
+    }
+
+    .lisa-works-grid {
+        display: block;
+    }
+
+    .lisa-work {
+        margin-bottom: 90px;
+    }
+
+    .lisa-work:last-child {
+        margin-bottom: 0;
+    }
+
+}
+/* =========================================
+   LISA ETHIER — ARTWORK VIEWPORT SIZING
+========================================= */
+
+.lisa-work-image img {
+    width: auto;
+    max-width: 100%;
+    max-height: 76vh;
+    height: auto;
+    object-fit: contain;
+}
+
+.lisa-work-image {
+    display: flex;
+}
+
+/* preserve the editorial positioning */
+
+.lisa-work-left .lisa-work-image {
+    justify-content: flex-start;
+}
+
+.lisa-work-right .lisa-work-image {
+    justify-content: flex-end;
+}
+
+.lisa-work-center .lisa-work-image {
+    justify-content: center;
+}
+/* =========================================
+   LISA ETHIER — FEATURED WORK VIEWPORT
+========================================= */
+
+.lisa-featured-work {
+    min-height: 80vh;
+    align-items: center;
+}
+
+.lisa-featured-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lisa-featured-image img {
+    width: auto;
+    height: auto;
+
+    max-width: 100%;
+    max-height: 68vh;
+
+    object-fit: contain;
+    display: block;
+}
+/* =========================================
+   CAVINESS — HERO IMAGE SIZING
+========================================= */
+
+.artist-page-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.artist-page-image figure {
+    width: auto;
+    max-width: 100%;
+    margin: 0;
+}
+
+.artist-page-image img {
+    width: auto;
+    height: auto;
+
+    max-width: 100%;
+    max-height: 62vh;
+
+    object-fit: contain;
+    display: block;
+}
+/* =========================================
+   CAVINESS — HERO IMAGE
+========================================= */
+
+.caviness-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caviness-hero figure {
+    width: auto;
+    max-width: 100%;
+    margin: 0;
+}
+
+.caviness-hero img {
+    width: auto;
+    height: auto;
+
+    max-width: 100%;
+    max-height: 62vh;
+
+    object-fit: contain;
+    display: block;
+}
+/* =========================================
+   CAVINESS — FEATURED WORK
+========================================= */
+
+.caviness-featured-work {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 40px 6% 100px;
+}
+
+.caviness-featured-work > .eyebrow {
+    margin-bottom: 28px;
+}
+
+.caviness-featured-caption {
+    margin-top: 18px;
+}
+
+.caviness-featured-caption h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 28px;
+    font-weight: 400;
+    margin: 0 0 7px;
+}
+
+.caviness-featured-caption p {
+    margin: 0;
+
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+    color: #77736b;
+}
+/* =========================================
+   ARTWORK LIGHTBOX
+========================================= */
+
+.artwork-lightbox {
+    position: fixed;
+    inset: 0;
+
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 50px 80px;
+
+    background: rgba(24, 25, 23, 0.97);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition:
+        opacity 0.35s ease,
+        visibility 0.35s ease;
+}
+
+.artwork-lightbox.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.lightbox-content {
+    max-width: 1100px;
+    width: 100%;
+
+    text-align: center;
+}
+
+
+.lightbox-content img {
+    width: auto;
+    max-width: 100%;
+    max-height: 78vh;
+
+    margin: 0 auto;
+
+    object-fit: contain;
+}
+
+
+.lightbox-info {
+    margin-top: 18px;
+
+    color: #f5f2eb;
+}
+
+
+.lightbox-info h2 {
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+
+
+.lightbox-info p {
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: rgba(255, 255, 255, 0.55);
+}
+
+
+.lightbox-close {
+    position: absolute;
+    top: 25px;
+    right: 35px;
+
+    border: none;
+    background: transparent;
+
+    color: #f5f2eb;
+
+    font-size: 38px;
+    font-weight: 300;
+
+    cursor: pointer;
+}
+
+
+.lightbox-arrow {
+    position: absolute;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    border: none;
+    background: transparent;
+
+    color: #f5f2eb;
+
+    font-size: 35px;
+
+    cursor: pointer;
+
+    opacity: 0.65;
+
+    transition: opacity 0.25s ease;
+}
+
+
+.lightbox-arrow:hover {
+    opacity: 1;
+}
+
+
+.lightbox-prev {
+    left: 35px;
+}
+
+
+.lightbox-next {
+    right: 35px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .artwork-lightbox {
+        padding: 60px 20px 35px;
+    }
+
+    .lightbox-arrow {
+        top: auto;
+        bottom: 20px;
+    }
+
+    .lightbox-prev {
+        left: 30%;
+    }
+
+    .lightbox-next {
+        right: 30%;
+    }
+
+    .lightbox-content img {
+        max-height: 70vh;
+    }
+
+}
+/* =========================================
+   LISA ETHIER — COLLECTION CAROUSEL
+========================================= */
+
+.lisa-carousel-section {
+    overflow: hidden;
+}
+
+.lisa-carousel {
+    max-width: 1250px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 70px minmax(0, 1fr) 70px;
+
+    align-items: center;
+
+    gap: 30px;
+}
+
+
+/* ARTWORK STAGE */
+
+.lisa-carousel-stage {
+    min-width: 0;
+}
+
+.lisa-carousel-image-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 68vh;
+
+    overflow: hidden;
+}
+
+.lisa-carousel-image-wrap img {
+    width: auto;
+    height: auto;
+
+    max-width: 100%;
+    max-height: 68vh;
+
+    object-fit: contain;
+
+    display: block;
+
+    transition:
+        opacity 0.35s ease,
+        transform 0.7s ease;
+}
+
+.lisa-carousel-image-wrap:hover img {
+    transform: scale(1.015);
+}
+
+
+/* CAPTION */
+
+.lisa-carousel-caption {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    gap: 30px;
+
+    margin-top: 22px;
+}
+
+.lisa-carousel-caption h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-style: italic;
+    font-size: 28px;
+    font-weight: 400;
+
+    margin-bottom: 5px;
+}
+
+.lisa-carousel-caption div > p {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+    color: #77736b;
+}
+
+.lisa-carousel-counter {
+    font-size: 10px;
+    letter-spacing: 2px;
+
+    color: #77736b;
+
+    white-space: nowrap;
+}
+
+
+/* ARROWS */
+
+.lisa-carousel-arrow {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #aaa59b;
+    border-radius: 50%;
+
+    background: transparent;
+
+    color: #24231f;
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.lisa-carousel-arrow:hover {
+    background-color: #24231f;
+    color: #f5f2eb;
+    border-color: #24231f;
+}
+
+
+/* DOT NAVIGATION */
+
+.lisa-carousel-dots {
+    display: flex;
+    justify-content: center;
+
+    gap: 12px;
+
+    margin-top: 40px;
+}
+
+.lisa-carousel-dot {
+    width: 7px;
+    height: 7px;
+
+    padding: 0;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: #aaa59b;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.3s ease,
+        background-color 0.3s ease;
+}
+
+.lisa-carousel-dot.active {
+    background-color: #24231f;
+    transform: scale(1.35);
+}
+
+
+/* =========================================
+   LISA CAROUSEL — MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .lisa-carousel {
+        grid-template-columns: 45px minmax(0, 1fr) 45px;
+
+        gap: 10px;
+    }
+
+    .lisa-carousel-image-wrap {
+        min-height: auto;
+    }
+
+    .lisa-carousel-image-wrap img {
+        max-height: 62vh;
+    }
+
+    .lisa-carousel-arrow {
+        width: 42px;
+        height: 42px;
+
+        font-size: 18px;
+    }
+
+    .lisa-carousel-caption {
+        align-items: flex-start;
+    }
+
+}
+/* =========================================
+   LISA CAROUSEL — CONTROL ALIGNMENT
+========================================= */
+
+.lisa-carousel {
+    position: relative;
+    display: block;
+}
+
+.lisa-carousel-stage {
+    width: calc(100% - 180px);
+    margin: 0 auto;
+}
+
+.lisa-carousel-prev,
+.lisa-carousel-next {
+    position: absolute;
+    top: 34vh;
+    margin: 0;
+
+    transform: translateY(-50%);
+}
+
+.lisa-carousel-prev {
+    left: 0;
+}
+
+.lisa-carousel-next {
+    right: 0;
+}
+
+.lisa-carousel-dots {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    margin-top: 35px;
+}
+/* =========================================
+   LISA CAROUSEL — MOBILE REFINEMENT
+========================================= */
+
+@media (max-width: 700px) {
+
+    .lisa-carousel {
+        display: block;
+        position: relative;
+    }
+
+    .lisa-carousel-stage {
+        width: 100%;
+        margin: 0;
+    }
+
+    .lisa-carousel-image-wrap {
+        width: 100%;
+    }
+
+    .lisa-carousel-image-wrap img {
+        width: 100%;
+        height: auto;
+        max-height: none;
+        object-fit: contain;
+    }
+
+
+    /* Artwork title */
+
+    .lisa-carousel-caption h3 {
+        font-style: italic;
+        font-size: 28px;
+        margin-bottom: 8px;
+    }
+
+
+    /* Catalogue information */
+
+    .lisa-carousel-caption {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        margin-top: 18px;
+    }
+
+    .lisa-carousel-details {
+        line-height: 1.55;
+    }
+
+
+    /* Counter */
+
+    .lisa-carousel-counter {
+        align-self: flex-end;
+        padding-bottom: 3px;
+    }
+
+
+    /* Arrows sit over the artwork */
+
+    .lisa-carousel-prev,
+    .lisa-carousel-next {
+        position: absolute;
+        top: 42%;
+
+        width: 42px;
+        height: 42px;
+
+        margin: 0;
+
+        transform: translateY(-50%);
+
+        background: rgba(245, 242, 235, 0.92);
+    }
+
+    .lisa-carousel-prev {
+        left: 10px;
+    }
+
+    .lisa-carousel-next {
+        right: 10px;
+    }
+
+
+    /* Smaller, quieter pagination */
+
+    .lisa-carousel-dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        gap: 10px;
+
+        margin-top: 28px;
+    }
+
+    .lisa-carousel-dot {
+        width: 6px;
+        height: 6px;
+
+        border: none;
+        border-radius: 50%;
+
+        background: #aaa59b;
+    }
+
+    .lisa-carousel-dot.active {
+        background: #24231f;
+        transform: scale(1.3);
+    }
+
+}
+/* =========================================
+   ARTIST WORK DETAILS + PRICING
+========================================= */
+
+.artwork-details {
+    padding-top: 18px;
+}
+
+.artwork-details h3 {
+    margin: 0 0 10px;
+    font-weight: normal;
+}
+
+
+/* Medium + dimensions + price */
+
+.artwork-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.artwork-meta-info {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.artwork-meta-info p,
+.artwork-price {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.5;
+    opacity: 0.7;
+}
+
+.artwork-price {
+    white-space: nowrap;
+}
+
+/* =========================================
+   VIEW ARTWORK — IMAGE COUNT
+========================================= */
+
+.artwork-view-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.artwork-view-label small {
+    font-size: 9px;
+    letter-spacing: 0.12em;
+    opacity: 0.75;
+}
+.featured-work-price {
+    margin-top: 6px;
+    font-size: 14px;
+    opacity: 0.7;
+}
+/* =========================================
+   DEBORAH SQUIER — FEATURED WORK
+========================================= */
+
+.squier-featured-work {
+    padding: 20px 0 110px;
+}
+
+.squier-featured-work > .eyebrow {
+    margin-left: 6%;
+    margin-bottom: 28px;
+}
+
+.squier-featured-figure {
+    margin: 0;
+}
+
+.squier-featured-figure img {
+    display: block;
+
+    width: 100%;
+    max-height: 760px;
+
+    object-fit: contain;
+
+    background: #242424;
+}
+
+.squier-featured-caption {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    gap: 30px;
+
+    margin: 20px 6% 0;
+}
+
+.squier-featured-caption h2 {
+    margin: 0;
+    font-weight: normal;
+}
+
+.squier-featured-caption p {
+    margin: 0;
+    opacity: 0.7;
+}
+
+
+@media (max-width: 700px) {
+
+    .squier-featured-work {
+        padding-bottom: 75px;
+    }
+
+    .squier-featured-caption {
+        display: block;
+    }
+
+    .squier-featured-caption p {
+        margin-top: 6px;
+    }
+
+}
+/* =========================================
+   ARTIST PROFILE — COLLECTION PENDING
+========================================= */
+
+.artist-text-hero {
+    padding: 80px 6% 110px;
+    max-width: 1000px;
+}
+
+.artist-text-hero h2 {
+    margin: 14px 0 22px;
+    font-size: clamp(42px, 6vw, 82px);
+    font-weight: normal;
+    line-height: 1;
+}
+
+.artist-text-hero > p:last-child {
+    max-width: 620px;
+    font-size: 17px;
+    line-height: 1.7;
+    opacity: 0.72;
+}
+
+
+.artist-collection-note {
+    max-width: 650px;
+    padding: 10px 0 30px;
+}
+
+.artist-collection-note p {
+    margin: 0 0 18px;
+    line-height: 1.7;
+}
+
+.artist-collection-note .button {
+    margin-top: 12px;
+}
+/* =========================================
+   ARTIST CARD — COLLECTION PENDING
+========================================= */
+
+.artist-card-pending .artist-card-placeholder {
+    aspect-ratio: 4 / 5;
+
+    background: #2b2a28;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 34px;
+
+    color: #f3f0e8;
+}
+
+.artist-card-placeholder-name {
+    font-family: inherit;
+    font-size: clamp(30px, 3vw, 48px);
+    line-height: 0.95;
+}
+
+.artist-card-placeholder-note {
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    opacity: 0.6;
+}
+
+.artist-card-pending a {
+    text-decoration: none;
+    color: inherit;
+}
+/* =========================================
+   LINDY SCHILLACI — FEATURED WORK
+========================================= */
+
+.schillaci-featured-work {
+    padding: 20px 6% 105px;
+}
+
+.schillaci-featured-heading {
+    max-width: 1180px;
+    margin: 0 auto 18px;
+}
+
+.schillaci-featured-figure {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.schillaci-featured-image {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 28px 3%;
+
+    background: #292826;
+}
+
+.schillaci-featured-image img {
+    display: block;
+
+    width: auto;
+    max-width: 88%;
+
+    max-height: 620px;
+
+    object-fit: contain;
+}
+
+.schillaci-featured-caption {
+    margin-top: 18px;
+}
+
+.schillaci-featured-caption h2 {
+    margin: 0 0 5px;
+
+    font-size: clamp(28px, 3vw, 44px);
+    line-height: 1.05;
+
+    font-weight: normal;
+}
+
+.schillaci-featured-caption p {
+    margin: 0;
+
+    font-size: 12px;
+
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+
+    opacity: 0.6;
+}
+
+
+@media (max-width: 700px) {
+
+    .schillaci-featured-work {
+        padding: 15px 20px 65px;
+    }
+
+    .schillaci-featured-heading {
+        margin-bottom: 15px;
+    }
+
+    .schillaci-featured-image {
+        padding: 20px 12px;
+    }
+
+    .schillaci-featured-image img {
+        max-width: 100%;
+        max-height: 460px;
+    }
+
+}
+/* =========================================
+   MATTHEW HILLIER — FEATURED WORK
+========================================= */
+
+.hillier-featured-work {
+    padding: 20px 6% 105px;
+}
+
+.hillier-featured-heading {
+    max-width: 1280px;
+    margin: 0 auto 18px;
+}
+
+.hillier-featured-figure {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.hillier-featured-image {
+    width: 100%;
+    padding: 30px 3%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #292826;
+}
+
+.hillier-featured-image img {
+    display: block;
+
+    width: 100%;
+    max-width: 1180px;
+    height: auto;
+
+    object-fit: contain;
+}
+
+.hillier-featured-caption {
+    margin-top: 18px;
+}
+
+.hillier-featured-caption h2 {
+    margin: 0 0 5px;
+
+    font-size: clamp(28px, 3vw, 44px);
+    line-height: 1.05;
+
+    font-weight: normal;
+}
+
+.hillier-featured-caption p {
+    margin: 0;
+
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+
+    opacity: 0.6;
+}
+
+
+@media (max-width: 700px) {
+
+    .hillier-featured-work {
+        padding: 15px 20px 70px;
+    }
+
+    .hillier-featured-image {
+        padding: 18px 12px;
+    }
+
+}
+/* =========================================
+   ARTIST CARD IMAGES
+========================================= */
+
+.artist-card-image {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+    background: #dfdbd2;
+}
+
+.artist-card-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+/* Matthew Hillier artist card */
+
+.artist-card-image.hillier-card-image img {
+    object-position: center 42%;
+}
+/* =========================================
+   ELISSA HOUGHTON — FEATURED WORK
+========================================= */
+
+.houghton-featured-work {
+    padding: 20px 6% 105px;
+}
+
+.houghton-featured-heading {
+    max-width: 1280px;
+    margin: 0 auto 18px;
+}
+
+.houghton-featured-figure {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.houghton-featured-image {
+    width: 100%;
+    padding: 30px 3%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #292826;
+}
+
+.houghton-featured-image img {
+    display: block;
+
+    width: 100%;
+    max-width: 1180px;
+    height: auto;
+
+    object-fit: contain;
+}
+
+.houghton-featured-caption {
+    margin-top: 18px;
+}
+
+.houghton-featured-caption h2 {
+    margin: 0 0 5px;
+
+    font-size: clamp(28px, 3vw, 44px);
+    line-height: 1.05;
+
+    font-weight: normal;
+}
+
+.houghton-featured-caption p {
+    margin: 0;
+
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+
+    opacity: 0.6;
+}
+
+
+@media (max-width: 700px) {
+
+    .houghton-featured-work {
+        padding: 15px 20px 70px;
+    }
+
+    .houghton-featured-image {
+        padding: 18px 12px;
+    }
+
+}
+/* =========================================
+   MOBILE — FEATURED WORK CAPTIONS
+========================================= */
+
+@media (max-width: 700px) {
+
+    /* Featured artwork captions */
+
+    .schillaci-featured-caption,
+    .hillier-featured-caption,
+    .houghton-featured-caption,
+    .squier-featured-caption,
+    .caviness-featured-caption {
+        padding: 0 20px;
+        margin-top: 16px;
+    }
+
+
+    /* Featured artwork titles */
+
+    .schillaci-featured-caption h2,
+    .hillier-featured-caption h2,
+    .houghton-featured-caption h2,
+    .squier-featured-caption h2,
+    .caviness-featured-caption h2 {
+        margin: 0 0 8px;
+        font-size: clamp(30px, 9vw, 42px);
+        line-height: 1.02;
+        font-weight: normal;
+        overflow-wrap: break-word;
+    }
+
+
+    /* Artist name / medium beneath title */
+
+    .schillaci-featured-caption p,
+    .hillier-featured-caption p,
+    .houghton-featured-caption p,
+    .squier-featured-caption p,
+    .caviness-featured-caption p {
+        margin: 0;
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+}
+@media (max-width: 700px) {
+
+    .schillaci-featured-caption h2 {
+        font-size: clamp(27px, 8vw, 36px);
+        line-height: 1.05;
+    }
+
+}
+@media (max-width: 700px) {
+
+    .schillaci-featured-heading,
+    .hillier-featured-heading,
+    .houghton-featured-heading,
+    .squier-featured-heading {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+}
+#collectionShuffle,
+#featuredShuffle {
+    transition: opacity 0.5s ease;
+}
+
+#collectionShuffle.shuffle-fade,
+#featuredShuffle.shuffle-fade {
+    opacity: 0;
+}
+/* =========================================
+   COLLECTION PAGE CLEANUP
+========================================= */
+
+.collection-grid a,
+.collection-grid a:visited,
+.collection-grid a:hover,
+.collection-grid a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* artwork card */
+
+.artwork-card {
+    min-width: 0;
+}
+
+
+.collection-artwork-link {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* image area */
+
+.collection-artwork-image {
+    position: relative;
+
+    width: 100%;
+    aspect-ratio: 1 / 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    background: #f1efea;
+}
+
+
+.collection-artwork-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    padding: 18px;
+
+    transition:
+        transform 0.45s ease,
+        opacity 0.3s ease;
+}
+
+
+.collection-artwork-link:hover
+.collection-artwork-image img {
+    transform: scale(1.015);
+}
+
+
+/* "View Artwork" overlay */
+
+.collection-view-label {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    padding: 14px 18px;
+
+    background: rgba(25, 25, 25, 0.88);
+    color: #ffffff;
+
+    font-size: 0.67rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+
+    opacity: 0;
+    transform: translateY(100%);
+
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.collection-artwork-link:hover
+.collection-view-label {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* artwork information */
+
+.artwork-info {
+    padding-top: 18px;
+}
+
+
+.artwork-info h2 {
+    margin: 0 0 8px;
+
+    color: #1f1f1f;
+
+    font-size: 1.45rem;
+    font-weight: 400;
+    line-height: 1.15;
+
+    text-decoration: none;
+}
+
+
+.artwork-artist {
+    margin: 0 0 8px;
+
+    color: #333;
+
+    font-size: 0.92rem;
+
+    text-decoration: none;
+}
+
+
+.artwork-medium {
+    margin: 0 0 5px;
+
+    color: #777;
+
+    font-size: 0.68rem;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+
+    text-decoration: none;
+}
+
+
+.artwork-dimensions {
+    margin: 0 0 5px;
+
+    color: #777;
+
+    font-size: 0.78rem;
+
+    text-decoration: none;
+}
+
+
+.artwork-price {
+    margin: 8px 0 0;
+
+    color: #222;
+
+    font-size: 0.86rem;
+
+    text-decoration: none;
+}
+
+
+/* count */
+
+.collection-count-wrap {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 7% 28px;
+}
+
+
+#collectionCount {
+    margin: 0;
+
+    color: #777;
+
+    font-size: 0.68rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+
+/* grid spacing */
+
+.collection-grid {
+    max-width: 1400px;
+    margin: 0 auto;
+
+    padding: 0 7% 130px;
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    column-gap: 30px;
+    row-gap: 70px;
+}
+
+
+/* tablet */
+
+@media (max-width: 1000px) {
+
+    .collection-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+/* mobile */
+
+@media (max-width: 650px) {
+
+    .collection-grid {
+        grid-template-columns: 1fr;
+        row-gap: 55px;
+    }
+
+}
+/* =========================================
+   HOMEPAGE ROTATING HERO
+========================================= */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+
+.hero-artwork {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    z-index: 0;
+
+    opacity: 1;
+
+    transition:
+        opacity 1.2s ease,
+        transform 8s ease;
+}
+
+
+.hero-artwork.hero-fade {
+    opacity: 0;
+}
+
+
+.hero-overlay {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    height: 100%;
+}
+
+
+/* optional subtle cinematic movement */
+
+.hero-artwork.hero-zoom {
+    transform: scale(1.025);
+}
+/* =========================================
+   AMBLESIDE BRAND TYPOGRAPHY
+========================================= */
+
+/* Ambleside name / branding */
+
+.logo a,
+.footer-brand h2 {
+    font-family: "University Roman", serif !important;
+}
+
+
+/* Ambleside Gallery eyebrow branding */
+
+.hero-content .eyebrow,
+.welcome .eyebrow {
+    font-family: "University Roman", serif !important;
+    letter-spacing: 3px;
+}
+
+
+/* Main editorial typography stays restrained */
+
+h1,
+h2 {
+    font-family: Georgia, "Times New Roman", serif !important;
+    font-weight: 400;
 }

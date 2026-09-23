@@ -2,22 +2,28 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <meta
         name="description"
-        content="Discover the watercolor paintings and biography of Guan Weixing, represented by Ambleside Gallery."
+        content="Discover the watercolor paintings, biography and selected works of Guan Weixing, represented by Ambleside Gallery."
     >
 
     <title>Guan Weixing | Ambleside Gallery</title>
 
-    <!-- We are inside /artists, so ../ goes back to the main folder -->
     <link rel="stylesheet" href="../style.css">
+
 </head>
 
 
 <body>
+
 
     <!-- =========================================
          HEADER
@@ -26,10 +32,16 @@
     <header class="site-header">
 
         <div class="logo">
-            <a href="../index.html">AMBLESIDE</a>
+
+            <a href="../index.html">
+                AMBLESIDE
+            </a>
+
         </div>
 
+
         <nav class="main-nav">
+
             <a href="../index.html">Home</a>
             <a href="../artists.html">Artists</a>
             <a href="../collection.html">Collection</a>
@@ -37,9 +49,11 @@
             <a href="../music.html">Music at Ambleside</a>
             <a href="../about.html">About</a>
             <a href="../contact.html">Contact Us</a>
+
         </nav>
 
     </header>
+
 
 
     <main>
@@ -68,24 +82,51 @@
 
 
         <!-- =========================================
-             HERO ARTWORK / PORTRAIT
+             FEATURED WORK
         ========================================== -->
 
-        <section class="artist-page-image">
+        <section class="schillaci-featured-work">
 
-            <div class="artist-large-placeholder">
-                Guan Weixing
+            <div class="schillaci-featured-heading">
+
+                <p class="eyebrow">
+                    FEATURED WORK
+                </p>
+
             </div>
 
-            <!--
-            WHEN YOU RECEIVE THE IMAGE, REPLACE THE
-            PLACEHOLDER ABOVE WITH:
 
-            <img
-                src="../images/artists/guan-weixing.jpg"
-                alt="Guan Weixing"
-            >
-            -->
+            <figure class="schillaci-featured-figure">
+
+
+                <div class="schillaci-featured-image">
+
+                    <img
+                        src="../images/weixing-lexington-lady.png"
+                        alt="Lexington Lady by Guan Weixing"
+                    >
+
+                </div>
+
+
+                <figcaption class="schillaci-featured-caption">
+
+                    <div>
+
+                        <h2>
+                            Lexington Lady
+                        </h2>
+
+                        <p>
+                            Guan Weixing
+                        </p>
+
+                    </div>
+
+                </figcaption>
+
+
+            </figure>
 
         </section>
 
@@ -96,6 +137,7 @@
         ========================================== -->
 
         <section class="artist-biography">
+
 
             <div class="artist-biography-heading">
 
@@ -154,6 +196,7 @@
 
             </div>
 
+
         </section>
 
 
@@ -186,10 +229,11 @@
 
         <section class="artist-gallery-story">
 
+
             <div>
 
                 <p class="eyebrow">
-                    GUAN WEIXING & AMBLESIDE
+                    GUAN WEIXING &amp; AMBLESIDE
                 </p>
 
                 <h2>
@@ -233,6 +277,7 @@
 
             </div>
 
+
         </section>
 
 
@@ -242,6 +287,7 @@
         ========================================== -->
 
         <section class="artist-works">
+
 
             <div class="artist-works-heading">
 
@@ -256,62 +302,17 @@
             </div>
 
 
-            <div class="artist-works-grid">
+            <!--
+                artwork-data.js automatically fills
+                this grid with Guan's available works.
+            -->
 
-
-                <article class="artist-work">
-
-                    <div class="work-placeholder">
-                        Artwork
-                    </div>
-
-                    <h3>Artwork Title</h3>
-
-                    <p>Watercolor</p>
-
-                </article>
-
-
-                <article class="artist-work">
-
-                    <div class="work-placeholder">
-                        Artwork
-                    </div>
-
-                    <h3>Artwork Title</h3>
-
-                    <p>Watercolor</p>
-
-                </article>
-
-
-                <article class="artist-work">
-
-                    <div class="work-placeholder">
-                        Artwork
-                    </div>
-
-                    <h3>Artwork Title</h3>
-
-                    <p>Watercolor</p>
-
-                </article>
-
-
-                <article class="artist-work">
-
-                    <div class="work-placeholder">
-                        Artwork
-                    </div>
-
-                    <h3>Artwork Title</h3>
-
-                    <p>Watercolor</p>
-
-                </article>
-
-
+            <div
+                class="artist-works-grid"
+                id="guanWorks"
+            >
             </div>
+
 
         </section>
 
@@ -352,54 +353,474 @@
 
     <footer class="site-footer">
 
+
         <div class="footer-top">
+
 
             <div class="footer-brand">
 
-                <h2>AMBLESIDE</h2>
+                <h2>
+                    AMBLESIDE
+                </h2>
 
-                <p>Fine Art Gallery</p>
+                <p>
+                    Fine Art Gallery
+                </p>
 
             </div>
 
 
             <div class="footer-links">
 
+
                 <div>
 
-                    <h3>Explore</h3>
+                    <h3>
+                        Explore
+                    </h3>
 
-                    <a href="../artists.html">Artists</a>
-                    <a href="../collection.html">Collection</a>
-                    <a href="../exhibitions.html">Exhibitions</a>
+                    <a href="../artists.html">
+                        Artists
+                    </a>
+
+                    <a href="../collection.html">
+                        Collection
+                    </a>
+
+                    <a href="../exhibitions.html">
+                        Exhibitions
+                    </a>
 
                 </div>
 
 
                 <div>
 
-                    <h3>Gallery</h3>
+                    <h3>
+                        Gallery
+                    </h3>
 
-                    <a href="../about.html">About</a>
-                    <a href="../contact.html">Contact</a>
-                    <a href="../music.html">Music at Ambleside</a>
+                    <a href="../about.html">
+                        About
+                    </a>
+
+                    <a href="../contact.html">
+                        Contact
+                    </a>
+
+                    <a href="../music.html">
+                        Music at Ambleside
+                    </a>
 
                 </div>
+
 
             </div>
+
 
         </div>
 
 
         <div class="footer-bottom">
 
-            <p>© 2026 Ambleside Gallery</p>
-
-            <p>Asheville, North Carolina</p>
+            <p>
+                © 2026 Ambleside Gallery
+            </p>
 
         </div>
 
+
     </footer>
+
+
+
+    <!-- =========================================
+         ARTWORK LIGHTBOX
+    ========================================== -->
+
+    <div
+        class="artwork-lightbox"
+        id="artworkLightbox"
+    >
+
+        <button
+            class="lightbox-close"
+            type="button"
+            aria-label="Close artwork"
+        >
+            ×
+        </button>
+
+
+        <div class="lightbox-content">
+
+            <img
+                id="lightboxImage"
+                src=""
+                alt=""
+            >
+
+            <div class="lightbox-info">
+
+                <h2 id="lightboxTitle"></h2>
+
+                <p id="lightboxDetails"></p>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- =========================================
+         MASTER ARTWORK DATABASE
+    ========================================== -->
+
+    <script src="../artwork-data.js"></script>
+
+
+
+    <!-- =========================================
+         GUAN WEIXING COLLECTION
+    ========================================== -->
+
+    <script>
+
+        document.addEventListener(
+            "DOMContentLoaded",
+            () => {
+
+
+                const guanWorks =
+                    document.getElementById("guanWorks");
+
+
+                const lightbox =
+                    document.getElementById("artworkLightbox");
+
+
+                const lightboxImage =
+                    document.getElementById("lightboxImage");
+
+
+                const lightboxTitle =
+                    document.getElementById("lightboxTitle");
+
+
+                const lightboxDetails =
+                    document.getElementById("lightboxDetails");
+
+
+                const closeButton =
+                    document.querySelector(".lightbox-close");
+
+
+
+                /* =====================================
+                   PRICE FORMATTER
+                ====================================== */
+
+                function formatPrice(price) {
+
+                    if (
+                        price === null ||
+                        price === undefined ||
+                        price === ""
+                    ) {
+
+                        return "";
+
+                    }
+
+
+                    return new Intl.NumberFormat(
+                        "en-US",
+                        {
+                            style: "currency",
+                            currency: "USD",
+                            maximumFractionDigits: 0
+                        }
+                    ).format(price);
+
+                }
+
+
+
+                /* =====================================
+                   LOAD GUAN'S AVAILABLE WORK
+                ====================================== */
+
+                if (
+                    window.artworks &&
+                    Array.isArray(window.artworks)
+                ) {
+
+
+                    const works =
+                        window.artworks.filter(
+                            (artwork) => {
+
+                                return (
+                                    artwork.artist === "Guan Weixing" &&
+                                    artwork.image
+                                );
+
+                            }
+                        );
+
+
+
+                    works.forEach(
+                        (artwork) => {
+
+
+                            const article =
+                                document.createElement("article");
+
+
+                            article.className =
+                                "artist-work";
+
+
+
+                            const dimensionsMarkup =
+                                artwork.dimensions
+                                    ? `
+                                        <p>
+                                            ${artwork.dimensions}
+                                        </p>
+                                      `
+                                    : "";
+
+
+
+                            const priceMarkup =
+                                artwork.price
+                                    ? `
+                                        <p>
+                                            ${formatPrice(artwork.price)}
+                                        </p>
+                                      `
+                                    : "";
+
+
+
+                            article.innerHTML = `
+
+                                <button
+                                    class="artwork-gallery-trigger"
+                                    type="button"
+                                    data-title="${artwork.title}"
+                                    data-image="../${artwork.image}"
+                                    data-medium="${artwork.medium || ""}"
+                                    data-dimensions="${artwork.dimensions || ""}"
+                                    data-price="${artwork.price || ""}"
+                                >
+
+                                    <div class="artwork-image-wrap">
+
+                                        <img
+                                            src="../${artwork.image}"
+                                            alt="${artwork.title} by Guan Weixing"
+                                            loading="lazy"
+                                        >
+
+                                        <span class="artwork-view-label">
+                                            View Artwork
+                                        </span>
+
+                                    </div>
+
+                                </button>
+
+
+                                <div class="artwork-details">
+
+                                    <h3>
+                                        ${artwork.title}
+                                    </h3>
+
+                                    <p>
+                                        ${artwork.medium || ""}
+                                    </p>
+
+                                    ${dimensionsMarkup}
+
+                                    ${priceMarkup}
+
+                                </div>
+
+                            `;
+
+
+
+                            guanWorks.appendChild(
+                                article
+                            );
+
+                        }
+                    );
+
+                }
+
+
+
+                /* =====================================
+                   OPEN ARTWORK
+                ====================================== */
+
+                guanWorks.addEventListener(
+                    "click",
+                    (event) => {
+
+
+                        const button =
+                            event.target.closest(
+                                ".artwork-gallery-trigger"
+                            );
+
+
+                        if (!button) {
+                            return;
+                        }
+
+
+
+                        const medium =
+                            button.dataset.medium;
+
+
+                        const dimensions =
+                            button.dataset.dimensions;
+
+
+                        const rawPrice =
+                            button.dataset.price;
+
+
+                        const details = [];
+
+
+                        if (medium) {
+                            details.push(medium);
+                        }
+
+
+                        if (dimensions) {
+                            details.push(dimensions);
+                        }
+
+
+                        if (rawPrice) {
+
+                            details.push(
+                                formatPrice(
+                                    Number(rawPrice)
+                                )
+                            );
+
+                        }
+
+
+
+                        lightboxImage.src =
+                            button.dataset.image;
+
+
+                        lightboxImage.alt =
+                            button.dataset.title +
+                            " by Guan Weixing";
+
+
+                        lightboxTitle.textContent =
+                            button.dataset.title;
+
+
+                        lightboxDetails.textContent =
+                            details.join(" · ");
+
+
+                        lightbox.classList.add(
+                            "active"
+                        );
+
+
+                        document.body.style.overflow =
+                            "hidden";
+
+                    }
+                );
+
+
+
+                /* =====================================
+                   CLOSE LIGHTBOX
+                ====================================== */
+
+                function closeLightbox() {
+
+                    lightbox.classList.remove(
+                        "active"
+                    );
+
+
+                    document.body.style.overflow =
+                        "";
+
+                }
+
+
+
+                closeButton.addEventListener(
+                    "click",
+                    closeLightbox
+                );
+
+
+
+                lightbox.addEventListener(
+                    "click",
+                    (event) => {
+
+                        if (
+                            event.target === lightbox
+                        ) {
+
+                            closeLightbox();
+
+                        }
+
+                    }
+                );
+
+
+
+                document.addEventListener(
+                    "keydown",
+                    (event) => {
+
+                        if (
+                            event.key === "Escape" &&
+                            lightbox.classList.contains(
+                                "active"
+                            )
+                        ) {
+
+                            closeLightbox();
+
+                        }
+
+                    }
+                );
+
+
+            }
+        );
+
+    </script>
 
 
 </body>
