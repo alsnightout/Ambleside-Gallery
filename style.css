@@ -7753,3 +7753,312 @@ h2 {
     font-family: Georgia, "Times New Roman", serif !important;
     font-weight: 400;
 }
+/* =========================================
+   HOMEPAGE — MOBILE REFINEMENT
+   Keep desktop styling unchanged
+========================================= */
+
+@media (max-width: 650px) {
+
+    /* =====================================
+       HERO
+    ====================================== */
+
+    .hero {
+        position: relative;
+        min-height: 72vh;
+        overflow: hidden;
+    }
+
+    .hero-overlay {
+        position: relative;
+        z-index: 2;
+
+        min-height: 72vh;
+        width: 100%;
+
+        display: flex;
+        align-items: flex-end;
+
+        padding: 0 28px 55px;
+    }
+
+    .hero-artwork {
+        position: absolute;
+        inset: 0;
+
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+        object-position: center center;
+
+        opacity: 1;
+        transform: none;
+
+        transition: opacity 0.45s ease;
+    }
+
+    /* Prevent the gray/blank-looking transition */
+
+    .hero-artwork.hero-fade {
+        opacity: 0.18;
+    }
+
+    .hero-content {
+        width: 100%;
+        max-width: 520px;
+    }
+
+    .hero-content .eyebrow {
+        margin-bottom: 18px;
+
+        font-size: 10px;
+        letter-spacing: 2.5px;
+    }
+
+    .hero h1 {
+        max-width: 540px;
+
+        font-family: Georgia, "Times New Roman", serif !important;
+        font-size: clamp(44px, 12vw, 58px);
+        font-weight: 400;
+
+        line-height: 0.98;
+        letter-spacing: -1px;
+
+        margin-bottom: 32px;
+    }
+
+    .hero .button {
+        padding: 13px 19px;
+
+        font-size: 10px;
+        letter-spacing: 1.2px;
+    }
+
+
+    /* =====================================
+       WELCOME
+    ====================================== */
+
+    .welcome {
+        padding: 90px 28px;
+    }
+
+    .welcome h2 {
+        font-size: 48px;
+        line-height: 1.05;
+    }
+
+    .welcome p {
+        max-width: 100%;
+    }
+
+
+    /* =====================================
+       HOMEPAGE FEATURE CARDS
+    ====================================== */
+
+    .featured-links {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-image {
+        width: 100%;
+
+        height: 55vh;
+        min-height: 380px;
+        max-height: 540px;
+
+        overflow: hidden;
+    }
+
+    .feature-image img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+        object-position: center;
+
+        display: block;
+    }
+
+    .feature-info {
+        padding: 28px 28px 42px;
+    }
+
+    .feature-info h3 {
+        font-size: 34px;
+    }
+
+
+    /* =====================================
+       ABOUT SECTIONS
+    ====================================== */
+
+    .about-block {
+        display: flex;
+        flex-direction: column;
+
+        min-height: 0;
+    }
+
+    .about-content {
+        padding: 75px 28px;
+    }
+
+    .about-content h2 {
+        font-size: 48px;
+        line-height: 1.05;
+    }
+
+    .about-image {
+        width: 100%;
+
+        height: 55vh;
+        min-height: 380px;
+        max-height: 540px;
+
+        overflow: hidden;
+    }
+
+    .about-image img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+        object-position: center;
+
+        display: block;
+    }
+
+
+    /* =====================================
+       ARTISTS OF SKILL AND DISTINCTION
+    ====================================== */
+
+    .artists-about .about-content {
+        order: 1;
+    }
+
+    .artists-about .about-image {
+        order: 2;
+    }
+
+    .artists-about .about-image img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+        object-position: center;
+    }
+
+
+    /* =====================================
+       FEATURED ARTIST
+    ====================================== */
+
+    .featured-artist {
+        padding: 90px 28px;
+    }
+
+    .featured-artist-heading {
+        margin-bottom: 35px;
+    }
+
+    .featured-artist-heading h2 {
+        font-size: clamp(46px, 13vw, 64px);
+        line-height: 1;
+    }
+
+    .featured-artist-grid {
+        display: block;
+        min-height: 0;
+    }
+
+    .artist-artwork {
+        width: 100%;
+
+        height: 55vh;
+        min-height: 380px;
+        max-height: 540px;
+
+        overflow: hidden;
+    }
+
+    .artist-artwork img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+        object-position: center;
+
+        display: block;
+    }
+
+    .artist-description {
+        padding: 45px 28px 50px;
+    }
+
+    .artist-description h3 {
+        font-size: 31px;
+        line-height: 1.1;
+
+        margin-bottom: 20px;
+    }
+
+    .artist-description p {
+        line-height: 1.75;
+        margin-bottom: 30px;
+    }
+
+
+    /* =====================================
+       SEARCH
+    ====================================== */
+
+    .search-section h2 {
+        font-size: 42px;
+        line-height: 1.08;
+    }
+
+    .search-form {
+        width: 100%;
+    }
+
+
+    /* =====================================
+       VISIT
+    ====================================== */
+
+    .visit h2 {
+        font-size: 48px;
+        line-height: 1.03;
+    }
+
+    .visit-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+
+    /* =====================================
+       FOOTER
+    ====================================== */
+
+    .footer-top {
+        flex-direction: column;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+}
