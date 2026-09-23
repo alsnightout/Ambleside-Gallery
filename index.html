@@ -685,6 +685,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
     }
     /* =========================================
+   REPRESENTED ARTIST ROTATION
+========================================= */
+
+if (
+    representedArtistShuffle &&
+    representedArtistImages.length
+) {
+
+    setInterval(() => {
+
+        rotateImage(
+            representedArtistShuffle,
+            representedArtistImages,
+            "shuffle-fade"
+        );
+
+    }, 7000);
+
+}
+    /* =========================================
        MAKE SURE ARTWORK DATA EXISTS
     ========================================== */
 
