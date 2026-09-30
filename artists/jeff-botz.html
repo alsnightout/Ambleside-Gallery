@@ -22,7 +22,7 @@
 </head>
 
 
-<body>
+<body data-artist="Jeff Botz">
 
 
     <!-- =========================================
@@ -452,64 +452,12 @@
             </div>
 
 
-            <div class="artist-works-grid">
-
-
-                <!-- THE MIRAGE OF PHYSICAL METAPHYSICS -->
-
-                <article class="artist-work">
-
-                    <button
-                        class="artwork-gallery-trigger"
-                        type="button"
-                        data-title="The Mirage of Physical Metaphysics"
-                        data-images="../images/botz-mirage-of-physical-metaphysics.jpg"
-                    >
-
-                        <div class="artwork-image-wrap">
-
-                            <img
-                                src="../images/botz-marriage-of-physics-metaphysics-hero.png"
-                                alt="The Marriage of Physics and Metaphysics by Jeff Botz"
-                            >
-
-                            <span class="artwork-view-label">
-                                View Artwork
-                            </span>
-
-                        </div>
-
-                    </button>
-
-
-                    <div class="artwork-details">
-
-                        <h3>
-                            The Mirage of Physical Metaphysics
-                        </h3>
-
-                        <p>
-                            Black &amp; White Photograph
-                        </p>
-
-                        <p>
-                            24" × 30"
-                        </p>
-
-                        <p>
-                            $2,550
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-            </div>
-
+           <div
+                 class="artist-works-grid"
+    id="artistWorks"
+        ></div>
         </section>
-
-
+                
 
         <!-- =========================================
              EXHIBITIONS & COLLECTIONS
@@ -863,179 +811,8 @@
          LIGHTBOX SCRIPT
     ========================================== -->
 
-    <script>
-
-        const galleryButtons =
-            document.querySelectorAll(".artwork-gallery-trigger");
-
-        const lightbox =
-            document.getElementById("artworkLightbox");
-
-        const lightboxImage =
-            document.getElementById("lightboxImage");
-
-        const lightboxTitle =
-            document.getElementById("lightboxTitle");
-
-        const lightboxCounter =
-            document.getElementById("lightboxCounter");
-
-        const closeButton =
-            document.querySelector(".lightbox-close");
-
-        const nextButton =
-            document.querySelector(".lightbox-next");
-
-        const prevButton =
-            document.querySelector(".lightbox-prev");
-
-
-        let currentImages = [];
-        let currentIndex = 0;
-        let currentTitle = "";
-
-
-        galleryButtons.forEach((button) => {
-
-            button.addEventListener("click", () => {
-
-                currentImages =
-                    button.dataset.images
-                        .split(",")
-                        .map(image => image.trim());
-
-                currentTitle =
-                    button.dataset.title;
-
-                currentIndex = 0;
-
-                openLightbox();
-
-            });
-
-        });
-
-
-
-        function openLightbox() {
-
-            lightbox.classList.add("active");
-
-            document.body.style.overflow = "hidden";
-
-            updateLightbox();
-
-        }
-
-
-
-        function updateLightbox() {
-
-            lightboxImage.src =
-                currentImages[currentIndex];
-
-            lightboxImage.alt =
-                currentTitle + " by Jeff Botz";
-
-            lightboxTitle.textContent =
-                currentTitle;
-
-
-            if (currentImages.length > 1) {
-
-                lightboxCounter.textContent =
-                    (currentIndex + 1) +
-                    " / " +
-                    currentImages.length;
-
-                nextButton.style.display = "block";
-                prevButton.style.display = "block";
-
-            } else {
-
-                lightboxCounter.textContent = "";
-
-                nextButton.style.display = "none";
-                prevButton.style.display = "none";
-
-            }
-
-        }
-
-
-
-        function closeLightbox() {
-
-            lightbox.classList.remove("active");
-
-            document.body.style.overflow = "";
-
-        }
-
-
-
-        closeButton.addEventListener(
-            "click",
-            closeLightbox
-        );
-
-
-        nextButton.addEventListener(
-            "click",
-            () => {
-
-                currentIndex =
-                    (currentIndex + 1) %
-                    currentImages.length;
-
-                updateLightbox();
-
-            }
-        );
-
-
-        prevButton.addEventListener(
-            "click",
-            () => {
-
-                currentIndex =
-                    (currentIndex - 1 +
-                    currentImages.length) %
-                    currentImages.length;
-
-                updateLightbox();
-
-            }
-        );
-
-
-        lightbox.addEventListener(
-            "click",
-            (event) => {
-
-                if (event.target === lightbox) {
-                    closeLightbox();
-                }
-
-            }
-        );
-
-
-        document.addEventListener(
-            "keydown",
-            (event) => {
-
-                if (
-                    event.key === "Escape" &&
-                    lightbox.classList.contains("active")
-                ) {
-                    closeLightbox();
-                }
-
-            }
-        );
-
-    </script>
+   <script src="../artwork-data.js"></script>
+<script src="../artist-page.js"></script>
 
 
 </body>

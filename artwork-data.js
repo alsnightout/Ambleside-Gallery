@@ -12,10 +12,10 @@ window.artworks = [
         price: 9500,
         category: "painting",
         image: null,
+        heroImage: null,
         artistPage: null,
         featured: false
     },
-
 
     // ==================================================
     // ANDREA HENNINGS
@@ -29,6 +29,33 @@ window.artworks = [
         price: 6800,
         category: "painting",
         image: null,
+        heroImage: null,
+        artistPage: null,
+        featured: false
+    },
+
+    {
+        artist: "Andrea Hennings",
+        title: "Beautiful Kisa",
+        medium: "Acrylic on canvas",
+        dimensions: "",
+        price: 1800,
+        category: "painting",
+        image: null,
+        heroImage: null,
+        artistPage: null,
+        featured: false
+    },
+
+    {
+        artist: "Andrea Hennings",
+        title: "Flamingo",
+        medium: "Oil on canvas",
+        dimensions: "",
+        price: 2400,
+        category: "painting",
+        image: null,
+        heroImage: null,
         artistPage: null,
         featured: false
     },
@@ -41,6 +68,7 @@ window.artworks = [
         price: 3200,
         category: "painting",
         image: null,
+        heroImage: null,
         artistPage: null,
         featured: false
     },
@@ -53,12 +81,12 @@ window.artworks = [
         price: 3800,
         category: "painting",
         image: null,
+        heroImage: null,
         artistPage: null,
         featured: false
     },
 
-
-    // ==================================================
+     // ==================================================
     // BRAD & BRYAN CAVINESS
     // ==================================================
 
@@ -69,31 +97,55 @@ window.artworks = [
         dimensions: "",
         price: 7400,
         category: "sculpture",
+
         image: "images/caviness-Athens.jpg",
+
+        images: [
+            "images/caviness-Athens.jpg",
+            "images/caviness-athens-detail-01.jpg"
+        ],
+
+        heroImage: null,
         artistPage: "artists/brad-bryan-caviness.html",
         featured: false
     },
 
     {
         artist: "Brad & Bryan Caviness",
-        title: "Birmingham Buddha",
+        title: "Bimiyan Buddha",
         medium: "Ceramic",
         dimensions: "",
         price: 3500,
         category: "sculpture",
+
         image: "images/caviness-bimiyan-buddha-02.jpg",
+
+        images: [
+            "images/caviness-bimiyan-buddha-02.jpg",
+            "images/caviness-bimiyan-buddha-detail-01.jpg",
+            "images/caviness-bimiyan-buddha-detail-02.jpg"
+        ],
+
+        heroImage: null,
         artistPage: "artists/brad-bryan-caviness.html",
         featured: false
     },
 
     {
         artist: "Brad & Bryan Caviness",
-        title: "Chaco-Dooryway",
+        title: "Chaco Doorways",
         medium: "Ceramic",
         dimensions: "",
         price: 1400,
         category: "sculpture",
+
         image: "images/caviness-chaco-doorways-01.jpg",
+
+        images: [
+            "images/caviness-chaco-doorways-01.jpg"
+        ],
+
+        heroImage: null,
         artistPage: "artists/brad-bryan-caviness.html",
         featured: false
     },
@@ -105,7 +157,17 @@ window.artworks = [
         dimensions: "",
         price: 8600,
         category: "sculpture",
-        image: "images/caviness-delphi-01.jpg",
+
+        image: "images/caviness-delphi-03.jpg",
+
+        images: [
+            "images/caviness-delphi-03.jpg",
+            "images/caviness-delphi-02.jpg",
+            "images/caviness-delphi-01.jpg",
+            "images/caviness-delphi-detail-01.jpg"
+        ],
+
+        heroImage: null,
         artistPage: "artists/brad-bryan-caviness.html",
         featured: false
     },
@@ -117,7 +179,14 @@ window.artworks = [
         dimensions: "",
         price: 2500,
         category: "sculpture",
+
         image: "images/caviness-egyptian-temple-01.jpg",
+
+        images: [
+            "images/caviness-egyptian-temple-01.jpg"
+        ],
+
+        heroImage: null,
         artistPage: "artists/brad-bryan-caviness.html",
         featured: false
     },
@@ -129,7 +198,17 @@ window.artworks = [
         dimensions: "",
         price: 2400,
         category: "sculpture",
+
         image: "images/caviness-french-town-02.jpg",
+
+        images: [
+            "images/caviness-french-town-02.jpg",
+            "images/caviness-french-town-lightup.jpg",
+            "images/caviness-french-town-detail-01.jpg",
+            "images/caviness-french-town-detail-02.jpg"
+        ],
+
+        heroImage: null,
         artistPage: "artists/brad-bryan-caviness.html",
         featured: false
     },
@@ -141,7 +220,14 @@ window.artworks = [
         dimensions: "",
         price: null,
         category: "sculpture",
+
         image: "images/caviness-french-village-01.jpg",
+
+        images: [
+            "images/caviness-french-village-01.jpg"
+        ],
+
+        heroImage: null,
         artistPage: "artists/brad-bryan-caviness.html",
         featured: false
     },
@@ -153,19 +239,36 @@ window.artworks = [
         dimensions: "",
         price: null,
         category: "sculpture",
+
         image: "images/caviness-gothic-stairway-01.jpg",
+
+        images: [
+            "images/caviness-gothic-stairway-01.jpg",
+            "images/caviness-gothic-stairway-detail-01.jpg"
+        ],
+
+        heroImage: null,
         artistPage: "artists/brad-bryan-caviness.html",
         featured: false
     },
 
     {
         artist: "Brad & Bryan Caviness",
-        title: "Great Hall Of Thinkers",
+        title: "Hall of Great Thinkers",
         medium: "Ceramic",
         dimensions: "",
         price: 2400,
         category: "sculpture",
+
         image: "images/caviness-hall-of-great-thinkers-02.jpg",
+
+        images: [
+            "images/caviness-hall-of-great-thinkers-02.jpg",
+            "images/caviness-hall-of-great-thinkers-03.jpg",
+            "images/caviness-great-hall-of-thinkers-detail-01.jpg"
+        ],
+
+        heroImage: null,
         artistPage: "artists/brad-bryan-caviness.html",
         featured: false
     },
@@ -177,7 +280,14 @@ window.artworks = [
         dimensions: "",
         price: 2800,
         category: "sculpture",
-        image: "images/caviness-jerusalem-alley-01.jpg",
+
+        image: "images/caviness-jerusalem-alley.jpg",
+
+        images: [
+            "images/caviness-jerusalem-alley.jpg"
+        ],
+
+        heroImage: null,
         artistPage: "artists/brad-bryan-caviness.html",
         featured: false
     },
@@ -189,19 +299,36 @@ window.artworks = [
         dimensions: "",
         price: 4400,
         category: "sculpture",
+
         image: "images/caviness-mediterranean-coastal-villa-04.jpg",
+
+        images: [
+            "images/caviness-mediterranean-coastal-villa-04.jpg",
+            "images/caviness-mediterranean-coastal-villa-detail-01.jpg",
+            "images/caviness-mediterranean-coastal-villa-detail-001.jpg"
+        ],
+
+        heroImage: null,
         artistPage: "artists/brad-bryan-caviness.html",
         featured: false
     },
 
     {
         artist: "Brad & Bryan Caviness",
-        title: "Norman Castle",
+        title: "Norman's Castle, France",
         medium: "Ceramic",
         dimensions: "",
         price: 1200,
         category: "sculpture",
+
         image: "images/caviness-normans-castle-01.jpg",
+
+        images: [
+            "images/caviness-normans-castle-01.jpg",
+            "images/caviness-normans-castle-france.jpg"
+        ],
+
+        heroImage: null,
         artistPage: "artists/brad-bryan-caviness.html",
         featured: false
     },
@@ -213,19 +340,36 @@ window.artworks = [
         dimensions: "",
         price: 2800,
         category: "sculpture",
+
         image: "images/caviness-petra-01.jpg",
+
+        images: [
+            "images/caviness-petra-01.jpg",
+            "images/caviness-petra-02.jpg",
+            "images/caviness-petra-detail-01.jpg"
+        ],
+
+        heroImage: null,
         artistPage: "artists/brad-bryan-caviness.html",
         featured: false
     },
 
     {
         artist: "Brad & Bryan Caviness",
-        title: "Roman Bath House",
+        title: "Roman Bathhouse",
         medium: "Ceramic",
         dimensions: "",
         price: 2900,
         category: "sculpture",
+
         image: "images/caviness-roman-bathhouse-03.jpg",
+
+        images: [
+            "images/caviness-roman-bathhouse-03.jpg",
+            "images/caviness-romanbathhouse-detail-01.jpg"
+        ],
+
+        heroImage: null,
         artistPage: "artists/brad-bryan-caviness.html",
         featured: false
     },
@@ -237,28 +381,48 @@ window.artworks = [
         dimensions: "",
         price: 2700,
         category: "sculpture",
-        image: "images/caviness-the-great-wall.jpg",
+
+        image: "images/caviness-the-great-wall-02.jpg",
+
+        images: [
+            "images/caviness-the-great-wall-02.jpg",
+            "images/Caviness-The-Great-wall-detail-01.jpg"
+        ],
+
+        heroImage: null,
         artistPage: "artists/brad-bryan-caviness.html",
         featured: false
-    },
-
+    }, 
 
     // ==================================================
-    // CARL WEHN
+    // DAVID EASTON
     // ==================================================
 
     {
-        artist: "Carl Wehn",
-        title: "Makullsbachen",
-        medium: "Oil on canvas board",
-        dimensions: '12" × 16"',
-        price: null,
-        category: "painting",
+        artist: "David Easton",
+        title: "Breakfast Table in Yellow",
+        medium: "Watercolor on paper",
+        dimensions: "",
+        price: 2800,
+        category: "watercolor",
         image: null,
+        heroImage: null,
         artistPage: null,
         featured: false
     },
 
+    {
+        artist: "David Easton",
+        title: "Cyclamen",
+        medium: "Watercolor",
+        dimensions: "",
+        price: 2400,
+        category: "watercolor",
+        image: null,
+        heroImage: null,
+        artistPage: null,
+        featured: false
+    },
 
     // ==================================================
     // DEBORAH SQUIER
@@ -272,6 +436,7 @@ window.artworks = [
         price: 4800,
         category: "painting",
         image: null,
+        heroImage: null,
         artistPage: "artists/deborah-squier.html",
         featured: false
     },
@@ -284,6 +449,7 @@ window.artworks = [
         price: null,
         category: "painting",
         image: null,
+        heroImage: null,
         artistPage: "artists/deborah-squier.html",
         featured: false
     },
@@ -296,6 +462,7 @@ window.artworks = [
         price: null,
         category: "painting",
         image: null,
+        heroImage: null,
         artistPage: "artists/deborah-squier.html",
         featured: false
     },
@@ -308,10 +475,10 @@ window.artworks = [
         price: null,
         category: "painting",
         image: null,
+        heroImage: null,
         artistPage: "artists/deborah-squier.html",
         featured: false
     },
-
 
     // ==================================================
     // DINO PARAVANO
@@ -325,10 +492,10 @@ window.artworks = [
         price: 9600,
         category: "painting",
         image: null,
+        heroImage: null,
         artistPage: null,
         featured: false
     },
-
 
     // ==================================================
     // ELDON FARIES
@@ -355,10 +522,10 @@ window.artworks = [
         price: 3000,
         category: "watercolor",
         image: null,
+        heroImage: null,
         artistPage: "artists/eldon-faries.html",
         featured: false
     },
-
 
     // ==================================================
     // ELLISSA HOUGHTON
@@ -372,6 +539,7 @@ window.artworks = [
         price: 1400,
         category: "painting",
         image: null,
+        heroImage: null,
         artistPage: "artists/elissa-houghton.html",
         featured: false
     },
@@ -397,6 +565,7 @@ window.artworks = [
         price: 3400,
         category: "painting",
         image: null,
+        heroImage: null,
         artistPage: "artists/elissa-houghton.html",
         featured: false
     },
@@ -409,6 +578,7 @@ window.artworks = [
         price: 5500,
         category: "painting",
         image: null,
+        heroImage: null,
         artistPage: "artists/elissa-houghton.html",
         featured: false
     },
@@ -421,6 +591,7 @@ window.artworks = [
         price: 2200,
         category: "painting",
         image: "images/houghton-many-paths.jpg",
+        heroImage: null,
         artistPage: "artists/elissa-houghton.html",
         featured: false
     },
@@ -433,6 +604,7 @@ window.artworks = [
         price: 4800,
         category: "painting",
         image: null,
+        heroImage: null,
         artistPage: "artists/elissa-houghton.html",
         featured: false
     },
@@ -445,6 +617,7 @@ window.artworks = [
         price: 4800,
         category: "painting",
         image: null,
+        heroImage: null,
         artistPage: "artists/elissa-houghton.html",
         featured: false
     },
@@ -457,12 +630,11 @@ window.artworks = [
         price: 3400,
         category: "painting",
         image: null,
+        heroImage: null,
         artistPage: "artists/elissa-houghton.html",
         featured: false
     },
-
-
-    // ==================================================
+       // ==================================================
     // FRANK EBER
     // ==================================================
 
@@ -474,6 +646,7 @@ window.artworks = [
         price: 2800,
         category: "watercolor",
         image: "images/eber-breakfast-of-kings.jpg",
+        heroImage: null,
         artistPage: "artists/frank-eber.html",
         featured: false
     },
@@ -486,6 +659,7 @@ window.artworks = [
         price: null,
         category: "painting",
         image: null,
+        heroImage: null,
         artistPage: "artists/frank-eber.html",
         featured: false
     },
@@ -498,6 +672,7 @@ window.artworks = [
         price: 2800,
         category: "watercolor",
         image: "images/eber-cascade.jpg",
+        heroImage: null,
         artistPage: "artists/frank-eber.html",
         featured: false
     },
@@ -510,10 +685,10 @@ window.artworks = [
         price: 1600,
         category: "watercolor",
         image: "images/eber-passionate.jpg",
+        heroImage: null,
         artistPage: "artists/frank-eber.html",
         featured: false
     },
-
 
     // ==================================================
     // GENE McINERNEY
@@ -527,6 +702,7 @@ window.artworks = [
         price: 15000,
         category: "painting",
         image: null,
+        heroImage: null,
         artistPage: "artists/gene-mcinerney.html",
         featured: false
     },
@@ -544,66 +720,178 @@ window.artworks = [
         featured: true
     },
 
+    {
+        artist: "Gene McInerney",
+        title: "turnips",
+        medium: "",
+        dimensions: "",
+        price: null,
+        category: "painting",
+        image: null,
+        heroImage: null,
+        artistPage: "artists/gene-mcinerney.html",
+        featured: false
+    },
 
-  {
-    artist: "Guan Weixing",
-    title: "Aged Farmer",
-    medium: "GICLEE",
-    dimensions: '14" × 19"',
-    price: 625,
-    category: "painting",
-    image: "images/weixing-aged-farmer.png",
-    artistPage: "artists/guan-weixing.html",
-    featured: false
-},
+    // ==================================================
+    // GUAN WEIXING
+    // ==================================================
 
-{
-    artist: "Guan Weixing",
-    title: "Autumn in Village",
-    medium: "GICLEE",
-    dimensions: '21" × 30"',
-    price: 1125,
-    category: "painting",
-    image: "images/weixing-autumn-in-village-giclee.png",
-    artistPage: "artists/guan-weixing.html",
-    featured: false
-},
+    {
+        artist: "Guan Weixing",
+        title: "Aged Farmer",
+        medium: "GICLEE",
+        dimensions: '14" × 19"',
+        price: 625,
+        category: "painting",
+        image: "images/weixing-aged-farmer.png",
+        heroImage: null,
+        artistPage: "artists/guan-weixing.html",
+        featured: false
+    },
 
-{
-    artist: "Guan Weixing",
-    title: "Lexington Lady",
-    medium: "Watercolor",
-    dimensions: '14" × 19"',
-    price: 5000,
-    category: "watercolor",
-    image: "images/weixing-lexington-lady.png",
-    artistPage: "artists/guan-weixing.html",
-    featured: true
-},
+    {
+        artist: "Guan Weixing",
+        title: "Autumn in Village",
+        medium: "GICLEE",
+        dimensions: '21" × 30"',
+        price: 1125,
+        category: "painting",
+        image: "images/weixing-autumn-in-village-giclee.png",
+        heroImage: null,
+        artistPage: "artists/guan-weixing.html",
+        featured: false
+    },
 
-{
-    artist: "Guan Weixing",
-    title: "Summer Night",
-    medium: "Watercolor",
-    dimensions: '29" × 19"',
-    price: 5000,
-    category: "watercolor",
-    image: "images/weixing-summer-night.png",
-    artistPage: "artists/guan-weixing.html",
-    featured: false
-},
+    {
+        artist: "Guan Weixing",
+        title: "Autumn in Village",
+        medium: "Watercolor",
+        dimensions: '20" × 29"',
+        price: 65000,
+        category: "watercolor",
+        image: null,
+        heroImage: null,
+        artistPage: "artists/guan-weixing.html",
+        featured: false
+    },
 
-{
-    artist: "Guan Weixing",
-    title: "Vance",
-    medium: "Watercolor",
-    dimensions: '17" × 22"',
-    price: 5000,
-    category: "watercolor",
-    image: "images/weixing-vance.png",
-    artistPage: "artists/guan-weixing.html",
-    featured: false
-},
+    {
+        artist: "Guan Weixing",
+        title: "Autumn Rhythm",
+        medium: "GICLEE",
+        dimensions: '20" × 29"',
+        price: 1125,
+        category: "painting",
+        image: "images/guan-weixing-autumn-rhythm-web.jpg",
+        heroImage: null,
+        artistPage: "artists/guan-weixing.html",
+        featured: false
+    },
+
+    {
+        artist: "Guan Weixing",
+        title: "First Look into the World",
+        medium: "GICLEE",
+        dimensions: '20" × 15"',
+        price: 625,
+        category: "painting",
+        image: null,
+        heroImage: null,
+        artistPage: "artists/guan-weixing.html",
+        featured: false
+    },
+
+    {
+        artist: "Guan Weixing",
+        title: "Lexington Lady",
+        medium: "Watercolor",
+        dimensions: '14" × 19"',
+        price: 5000,
+        category: "watercolor",
+        image: "images/weixing-lexington-lady.png",
+        heroImage: "images/weixing-lexington-lady-hero.png",
+        artistPage: "artists/guan-weixing.html",
+        featured: true
+    },
+
+    {
+        artist: "Guan Weixing",
+        title: "Morning Star Lily",
+        medium: "GICLEE",
+        dimensions: '21" × 29"',
+        price: 1125,
+        category: "painting",
+        image: null,
+        heroImage: null,
+        artistPage: "artists/guan-weixing.html",
+        featured: false
+    },
+
+    {
+        artist: "Guan Weixing",
+        title: "Pastoral Plateau",
+        medium: "GICLEE",
+        dimensions: '25" × 45"',
+        price: 1900,
+        category: "painting",
+        image: null,
+        heroImage: null,
+        artistPage: "artists/guan-weixing.html",
+        featured: false
+    },
+
+    {
+        artist: "Guan Weixing",
+        title: "Peasant Viewing the Opera",
+        medium: "GICLEE",
+        dimensions: '26" × 40"',
+        price: 1700,
+        category: "painting",
+        image: null,
+        heroImage: null,
+        artistPage: "artists/guan-weixing.html",
+        featured: false
+    },
+
+    {
+        artist: "Guan Weixing",
+        title: "Summer Night",
+        medium: "Watercolor",
+        dimensions: '29" × 19"',
+        price: 5000,
+        category: "watercolor",
+        image: "images/weixing-summer-night.png",
+        heroImage: null,
+        artistPage: "artists/guan-weixing.html",
+        featured: false
+    },
+
+    {
+        artist: "Guan Weixing",
+        title: "Tajik Girl",
+        medium: "Watercolor",
+        dimensions: "",
+        price: null,
+        category: "watercolor",
+        image: "images/weixing-tajit-girl.png",
+        heroImage: null,
+        artistPage: "artists/guan-weixing.html",
+        featured: false
+    },
+
+    {
+        artist: "Guan Weixing",
+        title: "Vance",
+        medium: "Watercolor",
+        dimensions: '17" × 22"',
+        price: 5000,
+        category: "watercolor",
+        image: "images/weixing-vance.png",
+        heroImage: null,
+        artistPage: "artists/guan-weixing.html",
+        featured: false
+    },
 
     // ==================================================
     // HARRISON RUCKER
@@ -617,10 +905,10 @@ window.artworks = [
         price: 5500,
         category: "painting",
         image: null,
+        heroImage: null,
         artistPage: null,
         featured: false
     },
-
 
     // ==================================================
     // JEFF BOTZ
@@ -639,7 +927,6 @@ window.artworks = [
         featured: true
     },
 
-
     // ==================================================
     // JULIA ROGERS
     // ==================================================
@@ -652,14 +939,74 @@ window.artworks = [
         price: 5500,
         category: "painting",
         image: null,
+        heroImage: null,
         artistPage: null,
         featured: false
     },
 
+    // ==================================================
+    // KARN CARTERN VAN GAMPER
+    // ==================================================
+
+    {
+        artist: "Karn Cartern Van Gamper",
+        title: "The Niagara & The Unicorn",
+        medium: "",
+        dimensions: "",
+        price: null,
+        category: "painting",
+        image: null,
+        heroImage: null,
+        artistPage: null,
+        featured: false
+    },
+
+    // ==================================================
+    // KARL WENNERGREN
+    // ==================================================
+
+    {
+        artist: "Karl Wennergren",
+        title: "Makullsbacken",
+        medium: "Oil on canvas",
+        dimensions: '12" × 16"',
+        price: 1900,
+        category: "painting",
+        image: null,
+        heroImage: null,
+        artistPage: null,
+        featured: false
+    },
+
+    {
+        artist: "Karl Wennergren",
+        title: "Two Sqashes",
+        medium: "Oil on canvas",
+        dimensions: "",
+        price: 1550,
+        category: "painting",
+        image: null,
+        heroImage: null,
+        artistPage: null,
+        featured: false
+    },
 
     // ==================================================
     // KATRIEL SREBNIK
     // ==================================================
+
+    {
+        artist: "Katriel Srebnik",
+        title: "A village in Normandie",
+        medium: "Oil",
+        dimensions: "",
+        price: 1800,
+        category: "painting",
+        image: null,
+        heroImage: null,
+        artistPage: "artists/katriel-srebnik.html",
+        featured: false
+    },
 
     {
         artist: "Katriel Srebnik",
@@ -669,6 +1016,7 @@ window.artworks = [
         price: 3900,
         category: "painting",
         image: "images/srebnik-a-winters-drive.jpg",
+        heroImage: null,
         artistPage: "artists/katriel-srebnik.html",
         featured: false
     },
@@ -681,6 +1029,33 @@ window.artworks = [
         price: 2900,
         category: "painting",
         image: null,
+        heroImage: null,
+        artistPage: "artists/katriel-srebnik.html",
+        featured: false
+    },
+
+    {
+        artist: "Katriel Srebnik",
+        title: "Chevron Sunset in Paris",
+        medium: "Oil on panel",
+        dimensions: "",
+        price: 2900,
+        category: "painting",
+        image: null,
+        heroImage: null,
+        artistPage: "artists/katriel-srebnik.html",
+        featured: false
+    },
+
+    {
+        artist: "Katriel Srebnik",
+        title: "Conductor Making the Rounds",
+        medium: "Oil",
+        dimensions: "",
+        price: 1800,
+        category: "painting",
+        image: null,
+        heroImage: null,
         artistPage: "artists/katriel-srebnik.html",
         featured: false
     },
@@ -693,14 +1068,130 @@ window.artworks = [
         price: 1600,
         category: "painting",
         image: null,
+        heroImage: null,
         artistPage: "artists/katriel-srebnik.html",
         featured: false
     },
 
+    {
+        artist: "Katriel Srebnik",
+        title: "Evening in Paris",
+        medium: "Oil on panel",
+        dimensions: "",
+        price: 2900,
+        category: "painting",
+        image: null,
+        heroImage: null,
+        artistPage: "artists/katriel-srebnik.html",
+        featured: false
+    },
 
-    // ==================================================
+    {
+        artist: "Katriel Srebnik",
+        title: "Sunlight and Shadow in Paris",
+        medium: "",
+        dimensions: "",
+        price: 2500,
+        category: "painting",
+        image: null,
+        heroImage: null,
+        artistPage: "artists/katriel-srebnik.html",
+        featured: false
+    }, 
+        // ==================================================
     // LISE ETHIER
     // ==================================================
+
+    {
+        artist: "Lise Ethier",
+        title: "curious",
+        medium: "Mixed media",
+        dimensions: '24" × 30"',
+        price: null,
+        category: "painting",
+        image: "images/ethier-curious.jpg",
+        heroImage: null,
+        artistPage: "artists/lisa-ethier.html",
+        featured: false
+    },
+
+    {
+        artist: "Lise Ethier",
+        title: "Etherea",
+        medium: "Oil & Cold Wax on board",
+        dimensions: '40" × 30"',
+        price: 3450,
+        category: "painting",
+        image: "images/ethier-etherea.jpg",
+        heroImage: null,
+        artistPage: "artists/lisa-ethier.html",
+        featured: false
+    },
+
+    {
+        artist: "Lise Ethier",
+        title: "Fluent in paradox",
+        medium: "Mixed media",
+        dimensions: '24" × 30"',
+        price: null,
+        category: "painting",
+        image: "images/ethier-fluent-in-paradox.jpg",
+        heroImage: null,
+        artistPage: "artists/lisa-ethier.html",
+        featured: false
+    },
+
+    {
+        artist: "Lise Ethier",
+        title: "Nocturna",
+        medium: "Oil & Cold Wax on board",
+        dimensions: '36" × 24"',
+        price: 3250,
+        category: "painting",
+        image: "images/ethier-nocturna.jpg",
+        heroImage: null,
+        artistPage: "artists/lisa-ethier.html",
+        featured: false
+    },
+
+    {
+        artist: "Lise Ethier",
+        title: "Please let there be light series I",
+        medium: "Oil & Cold Wax on board",
+        dimensions: "",
+        price: null,
+        category: "painting",
+        image: "images/ethier-please-let-there-be-light-series-I.jpg",
+        heroImage: null,
+        artistPage: "artists/lisa-ethier.html",
+        featured: false
+    },
+
+    {
+        artist: "Lise Ethier",
+        title: "Please let there be light series II",
+        medium: "Oil & Cold Wax on board",
+        dimensions: "",
+        price: null,
+        category: "painting",
+        image: "images/ethier-please-let-there-be-light-series-II.jpg",
+        heroImage: null,
+        artistPage: "artists/lisa-ethier.html",
+        featured: false
+    },
+
+    {
+        artist: "Lise Ethier",
+        title: "Please let there be light series III",
+        medium: "Oil & Cold Wax on board",
+        dimensions: "",
+        price: null,
+        category: "painting",
+        image: "images/ethier-please-let-there-be-light-series-III.jpg",
+        heroImage: null,
+        artistPage: "artists/lisa-ethier.html",
+        featured: false
+    },
 
     {
         artist: "Lise Ethier",
@@ -717,24 +1208,13 @@ window.artworks = [
 
     {
         artist: "Lise Ethier",
-        title: "Etherea",
-        medium: "Oil & Cold Wax on board",
-        dimensions: '40" × 30"',
-        price: 3450,
+        title: "Sovereign",
+        medium: "Mixed media",
+        dimensions: '24" × 30"',
+        price: null,
         category: "painting",
-        image: "images/ethier-etherea.jpg",
-        artistPage: "artists/lisa-ethier.html",
-        featured: false
-    },
-
-    {
-        artist: "Lise Ethier",
-        title: "Nocturna",
-        medium: "Oil & Cold Wax on board",
-        dimensions: '36" × 24"',
-        price: 3250,
-        category: "painting",
-        image: "images/ethier-nocturna.jpg",
+        image: "images/ethier-sovereign.jpg",
+        heroImage: null,
         artistPage: "artists/lisa-ethier.html",
         featured: false
     },
@@ -747,42 +1227,7 @@ window.artworks = [
         price: null,
         category: "painting",
         image: "images/ethier-the-far-stillness.jpg",
-        artistPage: "artists/lisa-ethier.html",
-        featured: false
-    },
-
-    {
-        artist: "Lise Ethier",
-        title: "curious",
-        medium: "mixed media",
-        dimensions: '24" × 30"',
-        price: null,
-        category: "painting",
-        image: "images/ethier-curious.jpg",
-        artistPage: "artists/lisa-ethier.html",
-        featured: false
-    },
-
-    {
-        artist: "Lise Ethier",
-        title: "Fluent in paradox",
-        medium: "mixed media",
-        dimensions: '24" × 30"',
-        price: null,
-        category: "painting",
-        image: "images/ethier-fluent-in-paradox.jpg",
-        artistPage: "artists/lisa-ethier.html",
-        featured: false
-    },
-
-    {
-        artist: "Lise Ethier",
-        title: "Sovereign",
-        medium: "mixed media",
-        dimensions: '24" × 30"',
-        price: null,
-        category: "painting",
-        image: "images/ethier-sovereign.jpg",
+        heroImage: null,
         artistPage: "artists/lisa-ethier.html",
         featured: false
     },
@@ -790,11 +1235,12 @@ window.artworks = [
     {
         artist: "Lise Ethier",
         title: "Unapologetically alive",
-        medium: "mixed media",
+        medium: "Mixed media",
         dimensions: '24" × 30"',
         price: null,
         category: "painting",
         image: "images/ethier-unapologetically-alive.jpg",
+        heroImage: null,
         artistPage: "artists/lisa-ethier.html",
         featured: false
     },
@@ -802,11 +1248,12 @@ window.artworks = [
     {
         artist: "Lise Ethier",
         title: "Unfiltered truth",
-        medium: "mixed media",
+        medium: "Mixed media",
         dimensions: '30" × 30"',
         price: null,
         category: "painting",
         image: "images/ethier-unfiltered-truth.jpg",
+        heroImage: null,
         artistPage: "artists/lisa-ethier.html",
         featured: false
     },
@@ -814,55 +1261,32 @@ window.artworks = [
     {
         artist: "Lise Ethier",
         title: "Unshakeable",
-        medium: "mixed media",
+        medium: "Mixed media",
         dimensions: '30" × 40"',
         price: null,
         category: "painting",
         image: "images/ethier-unshakeable.jpg",
+        heroImage: null,
         artistPage: "artists/lisa-ethier.html",
         featured: false
     },
-
-    {
-        artist: "Lise Ethier",
-        title: "Please let there be light series I",
-        medium: "Oil & Cold Wax on board",
-        dimensions: "",
-        price: null,
-        category: "painting",
-        image: "images/ethier-please-let-there-be-light-series-I.jpg",
-        artistPage: "artists/lisa-ethier.html",
-        featured: false
-    },
-
-    {
-        artist: "Lise Ethier",
-        title: "Please let there be light series II",
-        medium: "Oil & Cold Wax on board",
-        dimensions: "",
-        price: null,
-        category: "painting",
-        image: "images/ethier-please-let-there-be-light-series-II.jpg",
-        artistPage: "artists/lisa-ethier.html",
-        featured: false
-    },
-
-    {
-        artist: "Lise Ethier",
-        title: "Please let there be light series III",
-        medium: "Oil & Cold Wax on board",
-        dimensions: "",
-        price: null,
-        category: "painting",
-        image: "images/ethier-please-let-there-be-light-series-III.jpg",
-        artistPage: "artists/lisa-ethier.html",
-        featured: false
-    },
-
 
     // ==================================================
     // LINDY SCHILLACI
     // ==================================================
+
+    {
+        artist: "Lindy Schillaci",
+        title: "Eucalyptus in a China Vase",
+        medium: "Oil on panel",
+        dimensions: "",
+        price: null,
+        category: "painting",
+        image: "images/schillaci-eucalyptus-in-a-china-vase.jpg",
+        heroImage: null,
+        artistPage: "artists/lindy-schillaci.html",
+        featured: false
+    },
 
     {
         artist: "Lindy Schillaci",
@@ -872,6 +1296,7 @@ window.artworks = [
         price: 3600,
         category: "painting",
         image: "images/schillaci-oranges-and-grapes.jpg",
+        heroImage: null,
         artistPage: "artists/lindy-schillaci.html",
         featured: false
     },
@@ -884,6 +1309,7 @@ window.artworks = [
         price: null,
         category: "painting",
         image: null,
+        heroImage: null,
         artistPage: "artists/lindy-schillaci.html",
         featured: false
     },
@@ -896,6 +1322,7 @@ window.artworks = [
         price: 3800,
         category: "painting",
         image: "images/schillaci-turquoise-bowl.jpg",
+        heroImage: null,
         artistPage: "artists/lindy-schillaci.html",
         featured: false
     },
@@ -913,6 +1340,22 @@ window.artworks = [
         featured: true
     },
 
+    // ==================================================
+    // MARK SMIRNOV
+    // ==================================================
+
+    {
+        artist: "Mark Smirnov",
+        title: "Southern Italy",
+        medium: "Oil on canvas",
+        dimensions: "",
+        price: 1200,
+        category: "painting",
+        image: "images/smirnov-southern-italy.png",
+        heroImage: null,
+        artistPage: null,
+        featured: false
+    },
 
     // ==================================================
     // MATTHEW HILLIER
@@ -926,6 +1369,7 @@ window.artworks = [
         price: 22000,
         category: "painting",
         image: null,
+        heroImage: null,
         artistPage: "artists/matthew-hillier.html",
         featured: false
     },
@@ -938,6 +1382,7 @@ window.artworks = [
         price: 5500,
         category: "painting",
         image: "images/hillier-grey-heron-on-tire.jpg",
+        heroImage: null,
         artistPage: "artists/matthew-hillier.html",
         featured: false
     },
@@ -950,6 +1395,7 @@ window.artworks = [
         price: 24000,
         category: "painting",
         image: null,
+        heroImage: null,
         artistPage: "artists/matthew-hillier.html",
         featured: false
     },
@@ -965,6 +1411,19 @@ window.artworks = [
         heroImage: "images/hillier-jay-on-fence-hero.png",
         artistPage: "artists/matthew-hillier.html",
         featured: true
+    },
+
+    {
+        artist: "Matthew Hillier",
+        title: "Scarlet Macaws",
+        medium: "Mixed Media",
+        dimensions: "",
+        price: 1800,
+        category: "painting",
+        image: null,
+        heroImage: null,
+        artistPage: "artists/matthew-hillier.html",
+        featured: false
     },
 
     {
@@ -988,10 +1447,10 @@ window.artworks = [
         price: 28000,
         category: "painting",
         image: null,
+        heroImage: null,
         artistPage: "artists/matthew-hillier.html",
         featured: false
     },
-
 
     // ==================================================
     // NANCY CARROLL
@@ -1005,6 +1464,7 @@ window.artworks = [
         price: 1000,
         category: "painting",
         image: null,
+        heroImage: null,
         artistPage: "artists/nancy-carroll.html",
         featured: false
     },
@@ -1017,6 +1477,7 @@ window.artworks = [
         price: 1000,
         category: "painting",
         image: null,
+        heroImage: null,
         artistPage: "artists/nancy-carroll.html",
         featured: false
     },
@@ -1029,6 +1490,7 @@ window.artworks = [
         price: 3200,
         category: "painting",
         image: null,
+        heroImage: null,
         artistPage: "artists/nancy-carroll.html",
         featured: false
     },
@@ -1041,6 +1503,7 @@ window.artworks = [
         price: 3500,
         category: "painting",
         image: null,
+        heroImage: null,
         artistPage: "artists/nancy-carroll.html",
         featured: false
     },
@@ -1066,10 +1529,40 @@ window.artworks = [
         price: 3500,
         category: "painting",
         image: null,
+        heroImage: null,
         artistPage: "artists/nancy-carroll.html",
         featured: false
     },
 
+    // ==================================================
+    // NIGEL PRICE
+    // ==================================================
+
+    {
+        artist: "Nigel Price",
+        title: "Windswept",
+        medium: "Watercolor",
+        dimensions: "",
+        price: 1900,
+        category: "watercolor",
+        image: "images/price-windswept.png",
+        heroImage: null,
+        artistPage: null,
+        featured: false
+    },
+
+    {
+        artist: "Nigel Price",
+        title: "Yorkshire Farmhouse",
+        medium: "Watercolor",
+        dimensions: "",
+        price: 2400,
+        category: "watercolor",
+        image: "images/price-yorkshire-farmhouse-01.png",
+        heroImage: null,
+        artistPage: null,
+        featured: false
+    },
 
     // ==================================================
     // PAT DEWS
@@ -1083,6 +1576,7 @@ window.artworks = [
         price: 3000,
         category: "watercolor",
         image: "images/dews-birch-parade.jpg",
+        heroImage: null,
         artistPage: "artists/pat-dews.html",
         featured: false
     },
@@ -1095,6 +1589,7 @@ window.artworks = [
         price: 3000,
         category: "watercolor",
         image: null,
+        heroImage: null,
         artistPage: "artists/pat-dews.html",
         featured: false
     },
@@ -1107,6 +1602,7 @@ window.artworks = [
         price: 3000,
         category: "watercolor",
         image: "images/dews-iris-essence.jpg",
+        heroImage: null,
         artistPage: "artists/pat-dews.html",
         featured: false
     },
@@ -1119,6 +1615,7 @@ window.artworks = [
         price: 1800,
         category: "watercolor",
         image: "images/dews-luminosity.jpg",
+        heroImage: null,
         artistPage: "artists/pat-dews.html",
         featured: false
     },
@@ -1131,6 +1628,7 @@ window.artworks = [
         price: 9500,
         category: "painting",
         image: null,
+        heroImage: null,
         artistPage: "artists/pat-dews.html",
         featured: false
     },
@@ -1143,6 +1641,20 @@ window.artworks = [
         price: 1800,
         category: "watercolor",
         image: "images/dews-natures-dance.jpg",
+        heroImage: null,
+        artistPage: "artists/pat-dews.html",
+        featured: false
+    },
+
+    {
+        artist: "Pat Dews",
+        title: "Red Best",
+        medium: "Watercolor",
+        dimensions: "",
+        price: 2800,
+        category: "watercolor",
+        image: null,
+        heroImage: null,
         artistPage: "artists/pat-dews.html",
         featured: false
     },
@@ -1168,6 +1680,7 @@ window.artworks = [
         price: 1800,
         category: "watercolor",
         image: "images/dews-techi.jpg",
+        heroImage: null,
         artistPage: "artists/pat-dews.html",
         featured: false
     },
@@ -1180,12 +1693,11 @@ window.artworks = [
         price: 2400,
         category: "watercolor",
         image: "images/dews-turquoise-flowers-in-vase.jpg",
+        heroImage: null,
         artistPage: "artists/pat-dews.html",
         featured: false
     },
-
-
-    // ==================================================
+        // ==================================================
     // PETER ARCHER
     // ==================================================
 
@@ -1197,6 +1709,7 @@ window.artworks = [
         price: 8600,
         category: "painting",
         image: null,
+        heroImage: null,
         artistPage: "artists/peter-archer.html",
         featured: false
     },
@@ -1209,10 +1722,10 @@ window.artworks = [
         price: 6500,
         category: "painting",
         image: null,
+        heroImage: null,
         artistPage: "artists/peter-archer.html",
         featured: false
     },
-
 
     // ==================================================
     // RICHARD SEDLACK
@@ -1225,7 +1738,8 @@ window.artworks = [
         dimensions: '18" × 30"',
         price: 3400,
         category: "painting",
-        image: null,
+        image: "images/sedlack-alamance-tobacco-barn-01.jpg",
+        heroImage: null,
         artistPage: null,
         featured: false
     },
@@ -1237,7 +1751,8 @@ window.artworks = [
         dimensions: '16" × 20"',
         price: 2300,
         category: "painting",
-        image: null,
+        image: "images/sedlack-bear-springs-evening-01.png",
+        heroImage: null,
         artistPage: null,
         featured: false
     },
@@ -1249,7 +1764,8 @@ window.artworks = [
         dimensions: '16" × 30"',
         price: 3200,
         category: "painting",
-        image: null,
+        image: "images/sedlack-cape-hatteras-gaillardia-01.png",
+        heroImage: null,
         artistPage: null,
         featured: false
     },
@@ -1262,6 +1778,7 @@ window.artworks = [
         price: 4800,
         category: "painting",
         image: null,
+        heroImage: null,
         artistPage: null,
         featured: false
     },
@@ -1274,6 +1791,7 @@ window.artworks = [
         price: 4800,
         category: "painting",
         image: null,
+        heroImage: null,
         artistPage: null,
         featured: false
     },
@@ -1285,111 +1803,137 @@ window.artworks = [
         dimensions: '18" × 24"',
         price: 2800,
         category: "painting",
-        image: null,
+        image: "images/sedlack-outer-banks-dunes-01.png",
+        heroImage: null,
         artistPage: null,
         featured: false
     },
 
+    // ==================================================
+    // TOM CHRISTOPHER
+    // ==================================================
 
-// ==================================================
-// TOM CHRISTOPHER
-// ==================================================
+    {
+        artist: "Tom Christopher",
+        title: "Abandon Acreage",
+        medium: "Pastel",
+        dimensions: '22" × 27"',
+        price: 2800,
+        category: "painting",
+        image: "images/christopher-abandoned-acreage.png",
+        heroImage: null,
+        artistPage: "artists/tom-christopher.html",
+        featured: false
+    },
 
-{
-    artist: "Tom Christopher",
-    title: "Abandon Acreage",
-    medium: "Pastel",
-    dimensions: '22" × 27"',
-    price: 2800,
-    category: "painting",
-    image: "images/christopher-abandoned-acreage.png",
-    artistPage: "artists/tom-christopher.html",
-    featured: false
-},
+    {
+        artist: "Tom Christopher",
+        title: "Broken Fence",
+        medium: "Pastel",
+        dimensions: '15" × 20"',
+        price: 1850,
+        category: "painting",
+        image: "images/christopher-broken-fences.png",
+        heroImage: null,
+        artistPage: "artists/tom-christopher.html",
+        featured: false
+    },
 
-{
-    artist: "Tom Christopher",
-    title: "Broken Fence",
-    medium: "Pastel",
-    dimensions: '15" × 20"',
-    price: 1850,
-    category: "painting",
-    image: "images/christopher-broken-fences.png",
-    artistPage: "artists/tom-christopher.html",
-    featured: false
-},
+    {
+        artist: "Tom Christopher",
+        title: "BW Street Study",
+        medium: "Pastel",
+        dimensions: '19" × 16"',
+        price: 950,
+        category: "painting",
+        image: "images/christopher-b&w-street-scene.png",
+        heroImage: "images/christopher-b&w-street-scene-hero.png",
+        artistPage: "artists/tom-christopher.html",
+        featured: false
+    },
 
-{
-    artist: "Tom Christopher",
-    title: "BW Street Study",
-    medium: "Pastel",
-    dimensions: '19" × 16"',
-    price: 950,
-    category: "painting",
-    image: "images/christopher-b&w-street-scene.png",
-    artistPage: "artists/tom-christopher.html",
-    featured: false
-},
+    {
+        artist: "Tom Christopher",
+        title: "Early Autumn",
+        medium: "",
+        dimensions: "",
+        price: null,
+        category: "painting",
+        image: "images/christopher-early-autumn.png",
+        heroImage: null,
+        artistPage: "artists/tom-christopher.html",
+        featured: false
+    },
 
-{
-    artist: "Tom Christopher",
-    title: "Eighty Acres",
-    medium: "Pastel",
-    dimensions: '18" × 24"',
-    price: 2500,
-    category: "painting",
-    image: "images/christopher-eighty-acres.png",
-    artistPage: "artists/tom-christopher.html",
-    featured: false
-},
+    {
+        artist: "Tom Christopher",
+        title: "Eighty Acres",
+        medium: "Pastel",
+        dimensions: '18" × 24"',
+        price: 2500,
+        category: "painting",
+        image: "images/christopher-eighty-acres.png",
+        heroImage: null,
+        artistPage: "artists/tom-christopher.html",
+        featured: false
+    },
 
-{
-    artist: "Tom Christopher",
-    title: "Red Roof Barn",
-    medium: "Pastel",
-    dimensions: '22" × 28"',
-    price: 2500,
-    category: "painting",
-    image: null,
-    artistPage: "artists/tom-christopher.html",
-    featured: false
-},
+    {
+        artist: "Tom Christopher",
+        title: "Red Roof Barn",
+        medium: "Pastel",
+        dimensions: '22" × 28"',
+        price: 2500,
+        category: "painting",
+        image: null,
+        heroImage: null,
+        artistPage: "artists/tom-christopher.html",
+        featured: false
+    },
 
-{
-    artist: "Tom Christopher",
-    title: "Street Scene #3",
-    medium: "Pastel",
-    dimensions: '20" × 16"',
-    price: 750,
-    category: "painting",
-    image: "images/christopher-street-scene-III.png",
-    artistPage: "artists/tom-christopher.html",
-    featured: false
-},
+    {
+        artist: "Tom Christopher",
+        title: "Street Scene #3",
+        medium: "Pastel",
+        dimensions: '20" × 16"',
+        price: 750,
+        category: "painting",
+        image: "images/christopher-street-scene-III.png",
+        heroImage: null,
+        artistPage: "artists/tom-christopher.html",
+        featured: false
+    },
 
-  {
-    artist: "Vicky Cox",
-    title: "Magnolias",
-    medium: "Color pencil",
-    dimensions: '31" × 23"',
-    price: 1800,
-    category: "painting",
-    image: "images/cox-magnolias.png",
-    artistPage: null,
-    featured: false
-},
+    // ==================================================
+    // VICKY COX
+    // ==================================================
 
-{
-    artist: "Vicky Cox",
-    title: "Passion Fruit & Flowers",
-    medium: "Color pencil",
-    dimensions: '29" × 21"',
-    price: 1800,
-    category: "painting",
-    image: "images/cox-passion-fruit-and-flowers.png",
-    artistPage: null,
-    featured: false
-},
+    {
+        artist: "Vicky Cox",
+        title: "Magnolias",
+        medium: "Color pencil",
+        dimensions: '31" × 23"',
+        price: 1800,
+        category: "painting",
+        image: "images/cox-magnolias.png",
+        heroImage: null,
+        artistPage: null,
+        featured: false
+    },
+
+    {
+        artist: "Vicky Cox",
+        title: "Passion Fruit & Flowers",
+        medium: "Color pencil",
+        dimensions: '29" × 21"',
+        price: 1800,
+        category: "painting",
+        image: "images/cox-passion-fruit-and-flowers.png",
+        heroImage: null,
+        artistPage: null,
+        featured: false
+    },
+
     // ==================================================
     // WENDY MUSSER FLECK
     // ==================================================
@@ -1402,6 +1946,20 @@ window.artworks = [
         price: 3000,
         category: "painting",
         image: null,
+        heroImage: null,
+        artistPage: "artists/wendy-musser.html",
+        featured: false
+    },
+
+    {
+        artist: "Wendy Musser Fleck",
+        title: "Afternoon in the Valley",
+        medium: "Pastel",
+        dimensions: "",
+        price: 1200,
+        category: "painting",
+        image: "images/fleck-afternoon-in-the-valley.png",
+        heroImage: null,
         artistPage: "artists/wendy-musser.html",
         featured: false
     },
@@ -1414,6 +1972,20 @@ window.artworks = [
         price: 4000,
         category: "painting",
         image: null,
+        heroImage: null,
+        artistPage: "artists/wendy-musser.html",
+        featured: false
+    },
+
+    {
+        artist: "Wendy Musser Fleck",
+        title: "Enchanted Marsh",
+        medium: "Pastel",
+        dimensions: "",
+        price: 1100,
+        category: "painting",
+        image: "images/fleck-enchanted-marsh.png",
+        heroImage: null,
         artistPage: "artists/wendy-musser.html",
         featured: false
     },
@@ -1425,7 +1997,34 @@ window.artworks = [
         dimensions: '24" × 36"',
         price: 2400,
         category: "painting",
-        image: null,
+        image: "images/fleck-high-dunes.png",
+        heroImage: null,
+        artistPage:"artists/wendy-musser.html",
+        featured: false
+    },
+
+    {
+        artist: "Wendy Musser Fleck",
+        title: "Live Oak Stands",
+        medium: "Pastel",
+        dimensions: "",
+        price: 825,
+        category: "painting",
+        image: "images/fleck-live-oak-stands.png",
+        heroImage: null,
+        artistPage: "artists/wendy-musser.html",
+        featured: false
+    },
+
+    {
+        artist: "Wendy Musser Fleck",
+        title: "Marsh Tidal Pool",
+        medium: "Pastel",
+        dimensions: "",
+        price: 1100,
+        category: "painting",
+        image: "images/fleck-marsh-tidal-pool.png",
+        heroImage: null,
         artistPage: "artists/wendy-musser.html",
         featured: false
     },

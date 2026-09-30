@@ -20,7 +20,7 @@
 </head>
 
 
-<body>
+<body data-artist="Pat Dews">
 
 
     <!-- =========================================
@@ -296,258 +296,12 @@
     </div>
 
 
-    <div class="artist-works-grid">
-
-
-        <!-- BIRCH PARADE -->
-
-        <article class="artist-work">
-
-            <button
-                class="artwork-gallery-trigger"
-                type="button"
-                data-title="Birch Parade"
-                data-images="../images/dews-birch-parade.jpg"
-            >
-
-                <div class="artwork-image-wrap">
-
-                    <img
-                        src="../images/dews-birch-parade.jpg"
-                        alt="Birch Parade by Pat Dews"
-                    >
-
-                    <span class="artwork-view-label">
-                        View Artwork
-                    </span>
-
-                </div>
-
-            </button>
-
-            <div class="artwork-details">
-
-                <h3>Birch Parade</h3>
-
-            </div>
-
-        </article>
-
-
-
-        <!-- IRIS ESSENCE -->
-
-        <article class="artist-work">
-
-            <button
-                class="artwork-gallery-trigger"
-                type="button"
-                data-title="Iris Essence"
-                data-images="../images/dews-iris-essence.jpg"
-            >
-
-                <div class="artwork-image-wrap">
-
-                    <img
-                        src="../images/dews-iris-essence.jpg"
-                        alt="Iris Essence by Pat Dews"
-                    >
-
-                    <span class="artwork-view-label">
-                        View Artwork
-                    </span>
-
-                </div>
-
-            </button>
-
-            <div class="artwork-details">
-
-                <h3>Iris Essence</h3>
-
-            </div>
-
-        </article>
-
-
-
-        <!-- LUMINOSITY -->
-
-        <article class="artist-work">
-
-            <button
-                class="artwork-gallery-trigger"
-                type="button"
-                data-title="Luminosity"
-                data-images="../images/dews-luminosity.jpg"
-            >
-
-                <div class="artwork-image-wrap">
-
-                    <img
-                        src="../images/dews-luminosity.jpg"
-                        alt="Luminosity by Pat Dews"
-                    >
-
-                    <span class="artwork-view-label">
-                        View Artwork
-                    </span>
-
-                </div>
-
-            </button>
-
-            <div class="artwork-details">
-
-                <h3>Luminosity</h3>
-
-            </div>
-
-        </article>
-
-
-
-        <!-- NATURE'S DANCE -->
-
-        <article class="artist-work">
-
-            <button
-                class="artwork-gallery-trigger"
-                type="button"
-                data-title="Nature's Dance"
-                data-images="../images/dews-natures-dance.jpg"
-            >
-
-                <div class="artwork-image-wrap">
-
-                    <img
-                        src="../images/dews-natures-dance.jpg"
-                        alt="Nature's Dance by Pat Dews"
-                    >
-
-                    <span class="artwork-view-label">
-                        View Artwork
-                    </span>
-
-                </div>
-
-            </button>
-
-            <div class="artwork-details">
-
-                <h3>Nature's Dance</h3>
-
-            </div>
-
-        </article>
-
-
-
-        <!-- TECHI -->
-
-        <article class="artist-work">
-
-            <button
-                class="artwork-gallery-trigger"
-                type="button"
-                data-title="Techi"
-                data-images="../images/dews-techi.jpg"
-            >
-
-                <div class="artwork-image-wrap">
-
-                    <img
-                        src="../images/dews-techi.jpg"
-                        alt="Techi by Pat Dews"
-                    >
-
-                    <span class="artwork-view-label">
-                        View Artwork
-                    </span>
-
-                </div>
-
-            </button>
-
-            <div class="artwork-details">
-
-                <h3>Techi</h3>
-
-            </div>
-
-        </article>
-
-<!-- SLIPPERY SLOPE -->
-
-<article class="artist-work">
-
-    <button
-        class="artwork-gallery-trigger"
-        type="button"
-        data-title="Slippery Slope"
-        data-images="../images/dews-slippery-slope.jpg"
-    >
-
-        <div class="artwork-image-wrap">
-
-            <img
-                src="../images/dews-slippery-slope.jpg"
-                alt="Slippery Slope by Pat Dews"
-            >
-
-            <span class="artwork-view-label">
-                View Artwork
-            </span>
-
-        </div>
-
-    </button>
-
-    <div class="artwork-details">
-
-        <h3>Slippery Slope</h3>
-
-    </div>
-
-</article>
-
-        <!-- TURQUOISE FLOWERS IN VASE -->
-
-        <article class="artist-work">
-
-            <button
-                class="artwork-gallery-trigger"
-                type="button"
-                data-title="Turquoise Flowers in Vase"
-                data-images="../images/dews-turquoise-flowers-in-vase.jpg"
-            >
-
-                <div class="artwork-image-wrap">
-
-                    <img
-                        src="../images/dews-turquoise-flowers-in-vase.jpg"
-                        alt="Turquoise Flowers in Vase by Pat Dews"
-                    >
-
-                    <span class="artwork-view-label">
-                        View Artwork
-                    </span>
-
-                </div>
-
-            </button>
-
-            <div class="artwork-details">
-
-                <h3>Turquoise Flowers in Vase</h3>
-
-            </div>
-
-        </article>
-
-
-    </div>
-
+ <div
+    class="artist-works-grid"
+    id="artistWorks"
+></div>
+
+</section>
 </section>
 
 
@@ -1000,6 +754,9 @@
 
 
     </footer>
+
+    <script src="../artwork-data.js"></script>
+<script src="../artist-page.js"></script>
 
 
 </body>

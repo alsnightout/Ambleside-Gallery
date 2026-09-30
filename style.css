@@ -148,7 +148,6 @@ h3 {
     width: 100%;
 }
 
-
 /* =========================================
    HERO
 ========================================= */
@@ -157,7 +156,11 @@ h3 {
     position: relative;
     min-height: 86vh;
     overflow: hidden;
+    background-color: #24231f;
 }
+
+
+/* HERO ARTWORK */
 
 .hero-artwork {
     position: absolute;
@@ -170,6 +173,7 @@ h3 {
     object-position: center;
 
     z-index: 0;
+
     opacity: 1;
 
     transition:
@@ -177,20 +181,31 @@ h3 {
         transform 8s ease;
 }
 
+
+/* DARK GRADIENT OVER ARTWORK */
+
 .hero::after {
     content: "";
 
     position: absolute;
     inset: 0;
 
-    background: linear-gradient(
-        rgba(15, 15, 12, 0.22),
-        rgba(15, 15, 12, 0.30)
-    );
+    background:
+        linear-gradient(
+            90deg,
+            rgba(18, 18, 15, 0.58) 0%,
+            rgba(18, 18, 15, 0.32) 38%,
+            rgba(18, 18, 15, 0.08) 68%,
+            rgba(18, 18, 15, 0.02) 100%
+        );
 
     z-index: 1;
+
     pointer-events: none;
 }
+
+
+/* IMAGE ROTATION */
 
 .hero-artwork.hero-fade {
     opacity: 0;
@@ -200,34 +215,84 @@ h3 {
     transform: scale(1.025);
 }
 
+
+/* HERO LAYOUT */
+
 .hero-overlay {
+    position: relative;
+    z-index: 2;
+
     min-height: 86vh;
 
     display: flex;
-    align-items: flex-end;
+    align-items: center;
 
-    padding: 8% 6%;
+    padding: 8% 7%;
 }
+
+
+/* TEXT AREA */
 
 .hero-content {
     color: white;
-    max-width: 900px;
+
+    width: 100%;
+    max-width: 720px;
 }
+
+
+/* SMALL AMBLESIDE LABEL */
 
 .hero-content .eyebrow {
-    margin-bottom: 24px;
+    margin-bottom: 28px;
+
+    font-size: 11px;
+
+    letter-spacing: 0.23em;
+
+    opacity: 0.82;
 }
 
-.hero h1 {
-    font-size: clamp(55px, 7vw, 105px);
+
+/* MAIN HEADLINE */
+
+.hero-title {
+    margin: 0 0 44px;
+
+    font-weight: 400;
+
+    letter-spacing: -0.025em;
+}
+
+
+/* FIRST LINE */
+
+.hero-title-main {
+    display: block;
+
+    max-width: 680px;
+
+    font-size: clamp(48px, 5.6vw, 82px);
 
     line-height: 0.98;
-
-    letter-spacing: -2px;
-
-    margin-bottom: 45px;
 }
 
+
+/* SECOND LINE */
+
+.hero-title-secondary {
+    display: block;
+
+    max-width: 600px;
+
+    margin-top: 16px;
+
+    font-size: clamp(30px, 3.6vw, 52px);
+
+    line-height: 1.04;
+
+    opacity: 0.88;
+}
 
 /* =========================================
    BUTTONS
@@ -8061,4 +8126,13 @@ h2 {
         gap: 10px;
     }
 
+}
+.about-statement-subtext {
+    max-width: 560px;
+    margin: 2rem auto 0;
+    font-size: 1rem;
+    line-height: 1.7;
+    letter-spacing: 0.04em;
+    opacity: 0.75;
+    text-align: center;
 }
