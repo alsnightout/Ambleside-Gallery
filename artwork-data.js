@@ -1494,7 +1494,7 @@ window.artworks = [
         dimensions: '36" × 12"',
         price: 7900,
         category: "painting",
-        image: "images/hillier-jay-on-fence-hero.png",
+        image: "images/hillier-jay-on-a-fence-hero.png",
         heroImage: "images/hillier-jay-on-fence-framed.jpg",
         artistPage: "artists/matthew-hillier.html",
         featured: true
@@ -1603,7 +1603,10 @@ window.artworks = [
         price: 4800,
         category: "painting",
         image: "images/carroll-nod-to-sunflowers-hero.png",
-        heroImage: "images/carroll-nod-to-sunflowers-framed.png",
+        images: [
+            "images/carroll-nod-to-sunflowers-hero.png",
+            "images/carroll-nod-to-sunflowers-framed.png"
+        ],
         artistPage: "artists/nancy-carroll.html",
         featured: true
     },
@@ -1634,7 +1637,7 @@ window.artworks = [
         category: "watercolor",
         image: "images/price-windswept-hero.png",
         heroImage: "images/price-windswept-framed.png",
-        artistPage: null,
+        artistPage: "artists/nigel-price.html",
         featured: false
     },
 
@@ -1647,7 +1650,7 @@ window.artworks = [
         category: "watercolor",
         image: "images/price-yorkshire-farmhouse-hero.png",
         heroImage: "images/price-yorkshire-farmhouse-framed.png",
-        artistPage: null,
+        artistPage: "artists/nigel-price.html",
         featured: false
     },
 

@@ -34,7 +34,7 @@
         <div class="logo">
 
             <a href="index.html">
-                AMBLESIDE
+                AMBLESIDE GALLERY
             </a>
 
         </div>
@@ -184,7 +184,7 @@
             <div class="footer-brand">
 
                 <h2>
-                    AMBLESIDE
+                    AMBLESIDE GALLERY
                 </h2>
 
                 <p>
@@ -266,253 +266,67 @@
 
 
 
-    <!-- =========================================
-         COLLECTION PAGE LOGIC
-    ========================================== -->
-
-    <script>
-
-        const collectionGrid =
-            document.getElementById("collectionGrid");
-
-        const collectionCount =
-            document.getElementById("collectionCount");
-
-        const filterButtons =
-            document.querySelectorAll(".collection-filter");
-
-
-
-        /* =========================================
-           FORMAT PRICE
-        ========================================== */
-
-        function formatPrice(price) {
-
-            if (
-                price === null ||
-                price === undefined ||
-                price === ""
-            ) {
-                return "";
-            }
-
-            return new Intl.NumberFormat(
-                "en-US",
-                {
-                    style: "currency",
-                    currency: "USD",
-                    maximumFractionDigits: 0
-                }
-            ).format(price);
-
-        }
-
-
-
-        /* =========================================
-           BUILD COLLECTION
-        ========================================== */
-
-        function renderCollection(filter = "all") {
-
-
-            collectionGrid.innerHTML = "";
-
-
-            /*
-            Only show works that currently have
-            a website image assigned.
-            */
-
-            const availableWorks =
-                window.artworks.filter((artwork) => {
-
-                    return artwork.image;
-
-                });
-
-
-
-            const visibleWorks =
-                availableWorks.filter((artwork) => {
-
-                    return (
-                        filter === "all" ||
-                        artwork.category === filter
-                    );
-
-                });
-
-
-
-            visibleWorks.forEach((artwork) => {
-
-
-                const article =
-                    document.createElement("article");
-
-
-                article.className =
-                    "artwork-card";
-
-
-
-                const dimensionMarkup =
-                    artwork.dimensions
-                        ? `
-                            <p class="artwork-dimensions">
-                                ${artwork.dimensions}
-                            </p>
-                          `
-                        : "";
-
-
-
-                const priceMarkup =
-                    artwork.price
-                        ? `
-                            <p class="artwork-price">
-                                ${formatPrice(artwork.price)}
-                            </p>
-                          `
-                        : "";
-
-
-
-                article.innerHTML = `
-
-                    <a
-                        href="${artwork.artistPage}"
-                        class="collection-artwork-link"
-                    >
-
-                        <div class="collection-artwork-image">
-
-                            <img
-                                src="${artwork.image}"
-                                alt="${artwork.title} by ${artwork.artist}"
-                                loading="lazy"
-                            >
-
-                            <span class="collection-view-label">
-                                View Artwork
-                            </span>
-
-                        </div>
-
-
-                        <div class="artwork-info">
-
-                            <h2>
-                                ${artwork.title}
-                            </h2>
-
-
-                            <p class="artwork-artist">
-                                ${artwork.artist}
-                            </p>
-
-
-                            <p class="artwork-medium">
-                                ${artwork.medium}
-                            </p>
-
-
-                            ${dimensionMarkup}
-
-
-                            ${priceMarkup}
-
-                        </div>
-
-                    </a>
-
-                `;
-
-
-
-                collectionGrid.appendChild(article);
-
-            });
-
-
-
-            collectionCount.textContent =
-                `${visibleWorks.length} ${
-                    visibleWorks.length === 1
-                        ? "work"
-                        : "works"
-                }`;
-
-        }
-
-
-
-        /* =========================================
-           FILTER BUTTONS
-        ========================================== */
-
-        filterButtons.forEach((button) => {
-
-
-            button.addEventListener(
-                "click",
-                () => {
-
-
-                    filterButtons.forEach(
-                        (otherButton) => {
-
-                            otherButton
-                                .classList
-                                .remove("active");
-
-                        }
-                    );
-
-
-                    button
-                        .classList
-                        .add("active");
-
-
-                    renderCollection(
-                        button.dataset.filter
-                    );
-
-                }
-            );
-
-        });
-
-
-
-        /* =========================================
-           INITIAL PAGE LOAD
-        ========================================== */
-
-        if (
-            window.artworks &&
-            Array.isArray(window.artworks)
-        ) {
-
-            renderCollection();
-
-        } else {
-
-            collectionCount.textContent =
-                "Collection data could not be loaded.";
-
-            console.error(
-                "artwork-data.js did not load correctly."
-            );
-
-        }
-
-    </script>
-
+<!-- =========================================
+     COLLECTION ARTWORK LIGHTBOX
+========================================= -->
+
+<div
+    class="artwork-lightbox"
+    id="collectionLightbox"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Artwork viewer"
+>
+
+    <button
+        class="lightbox-close"
+        type="button"
+        aria-label="Close artwork viewer"
+    >
+        ×
+    </button>
+
+    <button
+        class="lightbox-arrow lightbox-prev"
+        type="button"
+        aria-label="Previous image"
+    >
+        ←
+    </button>
+
+    <div class="lightbox-content">
+
+        <img
+            id="collectionLightboxImage"
+            src=""
+            alt=""
+        >
+
+        <div class="lightbox-info">
+
+            <h2 id="collectionLightboxTitle"></h2>
+            <p id="collectionLightboxCounter"></p>
+
+        </div>
+
+    </div>
+
+    <button
+        class="lightbox-arrow lightbox-next"
+        type="button"
+        aria-label="Next image"
+    >
+        →
+    </button>
+
+</div>
+
+
+<!-- =========================================
+     COLLECTION PAGE JAVASCRIPT
+========================================= -->
+
+<script src="collection-page.js"></script>
 
 </body>
-
 </html>

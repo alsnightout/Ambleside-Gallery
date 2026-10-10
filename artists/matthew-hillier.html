@@ -86,49 +86,61 @@
         </section>
 
 
+<!-- =========================================
+     FEATURED WORK — MATTHEW HILLIER
+========================================= -->
 
-        <!-- =========================================
-             FEATURED WORK
-        ========================================== -->
+<section class="artist-featured-work">
 
-        <section class="hillier-featured-work">
+    <!-- FEATURED IMAGE -->
 
-            <div class="hillier-featured-heading">
+    <div class="artist-featured-image">
 
-                <p class="eyebrow">
-                    FEATURED WORK
-                </p>
+        <img
+            src="../images/hillier-grey-heron-on-a-tire-hero.png"
+            alt="Grey Heron on Tire by Matthew Hillier"
+        >
 
-            </div>
-
-
-            <figure class="hillier-featured-figure">
-
-                <div class="hillier-featured-image">
-
-                    <img
-                        src="../images/hillier-grey-heron-on-tire.jpg"
-                        alt="Grey Heron on Tire by Matthew Hillier"
-                    >
-
-                </div>
+    </div>
 
 
-                <figcaption class="hillier-featured-caption">
+    <!-- FEATURED INFORMATION -->
 
-                    <h2>
-                        Grey Heron on Tire
-                    </h2>
+    <div class="artist-featured-info">
 
-                    <p>
-                        Matthew Hillier
-                    </p>
+        <p class="eyebrow">
+            FEATURED WORK
+        </p>
 
-                </figcaption>
+        <h2>
+            Grey Heron on Tire
+        </h2>
 
-            </figure>
+        <p class="artist-featured-name">
+            Matthew Hillier
+        </p>
 
-        </section>
+        <p class="artist-featured-details">
+            ACRYLIC ON PANEL
+        </p>
+
+        <p class="artist-featured-details">
+            20" × 36"
+        </p>
+
+        <p class="artist-featured-details">
+            $5,500
+        </p>
+
+        <p class="artist-featured-description">
+            A striking study of wildlife and the
+            unexpected relationship between nature
+            and the industrial landscape.
+        </p>
+
+    </div>
+
+</section>
 
 
 
@@ -525,7 +537,7 @@
             <div class="footer-brand">
 
                 <h2>
-                    AMBLESIDE
+                    AMBLESIDE GALLERY
                 </h2>
 
                 <p>
@@ -604,10 +616,39 @@
 
     </footer>
 
-    <!-- =========================================
-         ARTWORK LIGHTBOX SCRIPT
-    ========================================== -->
+<!-- =========================================
+     ARTWORK LIGHTBOX
+========================================= -->
 
+<div class="artwork-lightbox" id="artworkLightbox">
+
+    <button class="lightbox-close" type="button"
+            aria-label="Close artwork viewer">
+        ×
+    </button>
+
+    <button class="lightbox-arrow lightbox-prev"
+            type="button" aria-label="Previous image">
+        ←
+    </button>
+
+    <div class="lightbox-content">
+
+        <img id="lightboxImage" src="" alt="">
+
+        <div class="lightbox-info">
+            <h2 id="lightboxTitle"></h2>
+            <p id="lightboxCounter"></p>
+        </div>
+
+    </div>
+
+    <button class="lightbox-arrow lightbox-next"
+            type="button" aria-label="Next image">
+        →
+    </button>
+
+</div>
     <script src="../artwork-data.js"></script>
 <script src="../artist-page.js"></script>
 

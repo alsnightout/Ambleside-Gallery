@@ -8347,3 +8347,63 @@ h2 {
         aspect-ratio: 1 / 1;
     }
 }
+/* =========================================
+   COLLECTION ARTWORK VIEWER
+========================================= */
+
+.collection-artwork-link {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    text-align: left;
+    cursor: zoom-in;
+}
+
+.collection-artwork-link .collection-artwork-image {
+    width: 100%;
+}
+
+.collection-artwork-link:focus-visible {
+    outline: 2px solid #555047;
+    outline-offset: 5px;
+}
+
+.artwork-info a.artwork-artist {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+}
+
+.artwork-info a.artwork-artist:hover {
+    text-decoration: underline;
+}
+
+/* Keep existing lightbox CSS, but hide unused arrows. */
+
+#collectionLightbox .lightbox-arrow[hidden] {
+    display: none !important;
+}
+/* =========================================
+   JEFF BOTZ — FEATURED WORK TITLE
+========================================= */
+
+body[data-artist="Jeff Botz"]
+.artist-featured-info h2 {
+    font-size: clamp(2.5rem, 3.5vw, 3.8rem);
+    line-height: 1.12;
+    letter-spacing: -0.025em;
+}
+/* =========================================
+   WENDY MUSSER FLECK — FEATURED WORK
+========================================= */
+
+body[data-artist="Wendy Musser Fleck"]
+.artist-featured-info h2 {
+    font-size: clamp(2.5rem, 3.5vw, 3.8rem);
+    line-height: 1.12;
+    letter-spacing: -0.025em;
+}
