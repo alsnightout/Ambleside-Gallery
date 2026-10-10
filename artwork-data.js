@@ -28,7 +28,7 @@ window.artworks = [
         dimensions: '36" × 48"',
         price: 6800,
         category: "painting",
-        image: null,
+        image: "images/hennings-a-sight-to-behold-hero.png",
         heroImage: null,
         artistPage: null,
         featured: false
@@ -41,7 +41,7 @@ window.artworks = [
         dimensions: "",
         price: 1800,
         category: "painting",
-        image: null,
+        image: "images/hennings-beautiful-kisa-hero.png",
         heroImage: null,
         artistPage: null,
         featured: false
@@ -54,7 +54,7 @@ window.artworks = [
         dimensions: "",
         price: 2400,
         category: "painting",
-        image: null,
+        image: "images/hennings-flamingo-hero.png",
         heroImage: null,
         artistPage: null,
         featured: false
@@ -67,7 +67,7 @@ window.artworks = [
         dimensions: '14" × 18"',
         price: 3200,
         category: "painting",
-        image: null,
+        image: "images/hennings-patriot-hero.png",
         heroImage: null,
         artistPage: null,
         featured: false
@@ -80,7 +80,7 @@ window.artworks = [
         dimensions: '14" × 18"',
         price: 3800,
         category: "painting",
-        image: null,
+        image: "images/hennings-ready-to-go-hero.png",
         heroImage: null,
         artistPage: null,
         featured: false
@@ -405,7 +405,7 @@ window.artworks = [
         dimensions: "",
         price: 2800,
         category: "watercolor",
-        image: null,
+        image: "images/easton-breakfast-table-in-yellow-hero.png",
         heroImage: null,
         artistPage: null,
         featured: false
@@ -418,7 +418,7 @@ window.artworks = [
         dimensions: "",
         price: 2400,
         category: "watercolor",
-        image: null,
+        image: "images/easton-cyclamen-hero.png",
         heroImage: null,
         artistPage: null,
         featured: false
@@ -432,23 +432,23 @@ window.artworks = [
         artist: "Deborah Squier",
         title: "Lingering Light",
         medium: "Pastel",
-        dimensions: '22" × 36"',
-        price: 4800,
+        dimensions: '22" × 30"',
+        price: 4600,
         category: "painting",
-        image: null,
+        image: "images/squier-lingering-light-hero.png",
         heroImage: null,
         artistPage: "artists/deborah-squier.html",
-        featured: false
+        featured: true
     },
 
     {
         artist: "Deborah Squier",
-        title: "Sunset Lake Pine",
+        title: "Letting Go",
         medium: "Oil on canvas",
         dimensions: '12" × 24"',
-        price: null,
+        price: 3800,
         category: "painting",
-        image: null,
+        image: "images/squier-letting-go-hero.png",
         heroImage: null,
         artistPage: "artists/deborah-squier.html",
         featured: false
@@ -456,29 +456,68 @@ window.artworks = [
 
     {
         artist: "Deborah Squier",
-        title: "Sunset Over Pastel Lake",
+        title: "Sunset Over Lake",
         medium: "Oil on canvas",
         dimensions: '20" × 20"',
+        price: 3800,
+        category: "painting",
+        image: "images/squier-sunset-over-lake-hero.png",
+        heroImage: null,
+        artistPage: "artists/deborah-squier.html",
+        featured: true
+    },
+
+    {
+        artist: "Deborah Squier",
+        title: "Meadow",
+        medium: "Oil on canvas",
+        dimensions: '12" × 24"',
+        price: 3800,
+        category: "painting",
+        image: "images/squier-meadow-hero.png",
+        heroImage: null,
+        artistPage: "artists/deborah-squier.html",
+        featured: true
+    },
+       {
+        artist: "Deborah Squier",
+        title: null,
+        medium: "Oil on canvas",
+        dimensions: '22" × 30"',
         price: null,
         category: "painting",
-        image: null,
+        image: "images/squier-01.png",
+        heroImage: null,
+        artistPage: "artists/deborah-squier.html",
+        featured: false
+    },
+       {
+        artist: "Deborah Squier",
+        title: null,
+        medium: "Oil on canvas",
+        dimensions: '12" × 12"',
+        price: null,
+        category: "painting",
+        image: "images/squier-02.png",
+        heroImage: null,
+        artistPage: "artists/deborah-squier.html",
+        featured: false
+    },
+       {
+        artist: "Deborah Squier",
+        title: null,
+        medium: "Oil on canvas",
+        dimensions: '12" × 12"',
+        price: null,
+        category: "painting",
+        image: "images/squier-03.png",
         heroImage: null,
         artistPage: "artists/deborah-squier.html",
         featured: false
     },
 
-    {
-        artist: "Deborah Squier",
-        title: "Wildflower",
-        medium: "Oil on canvas",
-        dimensions: '12" × 24"',
-        price: null,
-        category: "painting",
-        image: null,
-        heroImage: null,
-        artistPage: "artists/deborah-squier.html",
-        featured: false
-    },
+
+
 
     // ==================================================
     // DINO PARAVANO
@@ -491,7 +530,43 @@ window.artworks = [
         dimensions: '22" × 30"',
         price: 9600,
         category: "painting",
-        image: null,
+        image: "images/paravano-broken-wing-bluff-hero.png",
+        heroImage: null,
+        artistPage: null,
+        featured: false
+    },
+    {
+        artist: "Dino Paravano",
+        title: "Alamance Farmhouse",
+        medium: "Oil on Canvas",
+        dimensions: '22" × 30"',
+        price: 8500,
+        category: "painting",
+        image: "images/paravano-alamance-farmhouse-hero.png",
+        heroImage: null,
+        artistPage: null,
+        featured: false
+    },
+    {
+        artist: "Dino Paravano",
+        title: "Two Zebras",
+        medium: "Oil on Canvas",
+        dimensions: '22" × 30"',
+        price: 8500,
+        category: "painting",
+        image: "images/paravano-two-zebras-hero.png",
+        heroImage: null,
+        artistPage: null,
+        featured: false
+    },
+    {
+        artist: "Dino Paravano",
+        title: "Fishing Trawlers",
+        medium: "Oil on Canvas",
+        dimensions: '22" × 30"',
+        price: 9600,
+        category: "painting",
+        image: "images/paravano-fishing-trawlers-hero.png",
         heroImage: null,
         artistPage: null,
         featured: false
@@ -508,7 +583,7 @@ window.artworks = [
         dimensions: '24" × 36"',
         price: 3600,
         category: "watercolor",
-        image: "images/faries-earth-and-wind.png",
+        image: "images/faries-earth-and-wind-hero.png",
         heroImage: "images/faries-earth-and-wind-hero.png",
         artistPage: "artists/eldon-faries.html",
         featured: true
@@ -528,63 +603,63 @@ window.artworks = [
     },
 
     // ==================================================
-    // ELLISSA HOUGHTON
+    // ELISSA HOUGHTON
     // ==================================================
 
     {
-        artist: "Ellissa Houghton",
+        artist: "Elissa Houghton",
         title: "Before the Storm",
         medium: "Oil on canvas",
         dimensions: '28" × 28"',
         price: 1400,
         category: "painting",
-        image: null,
+        image: "images/houghton-4.jpg",
         heroImage: null,
         artistPage: "artists/elissa-houghton.html",
         featured: false
     },
 
     {
-        artist: "Ellissa Houghton",
+        artist: "Elissa Houghton",
         title: "Dream Scape",
         medium: "Oil on canvas",
         dimensions: '60" × 40"',
         price: 5500,
         category: "painting",
         image: "images/houghton-dream-scape.jpg",
-        heroImage: "images/houghton-dream-scape.png",
+        heroImage: "images/houghton-dream-scape.jpg",
         artistPage: "artists/elissa-houghton.html",
         featured: true
     },
 
     {
-        artist: "Ellissa Houghton",
+        artist: "Elissa Houghton",
         title: "Echos of the Ancients",
         medium: "Oil on canvas",
         dimensions: '36" × 36"',
         price: 3400,
         category: "painting",
-        image: null,
+        image: "images/houghton-03.jpg",
         heroImage: null,
         artistPage: "artists/elissa-houghton.html",
         featured: false
     },
 
     {
-        artist: "Ellissa Houghton",
+        artist: "Elissa Houghton",
         title: "Flight",
         medium: "Oil on canvas",
         dimensions: '60" × 40"',
         price: 5500,
         category: "painting",
-        image: null,
+        image: "images/houghton-02.jpg",
         heroImage: null,
         artistPage: "artists/elissa-houghton.html",
         featured: false
     },
 
     {
-        artist: "Ellissa Houghton",
+        artist: "Elissa Houghton",
         title: "Many Paths",
         medium: "Oil on canvas",
         dimensions: '24" × 36"',
@@ -597,20 +672,20 @@ window.artworks = [
     },
 
     {
-        artist: "Ellissa Houghton",
-        title: "Orange Spot on the Right",
+        artist: "Elissa Houghton",
+        title: null,
         medium: "Oil on canvas",
         dimensions: '48" × 36"',
         price: 4800,
         category: "painting",
-        image: null,
+        image: "images/houghton-05.jpg",
         heroImage: null,
         artistPage: "artists/elissa-houghton.html",
         featured: false
     },
 
     {
-        artist: "Ellissa Houghton",
+        artist: "Elissa Houghton",
         title: "Underlying Truth",
         medium: "Oil on canvas",
         dimensions: '48" × 48"',
@@ -623,7 +698,7 @@ window.artworks = [
     },
 
     {
-        artist: "Ellissa Houghton",
+        artist: "Elissa Houghton",
         title: "Upon Reflection",
         medium: "Oil on canvas",
         dimensions: '36" × 36"',
@@ -645,7 +720,7 @@ window.artworks = [
         dimensions: '17" × 23"',
         price: 2800,
         category: "watercolor",
-        image: "images/eber-breakfast-of-kings.jpg",
+        image: "images/eber-breakfast-of-kings-hero.png",
         heroImage: null,
         artistPage: "artists/frank-eber.html",
         featured: false
@@ -658,7 +733,7 @@ window.artworks = [
         dimensions: '11" × 14"',
         price: null,
         category: "painting",
-        image: null,
+        image: "images/eber-car-and-palm-tree-hero.png",
         heroImage: null,
         artistPage: "artists/frank-eber.html",
         featured: false
@@ -671,7 +746,7 @@ window.artworks = [
         dimensions: '24" × 18"',
         price: 2800,
         category: "watercolor",
-        image: "images/eber-cascade.jpg",
+        image: "images/eber-cascade-hero.png",
         heroImage: null,
         artistPage: "artists/frank-eber.html",
         featured: false
@@ -684,10 +759,10 @@ window.artworks = [
         dimensions: '10" × 16"',
         price: 1600,
         category: "watercolor",
-        image: "images/eber-passionate.jpg",
+        image: "images/eber-passionate-hero.png",
         heroImage: null,
         artistPage: "artists/frank-eber.html",
-        featured: false
+        featured: true
     },
 
     // ==================================================
@@ -714,23 +789,23 @@ window.artworks = [
         dimensions: '20" × 30"',
         price: 9500,
         category: "painting",
-        image: "images/mcinerney-queen-of-heaven.png",
-        heroImage: "images/mcinerney-queen-of-heaven-hero.png",
+        image: "images/mcinerney-queen-of-heaven-hero.png",
+        heroImage: "images/mcinerney-queen-of-heaven-framed.png",
         artistPage: "artists/gene-mcinerney.html",
         featured: true
     },
 
     {
         artist: "Gene McInerney",
-        title: "turnips",
-        medium: "",
-        dimensions: "",
-        price: null,
+        title: "Basket of Turnips",
+        medium: "Oil on panel",
+        dimensions: '20" × 18"',
+        price: 4800,
         category: "painting",
-        image: null,
+        image: "images/mcinerney-basket-of-turnips-hero.png",
         heroImage: null,
         artistPage: "artists/gene-mcinerney.html",
-        featured: false
+        featured: true
     },
 
     // ==================================================
@@ -921,12 +996,23 @@ window.artworks = [
         dimensions: '24" × 30"',
         price: 2550,
         category: "photography",
-        image: "images/botz-marriage-of-physics-metaphysics.png",
-        heroImage: "images/botz-marriage-of-physics-metaphysics-hero.png",
+        image: "images/botz-the-marriage-of-physics-and-metaphysics-hero.png",
+        heroImage: "images/botz-marriage-of-physics-metaphysics-framed.png",
         artistPage: "artists/jeff-botz.html",
         featured: true
     },
-
+  {
+        artist: "Jeff Botz",
+        title: "Mineral Vegetable Human Spirit",
+        medium: "Photograph B&W",
+        dimensions: '24" × 30"',
+        price: 2550,
+        category: "photography",
+        image: "images/botz-mineral-vegetable-human-spirit-hero.png",
+        heroImage: null,
+        artistPage: "artists/jeff-botz.html",
+        featured: true
+    },
     // ==================================================
     // JULIA ROGERS
     // ==================================================
@@ -955,7 +1041,7 @@ window.artworks = [
         dimensions: "",
         price: null,
         category: "painting",
-        image: null,
+        image: "images/gamper-the-niagara-and-the-unicorn-hero.png",
         heroImage: null,
         artistPage: null,
         featured: false
@@ -972,7 +1058,7 @@ window.artworks = [
         dimensions: '12" × 16"',
         price: 1900,
         category: "painting",
-        image: null,
+        image: "images/wennergren-makullsbacken-hero.png",
         heroImage: null,
         artistPage: null,
         featured: false
@@ -980,15 +1066,15 @@ window.artworks = [
 
     {
         artist: "Karl Wennergren",
-        title: "Two Sqashes",
+        title: "Two Squashes",
         medium: "Oil on canvas",
         dimensions: "",
         price: 1550,
         category: "painting",
-        image: null,
-        heroImage: null,
+        image: "images/wennergren-two-squashes-hero.png",
+        heroImage: "images/wennergren-two-squashes-framed.png",
         artistPage: null,
-        featured: false
+        featured: true
     },
 
     // ==================================================
@@ -1002,8 +1088,8 @@ window.artworks = [
         dimensions: "",
         price: 1800,
         category: "painting",
-        image: null,
-        heroImage: null,
+        image: "images/srebnik-a-village-in-normandie-hero.png",
+        heroImage: "images/srebnik-a-village-in-normandie-framed.png",
         artistPage: "artists/katriel-srebnik.html",
         featured: false
     },
@@ -1015,10 +1101,10 @@ window.artworks = [
         dimensions: '18" × 20"',
         price: 3900,
         category: "painting",
-        image: "images/srebnik-a-winters-drive.jpg",
-        heroImage: null,
+        image: "images/srebnik-a-winters-drive-hero.png",
+        heroImage: "images/srebnik-a-winters-drive-framed.jpg",
         artistPage: "artists/katriel-srebnik.html",
-        featured: false
+        featured: true
     },
 
     {
@@ -1028,10 +1114,10 @@ window.artworks = [
         dimensions: '12" × 16"',
         price: 2900,
         category: "painting",
-        image: null,
-        heroImage: null,
+        image: "images/srebnik-after-the-rains-hero.png",
+        heroImage: "images/srebnik-after-the-rains-framed.png",
         artistPage: "artists/katriel-srebnik.html",
-        featured: false
+        featured: true
     },
 
     {
@@ -1041,8 +1127,8 @@ window.artworks = [
         dimensions: "",
         price: 2900,
         category: "painting",
-        image: null,
-        heroImage: null,
+        image: "images/srebnik-chevron-sunset-in-paris-hero.png",
+        heroImage: "images/srebnik-chevron-sunset-in-paris-framed.png",
         artistPage: "artists/katriel-srebnik.html",
         featured: false
     },
@@ -1054,8 +1140,8 @@ window.artworks = [
         dimensions: "",
         price: 1800,
         category: "painting",
-        image: null,
-        heroImage: null,
+        image: "images/srebnik-conductor-making-the-rounds-hero.png",
+        heroImage: "images/srebnik-conductor-making-the-rounds-framed.png",
         artistPage: "artists/katriel-srebnik.html",
         featured: false
     },
@@ -1067,8 +1153,8 @@ window.artworks = [
         dimensions: '9" × 12"',
         price: 1600,
         category: "painting",
-        image: null,
-        heroImage: null,
+        image: "images/srebnik-crystal-morning-tournai-belgium-hero.png",
+        heroImage: "images/srebnik-crystal-morning-tournai-belgium-framed.png",
         artistPage: "artists/katriel-srebnik.html",
         featured: false
     },
@@ -1080,8 +1166,8 @@ window.artworks = [
         dimensions: "",
         price: 2900,
         category: "painting",
-        image: null,
-        heroImage: null,
+        image: "images/srebnik-evening-in-paris-hero.png",
+        heroImage: "images/srebnik-evening-in-paris-framed.png",
         artistPage: "artists/katriel-srebnik.html",
         featured: false
     },
@@ -1093,17 +1179,18 @@ window.artworks = [
         dimensions: "",
         price: 2500,
         category: "painting",
-        image: null,
-        heroImage: null,
+        image: "images/srebnik-sunlight-and-shadow-in-paris-hero.png",
+        heroImage: "images/srebnik-sunlight-and-shadow-in-paris-framed.png",
         artistPage: "artists/katriel-srebnik.html",
         featured: false
     }, 
+
         // ==================================================
-    // LISE ETHIER
+    // LISA ETHIER
     // ==================================================
 
     {
-        artist: "Lise Ethier",
+        artist: "Lisa Ethier",
         title: "curious",
         medium: "Mixed media",
         dimensions: '24" × 30"',
@@ -1116,7 +1203,7 @@ window.artworks = [
     },
 
     {
-        artist: "Lise Ethier",
+        artist: "Lisa Ethier",
         title: "Etherea",
         medium: "Oil & Cold Wax on board",
         dimensions: '40" × 30"',
@@ -1129,7 +1216,7 @@ window.artworks = [
     },
 
     {
-        artist: "Lise Ethier",
+        artist: "Lisa Ethier",
         title: "Fluent in paradox",
         medium: "Mixed media",
         dimensions: '24" × 30"',
@@ -1142,7 +1229,7 @@ window.artworks = [
     },
 
     {
-        artist: "Lise Ethier",
+        artist: "Lisa Ethier",
         title: "Nocturna",
         medium: "Oil & Cold Wax on board",
         dimensions: '36" × 24"',
@@ -1155,7 +1242,7 @@ window.artworks = [
     },
 
     {
-        artist: "Lise Ethier",
+        artist: "Lisa Ethier",
         title: "Please let there be light series I",
         medium: "Oil & Cold Wax on board",
         dimensions: "",
@@ -1168,7 +1255,7 @@ window.artworks = [
     },
 
     {
-        artist: "Lise Ethier",
+        artist: "Lisa Ethier",
         title: "Please let there be light series II",
         medium: "Oil & Cold Wax on board",
         dimensions: "",
@@ -1181,7 +1268,7 @@ window.artworks = [
     },
 
     {
-        artist: "Lise Ethier",
+        artist: "Lisa Ethier",
         title: "Please let there be light series III",
         medium: "Oil & Cold Wax on board",
         dimensions: "",
@@ -1194,7 +1281,7 @@ window.artworks = [
     },
 
     {
-        artist: "Lise Ethier",
+        artist: "Lisa Ethier",
         title: "Solara",
         medium: "Oil & Cold Wax on board",
         dimensions: '40" × 30"',
@@ -1207,7 +1294,7 @@ window.artworks = [
     },
 
     {
-        artist: "Lise Ethier",
+        artist: "Lisa Ethier",
         title: "Sovereign",
         medium: "Mixed media",
         dimensions: '24" × 30"',
@@ -1220,7 +1307,7 @@ window.artworks = [
     },
 
     {
-        artist: "Lise Ethier",
+        artist: "Lisa Ethier",
         title: "The far stillness",
         medium: "Oil & Cold Wax on board",
         dimensions: "",
@@ -1233,7 +1320,7 @@ window.artworks = [
     },
 
     {
-        artist: "Lise Ethier",
+        artist: "Lisa Ethier",
         title: "Unapologetically alive",
         medium: "Mixed media",
         dimensions: '24" × 30"',
@@ -1246,7 +1333,7 @@ window.artworks = [
     },
 
     {
-        artist: "Lise Ethier",
+        artist: "Lisa Ethier",
         title: "Unfiltered truth",
         medium: "Mixed media",
         dimensions: '30" × 30"',
@@ -1259,7 +1346,7 @@ window.artworks = [
     },
 
     {
-        artist: "Lise Ethier",
+        artist: "Lisa Ethier",
         title: "Unshakeable",
         medium: "Mixed media",
         dimensions: '30" × 40"',
@@ -1282,8 +1369,8 @@ window.artworks = [
         dimensions: "",
         price: null,
         category: "painting",
-        image: "images/schillaci-eucalyptus-in-a-china-vase.jpg",
-        heroImage: null,
+        image: "images/schillaci-eucalyptus-in-a-china-vase-hero.png",
+        heroImage: "images/schillaci-eucalyptus-in-a-china-vase-framed.jpg",
         artistPage: "artists/lindy-schillaci.html",
         featured: false
     },
@@ -1295,20 +1382,20 @@ window.artworks = [
         dimensions: '14" × 15"',
         price: 3600,
         category: "painting",
-        image: "images/schillaci-oranges-and-grapes.jpg",
-        heroImage: null,
+        image: "images/schillaci-oranges-and-grapes-hero.png",
+        heroImage: "images/schillaci-oranges-and-grapes-framed.jpg",
         artistPage: "artists/lindy-schillaci.html",
         featured: false
     },
 
     {
         artist: "Lindy Schillaci",
-        title: "Pear",
+        title: "Two Pears",
         medium: "Oil on panel",
         dimensions: '12" × 16"',
         price: null,
         category: "painting",
-        image: null,
+        image: "images/schillaci-two-pears-hero.png",
         heroImage: null,
         artistPage: "artists/lindy-schillaci.html",
         featured: false
@@ -1321,21 +1408,21 @@ window.artworks = [
         dimensions: '13" × 15"',
         price: 3800,
         category: "painting",
-        image: "images/schillaci-turquoise-bowl.jpg",
-        heroImage: null,
+        image: "images/schillaci-turquoise-bowl-hero.png",
+        heroImage: "images/schillaci-turquoise-bowl-framed.jpg",
         artistPage: "artists/lindy-schillaci.html",
         featured: false
     },
 
     {
         artist: "Lindy Schillaci",
-        title: "Two Pears",
+        title: "Mangoes",
         medium: "Oil on panel",
         dimensions: '9" × 13"',
         price: null,
         category: "painting",
-        image: "images/schillaci-two-pears.jpg",
-        heroImage: "images/schillaci-hero-01.jpg",
+        image: "images/schillaci-mangoes-hero.png",
+        heroImage: "images/schillaci-mangoes-framed.jpg",
         artistPage: "artists/lindy-schillaci.html",
         featured: true
     },
@@ -1351,8 +1438,8 @@ window.artworks = [
         dimensions: "",
         price: 1200,
         category: "painting",
-        image: "images/smirnov-southern-italy.png",
-        heroImage: null,
+        image: "images/smirnov-southern-italy-hero.png",
+        heroImage: "images/smirnov-southern-italy.png",
         artistPage: null,
         featured: false
     },
@@ -1381,8 +1468,8 @@ window.artworks = [
         dimensions: '20" × 36"',
         price: 5500,
         category: "painting",
-        image: "images/hillier-grey-heron-on-tire.jpg",
-        heroImage: null,
+        image: "images/hillier-grey-heron-on-a-tire-hero.png",
+        heroImage: "images/hillier-grey-heron-on-tire-framed.jpg",
         artistPage: "artists/matthew-hillier.html",
         featured: false
     },
@@ -1394,7 +1481,7 @@ window.artworks = [
         dimensions: '24" × 48"',
         price: 24000,
         category: "painting",
-        image: null,
+        image: "images/hillier-into-the-light-hero.png",
         heroImage: null,
         artistPage: "artists/matthew-hillier.html",
         featured: false
@@ -1407,8 +1494,8 @@ window.artworks = [
         dimensions: '36" × 12"',
         price: 7900,
         category: "painting",
-        image: "images/hillier-jay-on-fence.jpg",
-        heroImage: "images/hillier-jay-on-fence-hero.png",
+        image: "images/hillier-jay-on-fence-hero.png",
+        heroImage: "images/hillier-jay-on-fence-framed.jpg",
         artistPage: "artists/matthew-hillier.html",
         featured: true
     },
@@ -1420,7 +1507,7 @@ window.artworks = [
         dimensions: "",
         price: 1800,
         category: "painting",
-        image: null,
+        image: "images/hillier-scarlet-macaws-hero.png",
         heroImage: null,
         artistPage: "artists/matthew-hillier.html",
         featured: false
@@ -1433,8 +1520,8 @@ window.artworks = [
         dimensions: '15" × 30"',
         price: 8500,
         category: "painting",
-        image: "images/hillier-thompson-gazelles.jpg",
-        heroImage: "images/hillier-thompson-gazelles-hero.png",
+        image: "images/hillier-thompson-gazelles-hero.png",
+        heroImage: "images/hillier-thompson-gazelles-framed.jpg",
         artistPage: "artists/matthew-hillier.html",
         featured: false
     },
@@ -1463,8 +1550,8 @@ window.artworks = [
         dimensions: '12" × 12"',
         price: 1000,
         category: "painting",
-        image: null,
-        heroImage: null,
+        image: "images/carroll-carolina-hydrangeas-hero (1).png",
+        heroImage: "images/carroll-carolina-hydrangeas-framed.png",
         artistPage: "artists/nancy-carroll.html",
         featured: false
     },
@@ -1476,8 +1563,8 @@ window.artworks = [
         dimensions: '12" × 12"',
         price: 1000,
         category: "painting",
-        image: null,
-        heroImage: null,
+        image: "images/carroll-dahlia-simplicity-hero (1).png",
+        heroImage: "images/carroll-dahlia-simplicity-framed.png",
         artistPage: "artists/nancy-carroll.html",
         featured: false
     },
@@ -1489,8 +1576,8 @@ window.artworks = [
         dimensions: '16" × 20"',
         price: 3200,
         category: "painting",
-        image: null,
-        heroImage: null,
+        image: "images/carroll-delicate-bougainvillea-hero (1).png",
+        heroImage: "images/carroll-delicate-bougainvillea-framed.png",
         artistPage: "artists/nancy-carroll.html",
         featured: false
     },
@@ -1502,8 +1589,8 @@ window.artworks = [
         dimensions: '20" × 16"',
         price: 3500,
         category: "painting",
-        image: null,
-        heroImage: null,
+        image: "images/carroll-favored-peonies-hero.png",
+        heroImage: "images/carroll-favored-peonies-framed.png",
         artistPage: "artists/nancy-carroll.html",
         featured: false
     },
@@ -1515,8 +1602,8 @@ window.artworks = [
         dimensions: '30" × 30"',
         price: 4800,
         category: "painting",
-        image: "images/carroll-nod-to-sunflowers.png",
-        heroImage: "images/carroll-nod-to-sunflowers-hero.png",
+        image: "images/carroll-nod-to-sunflowers-hero.png",
+        heroImage: "images/carroll-nod-to-sunflowers-framed.png",
         artistPage: "artists/nancy-carroll.html",
         featured: true
     },
@@ -1528,8 +1615,8 @@ window.artworks = [
         dimensions: '20" × 16"',
         price: 3500,
         category: "painting",
-        image: null,
-        heroImage: null,
+        image: "images/carroll-sunflower-splendor-hero (1).png",
+        heroImage: "images/carroll-sunflower-splendor-framed.png",
         artistPage: "artists/nancy-carroll.html",
         featured: false
     },
@@ -1545,8 +1632,8 @@ window.artworks = [
         dimensions: "",
         price: 1900,
         category: "watercolor",
-        image: "images/price-windswept.png",
-        heroImage: null,
+        image: "images/price-windswept-hero.png",
+        heroImage: "images/price-windswept-framed.png",
         artistPage: null,
         featured: false
     },
@@ -1558,8 +1645,8 @@ window.artworks = [
         dimensions: "",
         price: 2400,
         category: "watercolor",
-        image: "images/price-yorkshire-farmhouse-01.png",
-        heroImage: null,
+        image: "images/price-yorkshire-farmhouse-hero.png",
+        heroImage: "images/price-yorkshire-farmhouse-framed.png",
         artistPage: null,
         featured: false
     },
@@ -1575,8 +1662,8 @@ window.artworks = [
         dimensions: '22" × 31"',
         price: 3000,
         category: "watercolor",
-        image: "images/dews-birch-parade.jpg",
-        heroImage: null,
+        image: "images/dews-birch-parade-hero.jpg",
+        heroImage: "images/dews-birch-parade-framed.jpg",
         artistPage: "artists/pat-dews.html",
         featured: false
     },
@@ -1588,7 +1675,7 @@ window.artworks = [
         dimensions: '36" × 23"',
         price: 3000,
         category: "watercolor",
-        image: null,
+        image: "images/dews-changing-seasons.jpg",
         heroImage: null,
         artistPage: "artists/pat-dews.html",
         featured: false
@@ -1601,8 +1688,8 @@ window.artworks = [
         dimensions: '29" × 21"',
         price: 3000,
         category: "watercolor",
-        image: "images/dews-iris-essence.jpg",
-        heroImage: null,
+        image: "images/dews-iris-essence-hero.jpg",
+        heroImage: "images/dews-iris-essence-framed.jpg",
         artistPage: "artists/pat-dews.html",
         featured: false
     },
@@ -1614,8 +1701,8 @@ window.artworks = [
         dimensions: '18" × 18"',
         price: 1800,
         category: "watercolor",
-        image: "images/dews-luminosity.jpg",
-        heroImage: null,
+        image: "images/dews-luminosity-hero.jpg",
+        heroImage: "images/dews-luminosity-framed.jpg",
         artistPage: "artists/pat-dews.html",
         featured: false
     },
@@ -1627,7 +1714,7 @@ window.artworks = [
         dimensions: '44" × 66"',
         price: 9500,
         category: "painting",
-        image: null,
+        image: "images/dews-moon-over-autumn-landscape.jpg",
         heroImage: null,
         artistPage: "artists/pat-dews.html",
         featured: false
@@ -1640,8 +1727,8 @@ window.artworks = [
         dimensions: '12" × 12"',
         price: 1800,
         category: "watercolor",
-        image: "images/dews-natures-dance.jpg",
-        heroImage: null,
+        image: "images/dews-natures-dance-hero.jpg",
+        heroImage: "images/dews-natures-dance-framed.jpg",
         artistPage: "artists/pat-dews.html",
         featured: false
     },
@@ -1653,7 +1740,7 @@ window.artworks = [
         dimensions: "",
         price: 2800,
         category: "watercolor",
-        image: null,
+        image: "images/dews-red-best-hero.jpg",
         heroImage: null,
         artistPage: "artists/pat-dews.html",
         featured: false
@@ -1666,8 +1753,8 @@ window.artworks = [
         dimensions: '29" × 22"',
         price: 3000,
         category: "watercolor",
-        image: "images/dews-slippery-slope.jpg",
-        heroImage: "images/dews-slippery-slope-hero.png",
+        image: "images/dews-slippery-slope-hero.png",
+        heroImage: "images/dews-slippery-slope-framed.jpg",
         artistPage: "artists/pat-dews.html",
         featured: true
     },
@@ -1679,8 +1766,8 @@ window.artworks = [
         dimensions: '12" × 12"',
         price: 1800,
         category: "watercolor",
-        image: "images/dews-techi.jpg",
-        heroImage: null,
+        image: "images/dews-techi-hero.jpg",
+        heroImage: "images/dews-techi-framed.jpg",
         artistPage: "artists/pat-dews.html",
         featured: false
     },
@@ -1692,8 +1779,8 @@ window.artworks = [
         dimensions: '17" × 22"',
         price: 2400,
         category: "watercolor",
-        image: "images/dews-turquoise-flowers-in-vase.jpg",
-        heroImage: null,
+        image: "images/dews-turquoise-flowers-in-vase-hero.jpg",
+        heroImage: "images/dews-turquoise-flowers-in-vase-framed.jpg",
         artistPage: "artists/pat-dews.html",
         featured: false
     },
@@ -1710,6 +1797,18 @@ window.artworks = [
         category: "painting",
         image: null,
         heroImage: null,
+        artistPage: "artists/peter-archer.html",
+        featured: false
+    },
+      {
+        artist: "Peter Archer",
+        title: "Nature and Man",
+        medium: "Oil on canvas",
+        dimensions: '33" × 46"',
+        price: 8600,
+        category: "painting",
+        image: "images/archer-nature-and-man-hero.png",
+        heroImage: "images/archer-nature-and-man-framed.jpeg",
         artistPage: "artists/peter-archer.html",
         featured: false
     },
@@ -1738,8 +1837,8 @@ window.artworks = [
         dimensions: '18" × 30"',
         price: 3400,
         category: "painting",
-        image: "images/sedlack-alamance-tobacco-barn-01.jpg",
-        heroImage: null,
+        image: "images/sedlack-alamance-tobacco-barn-hero.jpg",
+        heroImage: "images/sedlack-alamance-tobacco-barn-framed.jpg",
         artistPage: null,
         featured: false
     },
@@ -1751,8 +1850,8 @@ window.artworks = [
         dimensions: '16" × 20"',
         price: 2300,
         category: "painting",
-        image: "images/sedlack-bear-springs-evening-01.png",
-        heroImage: null,
+        image: "images/sedlack-bear-springs-evening-hero.jpg",
+        heroImage: "images/sedlack-bear-springs-evening-framed.jpeg",
         artistPage: null,
         featured: false
     },
@@ -1764,8 +1863,8 @@ window.artworks = [
         dimensions: '16" × 30"',
         price: 3200,
         category: "painting",
-        image: "images/sedlack-cape-hatteras-gaillardia-01.png",
-        heroImage: null,
+        image: "images/sedlack-cape-hatteras-gaillardia-hero.jpg",
+        heroImage: "images/sedlack-cape-hatteras-gaillardia-framed.png",
         artistPage: null,
         featured: false
     },
@@ -1803,8 +1902,8 @@ window.artworks = [
         dimensions: '18" × 24"',
         price: 2800,
         category: "painting",
-        image: "images/sedlack-outer-banks-dunes-01.png",
-        heroImage: null,
+        image: "images/sedlack-outer-banks-dunes-hero.jpg",
+        heroImage: "images/sedlack-outer-banks-dunes-framed.png",
         artistPage: null,
         featured: false
     },
@@ -1820,8 +1919,8 @@ window.artworks = [
         dimensions: '22" × 27"',
         price: 2800,
         category: "painting",
-        image: "images/christopher-abandoned-acreage.png",
-        heroImage: null,
+        image: "images/christopher-abandoned-acreage-hero.jpg",
+        heroImage: "images/christopher-abandoned-acreage-framed.png",
         artistPage: "artists/tom-christopher.html",
         featured: false
     },
@@ -1833,8 +1932,8 @@ window.artworks = [
         dimensions: '15" × 20"',
         price: 1850,
         category: "painting",
-        image: "images/christopher-broken-fences.png",
-        heroImage: null,
+        image: "images/christopher-broken-fences-hero.jpg",
+        heroImage: "images/christopher-broken-fences-framed.png",
         artistPage: "artists/tom-christopher.html",
         featured: false
     },
@@ -1846,8 +1945,8 @@ window.artworks = [
         dimensions: '19" × 16"',
         price: 950,
         category: "painting",
-        image: "images/christopher-b&w-street-scene.png",
-        heroImage: "images/christopher-b&w-street-scene-hero.png",
+        image: "images/christopher-b&w-street-study-hero.jpg",
+        heroImage: "images/christopher-b&w-street-scene-framed.png",
         artistPage: "artists/tom-christopher.html",
         featured: false
     },
@@ -1859,8 +1958,8 @@ window.artworks = [
         dimensions: "",
         price: null,
         category: "painting",
-        image: "images/christopher-early-autumn.png",
-        heroImage: null,
+        image: "images/christopher-early-autumn-hero.jpg",
+        heroImage: "images/christopher-early-autumn-framed.png",
         artistPage: "artists/tom-christopher.html",
         featured: false
     },
@@ -1872,8 +1971,8 @@ window.artworks = [
         dimensions: '18" × 24"',
         price: 2500,
         category: "painting",
-        image: "images/christopher-eighty-acres.png",
-        heroImage: null,
+        image: "images/christopher-eighty-acres-hero.jpg",
+        heroImage: "images/christopher-eighty-acres-framed.png",
         artistPage: "artists/tom-christopher.html",
         featured: false
     },
@@ -1898,8 +1997,8 @@ window.artworks = [
         dimensions: '20" × 16"',
         price: 750,
         category: "painting",
-        image: "images/christopher-street-scene-III.png",
-        heroImage: null,
+        image: "images/christopher-street-scene-III-hero.jpg",
+        heroImage: "images/christopher-street-scene-III-framed.png",
         artistPage: "artists/tom-christopher.html",
         featured: false
     },
@@ -1915,7 +2014,7 @@ window.artworks = [
         dimensions: '31" × 23"',
         price: 1800,
         category: "painting",
-        image: "images/cox-magnolias.png",
+        image: "images/cox-magnolias-hero.png",
         heroImage: null,
         artistPage: null,
         featured: false
@@ -1928,7 +2027,7 @@ window.artworks = [
         dimensions: '29" × 21"',
         price: 1800,
         category: "painting",
-        image: "images/cox-passion-fruit-and-flowers.png",
+        image: "images/cox-passion-fruit-and-flowers-hero.png",
         heroImage: null,
         artistPage: null,
         featured: false
@@ -1958,7 +2057,7 @@ window.artworks = [
         dimensions: "",
         price: 1200,
         category: "painting",
-        image: "images/fleck-afternoon-in-the-valley.png",
+        image: "images/fleck-afternoon-in-the-valley.jpg",
         heroImage: null,
         artistPage: "artists/wendy-musser.html",
         featured: false
@@ -1971,7 +2070,7 @@ window.artworks = [
         dimensions: '36" × 48"',
         price: 4000,
         category: "painting",
-        image: null,
+        image: "images/fleck-clouds-clearing-the-ridge.jpg",
         heroImage: null,
         artistPage: "artists/wendy-musser.html",
         featured: false
@@ -1984,8 +2083,8 @@ window.artworks = [
         dimensions: "",
         price: 1100,
         category: "painting",
-        image: "images/fleck-enchanted-marsh.png",
-        heroImage: null,
+        image: "images/fleck-enchanted-marsh-hero.jpg",
+        heroImage: "images/fleck-enchanted-marsh.png",
         artistPage: "artists/wendy-musser.html",
         featured: false
     },
@@ -2010,7 +2109,7 @@ window.artworks = [
         dimensions: "",
         price: 825,
         category: "painting",
-        image: "images/fleck-live-oak-stands.png",
+        image: "images/fleck-live-oak-stands-hero.jpg",
         heroImage: null,
         artistPage: "artists/wendy-musser.html",
         featured: false
@@ -2023,7 +2122,7 @@ window.artworks = [
         dimensions: "",
         price: 1100,
         category: "painting",
-        image: "images/fleck-marsh-tidal-pool.png",
+        image: "images/fleck-marsh-tidal-pool-hero.jpg",
         heroImage: null,
         artistPage: "artists/wendy-musser.html",
         featured: false
@@ -2036,8 +2135,8 @@ window.artworks = [
         dimensions: '48" × 36"',
         price: 4000,
         category: "painting",
-        image: "images/musser-fleck-splendid-day.png",
-        heroImage: "images/musser-fleck-splendid-day-hero.png",
+        image: "images/musser-fleck-splendid-day-hero.png",
+        heroImage: "images/musser-fleck-splendid-day.png",
         artistPage: "artists/wendy-musser.html",
         featured: true
     }
