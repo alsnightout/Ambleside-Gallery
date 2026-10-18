@@ -1830,6 +1830,76 @@ window.artworks = [
     },
 
     // ==================================================
+    // PATRICIA SAVAGE
+    // ==================================================
+
+    {
+        artist: "Patricia Savage",
+        title: "In the Gathering Light",
+        medium: "Oil on linen",
+        dimensions: "",
+        price: 2200,
+        category: "painting",
+        image: "images/savage-in-the-gathering-light-hero.png",
+        heroImage: null,
+        artistPage: "artists/patricia-savage.html",
+        featured: false
+    },
+
+    {
+        artist: "Patricia Savage",
+        title: "Sunset over the Marsh",
+        medium: "Oil on linen",
+        dimensions: "",
+        price: 2200,
+        category: "painting",
+        image: "images/savage-sunset-over-the-marsh-hero.png",
+        heroImage: null,
+        artistPage: "artists/patricia-savage.html",
+        featured: false
+    },
+
+    {
+        artist: "Patricia Savage",
+        title: "Collision",
+        medium: "Pastel",
+        dimensions: '18" × 24"',
+        price: 1900,
+        category: "painting",
+        image: "images/savage-collision-hero.png",
+        heroImage: null,
+        artistPage: "artists/patricia-savage.html",
+        featured: true
+    },
+
+    {
+        artist: "Patricia Savage",
+        title: "Icy Shards of Clouds",
+        medium: "Oil on linen",
+        dimensions: "",
+        price: 2700,
+        category: "painting",
+        image: "images/savage-icy-shards-of-clouds-hero.png",
+        heroImage: null,
+        artistPage: "artists/patricia-savage.html",
+        featured: false
+    },
+
+    {
+        artist: "Patricia Savage",
+        title: "Life in a saltwater pool",
+        medium: "Pastel",
+        dimensions: "",
+        price: 1080,
+        category: "painting",
+        image: "images/savage-life-in-a-salt-water-pool-hero.png",
+        heroImage: null,
+        artistPage: "artists/patricia-savage.html",
+        featured: false
+    },
+
+
+    // ==================================================
     // RICHARD SEDLACK
     // ==================================================
 
@@ -2142,6 +2212,38 @@ window.artworks = [
         heroImage: "images/musser-fleck-splendid-day.png",
         artistPage: "artists/wendy-musser.html",
         featured: true
-    }
+    },
+
+       // ==================================================
+    // TATYANA DYAKONOV
+    // ==================================================
+
+    {
+        artist: "Tatyana Dyakonov",
+        title: "Studio 7",
+        medium: "Acrylic on canvas",
+        dimensions: "",
+        price: 2800,
+        category: "painting",
+        image: "images/dyakonov-studio-7.png",
+        heroImage: null,
+        artistPage: "artists/tatyana-dyakonov.html",
+        featured: true
+    },
+
+    {
+        artist: "Tatyana Dyakonov",
+        title: "Streetlight",
+        medium: "Acrylic on canvas",
+        dimensions: "",
+        price: 2800,
+        category: "painting",
+        image: "images/dyakonov-streetlight.png",
+        heroImage: null,
+        artistPage: "artists/tatyana-dyakonov.html",
+        featured: false
+    },
 
 ];
+
+ 

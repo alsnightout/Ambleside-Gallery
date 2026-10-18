@@ -8388,22 +8388,126 @@ h2 {
     display: none !important;
 }
 /* =========================================
-   JEFF BOTZ — FEATURED WORK TITLE
+   AMBLESIDE GALLERY
+   REFINED FEATURED ARTWORK TYPOGRAPHY
 ========================================= */
 
-body[data-artist="Jeff Botz"]
-.artist-featured-info h2 {
-    font-size: clamp(2.5rem, 3.5vw, 3.8rem);
-    line-height: 1.12;
-    letter-spacing: -0.025em;
+body .artist-featured-work .artist-featured-info h2 {
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(1.8rem, 2.2vw, 2.5rem);
+
+    font-style: normal;
+
+    font-weight: 400;
+
+    line-height: 1.25;
+
+    letter-spacing: 0;
+
+    margin: 0 0 1.25rem;
+
+    max-width: 100%;
+
 }
+
+/* ARTIST NAME */
+
+body .artist-featured-work .artist-featured-name {
+
+    font-style: normal;
+
+    font-size: 1.05rem;
+
+    font-weight: 400;
+
+    margin-bottom: 1.25rem;
+
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    body .artist-featured-work .artist-featured-info h2 {
+
+        font-size: 1.8rem;
+
+        line-height: 1.3;
+
+    }
+
+}
+
+
+
 /* =========================================
-   WENDY MUSSER FLECK — FEATURED WORK
+   ARTIST PAGES — CENTERED COLLECTION
 ========================================= */
 
-body[data-artist="Wendy Musser Fleck"]
-.artist-featured-info h2 {
-    font-size: clamp(2.5rem, 3.5vw, 3.8rem);
-    line-height: 1.12;
-    letter-spacing: -0.025em;
+/* Keep the two-column collection layout */
+
+.artist-works-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
 }
+
+/* Center each artwork card */
+
+.artist-works-grid .artwork-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 0;
+}
+
+/* Keep artwork image centered */
+
+.artist-works-grid .collection-artwork-image,
+.artist-works-grid .artwork-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Center artwork details */
+
+.artist-works-grid .artwork-info {
+    width: 100%;
+    padding-top: 18px;
+    text-align: center;
+}
+
+/* Center all artwork text */
+
+.artist-works-grid .artwork-info h2,
+.artist-works-grid .artwork-info h3,
+.artist-works-grid .artwork-info p {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Stop price positioning from pushing right */
+
+.artist-works-grid .artwork-price {
+    position: static;
+    float: none;
+    display: block;
+    width: auto;
+    margin: 8px auto 0;
+    text-align: center;
+}
+
+/* Mobile layout */
+
+@media (max-width: 768px) {
+
+    .artist-works-grid {
+        grid-template-columns: 1fr;
+        gap: 55px;
+    }
+
+}
+`
