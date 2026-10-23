@@ -8510,4 +8510,93 @@ body .artist-featured-work .artist-featured-name {
     }
 
 }
-`
+
+/* =========================================
+   ARTIST GRID — REMOVE LINK UNDERLINES
+========================================= */
+
+.artist-card a,
+.artist-card a:visited,
+.artist-card a:hover,
+.artist-card a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+.artist-card-info h2,
+.artist-card-info h3 {
+    text-decoration: none;
+}
+
+/* =========================================
+   AMBLESIDE GALLERY — BRAND TYPOGRAPHY
+========================================= */
+
+/* Header logo across all pages */
+
+.site-header .logo,
+.site-header .logo a,
+
+/* Gallery name in page introductions */
+
+.hero-content .eyebrow,
+.welcome .eyebrow,
+.artists-header .eyebrow,
+.collection-header .eyebrow,
+.artist-page-header .eyebrow,
+
+/* Footer branding */
+
+.footer-brand h2 {
+
+    font-family: "University Roman", Georgia, serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* Keep the navigation logo elegant */
+
+.site-header .logo a {
+    letter-spacing: 0.1em;
+    text-decoration: none;
+}
+
+/* Branding labels above page headings */
+
+.hero-content .eyebrow,
+.welcome .eyebrow,
+.artists-header .eyebrow,
+.collection-header .eyebrow,
+.artist-page-header .eyebrow {
+    font-size: 1rem;
+    letter-spacing: 0.12em;
+}
+
+/* Footer gallery name */
+
+.footer-brand h2 {
+    letter-spacing: 0.1em;
+}
+
+/* =========================================
+   WEBSITE DESIGN CREDIT
+========================================= */
+
+.website-credit {
+    font-size: 0.7rem;
+    letter-spacing: 0.04em;
+    color: #8a857d;
+    font-weight: 400;
+}
+
+.website-credit span {
+    color: #55514b;
+}
+
+@media (max-width: 768px) {
+    .website-credit {
+        text-align: center;
+        line-height: 1.6;
+    }
+}
+

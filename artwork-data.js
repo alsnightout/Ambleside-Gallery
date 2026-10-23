@@ -1531,13 +1531,229 @@ window.artworks = [
         title: "Winter's Eve",
         medium: "Acrylic on panel",
         dimensions: '24" × 36"',
-        price: 28000,
+        price: 2800,
         category: "painting",
         image: null,
         heroImage: null,
         artistPage: "artists/matthew-hillier.html",
         featured: false
     },
+    // ==================================================
+    // MICHELLE SIDER
+    // ==================================================
+
+    {
+        artist: "Michelle Sider",
+        title: "Preening",
+        medium: "Stained glass, smalti, smalti gold",
+        dimensions: '21.5" × 17.5"',
+        price: 1800,
+        category: "painting",
+        image: "images/sider-preening.jpg",
+        heroImage: null,
+        artistPage: "artists/michelle-sider.html",
+        featured: false
+    },
+
+    {
+        artist: "Michelle Sider",
+        title: "Colorburts",
+        medium: "hand-pulled glass, Russian smalti",
+        dimensions: '16" × 16" X 3"D',
+        price: 4500,
+        category: "painting",
+        image: "images/sider-colorburst.jpg",
+        heroImage: null,
+        artistPage: "artists/michelle-sider.html",
+        featured: false
+    },
+
+    {
+        artist: "Michelle Sider",
+        title: "Peppers",
+        medium: "Smalti gold, stained glass",
+        dimensions: '13" × 13"',
+        price: 1800,
+        category: "painting",
+        image: "images/sider-peppers.jpeg",
+        heroImage: null,
+        artistPage: "artists/michelle-sider.html",
+        featured: false
+    },
+
+    {
+        artist: "Michelle Sider",
+        title: "Michigan Sunset",
+        medium: "Stained glass, smalti, gold",
+        dimensions: '13" × 13"',
+        price: 1800,
+        category: "painting",
+        image: "images/sider-michigan-sunset.jpeg",
+        heroImage: null,
+        artistPage: "artists/michelle-sider.html",
+        featured: false
+    },
+
+    {
+        artist: "Michelle Sider",
+        title: "Safe on Shore",
+        medium: "Stained glass, molten cement",
+        dimensions: '14" × 16"',
+        price: 2950,
+        category: "painting",
+        image: "images/sider-safe-on-shore.jpg",
+        heroImage: null,
+        artistPage: "artists/michelle-sider.html",
+        featured: false
+    },
+
+    {
+        artist: "Michelle Sider",
+        title: "Seeking Light",
+        medium: "Stained glass, smalti, gold",
+        dimensions: '31" × 31"',
+        price: 8750,
+        category: "painting",
+        image: "images/sider-seeking-light.jpg",
+        heroImage: null,
+        artistPage: "artists/michelle-sider.html",
+        featured: false
+    },
+
+    {
+        artist: "Michelle Sider",
+        title: "Shattered",
+        medium: "Smalti glass, acrylic",
+        dimensions: '13" × 17"',
+        price: 2450,
+        category: "painting",
+        image: "images/sider-shattered.jpg",
+        heroImage: null,
+        artistPage: "artists/michelle-sider.html",
+        featured: false
+    },
+
+    {
+        artist: "Michelle Sider",
+        title: "Precious Water",
+        medium: "Pastel",
+        dimensions: '42" × 30"',
+        price: 4000,
+        category: "painting",
+        image: "images/sider-precious-souls.jpg",
+        heroImage: null,
+        artistPage: "artists/michelle-sider.html",
+        featured: false
+    },
+
+    // ==================================================
+    // MORGAN SAMUEL PRICE
+    // ==================================================
+
+    {
+        artist: "Morgan Samuel Price",
+        title: "A teaching moment",
+        medium: "oil on linen panel",
+        dimensions: '12" × 16"',
+        price: 2800,
+        category: "painting",
+        image: "images/price-a-teaching-moment-hero-01.png",
+        heroImage: null,
+        artistPage: "artists/morgan-samuel-price.html",
+        featured: false
+    },
+
+    {
+        artist: "Morgan Samuel Price",
+        title: "Daddy's fishing",
+        medium: "Oil on Panel",
+        dimensions: '12" × 16"',
+        price: 2300,
+        category: "painting",
+        image: "images/price-daddys-fishing-02-hero.png",
+        heroImage: null,
+        artistPage: "artists/morgan-samuel-price.html",
+        featured: false
+    },
+
+    {
+        artist: "Morgan Samuel Price",
+        title: "Fishing Dick's Creek",
+        medium: "Oil on Panel",
+        dimensions: null,
+        price: 2300,
+        category: "painting",
+        image: "images/price-fishing-dicks-creek-hero-01.png",
+        heroImage: null,
+        artistPage: "artists/morgan-samuel-price.html",
+        featured: false
+    },
+
+    {
+        artist: "Morgan Samuel Price",
+        title: "Fishing Dick's Creek 2",
+        medium: "Oil on panel",
+        dimensions: null,
+        price: 2300,
+        category: "painting",
+        image: "images/price-fishing-dicks-creek-hero-02.png",
+        heroImage: null,
+        artistPage: "artists/morgan-samuel-price.html",
+        featured: false
+    },
+
+    {
+        artist: "Morgan Samuel Price",
+        title: "Lone Ibis",
+        medium: "Oil on Panel",
+        dimensions: '11" × 14"',
+        price: 2500,
+        category: "painting",
+        image: "images/price-lone-ibis-hero-01.png",
+        heroImage: null,
+        artistPage: "artists/morgan-samuel-price.html",
+        featured: false
+    },
+
+    {
+        artist: "Morgan Samuel Price",
+        title: "Perfect Landing",
+        medium: "Oil on Panel",
+        dimensions: null,
+        price: 2300,
+        category: "painting",
+        image: "images/price-perfect-landing-hero-01.png",
+        heroImage: null,
+        artistPage: "artists/morgan-samuel-price.html",
+        featured: false
+    },
+
+    {
+        artist: "Morgan Samuel Price",
+        title: "Southern Grace",
+        medium: "Oil on Linen Panel",
+        dimensions: null,
+        price: 5000,
+        category: "painting",
+        image: "images/price-southern-grace-hero-01.png",
+        heroImage: null,
+        artistPage: "artists/morgan-samuel-price.html",
+        featured: false
+    },
+
+    {
+        artist: "Morgan Samuel Price",
+        title: "Fall Color Pathway",
+        medium: "Oil on Panel",
+        dimensions: '12" × 9"',
+        price: 2000,
+        category: "painting",
+        image: "images/price-fall-color-pathway-hero-01.png",
+        heroImage: null,
+        artistPage: "artists/morgan-samuel-price.html",
+        featured: false
+    },
+
 
     // ==================================================
     // NANCY CARROLL
