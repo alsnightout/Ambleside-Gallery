@@ -82,7 +82,78 @@
             </p>
 
         </section>
+<!-- =========================================
+     INTERACTIVE ARTIST DIRECTORY
+========================================= -->
 
+<section class="artist-directory" aria-labelledby="directoryTitle">
+
+    <div class="artist-directory-heading">
+
+        <p class="eyebrow">
+            EXPLORE THE ARTISTS
+        </p>
+
+        <h2 id="directoryTitle">
+            An Artist Index.
+        </h2>
+
+        <p>
+            Browse our represented artists alphabetically.
+            Select a letter to discover their work.
+        </p>
+
+    </div>
+
+    <!-- Alphabet navigation -->
+
+    <nav
+        class="artist-alphabet"
+        id="artistAlphabet"
+        aria-label="Browse artists alphabetically"
+    ></nav>
+
+    <!-- Artist results -->
+
+    <div class="artist-directory-results">
+
+        <p
+            class="artist-directory-count"
+            id="artistDirectoryCount"
+            aria-live="polite"
+        ></p>
+
+        <div
+            class="artist-directory-list"
+            id="artistDirectoryList"
+        ></div>
+
+        <!-- Floating artwork preview -->
+
+        <div
+            class="artist-directory-preview"
+            id="artistDirectoryPreview"
+            aria-hidden="true"
+        >
+
+            <img
+                id="artistPreviewImage"
+                src=""
+                alt=""
+            >
+
+            <div class="artist-directory-preview-info">
+
+                <p id="artistPreviewName"></p>
+                <span id="artistPreviewTitle"></span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 
 
         <!-- =========================================
@@ -325,8 +396,10 @@
 <!-- =========================================
      COLLECTION PAGE JAVASCRIPT
 ========================================= -->
-
+<script src="artwork-data.js"></script>
 <script src="collection-page.js"></script>
+<script src="artist-directory.js"></script>
+
 
 </body>
 </html>

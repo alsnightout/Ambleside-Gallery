@@ -9230,3 +9230,278 @@ html {
     font-weight: 400;
 }
 
+/* =========================================
+   MORGAN SAMUEL PRICE — FEATURED WORK
+========================================= */
+
+body[data-artist="Morgan Samuel Price"]
+.artist-featured-work {
+    display: grid;
+    grid-template-columns:
+        minmax(0, 1.2fr)
+        minmax(0, 0.8fr);
+    align-items: center;
+    gap: clamp(40px, 6vw, 90px);
+}
+
+body[data-artist="Morgan Samuel Price"]
+.artist-featured-image {
+    min-width: 0;
+    width: 100%;
+    height: auto;
+}
+
+body[data-artist="Morgan Samuel Price"]
+.artist-featured-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 650px;
+    object-fit: contain;
+}
+
+body[data-artist="Morgan Samuel Price"]
+.artist-featured-info h2 {
+    font-size: clamp(2rem, 3vw, 3rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+
+    body[data-artist="Morgan Samuel Price"]
+    .artist-featured-work {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+}
+
+/* =========================================
+   AMBLESIDE — INTERACTIVE ARTIST DIRECTORY
+========================================= */
+
+.artist-directory {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 90px 5% 120px;
+}
+
+.artist-directory-heading {
+    margin-bottom: 55px;
+}
+
+.artist-directory-heading h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(3rem, 5vw, 5rem);
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.1;
+    margin: 20px 0;
+}
+
+.artist-directory-heading > p:last-child {
+    color: #77736b;
+    line-height: 1.8;
+}
+
+/* Alphabet */
+
+.artist-alphabet {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #c8c1b7;
+}
+
+.artist-alphabet-letter {
+    border: none;
+    background: transparent;
+    color: #77736b;
+    cursor: pointer;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.85rem;
+    padding: 10px 12px;
+
+    transition: color 0.25s ease,
+                background 0.25s ease;
+}
+
+.artist-alphabet-letter:hover {
+    color: #302c27;
+}
+
+.artist-alphabet-letter.is-active {
+    background: #302c27;
+    color: #f5f2eb;
+}
+
+/* Results */
+
+.artist-directory-results {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 360px;
+    gap: 70px;
+    padding-top: 35px;
+}
+
+.artist-directory-count {
+    grid-column: 1 / -1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #77736b;
+}
+
+.artist-directory-list {
+    min-width: 0;
+}
+
+.artist-directory-item,
+.artist-directory-item:visited {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    padding: 22px 0;
+    border-bottom: 1px solid #d4cec5;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.4rem, 2.2vw, 2rem);
+    font-weight: 400;
+    color: #302c27;
+    text-decoration: none;
+
+    transition: padding-left 0.25s ease;
+}
+
+.artist-directory-item:hover,
+.artist-directory-item:focus-visible {
+    padding-left: 12px;
+}
+
+.artist-directory-item > span:last-child {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: #928c84;
+}
+
+/* Artwork preview */
+
+.artist-directory-preview {
+    position: sticky;
+    top: 100px;
+    align-self: start;
+
+    opacity: 0;
+    transform: translateY(12px);
+    pointer-events: none;
+
+    transition: opacity 0.3s ease,
+                transform 0.3s ease;
+}
+
+.artist-directory-preview.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.artist-directory-preview img {
+    display: block;
+    width: 100%;
+    height: 360px;
+    object-fit: contain;
+}
+
+.artist-directory-preview-info {
+    text-align: center;
+    padding-top: 18px;
+}
+
+.artist-directory-preview-info p {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.2rem;
+    margin: 0 0 5px;
+}
+
+.artist-directory-preview-info span {
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    color: #77736b;
+}
+
+/* Mobile thumbnails hidden on desktop */
+
+.artist-directory-mobile-image {
+    display: none;
+}
+
+/* =========================================
+   MOBILE ARTIST DIRECTORY
+========================================= */
+
+@media (max-width: 768px) {
+
+    .artist-directory {
+        padding: 65px 6% 85px;
+    }
+
+    .artist-directory-results {
+        display: block;
+    }
+
+    .artist-directory-preview {
+        display: none;
+    }
+
+    .artist-directory-item {
+        font-size: 1.25rem;
+        padding: 18px 0;
+    }
+
+    .artist-directory-mobile-image {
+        display: block;
+        width: 65px;
+        height: 75px;
+        object-fit: contain;
+        flex-shrink: 0;
+    }
+
+    .artist-directory-item > span:first-of-type {
+        flex: 1;
+    }
+
+    .artist-alphabet {
+        gap: 4px;
+    }
+
+    .artist-alphabet-letter {
+        padding: 10px;
+    }
+
+}
+
+/* =========================================
+   ARTIST DIRECTORY — BUTTON CLEANUP
+========================================= */
+
+button.artist-directory-item {
+    width: 100%;
+    background: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    cursor: pointer;
+    text-align: left;
+}
+
+.collection-grid {
+    scroll-margin-top: 110px;
+}
+
