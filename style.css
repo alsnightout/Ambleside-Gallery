@@ -8600,3 +8600,633 @@ body .artist-featured-work .artist-featured-name {
     }
 }
 
+
+/* =========================================
+   AMBLESIDE — REFINED ARTWORK PRESENTATION
+========================================= */
+
+/* Artwork grid */
+
+.artist-works-grid {
+    align-items: start;
+    column-gap: 60px;
+    row-gap: 85px;
+}
+
+/* Individual artwork cards */
+
+.artist-works-grid .artist-work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-width: 0;
+}
+
+/* Artwork images */
+
+.artist-works-grid .artist-work img {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 470px;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+/* Artwork titles */
+
+.artist-works-grid .artist-work h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.35;
+
+    text-align: center;
+    margin: 22px 0 8px;
+}
+
+/* Artwork information */
+
+.artist-works-grid .artist-work p {
+    font-size: 0.7rem;
+    letter-spacing: 0.07em;
+    line-height: 1.8;
+    color: #77736b;
+    text-align: center;
+    margin: 3px 0;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+    .artist-works-grid {
+        grid-template-columns: 1fr;
+        row-gap: 65px;
+    }
+}
+
+/* =========================================
+   VIEW THE COLLECTION — EDITORIAL LINK
+========================================= */
+
+.artist-collection-jump {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    padding: 45px 20px 65px;
+    text-align: center;
+}
+
+.artist-collection-jump a,
+.artist-collection-jump a:visited {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+
+    color: #302c27;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.72rem;
+    font-weight: 400;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    border-bottom: 1px solid #aaa49a;
+    padding-bottom: 10px;
+
+    transition: border-color 0.3s ease;
+}
+
+.artist-collection-jump a:hover {
+    border-color: #302c27;
+}
+
+.artist-collection-jump span {
+    margin-left: 0;
+    font-size: 1rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#collection {
+    scroll-margin-top: 100px;
+}
+
+/* =========================================
+   RICHARD OVERSMITH — RECOGNITION
+========================================= */
+
+.oversmith-recognition {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 110px 30px 140px;
+}
+
+/* Heading */
+
+.oversmith-recognition-header {
+    margin-bottom: 65px;
+}
+
+.oversmith-recognition-header h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2.8rem, 5vw, 5rem);
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.1;
+    letter-spacing: -0.025em;
+    margin: 22px 0 0;
+}
+
+/* Recognition rows */
+
+.oversmith-recognition-row {
+    display: grid;
+    grid-template-columns: 190px minmax(0, 1fr);
+    column-gap: 40px;
+    align-items: start;
+
+    padding: 27px 0;
+    border-top: 1px solid #c5c0b8;
+}
+
+.oversmith-recognition-row:last-child {
+    border-bottom: 1px solid #c5c0b8;
+}
+
+/* Small category labels */
+
+.oversmith-recognition-label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.68rem;
+    letter-spacing: 0.12em;
+    font-weight: 400;
+    color: #77736b;
+}
+
+/* Description text */
+
+.oversmith-recognition-row p {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1rem;
+    line-height: 1.75;
+    color: #302c27;
+    margin: 0;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .oversmith-recognition {
+        padding: 75px 6% 90px;
+    }
+
+    .oversmith-recognition-row {
+        grid-template-columns: 1fr;
+        row-gap: 12px;
+        padding: 24px 0;
+    }
+
+    .oversmith-recognition-header h2 {
+        font-size: 2.8rem;
+    }
+
+}
+
+/* =========================================
+   VIEW THE COLLECTION — ALL ARTIST PAGES
+========================================= */
+
+.artist-collection-jump {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    padding: 45px 20px 65px;
+    text-align: center;
+}
+
+.artist-collection-jump a,
+.artist-collection-jump a:visited {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+
+    color: #302c27;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.72rem;
+    font-weight: 400;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    border-bottom: 1px solid #aaa49a;
+    padding-bottom: 10px;
+
+    transition: border-color 0.3s ease;
+}
+
+.artist-collection-jump a:hover {
+    border-color: #302c27;
+}
+
+.artist-collection-jump span {
+    font-size: 1rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#collection {
+    scroll-margin-top: 100px;
+}
+
+
+/* =========================================
+   CONNIE MCNEES — SCULPTURE & POETRY
+========================================= */
+
+.mcnees-featured,
+.mcnees-story {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 100px 5%;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: clamp(45px, 7vw, 110px);
+    align-items: center;
+}
+
+/* Featured sculpture */
+
+.mcnees-featured {
+    align-items: start;
+    padding-top: 70px;
+    padding-bottom: 130px;
+}
+
+.mcnees-featured-image img,
+.mcnees-story-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.mcnees-featured-content h2,
+.mcnees-story-content h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2.8rem, 4.5vw, 4.8rem);
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.1;
+    letter-spacing: -0.025em;
+    margin: 20px 0 25px;
+}
+
+/* Artwork details */
+
+.mcnees-artwork-details {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #77736b;
+    margin-bottom: 10px;
+}
+
+.mcnees-artwork-price {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1rem;
+    color: #302c27;
+    margin-bottom: 45px;
+}
+
+/* Poetry presentation */
+
+.mcnees-poetry {
+    border-top: 1px solid #c8c1b7;
+    padding-top: 35px;
+    margin-top: 40px;
+}
+
+.mcnees-poetry h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.7rem;
+    font-weight: 400;
+    font-style: normal;
+    margin: 22px 0;
+}
+
+.mcnees-poem {
+    white-space: pre-line;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(0.95rem, 1.2vw, 1.1rem);
+    font-style: normal;
+    line-height: 1.85;
+    color: #403b35;
+    margin: 0;
+}
+
+.mcnees-poetry-credit {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 0.85rem;
+    color: #77736b;
+    margin-top: 25px;
+}
+
+/* Collection introduction */
+
+.mcnees-collection-intro {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 100px 30px 90px;
+    text-align: center;
+    border-top: 1px solid #c8c1b7;
+}
+
+.mcnees-collection-intro h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2.8rem, 5vw, 5rem);
+    font-weight: 400;
+    line-height: 1.15;
+    margin: 25px 0 30px;
+}
+
+.mcnees-collection-intro > p:last-child {
+    max-width: 650px;
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 1.9;
+    color: #77736b;
+}
+
+/* Alternating sculpture sections */
+
+.mcnees-story {
+    border-top: 1px solid #d4cec5;
+}
+
+.mcnees-story-reverse .mcnees-story-image {
+    order: 2;
+}
+
+/* =========================================
+   CONNIE MCNEES — ALTERNATING SCULPTURES
+========================================= */
+
+/* Reverse every other sculpture layout */
+
+.mcnees-story-reverse .mcnees-story-image {
+    order: 2;
+}
+
+.mcnees-story-reverse .mcnees-story-content {
+    order: 1;
+}
+
+/* Sculpture photographs */
+
+.mcnees-story-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+}
+
+.mcnees-story-image img {
+    display: block;
+    width: 100%;
+    max-height: 650px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Sculpture descriptions */
+
+.mcnees-story-description {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.05rem;
+    line-height: 1.9;
+    color: #514b44;
+    max-width: 480px;
+}
+
+/* Artist statements */
+
+.mcnees-statement {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1rem;
+    line-height: 1.9;
+    color: #403b35;
+    margin-bottom: 22px;
+}
+
+/* Refine the poetry spacing */
+
+.mcnees-poetry .eyebrow {
+    margin-bottom: 22px;
+}
+
+.mcnees-poetry-credit {
+    margin-top: 30px;
+    font-size: 0.85rem;
+    letter-spacing: 0.02em;
+}
+
+/* Gentle separation between sculptures */
+
+.mcnees-story {
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
+
+/* =========================================
+   CONNIE MCNEES — TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .mcnees-featured,
+    .mcnees-story {
+        gap: 45px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .mcnees-featured-content h2,
+    .mcnees-story-content h2 {
+        font-size: clamp(2.5rem, 4vw, 3.8rem);
+    }
+
+    .mcnees-poem {
+        font-size: 0.95rem;
+        line-height: 1.8;
+    }
+
+}
+
+/* =========================================
+   CONNIE MCNEES — MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+    /* Stack sculptures and poetry vertically */
+
+    .mcnees-featured,
+    .mcnees-story {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        padding: 65px 6%;
+    }
+
+    /* Always show artwork before its story */
+
+    .mcnees-story-reverse .mcnees-story-image {
+        order: 1;
+    }
+
+    .mcnees-story-reverse .mcnees-story-content {
+        order: 2;
+    }
+
+    /* Images */
+
+    .mcnees-featured-image,
+    .mcnees-story-image {
+        width: 100%;
+    }
+
+    .mcnees-featured-image img,
+    .mcnees-story-image img {
+        width: 100%;
+        max-height: 520px;
+        object-fit: contain;
+    }
+
+    /* Headings */
+
+    .mcnees-featured-content h2,
+    .mcnees-story-content h2 {
+        font-size: 2.8rem;
+        line-height: 1.15;
+    }
+
+    /* Poetry */
+
+    .mcnees-poetry {
+        margin-top: 30px;
+        padding-top: 30px;
+    }
+
+    .mcnees-poem {
+        font-size: 1rem;
+        line-height: 1.9;
+    }
+
+    /* Collection introduction */
+
+    .mcnees-collection-intro {
+        padding: 75px 6%;
+    }
+
+    .mcnees-collection-intro h2 {
+        font-size: 2.8rem;
+    }
+
+    /* Artwork details */
+
+    .mcnees-artwork-price {
+        margin-bottom: 30px;
+    }
+
+}
+
+/* =========================================
+   CONNIE MCNEES — SMALL SCREENS
+========================================= */
+
+@media (max-width: 480px) {
+
+    .mcnees-featured-content h2,
+    .mcnees-story-content h2 {
+        font-size: 2.35rem;
+    }
+
+    .mcnees-collection-intro h2 {
+        font-size: 2.4rem;
+    }
+
+    .mcnees-poem {
+        font-size: 0.95rem;
+        line-height: 1.85;
+    }
+
+}
+
+/* =========================================
+   CONNIE MCNEES — FINAL EDITORIAL REFINEMENTS
+========================================= */
+
+@media (min-width: 769px) {
+
+    /* Keep the featured sculpture visible
+       while reading the longer poem */
+
+    .mcnees-featured-image {
+        position: sticky;
+        top: 110px;
+        align-self: start;
+    }
+
+    /* Slightly more restrained artwork titles */
+
+    .mcnees-featured-content h2,
+    .mcnees-story-content h2 {
+        font-size: clamp(2.4rem, 3.5vw, 3.8rem);
+        line-height: 1.15;
+        font-style: normal;
+    }
+
+    /* Balanced space around each sculpture */
+
+    .mcnees-story {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+}
+
+/* Poetry typography */
+
+.mcnees-poem {
+    line-height: 1.85;
+    letter-spacing: 0.005em;
+}
+
+/* Consistent artwork information */
+
+.mcnees-artwork-details {
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+}
+
+.mcnees-artwork-price {
+    font-size: 0.95rem;
+    font-weight: 400;
+}
+

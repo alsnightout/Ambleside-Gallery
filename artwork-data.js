@@ -395,6 +395,75 @@ window.artworks = [
     }, 
 
     // ==================================================
+    // CONNIE MCNEES
+    // ==================================================
+
+    {
+        artist: "Connie McNees",
+        title: "Mother of Time",
+        medium: "Bronze sculpture",
+        dimensions: '24" × 19"',
+        price: 28000,
+        category: "sculpture",
+        image: "images/mcnees-mother-of-time.jpg",
+        heroImage: null,
+        artistPage: "artists/connie-mcnees.html",
+        featured: true
+    },
+
+    {
+        artist: "Connie McNees",
+        title: "Storm",
+        medium: "Bronze sculpture",
+        dimensions: '16" × 23"',
+        price: 20000,
+        category: "sculpture",
+        image: "images/mcnees-storm.jpg",
+        heroImage: null,
+        artistPage: "artists/connie-mcnees.html",
+        featured: false
+    },
+
+    {
+        artist: "Connie McNees",
+        title: "Grateful",
+        medium: "Cast marble",
+        dimensions: '20"',
+        price: 18000,
+        category: "sculpture",
+        image: "images/mcnees-grateful.jpg",
+        heroImage: null,
+        artistPage: "artists/connie-mcnees.html",
+        featured: false
+    },
+
+    {
+        artist: "Connie McNees",
+        title: "Remember Me",
+        medium: "Bronze sculpture",
+        dimensions: "",
+        price: 30000,
+        category: "sculpture",
+        image: "images/mcnees-remember-me.jpeg",
+        heroImage: null,
+        artistPage: "artists/connie-mcnees.html",
+        featured: false
+    },
+
+    {
+        artist: "Connie McNees",
+        title: "Spring",
+        medium: "Bronze sculpture",
+        dimensions: '15" × 33" × 26"',
+        price: 30000,
+        category: "sculpture",
+        image: null,
+        heroImage: null,
+        artistPage: "artists/connie-mcnees.html",
+        featured: false
+    },
+
+    // ==================================================
     // DAVID EASTON
     // ==================================================
 
@@ -2114,6 +2183,152 @@ window.artworks = [
         featured: false
     },
 
+    // ==================================================
+    // RICHARD OVERSMITH
+    // ==================================================
+
+    {
+        artist: "Richard Oversmith",
+        title: "Autumn Light",
+        medium: "Oil on linen",
+        dimensions: '14" × 18"',
+        price: 2800,
+        category: "painting",
+        image: "images/oversmith-autumn-light.jpeg",
+        heroImage: null,
+        artistPage: "artists/richard-oversmith.html",
+        featured: false
+    },
+
+    {
+        artist: "Richard Oversmith",
+        title: "Coastal Birches",
+        medium: "Oil on linen",
+        dimensions: '18" × 14"',
+        price: 2800,
+        category: "painting",
+        image: "images/oversmith-coastal-birches.jpeg",
+        heroImage: null,
+        artistPage: "artists/richard-oversmith.html",
+        featured: false
+    },
+
+    {
+        artist: "Richard Oversmith",
+        title: "View of Chimney Rock",
+        medium: "Oil on linen",
+        dimensions: '20" × 16"',
+        price: 3200,
+        category: "painting",
+        image: "images/oversmith-view-of-chimney-rock.jpeg",
+        heroImage: null,
+        artistPage: "artists/richard-oversmith.html",
+        featured: true
+    },
+
+    {
+        artist: "Richard Oversmith",
+        title: "Creekside Maple",
+        medium: "Oil on linen",
+        dimensions: '18" × 14"',
+        price: 2800,
+        category: "painting",
+        image: "images/oversmith-creekside-maple.jpeg",
+        heroImage: null,
+        artistPage: "artists/richard-oversmith.html",
+        featured: false
+    },
+
+    {
+        artist: "Richard Oversmith",
+        title: "Glowing Red",
+        medium: "Oil on linen",
+        dimensions: '16" × 20"',
+        price: 3200,
+        category: "painting",
+        image: "images/oversmith-glowing-red.jpeg",
+        heroImage: null,
+        artistPage: "artists/richard-oversmith.html",
+        featured: false
+    },
+
+    {
+        artist: "Richard Oversmith",
+        title: "Appalachian Fence Line",
+        medium: "Oil on linen",
+        dimensions: '16" × 20"',
+        price: 3200,
+        category: "painting",
+        image: "images/oversmith-appalachian-fence-line.jpeg",
+        heroImage: null,
+        artistPage: "artists/richard-oversmith.html",
+        featured: false
+    },
+
+    {
+        artist: "Richard Oversmith",
+        title: "Al Fresco Lunch",
+        medium: "Oil on linen",
+        dimensions: '20" × 16"',
+        price: 3200,
+        category: "painting",
+        image: "images/oversmith-al-fresco-lunch.jpeg",
+        heroImage: null,
+        artistPage: "artists/richard-oversmith.html",
+        featured: false
+    },
+
+    {
+        artist: "Richard Oversmith",
+        title: "Through the Trees",
+        medium: "Oil on linen",
+        dimensions: '24" × 24"',
+        price: 5200,
+        category: "painting",
+        image: "images/oversmith-through-the-trees.jpeg",
+        heroImage: null,
+        artistPage: "artists/richard-oversmith.html",
+        featured: false
+    },
+
+    {
+        artist: "Richard Oversmith",
+        title: "Gentle Breeze",
+        medium: "Oil on linen",
+        dimensions: '32" × 44"',
+        price: 9800,
+        category: "painting",
+        image: "images/oversmith-gentle-breeze.jpeg",
+        heroImage: null,
+        artistPage: "artists/richard-oversmith.html",
+        featured: true
+    },
+
+    {
+        artist: "Richard Oversmith",
+        title: "Dressed in Gold",
+        medium: "Oil on linen",
+        dimensions: '40" × 20"',
+        price: 7200,
+        category: "painting",
+        image: "images/oversmith-dressed-in-gold.jpeg",
+        heroImage: null,
+        artistPage: "artists/richard-oversmith.html",
+        featured: false
+    },
+
+    {
+        artist: "Richard Oversmith",
+        title: "Winter's Gate",
+        medium: "Oil on linen",
+        dimensions: '42" × 36"',
+        price: 13000,
+        category: "painting",
+        image: "images/oversmith-winters-gate.jpeg",
+        heroImage: null,
+        artistPage: "artists/richard-oversmith.html",
+        featured: true
+    },
 
     // ==================================================
     // RICHARD SEDLACK

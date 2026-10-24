@@ -707,3 +707,51 @@ document.addEventListener(
 
 });
 
+/* =========================================
+   AMBLESIDE — VIEW THE COLLECTION LINK
+   Automatically added to artist pages
+========================================= */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const featuredSection = document.querySelector(
+        ".artist-featured-work"
+    );
+
+    const collectionSection = document.querySelector(
+        ".artist-works"
+    );
+
+    // Only run on pages with both sections
+    if (!featuredSection || !collectionSection) {
+        return;
+    }
+
+    // Give the collection its scroll destination
+    collectionSection.id = "collection";
+
+    // Prevent duplicate links
+    if (document.querySelector(".artist-collection-jump")) {
+        return;
+    }
+
+    // Create the navigation link
+    const jumpLink = document.createElement("div");
+
+    jumpLink.className = "artist-collection-jump";
+
+    jumpLink.innerHTML = `
+        <a href="#collection">
+            View the Collection
+            <span aria-hidden="true">↓</span>
+        </a>
+    `;
+
+    // Place directly below the featured artwork
+    featuredSection.insertAdjacentElement(
+        "afterend",
+        jumpLink
+    );
+
+});
+
