@@ -9505,3 +9505,58 @@ button.artist-directory-item {
     scroll-margin-top: 110px;
 }
 
+/* =========================================
+   AMBLESIDE — MOBILE ABOUT SECTION FIX
+========================================= */
+
+@media (max-width: 768px) {
+
+    /* Stack the flyer and gallery information */
+
+    .gallery-about {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100%;
+        height: auto !important;
+        overflow: visible;
+    }
+
+    /* Allow the flyer to use its natural dimensions */
+
+    .gallery-about .about-image {
+        width: 100% !important;
+        height: auto !important;
+        min-height: 0 !important;
+        overflow: visible !important;
+    }
+
+    /* Display the entire flyer without cropping */
+
+    .gallery-about .about-image img {
+        display: block;
+        width: 100% !important;
+        height: auto !important;
+        max-width: 100%;
+        max-height: none !important;
+        object-fit: contain !important;
+        object-position: center !important;
+        position: static !important;
+    }
+
+    /* Keep the text comfortably inside the screen */
+
+    .gallery-about .about-content {
+        width: 100% !important;
+        min-width: 0;
+        height: auto !important;
+        padding: 65px 7% !important;
+        box-sizing: border-box;
+    }
+
+    .gallery-about .about-content h2 {
+        font-size: clamp(2.8rem, 10vw, 4.5rem);
+        line-height: 1.1;
+    }
+
+}
+
