@@ -61,7 +61,7 @@ window.representedArtists = [
         page: "artists/deborah-squier.html",
         cardImage: "images/squier-artists-card-01.jpg",
 
-        homepageReady: true,
+        homepageReady: false,
 
         featureTitle: "Atmosphere held in color.",
 
@@ -137,7 +137,7 @@ window.representedArtists = [
         page: "artists/lisa-ethier.html",
         cardImage: "images/ethier-solara-hero.png",
 
-        homepageReady: true,
+        homepageReady: false,
 
         featureTitle: "Surface, color and abstraction.",
 
@@ -152,7 +152,7 @@ window.representedArtists = [
         page: "artists/matthew-hillier.html",
         cardImage: "images/hillier-jay-on-fence-hero.png",
 
-        homepageReady: true,
+        homepageReady: false,
 
         featureTitle: "The natural world, closely observed.",
 

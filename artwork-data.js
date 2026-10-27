@@ -504,10 +504,10 @@ window.artworks = [
         dimensions: '22" × 30"',
         price: 4600,
         category: "painting",
-        image: "images/squier-lingering-light-hero.png",
+        image: null,
         heroImage: null,
         artistPage: "artists/deborah-squier.html",
-        featured: true
+        featured: false
     },
 
     {
@@ -517,7 +517,7 @@ window.artworks = [
         dimensions: '12" × 24"',
         price: 3800,
         category: "painting",
-        image: "images/squier-letting-go-hero.png",
+        image: null,
         heroImage: null,
         artistPage: "artists/deborah-squier.html",
         featured: false
@@ -530,10 +530,10 @@ window.artworks = [
         dimensions: '20" × 20"',
         price: 3800,
         category: "painting",
-        image: "images/squier-sunset-over-lake-hero.png",
+        image: null,
         heroImage: null,
         artistPage: "artists/deborah-squier.html",
-        featured: true
+        featured: false
     },
 
     {
@@ -543,10 +543,10 @@ window.artworks = [
         dimensions: '12" × 24"',
         price: 3800,
         category: "painting",
-        image: "images/squier-meadow-hero.png",
+        image: null,
         heroImage: null,
         artistPage: "artists/deborah-squier.html",
-        featured: true
+        featured: false
     },
        {
         artist: "Deborah Squier",
@@ -555,7 +555,7 @@ window.artworks = [
         dimensions: '22" × 30"',
         price: null,
         category: "painting",
-        image: "images/squier-01.png",
+        image: null,
         heroImage: null,
         artistPage: "artists/deborah-squier.html",
         featured: false
@@ -567,7 +567,7 @@ window.artworks = [
         dimensions: '12" × 12"',
         price: null,
         category: "painting",
-        image: "images/squier-02.png",
+        image: null,
         heroImage: null,
         artistPage: "artists/deborah-squier.html",
         featured: false
@@ -579,7 +579,7 @@ window.artworks = [
         dimensions: '12" × 12"',
         price: null,
         category: "painting",
-        image: "images/squier-03.png",
+        image: null,
         heroImage: null,
         artistPage: "artists/deborah-squier.html",
         featured: false
@@ -1566,7 +1566,7 @@ window.artworks = [
         image: "images/hillier-jay-on-a-fence-hero.png",
         heroImage: "images/hillier-jay-on-fence-framed.jpg",
         artistPage: "artists/matthew-hillier.html",
-        featured: true
+        featured: false
     },
 
     {
