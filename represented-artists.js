@@ -74,7 +74,7 @@ window.representedArtists = [
         name: "Elissa Houghton",
         medium: "Painting · Abstraction",
         page: "artists/elissa-houghton.html",
-        cardImage: "images/houghton-dream-scape.png",
+        cardImage: "images/houghton-echos-of-the-ancients-hero.png",
 
         homepageReady: true,
 
@@ -234,24 +234,44 @@ window.representedArtists = [
     },
 
 
-    {
-        name: "Tatyana Dronova",
-        medium: "",
-        page: null,
-        cardImage: null,
+  
+    // =========================================
+    // TATYANA DYAKONOV
+    // =========================================
 
-        homepageReady: false
+    {
+        name: "Tatyana Dyakonov",
+        medium: "Acrylic Painting · Cityscapes",
+        page: "artists/tatyana-dyakonov.html",
+        cardImage: "images/dyakonov-studio-7.png",
+
+        homepageReady: true,
+
+        featureTitle: "Architecture reimagined.",
+
+        featureText:
+            "Discover Tatyana Dyakonov's imaginative cityscapes, where historic architecture, expressive color and unexpected perspectives transform familiar places into extraordinary worlds."
     },
 
 
+    // =========================================
+    // PATRICIA SAVAGE
+    // =========================================
+
     {
         name: "Patricia Savage",
-        medium: "",
-        page: null,
-        cardImage: null,
+        medium: "Pastel · Oil · Landscape",
+        page: "artists/patricia-savage.html",
+        cardImage: "images/savage-collision-hero.png",
 
-        homepageReady: false
-    }
+        homepageReady: true,
+
+        featureTitle: "Where color meets nature.",
+
+        featureText:
+            "Explore Patricia Savage's expressive paintings, where the beauty of the natural world comes alive through luminous color, atmospheric light and a remarkable sensitivity to nature."
+    },
+
 
 ];
 /* =========================================

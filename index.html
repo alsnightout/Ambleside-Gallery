@@ -296,7 +296,7 @@
 
                 <img
                     src="images/ambleside-grand-opening-flyer-hero (1).png"
-                    alt="Interior of Ambleside Gallery"
+                    alt="Ambleside Gallery Grand Opening, November 12, 2026, from 5:30 to 8:30 PM at 30 All Souls Crescent, Asheville, North Carolina."
                 >
 
             </div>
@@ -738,24 +738,29 @@ if (
        AVAILABLE COLLECTION IMAGES
     ========================================== */
 
-    const collectionImages =
-        window.artworks
-            .filter(artwork => artwork.image)
-            .map(artwork => artwork.image);
+    
+const collectionImages =
+    window.artworks
+        .filter(artwork =>
+            artwork.image &&
+            artwork.artist !== "Deborah Squier"
+        )
+        .map(artwork => artwork.image);
 
 
     /* =========================================
        FEATURED IMAGES
     ========================================== */
 
-    const featuredImages =
-        window.artworks
-            .filter(
-                artwork =>
-                    artwork.featured === true &&
-                    artwork.image
-            )
-            .map(artwork => artwork.image);
+   
+const featuredImages =
+    window.artworks
+        .filter(artwork =>
+            artwork.featured === true &&
+            artwork.image &&
+            artwork.artist !== "Deborah Squier"
+        )
+        .map(artwork => artwork.image);
 
 
 /* =========================================

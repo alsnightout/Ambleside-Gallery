@@ -41,7 +41,7 @@ window.artworks = [
         dimensions: "",
         price: 1800,
         category: "painting",
-        image: "images/hennings-beautiful-kisa-hero.png",
+        image: "images/hennings-beautiful-kisa-hero.JPG",
         heroImage: null,
         artistPage: null,
         featured: false
@@ -1778,7 +1778,7 @@ window.artworks = [
         dimensions: '11" × 14"',
         price: 2500,
         category: "painting",
-        image: "images/price-lone-ibis-hero-01.png",
+        image: "images/price-lone-ibis-hero.png",
         heroImage: null,
         artistPage: "artists/morgan-samuel-price.html",
         featured: false
@@ -1817,7 +1817,7 @@ window.artworks = [
         dimensions: '12" × 9"',
         price: 2000,
         category: "painting",
-        image: "images/price-fall-color-pathway-hero-01.png",
+        image: "images/price-fall-color-pathway-hero.png",
         heroImage: null,
         artistPage: "artists/morgan-samuel-price.html",
         featured: false
