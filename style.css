@@ -9836,3 +9836,112 @@ button.artist-directory-item {
     }
 }
 
+/* =========================================
+   LINDY SCHILLACI — FEATURED WORK
+========================================= */
+
+.lindy-schillaci-page .artist-featured-work {
+    display: grid;
+    grid-template-columns:
+        minmax(0, 1.15fr)
+        minmax(0, 0.85fr);
+
+    align-items: center;
+    gap: clamp(50px, 7vw, 120px);
+
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 100px 7% 140px;
+}
+
+/* Artwork */
+
+.lindy-schillaci-page .artist-featured-image {
+    width: 100%;
+    min-width: 0;
+}
+
+.lindy-schillaci-page .artist-featured-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 700px;
+
+    object-fit: contain;
+    object-position: center;
+}
+
+/* Information */
+
+.lindy-schillaci-page .artist-featured-info {
+    width: 100%;
+    min-width: 0;
+    max-width: 480px;
+}
+
+.lindy-schillaci-page .artist-featured-info h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2.5rem, 4vw, 4.5rem);
+    font-weight: 400;
+    line-height: 1.12;
+
+    margin: 25px 0;
+}
+
+.lindy-schillaci-page .artist-featured-name {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.15rem;
+    margin-bottom: 20px;
+}
+
+.lindy-schillaci-page .artist-featured-details {
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    color: #817a70;
+    margin-bottom: 30px;
+}
+
+.lindy-schillaci-page .artist-featured-description {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.1rem;
+    line-height: 1.85;
+    color: #5f5a52;
+}
+
+/* Collection link */
+
+.lindy-schillaci-page .artist-featured-collection-link {
+    display: inline-block;
+    margin-top: 35px;
+    padding-bottom: 8px;
+
+    color: #24231f;
+    text-decoration: none;
+
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+
+    border-bottom: 1px solid #aaa398;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .lindy-schillaci-page .artist-featured-work {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 60px 7% 90px;
+    }
+
+    .lindy-schillaci-page .artist-featured-info {
+        max-width: 100%;
+    }
+
+    .lindy-schillaci-page .artist-featured-info h2 {
+        font-size: clamp(2.4rem, 9vw, 3.5rem);
+    }
+
+}
+
