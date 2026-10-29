@@ -1065,7 +1065,7 @@ window.artworks = [
         dimensions: '24" × 30"',
         price: 2550,
         category: "photography",
-        image: "images/botz-the-marriage-of-physics-and-metaphysics-hero.png",
+        image: "images/botz-marriage-of-physics-metaphysics-hero.png",
         heroImage: "images/botz-marriage-of-physics-metaphysics-framed.png",
         artistPage: "artists/jeff-botz.html",
         featured: true
@@ -1524,7 +1524,7 @@ window.artworks = [
         dimensions: '36" × 24"',
         price: 22000,
         category: "painting",
-        image: null,
+        image: "images/hillier-denali-wolf-pack.jpg",
         heroImage: null,
         artistPage: "artists/matthew-hillier.html",
         featured: false
@@ -1602,7 +1602,7 @@ window.artworks = [
         dimensions: '24" × 36"',
         price: 2800,
         category: "painting",
-        image: null,
+        image: "images/hillier-winters-eve.jpg",
         heroImage: null,
         artistPage: "artists/matthew-hillier.html",
         featured: false
@@ -2341,10 +2341,10 @@ window.artworks = [
         dimensions: '18" × 30"',
         price: 3400,
         category: "painting",
-        image: "images/sedlack-alamance-tobacco-barn-hero.jpg",
+        image: "images/sedlack-alamance-tobacco-barn-hero.png",
         heroImage: "images/sedlack-alamance-tobacco-barn-framed.jpg",
         artistPage: null,
-        featured: false
+        featured: true
     },
 
     {
@@ -2354,10 +2354,10 @@ window.artworks = [
         dimensions: '16" × 20"',
         price: 2300,
         category: "painting",
-        image: "images/sedlack-bear-springs-evening-hero.jpg",
+        image: "images/sedlack-bear-springs-evening-hero.png",
         heroImage: "images/sedlack-bear-springs-evening-framed.jpeg",
         artistPage: null,
-        featured: false
+        featured: true
     },
 
     {
@@ -2367,10 +2367,10 @@ window.artworks = [
         dimensions: '16" × 30"',
         price: 3200,
         category: "painting",
-        image: "images/sedlack-cape-hatteras-gaillardia-hero.jpg",
+        image: "images/sedlack-cape-hatteras-gaillardia-hero.png",
         heroImage: "images/sedlack-cape-hatteras-gaillardia-framed.png",
         artistPage: null,
-        featured: false
+        featured: true
     },
 
     {
@@ -2393,7 +2393,7 @@ window.artworks = [
         dimensions: '20" × 40"',
         price: 4800,
         category: "painting",
-        image: null,
+        image: "images/sedlack-late-evening-canyon-land.png",
         heroImage: null,
         artistPage: null,
         featured: false
@@ -2406,10 +2406,10 @@ window.artworks = [
         dimensions: '18" × 24"',
         price: 2800,
         category: "painting",
-        image: "images/sedlack-outer-banks-dunes-hero.jpg",
+        image: "images/sedlack-outer-banks-dunes-hero.png",
         heroImage: "images/sedlack-outer-banks-dunes-framed.png",
         artistPage: null,
-        featured: false
+        featured: true
     },
 
     // ==================================================
