@@ -9587,3 +9587,252 @@ button.artist-directory-item {
     border-color: #302c27;
 }
 
+/* =========================================
+   COLLECTION — DESKTOP DIRECTORY SPACING
+========================================= */
+
+@media (min-width: 1051px) {
+
+    /* Remove unnecessary directory height */
+
+    .artist-directory {
+        min-height: 0 !important;
+        height: auto !important;
+        padding-bottom: 45px !important;
+    }
+
+    /* Prevent empty artist results from
+       reserving excessive vertical space */
+
+    .artist-directory-results {
+        min-height: 0 !important;
+        height: auto !important;
+    }
+
+    /* Hide the empty artwork preview */
+
+    .artist-directory-preview:not(.is-visible) {
+        display: none !important;
+    }
+
+    /* Reduce space below alphabet navigation */
+
+    .artist-alphabet {
+        margin-bottom: 25px !important;
+    }
+
+    /* Keep artwork filters closer to directory */
+
+    .collection-filters {
+        margin-top: 0 !important;
+    }
+
+}
+
+/* =========================================
+   AMBLESIDE GALLERY
+   EXHIBITIONS — TO BE ANNOUNCED
+========================================= */
+
+.exhibitions-coming-soon {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 130px 7% 150px;
+    background-color: #f5f2eb;
+    color: #24231f;
+}
+
+.exhibitions-coming-inner {
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+}
+
+.exhibitions-coming-inner .eyebrow {
+    margin-bottom: 65px;
+}
+
+.exhibitions-section-label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.68rem;
+    letter-spacing: 0.25em;
+    color: #817a70;
+    margin-bottom: 25px;
+}
+
+.exhibitions-coming-inner h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(3.5rem, 7vw, 7rem);
+    font-weight: 400;
+    line-height: 1.05;
+    letter-spacing: -0.035em;
+    margin: 0 auto 55px;
+}
+
+.exhibitions-coming-inner h1 span {
+    display: block;
+}
+
+.exhibitions-divider {
+    width: 75px;
+    height: 1px;
+    margin: 0 auto 40px;
+    background-color: #aaa398;
+}
+
+.exhibitions-announcement {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.78rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+}
+
+.exhibitions-description {
+    max-width: 620px;
+    margin: 0 auto 25px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.1rem, 1.6vw, 1.3rem);
+    line-height: 1.85;
+    color: #5f5a52;
+}
+
+.exhibitions-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 55px;
+}
+
+.exhibitions-text-link {
+    color: #24231f;
+    text-decoration: none;
+    border-bottom: 1px solid #aaa398;
+
+    padding-bottom: 8px;
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.exhibitions-text-link:hover {
+    border-color: #24231f;
+}
+
+.exhibitions-location {
+    margin-top: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    line-height: 1.9;
+    color: #817a70;
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .exhibitions-coming-soon {
+        min-height: 75vh;
+        padding: 95px 7% 100px;
+    }
+
+    .exhibitions-coming-inner .eyebrow {
+        margin-bottom: 45px;
+    }
+
+    .exhibitions-coming-inner h1 {
+        font-size: clamp(2.8rem, 11vw, 4.5rem);
+        margin-bottom: 40px;
+    }
+
+    .exhibitions-description {
+        font-size: 1.05rem;
+        line-height: 1.75;
+    }
+
+    .exhibitions-actions {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .exhibitions-location {
+        margin-top: 75px;
+    }
+
+}
+
+/* MUSIC AT AMBLESIDE — COMING SOON */
+
+.music-coming-soon {
+    width: 100%;
+    background: #f5f2eb;
+    padding: 60px 5%;
+}
+
+.music-coming-soon img {
+    display: block;
+    width: 100%;
+    max-width: 1400px;
+    height: auto;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .music-coming-soon {
+        padding: 30px 0;
+    }
+}
+
+/* MUSIC AT AMBLESIDE — COMING SOON */
+
+.music-coming-soon {
+    width: 100%;
+    background: #f5f2eb;
+    padding: 60px 5%;
+}
+
+.music-coming-soon img {
+    display: block;
+    width: 100%;
+    max-width: 1400px;
+    height: auto;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .music-coming-soon {
+        padding: 30px 0;
+    }
+}
+
+/* MUSIC AT AMBLESIDE — COMING SOON */
+
+.music-coming-soon {
+    width: 100%;
+    background: #f5f2eb;
+    padding: 60px 5%;
+}
+
+.music-coming-soon img {
+    display: block;
+    width: 100%;
+    max-width: 1400px;
+    height: auto;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .music-coming-soon {
+        padding: 30px 0;
+    }
+}
+
