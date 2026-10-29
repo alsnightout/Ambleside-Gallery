@@ -9560,3 +9560,30 @@ button.artist-directory-item {
 
 }
 
+/* =========================================
+   COLLECTION — MEET THE ARTIST LINK
+========================================= */
+
+.collection-artist-profile-link {
+    display: inline-block;
+    margin: 0 7% 35px;
+    padding-bottom: 8px;
+
+    color: #302c27;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    border-bottom: 1px solid #aaa398;
+}
+
+.collection-artist-profile-link[hidden] {
+    display: none;
+}
+
+.collection-artist-profile-link:hover {
+    border-color: #302c27;
+}
+

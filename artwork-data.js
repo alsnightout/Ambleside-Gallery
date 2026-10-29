@@ -2380,7 +2380,7 @@ window.artworks = [
         dimensions: '20" × 34"',
         price: 4800,
         category: "painting",
-        image: null,
+        image: "images/sedlack-estancia-valley.png",
         heroImage: null,
         artistPage: null,
         featured: false
@@ -2394,6 +2394,18 @@ window.artworks = [
         price: 4800,
         category: "painting",
         image: "images/sedlack-late-evening-canyon-land.png",
+        heroImage: null,
+        artistPage: null,
+        featured: false
+    },
+        {
+        artist: "Richard Sedlack",
+        title: "Lone Tree",
+        medium: "Oil on canvas",
+        dimensions: null,
+        price: null,
+        category: "painting",
+        image: "images/sedlack-lone-tree.png",
         heroImage: null,
         artistPage: null,
         featured: false

@@ -34,6 +34,55 @@ document.addEventListener("DOMContentLoaded", () => {
     let currentArtwork = null;
     let lastFocusedElement = null;
 
+/* =========================================
+   COLLECTION FILTER STATE
+========================================= */
+
+let activeCategory = "all";
+let activeArtist = "all";
+
+/* =========================================
+   SELECTED ARTIST PROFILE LINK
+========================================= */
+
+const artistProfileLink = document.createElement("a");
+
+artistProfileLink.className =
+    "collection-artist-profile-link";
+
+artistProfileLink.textContent =
+    "Meet the Artist →";
+
+artistProfileLink.hidden = true;
+
+grid.parentElement.insertBefore(
+    artistProfileLink,
+    grid
+);
+
+
+function updateArtistProfileLink() {
+
+    artistProfileLink.hidden = true;
+
+    if (activeArtist === "all") return;
+
+    const artwork = window.artworks.find(item =>
+        item.artist === activeArtist &&
+        typeof item.artistPage === "string" &&
+        item.artistPage.trim() &&
+        item.artistPage !== "null"
+    );
+
+    if (!artwork) return;
+
+    artistProfileLink.href = artwork.artistPage;
+
+    artistProfileLink.hidden = false;
+
+}
+
+
     function formatPrice(price) {
         if (price === null || price === undefined || price === "") {
             return "";
@@ -72,15 +121,20 @@ document.addEventListener("DOMContentLoaded", () => {
         ))];
     }
 
-    function renderCollection(filter = "all") {
+    function renderCollection() {
         grid.replaceChildren();
 
-        const visibleWorks = window.artworks.filter(artwork =>
-            artwork &&
-            typeof artwork.image === "string" &&
-            artwork.image.trim() &&
-            (filter === "all" || artwork.category === filter)
-        );
+        
+const visibleWorks = window.artworks.filter(artwork =>
+    artwork &&
+    typeof artwork.image === "string" &&
+    artwork.image.trim() &&
+    (activeCategory === "all" ||
+        artwork.category === activeCategory) &&
+    (activeArtist === "all" ||
+        artwork.artist === activeArtist)
+);
+
 
         visibleWorks.forEach(artwork => {
 
@@ -264,14 +318,70 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    filters.forEach(button => {
-        button.addEventListener("click", () => {
-            filters.forEach(item => item.classList.remove("active"));
-            button.classList.add("active");
-            renderCollection(button.dataset.filter);
-        });
+  
+/* =========================================
+   MEDIUM FILTERS
+========================================= */
+
+filters.forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        activeCategory = button.dataset.filter || "all";
+
+        filters.forEach(item =>
+            item.classList.remove("active")
+        );
+
+        button.classList.add("active");
+
+        renderCollection();
+
     });
 
-    renderCollection();
-
 });
+
+
+
+/* =========================================
+   ARTIST DIRECTORY SELECTION
+========================================= */
+
+document.addEventListener(
+    "ambleside:artistSelected",
+    event => {
+
+        activeArtist = event.detail.artist;
+
+        // Reset medium filters
+        activeCategory = "all";
+
+        filters.forEach(button => {
+
+            button.classList.toggle(
+                "active",
+                button.dataset.filter === "all"
+            );
+
+        });
+
+        // Update the artist biography link
+        updateArtistProfileLink();
+
+        // Display the selected artist's artwork
+        renderCollection();
+
+    }
+);
+
+
+
+
+/* =========================================
+   INITIAL COLLECTION
+========================================= */
+
+renderCollection();
+
+}); // END DOMContentLoaded
+
