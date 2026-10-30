@@ -171,7 +171,7 @@ window.representedArtists = [
         medium: "Oil · Painting · Sculpture",
         page: "artists/nancy-carroll.html",
         cardImage:
-            "images/carroll-nod-to-sunflowers-hero.webp",
+            "images/carroll-nod-to-sunflowers-hero.png",
 
         homepageReady: true,
 
@@ -196,7 +196,7 @@ window.representedArtists = [
         name: "Pat Dews",
         medium: "Watercolor · Collage",
         page: "artists/pat-dews.html",
-        cardImage: "images/dews-slippery-slope-hero.webp",
+        cardImage: "images/dews-slippery-slope-hero.png",
 
         homepageReady: true,
 
@@ -248,7 +248,7 @@ window.representedArtists = [
         name: "Tatyana Dyakonov",
         medium: "Acrylic Painting · Cityscapes",
         page: "artists/tatyana-dyakonov.html",
-        cardImage: "images/dyakonov-studio-7.webp",
+        cardImage: "images/dyakonov-studio-7.png",
 
         homepageReady: true,
 
@@ -267,7 +267,7 @@ window.representedArtists = [
         name: "Patricia Savage",
         medium: "Pastel · Oil · Landscape",
         page: "artists/patricia-savage.html",
-        cardImage: "images/savage-collision-hero.webp",
+        cardImage: "images/savage-collision-hero.png",
 
         homepageReady: true,
 
