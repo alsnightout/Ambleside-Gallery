@@ -28,7 +28,7 @@ window.artworks = [
         dimensions: '36" × 48"',
         price: 6800,
         category: "painting",
-        image: "images/hennings-a-sight-to-behold-hero.png",
+        image: "images/hennings-a-sight-to-behold-hero.webp",
         heroImage: null,
         artistPage: null,
         featured: false
@@ -67,7 +67,7 @@ window.artworks = [
         dimensions: '14" × 18"',
         price: 3200,
         category: "painting",
-        image: "images/hennings-patriot-hero.png",
+        image: "images/hennings-patriot-hero.webp",
         heroImage: null,
         artistPage: null,
         featured: false
@@ -644,7 +644,7 @@ window.artworks = [
         dimensions: '22" × 30"',
         price: 8500,
         category: "painting",
-        image: "images/paravano-alamance-farmhouse-hero.png",
+        image: "images/paravano-alamance-farmhouse-hero.webp",
         heroImage: null,
         artistPage: null,
         featured: false
@@ -656,7 +656,7 @@ window.artworks = [
         dimensions: '22" × 30"',
         price: 8500,
         category: "painting",
-        image: "images/paravano-two-zebras-hero.png",
+        image: "images/paravano-two-zebras-hero.webp",
         heroImage: null,
         artistPage: null,
         featured: false
@@ -668,7 +668,7 @@ window.artworks = [
         dimensions: '22" × 30"',
         price: 9600,
         category: "painting",
-        image: "images/paravano-fishing-trawlers-hero.png",
+        image: "images/paravano-fishing-trawlers-hero.webp",
         heroImage: null,
         artistPage: null,
         featured: false
@@ -891,7 +891,7 @@ window.artworks = [
         dimensions: '20" × 30"',
         price: 9500,
         category: "painting",
-        image: "images/mcinerney-queen-of-heaven-hero.png",
+        image: "images/mcinerney-queen-of-heaven-hero.webp",
         heroImage: "images/mcinerney-queen-of-heaven-framed.png",
         artistPage: "artists/gene-mcinerney.html",
         featured: true
@@ -1143,7 +1143,7 @@ window.artworks = [
         dimensions: "",
         price: null,
         category: "painting",
-        image: "images/gamper-the-niagara-and-the-unicorn-hero.png",
+        image: "images/gamper-the-niagara-and-the-unicorn-hero.webp",
         heroImage: null,
         artistPage: null,
         featured: false
@@ -1160,7 +1160,7 @@ window.artworks = [
         dimensions: '12" × 16"',
         price: 1900,
         category: "painting",
-        image: "images/wennergren-makullsbacken-hero.png",
+        image: "images/wennergren-makullsbacken-hero.webp",
         heroImage: null,
         artistPage: null,
         featured: false
@@ -1173,7 +1173,7 @@ window.artworks = [
         dimensions: "",
         price: 1550,
         category: "painting",
-        image: "images/wennergren-two-squashes-hero.png",
+        image: "images/wennergren-two-squashes-hero.webp",
         heroImage: "images/wennergren-two-squashes-framed.png",
         artistPage: null,
         featured: true
@@ -1190,7 +1190,7 @@ window.artworks = [
         dimensions: "",
         price: 1800,
         category: "painting",
-        image: "images/srebnik-a-village-in-normandie-hero.png",
+        image: "images/srebnik-a-village-in-normandie-hero.webp",
         heroImage: "images/srebnik-a-village-in-normandie-framed.png",
         artistPage: "artists/katriel-srebnik.html",
         featured: false
@@ -1203,7 +1203,7 @@ window.artworks = [
         dimensions: '18" × 20"',
         price: 3900,
         category: "painting",
-        image: "images/srebnik-a-winters-drive-hero.png",
+        image: "images/srebnik-a-winters-drive-hero.webp",
         heroImage: "images/srebnik-a-winters-drive-framed.jpg",
         artistPage: "artists/katriel-srebnik.html",
         featured: true
@@ -1216,7 +1216,7 @@ window.artworks = [
         dimensions: '12" × 16"',
         price: 2900,
         category: "painting",
-        image: "images/srebnik-after-the-rains-hero.png",
+        image: "images/srebnik-after-the-rains-hero.webp",
         heroImage: "images/srebnik-after-the-rains-framed.png",
         artistPage: "artists/katriel-srebnik.html",
         featured: true
@@ -1229,7 +1229,7 @@ window.artworks = [
         dimensions: "",
         price: 2900,
         category: "painting",
-        image: "images/srebnik-chevron-sunset-in-paris-hero.png",
+        image: "images/srebnik-chevron-sunset-in-paris-hero.webp",
         heroImage: "images/srebnik-chevron-sunset-in-paris-framed.png",
         artistPage: "artists/katriel-srebnik.html",
         featured: false
@@ -1242,7 +1242,7 @@ window.artworks = [
         dimensions: "",
         price: 1800,
         category: "painting",
-        image: "images/srebnik-conductor-making-the-rounds-hero.png",
+        image: "images/srebnik-conductor-making-the-rounds-hero.webp",
         heroImage: "images/srebnik-conductor-making-the-rounds-framed.png",
         artistPage: "artists/katriel-srebnik.html",
         featured: false
@@ -1255,7 +1255,7 @@ window.artworks = [
         dimensions: '9" × 12"',
         price: 1600,
         category: "painting",
-        image: "images/srebnik-crystal-morning-tournai-belgium-hero.png",
+        image: "images/srebnik-crystal-morning-tournai-belgium-hero.webp",
         heroImage: "images/srebnik-crystal-morning-tournai-belgium-framed.png",
         artistPage: "artists/katriel-srebnik.html",
         featured: false
@@ -1268,7 +1268,7 @@ window.artworks = [
         dimensions: "",
         price: 2900,
         category: "painting",
-        image: "images/srebnik-evening-in-paris-hero.png",
+        image: "images/srebnik-evening-in-paris-hero.webp",
         heroImage: "images/srebnik-evening-in-paris-framed.png",
         artistPage: "artists/katriel-srebnik.html",
         featured: false
@@ -1281,7 +1281,7 @@ window.artworks = [
         dimensions: "",
         price: 2500,
         category: "painting",
-        image: "images/srebnik-sunlight-and-shadow-in-paris-hero.png",
+        image: "images/srebnik-sunlight-and-shadow-in-paris-hero.webp",
         heroImage: "images/srebnik-sunlight-and-shadow-in-paris-framed.png",
         artistPage: "artists/katriel-srebnik.html",
         featured: false
@@ -1540,7 +1540,7 @@ window.artworks = [
         dimensions: "",
         price: 1200,
         category: "painting",
-        image: "images/smirnov-southern-italy-hero.png",
+        image: "images/smirnov-southern-italy-hero.webp",
         heroImage: "images/smirnov-southern-italy.png",
         artistPage: null,
         featured: false
@@ -1570,7 +1570,7 @@ window.artworks = [
         dimensions: '20" × 36"',
         price: 5500,
         category: "painting",
-        image: "images/hillier-grey-heron-on-a-tire-hero.png",
+        image: "images/hillier-grey-heron-on-a-tire-hero.webp",
         heroImage: "images/hillier-grey-heron-on-tire-framed.jpg",
         artistPage: "artists/matthew-hillier.html",
         featured: false
@@ -1583,7 +1583,7 @@ window.artworks = [
         dimensions: '24" × 48"',
         price: 24000,
         category: "painting",
-        image: "images/hillier-into-the-light-hero.png",
+        image: "images/hillier-into-the-light-hero.webp",
         heroImage: null,
         artistPage: "artists/matthew-hillier.html",
         featured: false
@@ -1759,7 +1759,7 @@ window.artworks = [
         dimensions: '12" × 16"',
         price: 2800,
         category: "painting",
-        image: "images/price-a-teaching-moment-hero-01.png",
+        image: "images/price-a-teaching-moment-hero-01.webp",
         heroImage: null,
         artistPage: "artists/morgan-samuel-price.html",
         featured: false
@@ -1772,7 +1772,7 @@ window.artworks = [
         dimensions: '12" × 16"',
         price: 2300,
         category: "painting",
-        image: "images/price-daddys-fishing-02-hero.png",
+        image: "images/price-daddys-fishing-02-hero.webp",
         heroImage: null,
         artistPage: "artists/morgan-samuel-price.html",
         featured: false
@@ -1798,7 +1798,7 @@ window.artworks = [
         dimensions: null,
         price: 2300,
         category: "painting",
-        image: "images/price-fishing-dicks-creek-hero-02.png",
+        image: "images/price-fishing-dicks-creek-hero-02.webp",
         heroImage: null,
         artistPage: "artists/morgan-samuel-price.html",
         featured: false
@@ -1811,7 +1811,7 @@ window.artworks = [
         dimensions: '11" × 14"',
         price: 2500,
         category: "painting",
-        image: "images/price-lone-ibis-hero.png",
+        image: "images/price-lone-ibis-hero.webp",
         heroImage: null,
         artistPage: "artists/morgan-samuel-price.html",
         featured: false
@@ -1837,7 +1837,7 @@ window.artworks = [
         dimensions: null,
         price: 5000,
         category: "painting",
-        image: "images/price-southern-grace-hero-01.png",
+        image: "images/price-southern-grace-hero-01.webp",
         heroImage: null,
         artistPage: "artists/morgan-samuel-price.html",
         featured: false
@@ -1868,7 +1868,7 @@ window.artworks = [
         dimensions: '12" × 12"',
         price: 1000,
         category: "painting",
-        image: "images/carroll-carolina-hydrangeas-hero (1).png",
+        image: "images/carroll-carolina-hydrangeas-hero (1).webp",
         heroImage: "images/carroll-carolina-hydrangeas-framed.png",
         artistPage: "artists/nancy-carroll.html",
         featured: false
@@ -1894,7 +1894,7 @@ window.artworks = [
         dimensions: '16" × 20"',
         price: 3200,
         category: "painting",
-        image: "images/carroll-delicate-bougainvillea-hero (1).png",
+        image: "images/carroll-delicate-bougainvillea-hero (1).webp",
         heroImage: "images/carroll-delicate-bougainvillea-framed.png",
         artistPage: "artists/nancy-carroll.html",
         featured: false
@@ -1907,7 +1907,7 @@ window.artworks = [
         dimensions: '20" × 16"',
         price: 3500,
         category: "painting",
-        image: "images/carroll-favored-peonies-hero.png",
+        image: "images/carroll-favored-peonies-hero.webp",
         heroImage: "images/carroll-favored-peonies-framed.png",
         artistPage: "artists/nancy-carroll.html",
         featured: false
@@ -1920,9 +1920,9 @@ window.artworks = [
         dimensions: '30" × 30"',
         price: 4800,
         category: "painting",
-        image: "images/carroll-nod-to-sunflowers-hero.png",
+        image: "images/carroll-nod-to-sunflowers-hero.webp",
         images: [
-            "images/carroll-nod-to-sunflowers-hero.png",
+            "images/carroll-nod-to-sunflowers-hero.webp",
             "images/carroll-nod-to-sunflowers-framed.png"
         ],
         artistPage: "artists/nancy-carroll.html",
@@ -1936,7 +1936,7 @@ window.artworks = [
         dimensions: '20" × 16"',
         price: 3500,
         category: "painting",
-        image: "images/carroll-sunflower-splendor-hero (1).png",
+        image: "images/carroll-sunflower-splendor-hero (1).webp",
         heroImage: "images/carroll-sunflower-splendor-framed.png",
         artistPage: "artists/nancy-carroll.html",
         featured: false
@@ -2074,7 +2074,7 @@ window.artworks = [
         dimensions: '29" × 22"',
         price: 3000,
         category: "watercolor",
-        image: "images/dews-slippery-slope-hero.png",
+        image: "images/dews-slippery-slope-hero.webp",
         heroImage: "images/dews-slippery-slope-framed.jpg",
         artistPage: "artists/pat-dews.html",
         featured: true
@@ -2158,7 +2158,7 @@ window.artworks = [
         dimensions: "",
         price: 2200,
         category: "painting",
-        image: "images/savage-in-the-gathering-light-hero.png",
+        image: "images/savage-in-the-gathering-light-hero.webp",
         heroImage: null,
         artistPage: "artists/patricia-savage.html",
         featured: false
@@ -2184,7 +2184,7 @@ window.artworks = [
         dimensions: '18" × 24"',
         price: 1900,
         category: "painting",
-        image: "images/savage-collision-hero.png",
+        image: "images/savage-collision-hero.webp",
         heroImage: null,
         artistPage: "artists/patricia-savage.html",
         featured: true
@@ -2197,7 +2197,7 @@ window.artworks = [
         dimensions: "",
         price: 2700,
         category: "painting",
-        image: "images/savage-icy-shards-of-clouds-hero.png",
+        image: "images/savage-icy-shards-of-clouds-hero.webp",
         heroImage: null,
         artistPage: "artists/patricia-savage.html",
         featured: false
@@ -2210,7 +2210,7 @@ window.artworks = [
         dimensions: "",
         price: 1080,
         category: "painting",
-        image: "images/savage-life-in-a-salt-water-pool-hero.png",
+        image: "images/savage-life-in-a-salt-water-pool-hero.webp",
         heroImage: null,
         artistPage: "artists/patricia-savage.html",
         featured: false
@@ -2374,7 +2374,7 @@ window.artworks = [
         dimensions: '18" × 30"',
         price: 3400,
         category: "painting",
-        image: "images/sedlack-alamance-tobacco-barn-hero.png",
+        image: "images/sedlack-alamance-tobacco-barn-hero.webp",
         heroImage: "images/sedlack-alamance-tobacco-barn-framed.jpg",
         artistPage: null,
         featured: true
@@ -2387,7 +2387,7 @@ window.artworks = [
         dimensions: '16" × 20"',
         price: 2300,
         category: "painting",
-        image: "images/sedlack-bear-springs-evening-hero.png",
+        image: "images/sedlack-bear-springs-evening-hero.webp",
         heroImage: "images/sedlack-bear-springs-evening-framed.jpeg",
         artistPage: null,
         featured: true
@@ -2400,7 +2400,7 @@ window.artworks = [
         dimensions: '16" × 30"',
         price: 3200,
         category: "painting",
-        image: "images/sedlack-cape-hatteras-gaillardia-hero.png",
+        image: "images/sedlack-cape-hatteras-gaillardia-hero.webp",
         heroImage: "images/sedlack-cape-hatteras-gaillardia-framed.png",
         artistPage: null,
         featured: true
@@ -2413,7 +2413,7 @@ window.artworks = [
         dimensions: '20" × 34"',
         price: 4800,
         category: "painting",
-        image: "images/sedlack-estancia-valley.png",
+        image: "images/sedlack-estancia-valley.webp",
         heroImage: null,
         artistPage: null,
         featured: false
@@ -2426,7 +2426,7 @@ window.artworks = [
         dimensions: '20" × 40"',
         price: 4800,
         category: "painting",
-        image: "images/sedlack-late-evening-canyon-land.png",
+        image: "images/sedlack-late-evening-canyon-land.webp",
         heroImage: null,
         artistPage: null,
         featured: false
@@ -2438,7 +2438,7 @@ window.artworks = [
         dimensions: null,
         price: null,
         category: "painting",
-        image: "images/sedlack-lone-tree.png",
+        image: "images/sedlack-lone-tree.webp",
         heroImage: null,
         artistPage: null,
         featured: false
@@ -2451,7 +2451,7 @@ window.artworks = [
         dimensions: '18" × 24"',
         price: 2800,
         category: "painting",
-        image: "images/sedlack-outer-banks-dunes-hero.png",
+        image: "images/sedlack-outer-banks-dunes-hero.webp",
         heroImage: "images/sedlack-outer-banks-dunes-framed.png",
         artistPage: null,
         featured: true
@@ -2701,7 +2701,7 @@ window.artworks = [
         dimensions: "",
         price: 2800,
         category: "painting",
-        image: "images/dyakonov-studio-7.png",
+        image: "images/dyakonov-studio-7.webp",
         heroImage: null,
         artistPage: "artists/tatyana-dyakonov.html",
         featured: true
@@ -2714,7 +2714,7 @@ window.artworks = [
         dimensions: "",
         price: 2800,
         category: "painting",
-        image: "images/dyakonov-streetlight.png",
+        image: "images/dyakonov-streetlight.webp",
         heroImage: null,
         artistPage: "artists/tatyana-dyakonov.html",
         featured: false
