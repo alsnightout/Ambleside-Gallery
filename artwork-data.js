@@ -512,12 +512,12 @@ window.artworks = [
 
     {
         artist: "Deborah Squier",
-        title: "Letting Go",
-        medium: "Oil on canvas",
-        dimensions: '12" × 24"',
-        price: 3800,
+        title: "Reach",
+        medium: "Pastel",
+        dimensions: '21" × 21"',
+        price: 4800,
         category: "painting",
-        image: null,
+        image: "images/squier-reach.jpg",
         heroImage: null,
         artistPage: "artists/deborah-squier.html",
         featured: false
@@ -525,12 +525,12 @@ window.artworks = [
 
     {
         artist: "Deborah Squier",
-        title: "Sunset Over Lake",
-        medium: "Oil on canvas",
+        title: "Veil",
+        medium: "Pastel",
         dimensions: '20" × 20"',
-        price: 3800,
+        price: 4200,
         category: "painting",
-        image: null,
+        image: "images/squier-veil.jpg",
         heroImage: null,
         artistPage: "artists/deborah-squier.html",
         featured: false
@@ -538,55 +538,88 @@ window.artworks = [
 
     {
         artist: "Deborah Squier",
-        title: "Meadow",
-        medium: "Oil on canvas",
-        dimensions: '12" × 24"',
-        price: 3800,
+        title: "Essence",
+        medium: "Oil on Linen",
+        dimensions: '30" × 30"',
+        price: 6600,
         category: "painting",
-        image: null,
+        image: "images/squier-essence.jpg",
         heroImage: null,
         artistPage: "artists/deborah-squier.html",
         featured: false
     },
        {
         artist: "Deborah Squier",
-        title: null,
-        medium: "Oil on canvas",
-        dimensions: '22" × 30"',
-        price: null,
+        title: "Adagio I",
+        medium: "Oil on Linen",
+        dimensions: '24" × 36"',
+        price: 6800,
         category: "painting",
-        image: null,
+        image: "images/squier-adagioI.jpg",
         heroImage: null,
         artistPage: "artists/deborah-squier.html",
         featured: false
     },
        {
         artist: "Deborah Squier",
-        title: null,
-        medium: "Oil on canvas",
-        dimensions: '12" × 12"',
-        price: null,
+        title: "Adagio II",
+        medium: "Oil on Linen",
+        dimensions: '24" × 36"',
+        price: 6800,
         category: "painting",
-        image: null,
+        image: "images/squier-adagioII.jpg",
         heroImage: null,
         artistPage: "artists/deborah-squier.html",
         featured: false
     },
        {
         artist: "Deborah Squier",
-        title: null,
-        medium: "Oil on canvas",
-        dimensions: '12" × 12"',
-        price: null,
+        title: "Alla Prima",
+        medium: "Oil on Linen",
+        dimensions: '10" × 20"',
+        price: 1800,
         category: "painting",
-        image: null,
+        image: "images/squier-alla-prima.jpg",
         heroImage: null,
         artistPage: "artists/deborah-squier.html",
         featured: false
     },
-
-
-
+        {
+        artist: "Deborah Squier",
+        title: "Cloud Shadows",
+        medium: "Oil on Linen",
+        dimensions: '10" × 20"',
+        price: 1800,
+        category: "painting",
+        image: "images/squier-cloud-shadows.jpg",
+        heroImage: null,
+        artistPage: "artists/deborah-squier.html",
+        featured: false
+    },
+        {
+        artist: "Deborah Squier",
+        title: "Beginner's Mind",
+        medium: "Oil on Linen",
+        dimensions: '10" × 20"',
+        price: 1800,
+        category: "painting",
+        image: "images/squier-beginners-mind.jpg",
+        heroImage: null,
+        artistPage: "artists/deborah-squier.html",
+        featured: false
+    },
+     {
+        artist: "Deborah Squier",
+        title: Kismet,
+        medium: "Pastel",
+        dimensions: '36" × 24"',
+        price: 7200,
+        category: "painting",
+        image: "images/squier-kismet.jpg",
+        heroImage: null,
+        artistPage: "artists/deborah-squier.html",
+        featured: false
+    },
 
     // ==================================================
     // DINO PARAVANO

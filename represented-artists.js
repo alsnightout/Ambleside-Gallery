@@ -55,19 +55,24 @@ window.representedArtists = [
     },
 
 
-    {
-        name: "Deborah Squier",
-        medium: "Pastel · Oil",
-        page: "artists/deborah-squier.html",
-        cardImage: "images/squier-artists-card-01.jpg",
+   
+{
+    name: "Deborah Squier",
 
-        homepageReady: false,
+    medium: "Pastel · Oil Painting",
 
-        featureTitle: "Atmosphere held in color.",
+    page: "artists/deborah-squier.html",
 
-        featureText:
-            "Discover Deborah Squier's atmospheric landscapes, where light, distance and the natural world are rendered with quiet sensitivity."
-    },
+    cardImage: "images/squier-reach.jpg",
+
+    homepageReady: true,
+
+    featureTitle: "Atmosphere held in color.",
+
+    featureText:
+        "Discover Deborah Squier's atmospheric landscapes, where light, distance and the natural world are rendered with quiet sensitivity."
+},
+
 
 
     {
