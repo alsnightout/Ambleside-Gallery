@@ -555,7 +555,7 @@ window.artworks = [
         dimensions: '24" × 36"',
         price: 6800,
         category: "painting",
-        image: "images/squier-adagioI.jpg",
+        image: "images/squier-adagio.jpg",
         heroImage: null,
         artistPage: "artists/deborah-squier.html",
         featured: false
@@ -610,7 +610,7 @@ window.artworks = [
     },
      {
         artist: "Deborah Squier",
-        title: Kismet,
+        title: "Kismet",
         medium: "Pastel",
         dimensions: '36" × 24"',
         price: 7200,
