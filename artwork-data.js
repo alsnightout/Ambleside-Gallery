@@ -892,7 +892,7 @@ window.artworks = [
         price: 9500,
         category: "painting",
         image: "images/mcinerney-queen-of-heaven-hero.png",
-        heroImage: "images/mcinerney-queen-of-heaven-framed.png",
+        heroImage: null,
         artistPage: "artists/gene-mcinerney.html",
         featured: true
     },
@@ -1099,7 +1099,7 @@ window.artworks = [
         price: 2550,
         category: "photography",
         image: "images/botz-marriage-of-physics-metaphysics-hero.png",
-        heroImage: "images/botz-marriage-of-physics-metaphysics-framed.png",
+        heroImage: null,
         artistPage: "artists/jeff-botz.html",
         featured: true
     },
@@ -1174,7 +1174,7 @@ window.artworks = [
         price: 1550,
         category: "painting",
         image: "images/wennergren-two-squashes-hero.png",
-        heroImage: "images/wennergren-two-squashes-framed.png",
+        heroImage: null,
         artistPage: null,
         featured: true
     },
@@ -1191,7 +1191,7 @@ window.artworks = [
         price: 1800,
         category: "painting",
         image: "images/srebnik-a-village-in-normandie-hero.png",
-        heroImage: "images/srebnik-a-village-in-normandie-framed.png",
+        heroImage: null,
         artistPage: "artists/katriel-srebnik.html",
         featured: false
     },
@@ -1204,7 +1204,7 @@ window.artworks = [
         price: 3900,
         category: "painting",
         image: "images/srebnik-a-winters-drive-hero.png",
-        heroImage: "images/srebnik-a-winters-drive-framed.jpg",
+        heroImage: null,
         artistPage: "artists/katriel-srebnik.html",
         featured: true
     },
@@ -1217,7 +1217,7 @@ window.artworks = [
         price: 2900,
         category: "painting",
         image: "images/srebnik-after-the-rains-hero.png",
-        heroImage: "images/srebnik-after-the-rains-framed.png",
+        heroImage: null,
         artistPage: "artists/katriel-srebnik.html",
         featured: true
     },
@@ -1230,7 +1230,7 @@ window.artworks = [
         price: 2900,
         category: "painting",
         image: "images/srebnik-chevron-sunset-in-paris-hero.png",
-        heroImage: "images/srebnik-chevron-sunset-in-paris-framed.png",
+        heroImage: null,
         artistPage: "artists/katriel-srebnik.html",
         featured: false
     },
@@ -1243,7 +1243,7 @@ window.artworks = [
         price: 1800,
         category: "painting",
         image: "images/srebnik-conductor-making-the-rounds-hero.png",
-        heroImage: "images/srebnik-conductor-making-the-rounds-framed.png",
+        heroImage: null,
         artistPage: "artists/katriel-srebnik.html",
         featured: false
     },
@@ -1256,7 +1256,7 @@ window.artworks = [
         price: 1600,
         category: "painting",
         image: "images/srebnik-crystal-morning-tournai-belgium-hero.png",
-        heroImage: "images/srebnik-crystal-morning-tournai-belgium-framed.png",
+        heroImage: null,
         artistPage: "artists/katriel-srebnik.html",
         featured: false
     },
@@ -1269,7 +1269,7 @@ window.artworks = [
         price: 2900,
         category: "painting",
         image: "images/srebnik-evening-in-paris-hero.png",
-        heroImage: "images/srebnik-evening-in-paris-framed.png",
+        heroImage: null,
         artistPage: "artists/katriel-srebnik.html",
         featured: false
     },
@@ -1282,7 +1282,7 @@ window.artworks = [
         price: 2500,
         category: "painting",
         image: "images/srebnik-sunlight-and-shadow-in-paris-hero.png",
-        heroImage: "images/srebnik-sunlight-and-shadow-in-paris-framed.png",
+        heroImage: null,
         artistPage: "artists/katriel-srebnik.html",
         featured: false
     }, 
@@ -1472,7 +1472,7 @@ window.artworks = [
         price: null,
         category: "painting",
         image: "images/schillaci-eucalyptus-in-a-china-vase-hero.png",
-        heroImage: "images/schillaci-eucalyptus-in-a-china-vase-framed.jpg",
+        heroImage: null,
         artistPage: "artists/lindy-schillaci.html",
         featured: false
     },
@@ -1485,7 +1485,7 @@ window.artworks = [
         price: 3600,
         category: "painting",
         image: "images/schillaci-oranges-and-grapes-hero.png",
-        heroImage: "images/schillaci-oranges-and-grapes-framed.jpg",
+        heroImage: null,
         artistPage: "artists/lindy-schillaci.html",
         featured: false
     },
@@ -1511,7 +1511,7 @@ window.artworks = [
         price: 3800,
         category: "painting",
         image: "images/schillaci-turquoise-bowl-hero.png",
-        heroImage: "images/schillaci-turquoise-bowl-framed.jpg",
+        heroImage: null,
         artistPage: "artists/lindy-schillaci.html",
         featured: false
     },
@@ -1524,7 +1524,7 @@ window.artworks = [
         price: null,
         category: "painting",
         image: "images/schillaci-mangoes-hero.png",
-        heroImage: "images/schillaci-mangoes-framed.jpg",
+        heroImage: null,
         artistPage: "artists/lindy-schillaci.html",
         featured: true
     },
@@ -1571,7 +1571,7 @@ window.artworks = [
         price: 5500,
         category: "painting",
         image: "images/hillier-grey-heron-on-a-tire-hero.png",
-        heroImage: "images/hillier-grey-heron-on-tire-framed.jpg",
+        heroImage: null,
         artistPage: "artists/matthew-hillier.html",
         featured: false
     },
@@ -1597,7 +1597,7 @@ window.artworks = [
         price: 7900,
         category: "painting",
         image: "images/hillier-jay-on-a-fence-hero.png",
-        heroImage: "images/hillier-jay-on-fence-framed.jpg",
+        heroImage: null,
         artistPage: "artists/matthew-hillier.html",
         featured: false
     },
@@ -1623,7 +1623,7 @@ window.artworks = [
         price: 8500,
         category: "painting",
         image: "images/hillier-thompson-gazelles-hero.png",
-        heroImage: "images/hillier-thompson-gazelles-framed.jpg",
+        heroImage: null,
         artistPage: "artists/matthew-hillier.html",
         featured: false
     },
@@ -1869,7 +1869,7 @@ window.artworks = [
         price: 1000,
         category: "painting",
         image: "images/carroll-carolina-hydrangeas-hero (1).png",
-        heroImage: "images/carroll-carolina-hydrangeas-framed.png",
+        heroImage: null,
         artistPage: "artists/nancy-carroll.html",
         featured: false
     },
@@ -1882,7 +1882,7 @@ window.artworks = [
         price: 1000,
         category: "painting",
         image: "images/carroll-dahlia-simplicity-hero (1).png",
-        heroImage: "images/carroll-dahlia-simplicity-framed.png",
+        heroImage: null,
         artistPage: "artists/nancy-carroll.html",
         featured: false
     },
@@ -1895,7 +1895,7 @@ window.artworks = [
         price: 3200,
         category: "painting",
         image: "images/carroll-delicate-bougainvillea-hero (1).png",
-        heroImage: "images/carroll-delicate-bougainvillea-framed.png",
+        heroImage: null,
         artistPage: "artists/nancy-carroll.html",
         featured: false
     },
@@ -1908,7 +1908,7 @@ window.artworks = [
         price: 3500,
         category: "painting",
         image: "images/carroll-favored-peonies-hero.png",
-        heroImage: "images/carroll-favored-peonies-framed.png",
+        heroImage: null,
         artistPage: "artists/nancy-carroll.html",
         featured: false
     },
@@ -1921,10 +1921,7 @@ window.artworks = [
         price: 4800,
         category: "painting",
         image: "images/carroll-nod-to-sunflowers-hero.png",
-        images: [
-            "images/carroll-nod-to-sunflowers-hero.png",
-            "images/carroll-nod-to-sunflowers-framed.png"
-        ],
+        images: "images/carroll-nod-to-sunflowers-hero.png",
         artistPage: "artists/nancy-carroll.html",
         featured: true
     },
@@ -1937,7 +1934,7 @@ window.artworks = [
         price: 3500,
         category: "painting",
         image: "images/carroll-sunflower-splendor-hero (1).png",
-        heroImage: "images/carroll-sunflower-splendor-framed.png",
+        heroImage: null,
         artistPage: "artists/nancy-carroll.html",
         featured: false
     },
@@ -1954,7 +1951,7 @@ window.artworks = [
         price: 1900,
         category: "watercolor",
         image: "images/price-windswept-hero.png",
-        heroImage: "images/price-windswept-framed.png",
+        heroImage: null,
         artistPage: "artists/nigel-price.html",
         featured: false
     },
@@ -1967,7 +1964,7 @@ window.artworks = [
         price: 2400,
         category: "watercolor",
         image: "images/price-yorkshire-farmhouse-hero.png",
-        heroImage: "images/price-yorkshire-farmhouse-framed.png",
+        heroImage: null,
         artistPage: "artists/nigel-price.html",
         featured: false
     },
@@ -1984,7 +1981,7 @@ window.artworks = [
         price: 3000,
         category: "watercolor",
         image: "images/dews-birch-parade-hero.jpg",
-        heroImage: "images/dews-birch-parade-framed.jpg",
+        heroImage: null,
         artistPage: "artists/pat-dews.html",
         featured: false
     },
@@ -2010,7 +2007,7 @@ window.artworks = [
         price: 3000,
         category: "watercolor",
         image: "images/dews-iris-essence-hero.jpg",
-        heroImage: "images/dews-iris-essence-framed.jpg",
+        heroImage: null,
         artistPage: "artists/pat-dews.html",
         featured: false
     },
@@ -2023,7 +2020,7 @@ window.artworks = [
         price: 1800,
         category: "watercolor",
         image: "images/dews-luminosity-hero.jpg",
-        heroImage: "images/dews-luminosity-framed.jpg",
+        heroImage: null,
         artistPage: "artists/pat-dews.html",
         featured: false
     },
@@ -2049,7 +2046,7 @@ window.artworks = [
         price: 1800,
         category: "watercolor",
         image: "images/dews-natures-dance-hero.jpg",
-        heroImage: "images/dews-natures-dance-framed.jpg",
+        heroImage: null,
         artistPage: "artists/pat-dews.html",
         featured: false
     },
@@ -2075,7 +2072,7 @@ window.artworks = [
         price: 3000,
         category: "watercolor",
         image: "images/dews-slippery-slope-hero.png",
-        heroImage: "images/dews-slippery-slope-framed.jpg",
+        heroImage: null,
         artistPage: "artists/pat-dews.html",
         featured: true
     },
@@ -2088,7 +2085,7 @@ window.artworks = [
         price: 1800,
         category: "watercolor",
         image: "images/dews-techi-hero.jpg",
-        heroImage: "images/dews-techi-framed.jpg",
+        heroImage: null,
         artistPage: "artists/pat-dews.html",
         featured: false
     },
@@ -2101,7 +2098,7 @@ window.artworks = [
         price: 2400,
         category: "watercolor",
         image: "images/dews-turquoise-flowers-in-vase-hero.jpg",
-        heroImage: "images/dews-turquoise-flowers-in-vase-framed.jpg",
+        heroImage: null,
         artistPage: "artists/pat-dews.html",
         featured: false
     },
@@ -2129,7 +2126,7 @@ window.artworks = [
         price: 8600,
         category: "painting",
         image: "images/archer-nature-and-man-hero.png",
-        heroImage: "images/archer-nature-and-man-framed.jpeg",
+        heroImage: null,
         artistPage: "artists/peter-archer.html",
         featured: false
     },
@@ -2375,7 +2372,7 @@ window.artworks = [
         price: 3400,
         category: "painting",
         image: "images/sedlack-alamance-tobacco-barn-hero.png",
-        heroImage: "images/sedlack-alamance-tobacco-barn-framed.jpg",
+        heroImage: null,
         artistPage: null,
         featured: true
     },
@@ -2388,7 +2385,7 @@ window.artworks = [
         price: 2300,
         category: "painting",
         image: "images/sedlack-bear-springs-evening-hero.png",
-        heroImage: "images/sedlack-bear-springs-evening-framed.jpeg",
+        heroImage: null,
         artistPage: null,
         featured: true
     },
@@ -2401,7 +2398,7 @@ window.artworks = [
         price: 3200,
         category: "painting",
         image: "images/sedlack-cape-hatteras-gaillardia-hero.png",
-        heroImage: "images/sedlack-cape-hatteras-gaillardia-framed.png",
+        heroImage: null,
         artistPage: null,
         featured: true
     },
@@ -2452,7 +2449,7 @@ window.artworks = [
         price: 2800,
         category: "painting",
         image: "images/sedlack-outer-banks-dunes-hero.png",
-        heroImage: "images/sedlack-outer-banks-dunes-framed.png",
+        heroImage: null,
         artistPage: null,
         featured: true
     },
@@ -2469,7 +2466,7 @@ window.artworks = [
         price: 2800,
         category: "painting",
         image: "images/christopher-abandoned-acreage-hero.jpg",
-        heroImage: "images/christopher-abandoned-acreage-framed.png",
+        heroImage: null,
         artistPage: "artists/tom-christopher.html",
         featured: false
     },
@@ -2482,7 +2479,7 @@ window.artworks = [
         price: 1850,
         category: "painting",
         image: "images/christopher-broken-fences-hero.jpg",
-        heroImage: "images/christopher-broken-fences-framed.png",
+        heroImage: null,
         artistPage: "artists/tom-christopher.html",
         featured: false
     },
@@ -2495,7 +2492,7 @@ window.artworks = [
         price: 950,
         category: "painting",
         image: "images/christopher-b&w-street-study-hero.jpg",
-        heroImage: "images/christopher-b&w-street-scene-framed.png",
+        heroImage: null,
         artistPage: "artists/tom-christopher.html",
         featured: false
     },
@@ -2508,7 +2505,7 @@ window.artworks = [
         price: null,
         category: "painting",
         image: "images/christopher-early-autumn-hero.jpg",
-        heroImage: "images/christopher-early-autumn-framed.png",
+        heroImage: null,
         artistPage: "artists/tom-christopher.html",
         featured: false
     },
@@ -2521,7 +2518,7 @@ window.artworks = [
         price: 2500,
         category: "painting",
         image: "images/christopher-eighty-acres-hero.jpg",
-        heroImage: "images/christopher-eighty-acres-framed.png",
+        heroImage: null,
         artistPage: "artists/tom-christopher.html",
         featured: false
     },
@@ -2547,7 +2544,7 @@ window.artworks = [
         price: 750,
         category: "painting",
         image: "images/christopher-street-scene-III-hero.jpg",
-        heroImage: "images/christopher-street-scene-III-framed.png",
+        heroImage: null,
         artistPage: "artists/tom-christopher.html",
         featured: false
     },
