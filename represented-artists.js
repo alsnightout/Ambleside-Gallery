@@ -1,3 +1,4 @@
+
 /* =========================================
    AMBLESIDE GALLERY
    REPRESENTED ARTISTS
@@ -19,7 +20,6 @@ window.representedArtists = [
             "Discover the extraordinary watercolor work of Guan Weixing, distinguished by sensitivity, atmosphere and remarkable technical command."
     },
 
-
     {
         name: "Karl Wennergren",
         medium: "Oil · Watercolor · Printmaking",
@@ -29,7 +29,6 @@ window.representedArtists = [
         homepageReady: false
     },
 
-
     {
         name: "Morgan Samuel Price",
         medium: "Oil",
@@ -38,7 +37,6 @@ window.representedArtists = [
 
         homepageReady: false
     },
-
 
     {
         name: "Brad & Bryan Caviness",
@@ -54,26 +52,19 @@ window.representedArtists = [
             "Explore the architectural ceramic sculpture of Brad and Bryan Caviness, where history, structure and imagination converge."
     },
 
+    {
+        name: "Deborah Squier",
+        medium: "Pastel · Oil Painting",
+        page: "artists/deborah-squier.html",
+        cardImage: "images/squier-reach.jpg",
 
-   
-{
-    name: "Deborah Squier",
+        homepageReady: true,
 
-    medium: "Pastel · Oil Painting",
+        featureTitle: "Atmosphere held in color.",
 
-    page: "artists/deborah-squier.html",
-
-    cardImage: "images/squier-reach.jpg",
-
-    homepageReady: true,
-
-    featureTitle: "Atmosphere held in color.",
-
-    featureText:
-        "Discover Deborah Squier's atmospheric landscapes, where light, distance and the natural world are rendered with quiet sensitivity."
-},
-
-
+        featureText:
+            "Discover Deborah Squier's atmospheric landscapes, where light, distance and the natural world are rendered with quiet sensitivity."
+    },
 
     {
         name: "Elissa Houghton",
@@ -89,7 +80,6 @@ window.representedArtists = [
             "Explore Elissa Houghton's expressive paintings, where abstraction, color and atmosphere create spaces that hover between landscape and imagination."
     },
 
-
     {
         name: "Frank Eber",
         medium: "Watercolor · Oil",
@@ -104,13 +94,11 @@ window.representedArtists = [
             "Discover Frank Eber's expressive watercolor paintings and his distinctive command of atmosphere, movement and light."
     },
 
-
     {
         name: "Jeff Botz",
         medium: "Black & White Photography · Large Format",
         page: "artists/jeff-botz.html",
-        cardImage:
-            "images/botz-marriage-of-physics-metaphysics-hero.png",
+        cardImage: "images/botz-marriage-of-physics-metaphysics-hero.png",
 
         homepageReady: true,
 
@@ -120,12 +108,11 @@ window.representedArtists = [
             "Explore Jeff Botz's large-format black-and-white photography of the high Himalayas, shaped by endurance, precision and the darkroom."
     },
 
-
     {
         name: "Katriel Srebnik",
         medium: "Oil · Pastel · Drawing",
         page: "artists/katriel-srebnik.html",
-        cardImage: "images/srebnik-a-winters-drive-002.jpg",
+        cardImage: "images/srebnik-a-winters-drive-hero.webp",
 
         homepageReady: true,
 
@@ -135,12 +122,11 @@ window.representedArtists = [
             "Discover Katriel Srebnik's carefully observed paintings and drawings, balancing atmosphere, structure and representational detail."
     },
 
-
     {
         name: "Lisa Ethier",
         medium: "Oil · Cold Wax · Mixed Media",
         page: "artists/lisa-ethier.html",
-        cardImage: "images/ethier-solara-hero.png",
+        cardImage: "images/ethier-solara-hero-02.webp",
 
         homepageReady: false,
 
@@ -150,12 +136,11 @@ window.representedArtists = [
             "Explore Lisa Ethier's atmospheric work in oil, cold wax and mixed media, where layered surfaces become fields of color and texture."
     },
 
-
     {
         name: "Matthew Hillier",
         medium: "Wildlife · Acrylic",
         page: "artists/matthew-hillier.html",
-        cardImage: "images/hillier-jay-on-fence-hero.png",
+        cardImage: "images/hillier-jay-on-a-fence-hero.png",
 
         homepageReady: false,
 
@@ -165,13 +150,11 @@ window.representedArtists = [
             "Discover Matthew Hillier's wildlife paintings, defined by close observation, precision and an enduring fascination with the animal world."
     },
 
-
     {
         name: "Nancy Carroll",
         medium: "Oil · Painting · Sculpture",
         page: "artists/nancy-carroll.html",
-        cardImage:
-            "images/carroll-nod-to-sunflowers-hero.png",
+        cardImage: "images/carroll-nod-to-sunflowers-hero.webp",
 
         homepageReady: true,
 
@@ -180,7 +163,6 @@ window.representedArtists = [
         featureText:
             "Discover Nancy Carroll's work across painting and sculpture, shaped by natural forms, close observation and an instinct for color."
     },
-
 
     {
         name: "Nigel Price",
@@ -191,12 +173,11 @@ window.representedArtists = [
         homepageReady: false
     },
 
-
     {
         name: "Pat Dews",
         medium: "Watercolor · Collage",
         page: "artists/pat-dews.html",
-        cardImage: "images/dews-slippery-slope-hero.png",
+        cardImage: "images/dews-slippery-slope-hero.webp",
 
         homepageReady: true,
 
@@ -206,13 +187,11 @@ window.representedArtists = [
             "Explore Pat Dews' expressive watercolor work, where abstraction, collage, gesture and luminous color transform the familiar."
     },
 
-
     {
         name: "Tom Christopher",
         medium: "Pastel · Painting · Drawing",
         page: "artists/tom-christopher.html",
-        cardImage:
-            "images/christopher-b&w-street-scene-hero.png",
+        cardImage: "images/christopher-b&w-street-scene-hero.png",
 
         homepageReady: true,
 
@@ -222,13 +201,11 @@ window.representedArtists = [
             "Discover Tom Christopher's work across drawing, pastel and painting, shaped by close observation and a career devoted to visual storytelling."
     },
 
-
     {
         name: "Wendy Musser Fleck",
         medium: "Oil · Pastel · Landscape",
         page: "artists/wendy-musser.html",
-        cardImage:
-            "images/musser-fleck-splendid-day-hero.png",
+        cardImage: "images/musser-fleck-splendid-day-hero.webp",
 
         homepageReady: true,
 
@@ -238,17 +215,11 @@ window.representedArtists = [
             "Explore Wendy Musser Fleck's landscapes, where changing skies, open terrain and shifting light become the heart of the composition."
     },
 
-
-  
-    // =========================================
-    // TATYANA DYAKONOV
-    // =========================================
-
     {
         name: "Tatyana Dyakonov",
         medium: "Acrylic Painting · Cityscapes",
         page: "artists/tatyana-dyakonov.html",
-        cardImage: "images/dyakonov-studio-7.png",
+        cardImage: "images/dyakonov-studio-7.webp",
 
         homepageReady: true,
 
@@ -258,16 +229,11 @@ window.representedArtists = [
             "Discover Tatyana Dyakonov's imaginative cityscapes, where historic architecture, expressive color and unexpected perspectives transform familiar places into extraordinary worlds."
     },
 
-
-    // =========================================
-    // PATRICIA SAVAGE
-    // =========================================
-
     {
         name: "Patricia Savage",
         medium: "Pastel · Oil · Landscape",
         page: "artists/patricia-savage.html",
-        cardImage: "images/savage-collision-hero.png",
+        cardImage: "images/savage-collision-hero.webp",
 
         homepageReady: true,
 
@@ -275,31 +241,33 @@ window.representedArtists = [
 
         featureText:
             "Explore Patricia Savage's expressive paintings, where the beauty of the natural world comes alive through luminous color, atmospheric light and a remarkable sensitivity to nature."
-    },
-
+    }
 
 ];
+
+
 /* =========================================
    REPRESENTED ARTIST IMAGE ROTATION
 ========================================= */
 
 const representedArtistImages =
     window.representedArtists
-        .filter(
-            artist =>
-                artist.homepageReady === true &&
-                artist.cardImage
+        .filter(artist =>
+            artist.homepageReady === true &&
+            artist.cardImage
         )
-        .map(
-            artist => artist.cardImage
-        );
-        /* =========================================
+        .map(artist => artist.cardImage);
+
+
+/* =========================================
    ROTATE REPRESENTED ARTIST PREVIEW
 ========================================= */
 
 if (
+    typeof representedArtistShuffle !== "undefined" &&
     representedArtistShuffle &&
-    representedArtistImages.length
+    representedArtistImages.length &&
+    typeof rotateImage === "function"
 ) {
 
     setInterval(() => {
