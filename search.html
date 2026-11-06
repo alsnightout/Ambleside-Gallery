@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Search artists and artworks represented by Ambleside Gallery."
+    >
+
+    <title>Search | Ambleside Gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="artwork-data.js" defer></script>
+    <script src="represented-artists.js" defer></script>
+    <script src="search.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="site-header">
+
+        <div class="logo">
+            <a href="index.html">
+                AMBLESIDE GALLERY
+            </a>
+        </div>
+
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="artists.html">Artists</a>
+            <a href="collection.html">Collection</a>
+            <a href="exhibitions.html">Exhibitions</a>
+            <a href="music.html">Music at Ambleside</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="search-results-section section">
+
+            <div class="section-container">
+
+                <p class="eyebrow">
+                    DISCOVER AMBLESIDE
+                </p>
+
+                <h1>
+                    Search Results
+                </h1>
+
+                <form
+                    class="search-form"
+                    action="search.html"
+                    method="get"
+                    role="search"
+                >
+
+                    <input
+                        type="search"
+                        id="search-query"
+                        name="q"
+                        placeholder="Search artists or artwork"
+                        aria-label="Search artists and artwork"
+                        required
+                    >
+
+                    <button type="submit">
+                        Search
+                    </button>
+
+                </form>
+
+                <p
+                    id="search-summary"
+                    class="search-summary"
+                    aria-live="polite"
+                ></p>
+
+                <div id="search-results"></div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="site-footer">
+
+        <div class="footer-top">
+
+            <div class="footer-brand">
+
+                <h2>AMBLESIDE GALLERY</h2>
+                <p>Fine Art Gallery</p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <div>
+                    <h3>Explore</h3>
+                    <a href="artists.html">Artists</a>
+                    <a href="collection.html">Collection</a>
+                    <a href="exhibitions.html">Exhibitions</a>
+                </div>
+
+                <div>
+                    <h3>Gallery</h3>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="music.html">Music at Ambleside</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Ambleside Gallery</p>
+        </div>
+
+    </footer>
+
+</body>
+</html>
