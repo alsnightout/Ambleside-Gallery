@@ -9945,3 +9945,25 @@ button.artist-directory-item {
 
 }
 
+/* =========================================
+   AMBLESIDE GALLERY HOURS
+========================================= */
+
+.gallery-hours {
+    margin-top: 38px;
+}
+
+.gallery-hours .eyebrow {
+    margin-bottom: 20px;
+    font-size: 0.7rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+.gallery-hours p:not(.eyebrow) {
+    margin: 0 0 16px;
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: #77736b;
+}
+
