@@ -1,8 +1,8 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
 
     <meta
@@ -18,12 +18,10 @@
     <title>Gene McInerney | Ambleside Gallery</title>
 
     <link rel="stylesheet" href="../style.css">
-
 </head>
 
 
-<body>
-
+<body data-artist="Gene McInerney">
 
     <!-- =========================================
          HEADER
@@ -32,13 +30,10 @@
     <header class="site-header">
 
         <div class="logo">
-
             <a href="../index.html">
                 AMBLESIDE
             </a>
-
         </div>
-
 
         <nav class="main-nav">
 
@@ -55,9 +50,7 @@
     </header>
 
 
-
     <main>
-
 
         <!-- =========================================
              ARTIST INTRO
@@ -80,62 +73,62 @@
         </section>
 
 
+<!-- =========================================
+     FEATURED WORK
+========================================= -->
 
-        <!-- =========================================
-             FEATURED WORK
-        ========================================== -->
+<section class="artist-featured-work">
 
-        <section class="schillaci-featured-work">
+    <div class="artist-featured-image">
 
-            <div class="schillaci-featured-heading">
+        <img
+            src="../images/mcinerney-basket-of-turnips-hero.png"
+            alt="Basket of Turnips by Gene McInerney"
+        >
 
-                <p class="eyebrow">
-                    FEATURED WORK
-                </p>
-
-            </div>
-
-
-            <figure class="schillaci-featured-figure">
-
-                <div class="schillaci-featured-image">
-
-                    <img
-                        src="../images/mcinerney-jacobs-cottage.jpg"
-                        alt="Jacobs Cottage by Gene McInerney"
-                    >
-
-                </div>
+    </div>
 
 
-                <figcaption class="schillaci-featured-caption">
+    <div class="artist-featured-info">
 
-                    <div>
+        <p class="eyebrow">
+            FEATURED WORK
+        </p>
 
-                        <h2>
-                            Jacobs Cottage
-                        </h2>
+        <h2>
+            Basket of Turnips
+        </h2>
 
-                        <p>
-                            Gene McInerney
-                        </p>
+        <p class="artist-featured-name">
+            Gene McInerney
+        </p>
 
-                    </div>
+        <p class="artist-featured-details">
+            OIL ON PANEL · 20" × 18"
+        </p>
 
-                </figcaption>
+        <p class="artist-featured-price">
+            $4,800
+        </p>
 
-            </figure>
+        <p class="artist-featured-description">
+            An intimate study of an ordinary subject,
+            rendered with extraordinary precision.
 
-        </section>
+            McInerney's careful observation transforms
+            the familiar into something quietly
+            contemplative.
+        </p>
 
+    </div>
 
+</section>
 
         <!-- =========================================
              THE ARTIST
         ========================================== -->
 
         <section class="artist-biography">
-
 
             <div class="artist-biography-heading">
 
@@ -150,7 +143,6 @@
                 </h2>
 
             </div>
-
 
             <div class="artist-biography-text">
 
@@ -182,9 +174,7 @@
 
             </div>
 
-
         </section>
-
 
 
         <!-- =========================================
@@ -204,13 +194,11 @@
         </section>
 
 
-
         <!-- =========================================
              PROCESS
         ========================================== -->
 
         <section class="artist-gallery-story">
-
 
             <div>
 
@@ -225,7 +213,6 @@
                 </h2>
 
             </div>
-
 
             <div class="artist-gallery-story-text">
 
@@ -254,9 +241,7 @@
 
             </div>
 
-
         </section>
-
 
 
         <!-- =========================================
@@ -264,7 +249,6 @@
         ========================================== -->
 
         <section class="artist-biography">
-
 
             <div class="artist-biography-heading">
 
@@ -279,7 +263,6 @@
                 </h2>
 
             </div>
-
 
             <div class="artist-biography-text">
 
@@ -303,17 +286,17 @@
 
             </div>
 
-
         </section>
-
 
 
         <!-- =========================================
              SELECTED WORKS
+             CONNECTED TO ARTWORK-DATA.JS
         ========================================== -->
 
-        <section class="artist-works">
-
+        <section class="artist-works"
+                id="collection"
+            >
 
             <div class="artist-works-heading">
 
@@ -327,116 +310,12 @@
 
             </div>
 
-
-            <div class="artist-works-grid">
-
-
-                <!-- JACOBS COTTAGE -->
-
-                <article class="artist-work">
-
-                    <button
-                        class="artwork-gallery-trigger"
-                        type="button"
-                        data-title="Jacobs Cottage"
-                        data-images="../images/mcinerney-jacobs-cottage.jpg"
-                    >
-
-                        <div class="artwork-image-wrap">
-
-                            <img
-                                src="../images/mcinerney-jacobs-cottage.jpg"
-                                alt="Jacobs Cottage by Gene McInerney"
-                            >
-
-                            <span class="artwork-view-label">
-                                View Artwork
-                            </span>
-
-                        </div>
-
-                    </button>
-
-
-                    <div class="artwork-details">
-
-                        <h3>
-                            Jacobs Cottage
-                        </h3>
-
-                        <p>
-                            Oil on canvas
-                        </p>
-
-                        <p>
-                            24" × 36"
-                        </p>
-
-                        <p>
-                            $15,000
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- QUEEN OF HEAVEN -->
-
-                <article class="artist-work">
-
-                    <button
-                        class="artwork-gallery-trigger"
-                        type="button"
-                        data-title="Queen of Heaven"
-                        data-images="../images/mcinerney-queen-of-heaven.png"
-                    >
-
-                        <div class="artwork-image-wrap">
-
-                            <img
-                                src="../images/mcinerney-queen-of-heaven-hero.webp"
-                                alt="Queen of Heaven by Gene McInerney"
-                            >
-
-                            <span class="artwork-view-label">
-                                View Artwork
-                            </span>
-
-                        </div>
-
-                    </button>
-
-
-                    <div class="artwork-details">
-
-                        <h3>
-                            Queen of Heaven
-                        </h3>
-
-                        <p>
-                            Oil on panel
-                        </p>
-
-                        <p>
-                            20" × 30"
-                        </p>
-
-                        <p>
-                            $9,500
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-            </div>
-
+            <div
+                class="artist-works-grid"
+                id="artistWorks"
+            ></div>
 
         </section>
-
 
 
         <!-- =========================================
@@ -444,7 +323,6 @@
         ========================================== -->
 
         <section class="artist-cv-section">
-
 
             <div class="artist-cv-heading">
 
@@ -459,9 +337,7 @@
 
             </div>
 
-
             <div class="artist-cv-list">
-
 
                 <div class="artist-cv-item">
 
@@ -477,7 +353,6 @@
 
                 </div>
 
-
                 <div class="artist-cv-item">
 
                     <span>
@@ -490,7 +365,6 @@
                     </p>
 
                 </div>
-
 
                 <div class="artist-cv-item">
 
@@ -505,7 +379,6 @@
 
                 </div>
 
-
                 <div class="artist-cv-item">
 
                     <span>
@@ -517,7 +390,6 @@
                     </p>
 
                 </div>
-
 
                 <div class="artist-cv-item">
 
@@ -531,12 +403,9 @@
 
                 </div>
 
-
             </div>
 
-
         </section>
-
 
 
         <!-- =========================================
@@ -544,7 +413,6 @@
         ========================================== -->
 
         <section class="artist-cv-section">
-
 
             <div class="artist-cv-heading">
 
@@ -559,15 +427,11 @@
 
             </div>
 
-
             <div class="artist-cv-list">
-
 
                 <div class="artist-cv-item">
 
-                    <span>
-                        NEW YORK
-                    </span>
+                    <span>NEW YORK</span>
 
                     <p>
                         Uptown Gallery · Salmagundi Club
@@ -575,12 +439,9 @@
 
                 </div>
 
-
                 <div class="artist-cv-item">
 
-                    <span>
-                        PENNSYLVANIA
-                    </span>
+                    <span>PENNSYLVANIA</span>
 
                     <p>
                         The Snow Goose Gallery · East Stroudsburg
@@ -590,12 +451,9 @@
 
                 </div>
 
-
                 <div class="artist-cv-item">
 
-                    <span>
-                        MARYLAND
-                    </span>
+                    <span>MARYLAND</span>
 
                     <p>
                         Capricorn Galleries
@@ -603,12 +461,9 @@
 
                 </div>
 
-
                 <div class="artist-cv-item">
 
-                    <span>
-                        HARRISBURG
-                    </span>
+                    <span>HARRISBURG</span>
 
                     <p>
                         Art Association of Harrisburg
@@ -617,12 +472,9 @@
 
                 </div>
 
-
             </div>
 
-
         </section>
-
 
 
         <!-- =========================================
@@ -630,7 +482,6 @@
         ========================================== -->
 
         <section class="artist-gallery-story">
-
 
             <div>
 
@@ -645,7 +496,6 @@
                 </h2>
 
             </div>
-
 
             <div class="artist-gallery-story-text">
 
@@ -668,9 +518,7 @@
 
             </div>
 
-
         </section>
-
 
 
         <!-- =========================================
@@ -697,9 +545,7 @@
 
         </section>
 
-
     </main>
-
 
 
     <!-- =========================================
@@ -708,85 +554,49 @@
 
     <footer class="site-footer">
 
-
         <div class="footer-top">
-
 
             <div class="footer-brand">
 
-                <h2>
-                    AMBLESIDE
-                </h2>
+                <h2>AMBLESIDE</h2>
 
-                <p>
-                    Fine Art Gallery
-                </p>
+                <p>Fine Art Gallery</p>
 
             </div>
-
 
             <div class="footer-links">
 
-
                 <div>
 
-                    <h3>
-                        Explore
-                    </h3>
+                    <h3>Explore</h3>
 
-                    <a href="../artists.html">
-                        Artists
-                    </a>
-
-                    <a href="../collection.html">
-                        Collection
-                    </a>
-
-                    <a href="../exhibitions.html">
-                        Exhibitions
-                    </a>
+                    <a href="../artists.html">Artists</a>
+                    <a href="../collection.html">Collection</a>
+                    <a href="../exhibitions.html">Exhibitions</a>
 
                 </div>
 
-
                 <div>
 
-                    <h3>
-                        Gallery
-                    </h3>
+                    <h3>Gallery</h3>
 
-                    <a href="../about.html">
-                        About
-                    </a>
-
-                    <a href="../contact.html">
-                        Contact
-                    </a>
-
-                    <a href="../music.html">
-                        Music at Ambleside
-                    </a>
+                    <a href="../about.html">About</a>
+                    <a href="../contact.html">Contact</a>
+                    <a href="../music.html">Music at Ambleside</a>
 
                 </div>
-
 
             </div>
 
-
         </div>
-
 
         <div class="footer-bottom">
 
-            <p>
-                © 2026 Ambleside Gallery
-            </p>
+            <p>© 2026 Ambleside Gallery</p>
 
         </div>
 
-
     </footer>
-
 
 
     <!-- =========================================
@@ -796,6 +606,10 @@
     <div
         class="artwork-lightbox"
         id="artworkLightbox"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Artwork viewer"
+        aria-hidden="true"
     >
 
         <button
@@ -803,18 +617,16 @@
             type="button"
             aria-label="Close artwork gallery"
         >
-            ×
+            &times;
         </button>
-
 
         <button
             class="lightbox-arrow lightbox-prev"
             type="button"
             aria-label="Previous image"
         >
-            ←
+            &larr;
         </button>
-
 
         <div class="lightbox-content">
 
@@ -834,198 +646,437 @@
 
         </div>
 
-
         <button
             class="lightbox-arrow lightbox-next"
             type="button"
             aria-label="Next image"
         >
-            →
+            &rarr;
         </button>
 
     </div>
 
 
+    <!-- =========================================
+         ARTWORK DATABASE
+    ========================================== -->
+
+    <script src="../artwork-data.js"></script>
+    <script src="../artist-page.js"></script>
 
     <!-- =========================================
-         LIGHTBOX SCRIPT
+         GENE McINERNEY ARTWORK RENDERING
     ========================================== -->
 
     <script>
 
-        const galleryButtons =
-            document.querySelectorAll(".artwork-gallery-trigger");
-
-        const lightbox =
-            document.getElementById("artworkLightbox");
-
-        const lightboxImage =
-            document.getElementById("lightboxImage");
-
-        const lightboxTitle =
-            document.getElementById("lightboxTitle");
-
-        const lightboxCounter =
-            document.getElementById("lightboxCounter");
-
-        const closeButton =
-            document.querySelector(".lightbox-close");
-
-        const nextButton =
-            document.querySelector(".lightbox-next");
-
-        const prevButton =
-            document.querySelector(".lightbox-prev");
-
-
-        let currentImages = [];
-        let currentIndex = 0;
-        let currentTitle = "";
-
-
-        galleryButtons.forEach((button) => {
-
-            button.addEventListener("click", () => {
-
-                currentImages =
-                    button.dataset.images
-                        .split(",")
-                        .map(image => image.trim());
-
-                currentTitle =
-                    button.dataset.title;
-
-                currentIndex = 0;
-
-                openLightbox();
-
-            });
-
-        });
-
-
-
-        function openLightbox() {
-
-            lightbox.classList.add("active");
-
-            document.body.style.overflow = "hidden";
-
-            updateLightbox();
-
-        }
-
-
-
-        function updateLightbox() {
-
-            lightboxImage.src =
-                currentImages[currentIndex];
-
-            lightboxImage.alt =
-                currentTitle + " by Gene McInerney";
-
-            lightboxTitle.textContent =
-                currentTitle;
-
-
-            if (currentImages.length > 1) {
-
-                lightboxCounter.textContent =
-                    (currentIndex + 1) +
-                    " / " +
-                    currentImages.length;
-
-                nextButton.style.display = "block";
-                prevButton.style.display = "block";
-
-            } else {
-
-                lightboxCounter.textContent = "";
-
-                nextButton.style.display = "none";
-                prevButton.style.display = "none";
-
-            }
-
-        }
-
-
-
-        function closeLightbox() {
-
-            lightbox.classList.remove("active");
-
-            document.body.style.overflow = "";
-
-        }
-
-
-
-        closeButton.addEventListener(
-            "click",
-            closeLightbox
-        );
-
-
-        nextButton.addEventListener(
-            "click",
-            () => {
-
-                currentIndex =
-                    (currentIndex + 1) %
-                    currentImages.length;
-
-                updateLightbox();
-
-            }
-        );
-
-
-        prevButton.addEventListener(
-            "click",
-            () => {
-
-                currentIndex =
-                    (currentIndex - 1 +
-                    currentImages.length) %
-                    currentImages.length;
-
-                updateLightbox();
-
-            }
-        );
-
-
-        lightbox.addEventListener(
-            "click",
-            (event) => {
-
-                if (event.target === lightbox) {
-                    closeLightbox();
-                }
-
-            }
-        );
-
-
         document.addEventListener(
-            "keydown",
-            (event) => {
+            "DOMContentLoaded",
+            () => {
 
-                if (
-                    event.key === "Escape" &&
-                    lightbox.classList.contains("active")
-                ) {
-                    closeLightbox();
+                const grid =
+                    document.getElementById(
+                        "mcinerney-artworks"
+                    );
+
+                if (!grid) return;
+
+                /*
+                 * Find the artwork array.
+                 * Supports common global declarations
+                 * used by artwork-data.js.
+                 */
+
+                const database =
+                    typeof artworks !== "undefined"
+                        ? artworks
+                        : window.artworks;
+
+                if (!Array.isArray(database)) {
+
+                    console.error(
+                        "Artwork database was not found."
+                    );
+
+                    return;
                 }
+
+                /*
+                 * Only display these two works.
+                 * Jacobs Cottage remains untouched
+                 * in the central database.
+                 */
+
+                const allowedTitles = [
+                    "Basket of Turnips",
+                    "Queen of Heaven"
+                ];
+
+                const selectedWorks =
+                    database.filter(artwork => {
+
+                        return (
+                            artwork.artist === "Gene McInerney" &&
+                            allowedTitles.includes(
+                                artwork.title
+                            )
+                        );
+
+                    });
+
+                selectedWorks.sort((a, b) => {
+
+                    return (
+                        allowedTitles.indexOf(a.title) -
+                        allowedTitles.indexOf(b.title)
+                    );
+
+                });
+
+                selectedWorks.forEach(artwork => {
+
+                    if (!artwork.image) return;
+
+                    const article =
+                        document.createElement("article");
+
+                    article.className =
+                        "artist-work";
+
+                    const button =
+                        document.createElement("button");
+
+                    button.type = "button";
+
+                    button.className =
+                        "artwork-gallery-trigger";
+
+                    button.dataset.title =
+                        artwork.title;
+
+                    const imagePath =
+                        "../" + artwork.image.replace(
+                            /^(\.\.\/|\/)+/,
+                            ""
+                        );
+
+                    button.dataset.images =
+                        imagePath;
+
+                    const imageWrap =
+                        document.createElement("div");
+
+                    imageWrap.className =
+                        "artwork-image-wrap";
+
+                    const image =
+                        document.createElement("img");
+
+                    image.src = imagePath;
+
+                    image.alt =
+                        artwork.title +
+                        " by Gene McInerney";
+
+                    image.loading = "lazy";
+
+                    const viewLabel =
+                        document.createElement("span");
+
+                    viewLabel.className =
+                        "artwork-view-label";
+
+                    viewLabel.textContent =
+                        "View Artwork";
+
+                    imageWrap.append(
+                        image,
+                        viewLabel
+                    );
+
+                    button.appendChild(imageWrap);
+
+                    const details =
+                        document.createElement("div");
+
+                    details.className =
+                        "artwork-details";
+
+                    const title =
+                        document.createElement("h3");
+
+                    title.textContent =
+                        artwork.title;
+
+                    details.appendChild(title);
+
+                    if (artwork.medium) {
+
+                        const medium =
+                            document.createElement("p");
+
+                        medium.textContent =
+                            artwork.medium;
+
+                        details.appendChild(medium);
+
+                    }
+
+                    if (artwork.dimensions) {
+
+                        const dimensions =
+                            document.createElement("p");
+
+                        dimensions.textContent =
+                            artwork.dimensions;
+
+                        details.appendChild(dimensions);
+
+                    }
+
+                    if (
+                        typeof artwork.price === "number"
+                    ) {
+
+                        const price =
+                            document.createElement("p");
+
+                        price.textContent =
+                            artwork.price.toLocaleString(
+                                "en-US",
+                                {
+                                    style: "currency",
+                                    currency: "USD",
+                                    maximumFractionDigits: 0
+                                }
+                            );
+
+                        details.appendChild(price);
+
+                    }
+
+                    article.append(
+                        button,
+                        details
+                    );
+
+                    grid.appendChild(article);
+
+                });
+
+
+                /* =========================================
+                   LIGHTBOX
+                ========================================== */
+
+                const lightbox =
+                    document.getElementById(
+                        "artworkLightbox"
+                    );
+
+                const lightboxImage =
+                    document.getElementById(
+                        "lightboxImage"
+                    );
+
+                const lightboxTitle =
+                    document.getElementById(
+                        "lightboxTitle"
+                    );
+
+                const lightboxCounter =
+                    document.getElementById(
+                        "lightboxCounter"
+                    );
+
+                const closeButton =
+                    document.querySelector(
+                        ".lightbox-close"
+                    );
+
+                const nextButton =
+                    document.querySelector(
+                        ".lightbox-next"
+                    );
+
+                const prevButton =
+                    document.querySelector(
+                        ".lightbox-prev"
+                    );
+
+                let currentImages = [];
+                let currentIndex = 0;
+                let currentTitle = "";
+
+                grid.addEventListener(
+                    "click",
+                    event => {
+
+                        const button =
+                            event.target.closest(
+                                ".artwork-gallery-trigger"
+                            );
+
+                        if (!button) return;
+
+                        currentImages =
+                            button.dataset.images
+                                .split(",")
+                                .map(path => path.trim())
+                                .filter(Boolean);
+
+                        if (!currentImages.length) {
+                            return;
+                        }
+
+                        currentTitle =
+                            button.dataset.title;
+
+                        currentIndex = 0;
+
+                        lightbox.classList.add(
+                            "open"
+                        );
+
+                        lightbox.setAttribute(
+                            "aria-hidden",
+                            "false"
+                        );
+
+                        document.body.style.overflow =
+                            "hidden";
+
+                        updateLightbox();
+
+                        closeButton.focus();
+
+                    }
+                );
+
+
+                function updateLightbox() {
+
+                    lightboxImage.src =
+                        currentImages[currentIndex];
+
+                    lightboxImage.alt =
+                        currentTitle +
+                        " by Gene McInerney";
+
+                    lightboxTitle.textContent =
+                        currentTitle;
+
+                    if (currentImages.length > 1) {
+
+                        lightboxCounter.textContent =
+                            (currentIndex + 1) +
+                            " / " +
+                            currentImages.length;
+
+                        nextButton.style.display =
+                            "block";
+
+                        prevButton.style.display =
+                            "block";
+
+                    } else {
+
+                        lightboxCounter.textContent =
+                            "";
+
+                        nextButton.style.display =
+                            "none";
+
+                        prevButton.style.display =
+                            "none";
+
+                    }
+
+                }
+
+
+                function closeLightbox() {
+
+                    lightbox.classList.remove(
+                        "open"
+                    );
+
+                    lightbox.setAttribute(
+                        "aria-hidden",
+                        "true"
+                    );
+
+                    document.body.style.overflow =
+                        "";
+
+                }
+
+
+                closeButton.addEventListener(
+                    "click",
+                    closeLightbox
+                );
+
+                nextButton.addEventListener(
+                    "click",
+                    () => {
+
+                        currentIndex =
+                            (currentIndex + 1) %
+                            currentImages.length;
+
+                        updateLightbox();
+
+                    }
+                );
+
+                prevButton.addEventListener(
+                    "click",
+                    () => {
+
+                        currentIndex =
+                            (
+                                currentIndex - 1 +
+                                currentImages.length
+                            ) %
+                            currentImages.length;
+
+                        updateLightbox();
+
+                    }
+                );
+
+                lightbox.addEventListener(
+                    "click",
+                    event => {
+
+                        if (event.target === lightbox) {
+                            closeLightbox();
+                        }
+
+                    }
+                );
+
+                document.addEventListener(
+                    "keydown",
+                    event => {
+
+                        if (
+                            event.key === "Escape" &&
+                            lightbox.classList.contains(
+                                "active"
+                            )
+                        ) {
+                            closeLightbox();
+                        }
+
+                    }
+                );
 
             }
         );
 
     </script>
 
-
 </body>
-
 </html>

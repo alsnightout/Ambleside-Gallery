@@ -873,19 +873,6 @@ window.artworks = [
 
     {
         artist: "Gene McInerney",
-        title: "Jacobs Cottage",
-        medium: "Oil on canvas",
-        dimensions: '24" × 36"',
-        price: 15000,
-        category: "painting",
-        image: null,
-        heroImage: null,
-        artistPage: "artists/gene-mcinerney.html",
-        featured: false
-    },
-
-    {
-        artist: "Gene McInerney",
         title: "Queen of Heaven",
         medium: "Oil on panel",
         dimensions: '20" × 30"',
