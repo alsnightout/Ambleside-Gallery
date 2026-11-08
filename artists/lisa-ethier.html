@@ -91,7 +91,7 @@
              FEATURED WORK
         ========================================== -->
 
-        <section class="lisa-featured-work">
+        <section class="lisa-featured-work artist-featured-work">
 
             <div class="lisa-featured-image">
 
@@ -280,7 +280,7 @@
              SELECTED WORKS
         ========================================== -->
 
-        <section class="artist-works">
+        <section class="artist-works" id="collection">
 
             <div class="artist-works-heading">
 
@@ -296,9 +296,9 @@
 
 
             <div
-    class="artist-works-grid"
-    id="artistWorks"
-></div>
+                class="artist-works-grid"
+                id="artistWorks"
+            ></div>
 
 </section>
 
@@ -627,13 +627,79 @@
 
     </footer>
 
-    <!-- =========================================
-         ARTWORK LIGHTBOX SCRIPT
-    ========================================== -->
+   
+<!-- =========================================
+     ARTWORK LIGHTBOX
+========================================= -->
+
+<div
+    class="artwork-lightbox"
+    id="artworkLightbox"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Artwork viewer"
+>
+
+    <button
+        class="lightbox-close"
+        type="button"
+        aria-label="Close artwork viewer"
+    >
+        &times;
+    </button>
+
+
+    <button
+        class="lightbox-arrow lightbox-prev"
+        type="button"
+        aria-label="Previous image"
+    >
+        &larr;
+    </button>
+
+
+    <div class="lightbox-content">
+
+        <img
+            id="lightboxImage"
+            src=""
+            alt=""
+        >
+
+        <div class="lightbox-info">
+
+            <h2 id="lightboxTitle"></h2>
+
+            <p id="lightboxCounter"></p>
+
+        </div>
+
+    </div>
+
+
+    <button
+        class="lightbox-arrow lightbox-next"
+        type="button"
+        aria-label="Next image"
+    >
+        &rarr;
+    </button>
+
+</div>
+
+
+<!-- =========================================
+     ARTWORK DATABASE
+========================================= -->
 
 <script src="../artwork-data.js"></script>
-<script src="../artist-page.js"></script>
 
+
+<!-- =========================================
+     SHARED ARTIST PAGE JAVASCRIPT
+========================================= -->
+
+<script src="../artist-page.js"></script>
 
 </body>
 
