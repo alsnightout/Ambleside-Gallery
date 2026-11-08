@@ -1627,8 +1627,18 @@ color: inherit;
     }
 
     .about-story {
-        padding: 0 25px 100px;
+        padding: 80px 25px 100px;
     }
+
+.about-story-heading h2 {
+    font-size: clamp(38px, 9vw, 48px);
+    line-height: 1.12;
+}
+
+.about-story-text {
+    padding-top: 0;
+}
+
 
     .about-statement {
         padding: 110px 25px;
@@ -5861,223 +5871,6 @@ color: inherit;
     }
 
 }
-/* =========================================
-   MUSIC PAGE — PERFORMER SECTIONS
-========================================= */
-
-.music-performer-section {
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 130px 6%;
-
-    background-color: #e8e2d8;
-}
-
-.music-performer-inner {
-    max-width: 850px;
-}
-
-.music-performer-section h2 {
-    font-size: clamp(48px, 6vw, 78px);
-    line-height: 1.05;
-
-    margin-bottom: 35px;
-}
-
-.music-performer-section p {
-    font-size: 17px;
-    line-height: 1.9;
-
-    margin-bottom: 24px;
-
-    color: #57544c;
-}
-
-.music-performer-section .button {
-    margin-top: 18px;
-}
-
-
-/* PERFORMER REQUIREMENTS */
-
-.performer-inquiries {
-    max-width: 1300px;
-    margin: 0 auto;
-
-    padding: 140px 6%;
-}
-
-.performer-inquiries-header {
-    max-width: 750px;
-
-    margin-bottom: 70px;
-}
-
-.performer-inquiries-header h2 {
-    font-size: clamp(48px, 6vw, 78px);
-    line-height: 1.05;
-}
-
-.performer-inquiry-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-
-    border-top: 1px solid #aaa59b;
-}
-
-.performer-inquiry-item {
-    min-height: 180px;
-
-    padding: 35px 35px 40px 0;
-
-    border-bottom: 1px solid #aaa59b;
-}
-
-.performer-inquiry-item:nth-child(odd) {
-    border-right: 1px solid #aaa59b;
-
-    padding-right: 50px;
-}
-
-.performer-inquiry-item:nth-child(even) {
-    padding-left: 50px;
-}
-
-.performer-number {
-    display: block;
-
-    margin-bottom: 25px;
-
-    font-size: 11px;
-    letter-spacing: 2px;
-
-    color: #88847b;
-}
-
-.performer-inquiry-item h3 {
-    font-size: 27px;
-
-    margin-bottom: 10px;
-}
-
-.performer-inquiry-item p {
-    max-width: 480px;
-
-    line-height: 1.7;
-
-    color: #5d5a52;
-}
-
-
-/* MOBILE */
-
-@media (max-width: 700px) {
-
-    .music-performer-section,
-    .performer-inquiries {
-        padding: 90px 25px;
-    }
-
-    .performer-inquiry-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .performer-inquiry-item,
-    .performer-inquiry-item:nth-child(odd),
-    .performer-inquiry-item:nth-child(even) {
-        border-right: none;
-
-        padding: 30px 0;
-    }
-
-}
-/* =========================================
-   MUSIC PAGE — MOBILE FIX
-========================================= */
-
-@media (max-width: 700px) {
-
-    .music-performer-section {
-        padding: 80px 24px;
-    }
-
-    .music-performer-inner {
-        max-width: 100%;
-    }
-
-    .music-performer-section h2 {
-        font-size: 42px;
-        line-height: 1.1;
-        margin-bottom: 28px;
-    }
-
-    .music-performer-section p {
-        font-size: 16px;
-        line-height: 1.75;
-        margin-bottom: 20px;
-    }
-
-    .music-performer-section .button {
-        width: 100%;
-        text-align: center;
-        margin-top: 24px;
-    }
-
-
-    .performer-inquiries {
-        padding: 90px 24px;
-    }
-
-    .performer-inquiries-header {
-        margin-bottom: 50px;
-    }
-
-    .performer-inquiries-header h2 {
-        font-size: 42px;
-        line-height: 1.1;
-    }
-
-    .performer-inquiry-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-
-        border-top: 1px solid #aaa59b;
-    }
-
-    .performer-inquiry-item,
-    .performer-inquiry-item:nth-child(odd),
-    .performer-inquiry-item:nth-child(even) {
-        padding: 28px 0;
-
-        border-right: none;
-        border-bottom: 1px solid #aaa59b;
-
-        min-height: auto;
-    }
-
-    .performer-number {
-        display: block;
-
-        font-size: 10px;
-        letter-spacing: 2px;
-
-        margin-bottom: 12px;
-
-        color: #8b877e;
-    }
-
-    .performer-inquiry-item h3 {
-        font-size: 24px;
-        margin-bottom: 8px;
-    }
-
-    .performer-inquiry-item p {
-        font-size: 16px;
-        line-height: 1.6;
-        margin: 0;
-    }
-
-}
 .artist-page-image figcaption {
     margin-top: 14px;
     font-size: 14px;
@@ -9792,50 +9585,6 @@ button.artist-directory-item {
     }
 }
 
-/* MUSIC AT AMBLESIDE — COMING SOON */
-
-.music-coming-soon {
-    width: 100%;
-    background: #f5f2eb;
-    padding: 60px 5%;
-}
-
-.music-coming-soon img {
-    display: block;
-    width: 100%;
-    max-width: 1400px;
-    height: auto;
-    margin: 0 auto;
-}
-
-@media (max-width: 768px) {
-    .music-coming-soon {
-        padding: 30px 0;
-    }
-}
-
-/* MUSIC AT AMBLESIDE — COMING SOON */
-
-.music-coming-soon {
-    width: 100%;
-    background: #f5f2eb;
-    padding: 60px 5%;
-}
-
-.music-coming-soon img {
-    display: block;
-    width: 100%;
-    max-width: 1400px;
-    height: auto;
-    margin: 0 auto;
-}
-
-@media (max-width: 768px) {
-    .music-coming-soon {
-        padding: 30px 0;
-    }
-}
-
 /* =========================================
    LINDY SCHILLACI — FEATURED WORK
 ========================================= */
@@ -10073,5 +9822,38 @@ button.artist-directory-item {
 
 }
 
+/* =========================================
+   MUSIC AT AMBLESIDE
+   STAY CONNECTED — MOBILE ONLY
+========================================= */
+
+@media (max-width: 650px) {
+
+    .music-stay-connected {
+        padding: 85px 25px 95px;
+        text-align: center;
+    }
+
+    .music-stay-connected h2 {
+        font-size: clamp(34px, 8vw, 44px);
+        line-height: 1.15;
+        margin: 20px auto 25px;
+        max-width: 100%;
+    }
+
+    .music-stay-connected > p:not(.eyebrow) {
+        max-width: 340px;
+        margin: 0 auto 30px;
+        font-size: 16px;
+        line-height: 1.75;
+    }
+
+    .music-stay-connected .button {
+        display: inline-block;
+        width: auto;
+        max-width: 100%;
+    }
+
+}
 
 
