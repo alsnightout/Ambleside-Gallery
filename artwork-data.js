@@ -1648,7 +1648,7 @@ window.artworks = [
         title: "Preening",
         medium: "Stained glass, smalti, smalti gold",
         dimensions: '21.5" × 17.5"',
-        price: 1800,
+        price: 5400,
         category: "painting",
         image: "images/michelle-sider-preening.png",
         heroImage: null,
