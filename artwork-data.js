@@ -218,7 +218,7 @@ window.artworks = [
         title: "French Village",
         medium: "Ceramic",
         dimensions: "",
-        price: null,
+        price: 2400,
         category: "sculpture",
 
         image: "images/caviness-french-village-01.jpg",
@@ -237,7 +237,7 @@ window.artworks = [
         title: "Gothic Stairway",
         medium: "Ceramic",
         dimensions: "",
-        price: null,
+        price: 3900,
         category: "sculpture",
 
         image: "images/caviness-gothic-stairway-01.jpg",
@@ -520,7 +520,7 @@ window.artworks = [
         image: "images/squier-reach.jpg",
         heroImage: null,
         artistPage: "artists/deborah-squier.html",
-        featured: false
+        featured: true
     },
 
     {
@@ -533,7 +533,7 @@ window.artworks = [
         image: "images/squier-veil.jpg",
         heroImage: null,
         artistPage: "artists/deborah-squier.html",
-        featured: false
+        featured: true
     },
 
     {
@@ -550,7 +550,7 @@ window.artworks = [
     },
        {
         artist: "Deborah Squier",
-        title: "Adagio I",
+        title: "Adagio",
         medium: "Oil on Linen",
         dimensions: '24" × 36"',
         price: 6800,
@@ -558,7 +558,7 @@ window.artworks = [
         image: "images/squier-adagio.jpg",
         heroImage: null,
         artistPage: "artists/deborah-squier.html",
-        featured: false
+        featured: true
     },
        {
         artist: "Deborah Squier",
@@ -582,7 +582,7 @@ window.artworks = [
         image: "images/squier-alla-prima.jpg",
         heroImage: null,
         artistPage: "artists/deborah-squier.html",
-        featured: false
+        featured: true
     },
         {
         artist: "Deborah Squier",
@@ -606,7 +606,7 @@ window.artworks = [
         image: "images/squier-beginners-mind.jpg",
         heroImage: null,
         artistPage: "artists/deborah-squier.html",
-        featured: false
+        featured: true
     },
      {
         artist: "Deborah Squier",
@@ -618,7 +618,7 @@ window.artworks = [
         image: "images/squier-kismet.jpg",
         heroImage: null,
         artistPage: "artists/deborah-squier.html",
-        featured: false
+        featured: true
     },
 
     // ==================================================
@@ -744,7 +744,7 @@ window.artworks = [
         image: "images/houghton-echos-of-the-ancients-hero.png",
         heroImage: null,
         artistPage: "artists/elissa-houghton.html",
-        featured: false
+        featured: true
     },
 
     {
@@ -775,7 +775,7 @@ window.artworks = [
 
     {
         artist: "Elissa Houghton",
-        title: null,
+        title: "Endless Search",
         medium: "Oil on canvas",
         dimensions: '48" × 36"',
         price: 4800,
@@ -896,6 +896,19 @@ window.artworks = [
         artistPage: "artists/gene-mcinerney.html",
         featured: true
     },
+      {
+        artist: "Gene McInerney",
+        title: "Jacobs Cottage",
+        medium: "Oil on panel",
+        dimensions: '24" × 36"',
+        price: 15000,
+        category: "painting",
+        image: null,
+        heroImage: null,
+        artistPage: "artists/gene-mcinerney.html",
+        featured: false
+    },
+
 
     // ==================================================
     // GUAN WEIXING
@@ -971,7 +984,7 @@ window.artworks = [
         title: "Lexington Lady",
         medium: "Watercolor",
         dimensions: '14" × 19"',
-        price: 5000,
+        price: 65000,
         category: "watercolor",
         image: "images/weixing-lexington-lady.png",
         heroImage: "images/weixing-lexington-lady-hero.png",
@@ -1023,7 +1036,7 @@ window.artworks = [
         title: "Summer Night",
         medium: "Watercolor",
         dimensions: '29" × 19"',
-        price: 5000,
+        price: 55000,
         category: "watercolor",
         image: "images/weixing-summer-night.png",
         heroImage: null,
@@ -1049,7 +1062,7 @@ window.artworks = [
         title: "Vance",
         medium: "Watercolor",
         dimensions: '17" × 22"',
-        price: 5000,
+        price: 65000,
         category: "watercolor",
         image: "images/weixing-vance.png",
         heroImage: null,
@@ -1335,7 +1348,7 @@ window.artworks = [
         title: "Please let there be light series I",
         medium: "Oil & Cold Wax on board",
         dimensions: "",
-        price: null,
+        price: 550,
         category: "painting",
         image: "images/ethier-please-let-there-be-light-series-I.jpg",
         heroImage: null,
@@ -1348,7 +1361,7 @@ window.artworks = [
         title: "Please let there be light series II",
         medium: "Oil & Cold Wax on board",
         dimensions: "",
-        price: null,
+        price: 550,
         category: "painting",
         image: "images/ethier-please-let-there-be-light-series-II.jpg",
         heroImage: null,
@@ -1361,7 +1374,7 @@ window.artworks = [
         title: "Please let there be light series III",
         medium: "Oil & Cold Wax on board",
         dimensions: "",
-        price: null,
+        price: 550,
         category: "painting",
         image: "images/ethier-please-let-there-be-light-series-III.jpg",
         heroImage: null,
@@ -1400,7 +1413,7 @@ window.artworks = [
         title: "The far stillness",
         medium: "Oil & Cold Wax on board",
         dimensions: "",
-        price: null,
+        price: 5000,
         category: "painting",
         image: "images/ethier-the-far-stillness-hero.webp",
         heroImage: null,
@@ -1439,7 +1452,7 @@ window.artworks = [
         title: "Unshakeable",
         medium: "Mixed media",
         dimensions: '30" × 40"',
-        price: null,
+        price: 7800,
         category: "painting",
         image: "images/ethier-unshakeable.jpg",
         heroImage: null,
@@ -1456,12 +1469,12 @@ window.artworks = [
         title: "Eucalyptus in a China Vase",
         medium: "Oil on panel",
         dimensions: "",
-        price: null,
+        price: 2800,
         category: "painting",
         image: "images/schillaci-eucalyptus-in-a-china-vase-hero.png",
         heroImage: null,
         artistPage: "artists/lindy-schillaci.html",
-        featured: false
+        featured: true
     },
 
     {
@@ -1482,12 +1495,12 @@ window.artworks = [
         title: "Two Pears",
         medium: "Oil on panel",
         dimensions: '12" × 16"',
-        price: null,
+        price: 2800,
         category: "painting",
         image: "images/schillaci-two-pears-hero.png",
         heroImage: null,
         artistPage: "artists/lindy-schillaci.html",
-        featured: false
+        featured: true
     },
 
     {
@@ -1508,7 +1521,7 @@ window.artworks = [
         title: "Mangoes",
         medium: "Oil on panel",
         dimensions: '9" × 13"',
-        price: null,
+        price: 2400,
         category: "painting",
         image: "images/schillaci-mangoes-hero.png",
         heroImage: null,
@@ -1560,7 +1573,7 @@ window.artworks = [
         image: "images/hillier-grey-heron-on-a-tire-hero.webp",
         heroImage: null,
         artistPage: "artists/matthew-hillier.html",
-        featured: false
+        featured: true
     },
 
     {
@@ -1568,7 +1581,7 @@ window.artworks = [
         title: "Into the Light",
         medium: "Acrylic on panel",
         dimensions: '24" × 48"',
-        price: 24000,
+        price: 28000,
         category: "painting",
         image: "images/hillier-into-the-light-hero.webp",
         heroImage: null,
@@ -1620,7 +1633,7 @@ window.artworks = [
         title: "Winter's Eve",
         medium: "Acrylic on panel",
         dimensions: '24" × 36"',
-        price: 2800,
+        price: 28000,
         category: "painting",
         image: "images/hillier-winters-eve.jpg",
         heroImage: null,
@@ -1653,7 +1666,7 @@ window.artworks = [
         image: "images/michelle-sider-preening.png",
         heroImage: null,
         artistPage: "artists/michelle-sider.html",
-        featured: false
+        featured: true
     },
 
     {
@@ -1666,7 +1679,7 @@ window.artworks = [
         image: "images/sider-colorburst.jpg",
         heroImage: null,
         artistPage: "artists/michelle-sider.html",
-        featured: false
+        featured: true
     },
 
     {
@@ -1679,7 +1692,7 @@ window.artworks = [
         image: "images/sider-peppers.jpeg",
         heroImage: null,
         artistPage: "artists/michelle-sider.html",
-        featured: false
+        featured: true
     },
 
     {
@@ -1736,8 +1749,8 @@ window.artworks = [
 
     {
         artist: "Michelle Sider",
-        title: "Precious Water",
-        medium: "Pastel",
+        title: "Wonder & Warning",
+        medium: "Mosaic Glass",
         dimensions: '42" × 30"',
         price: 4000,
         category: "painting",
@@ -1761,7 +1774,7 @@ window.artworks = [
         image: "images/price-a-teaching-moment-hero.webp",
         heroImage: null,
         artistPage: "artists/morgan-samuel-price.html",
-        featured: false
+        featured: true
     },
 
     {
@@ -1774,7 +1787,7 @@ window.artworks = [
         image: "images/price-daddys-fishing-02-hero.webp",
         heroImage: null,
         artistPage: "artists/morgan-samuel-price.html",
-        featured: false
+        featured: true
     },
 
     {
@@ -1896,7 +1909,7 @@ window.artworks = [
         image: "images/carroll-delicate-bougainvillea-hero (1).webp",
         heroImage: null,
         artistPage: "artists/nancy-carroll.html",
-        featured: false
+        featured: true
     },
 
     {
@@ -1935,7 +1948,7 @@ window.artworks = [
         image: "images/carroll-sunflower-splendor-hero (1).webp",
         heroImage: null,
         artistPage: "artists/nancy-carroll.html",
-        featured: false
+        featured: true
     },
      {
         artist: "Nancy Carroll",
@@ -2072,7 +2085,7 @@ window.artworks = [
         image: "images/dews-red-best-hero.jpg",
         heroImage: null,
         artistPage: "artists/pat-dews.html",
-        featured: false
+        featured: true
     },
 
     {
@@ -2117,21 +2130,9 @@ window.artworks = [
     // PETER ARCHER
     // ==================================================
 
-    {
-        artist: "Peter Archer",
-        title: "Morning Mist, Cornwall England",
-        medium: "Oil on canvas",
-        dimensions: '33" × 46"',
-        price: 8600,
-        category: "painting",
-        image: null,
-        heroImage: null,
-        artistPage: "artists/peter-archer.html",
-        featured: false
-    },
       {
         artist: "Peter Archer",
-        title: "Nature and Man",
+        title: "Morning Mist, Cornwall England",
         medium: "Oil on canvas",
         dimensions: '33" × 46"',
         price: 8600,
@@ -2219,6 +2220,42 @@ window.artworks = [
         price: 1080,
         category: "painting",
         image: "images/savage-life-in-a-salt-water-pool-hero.webp",
+        heroImage: null,
+        artistPage: "artists/patricia-savage.html",
+        featured: false
+    },
+        {
+        artist: "Patricia Savage",
+        title: "Phantom of the Mist",
+        medium: "Scratchboard",
+        dimensions: "",
+        price: 3000,
+        category: "painting",
+        image: null,
+        heroImage: null,
+        artistPage: "artists/patricia-savage.html",
+        featured: false
+    },
+     {
+        artist: "Patricia Savage",
+        title: "Splash",
+        medium: "Pastel",
+        dimensions: "",
+        price: 1500,
+        category: "painting",
+        image: null,
+        heroImage: null,
+        artistPage: "artists/patricia-savage.html",
+        featured: false
+    },
+      {
+        artist: "Patricia Savage",
+        title: "Sea Smoke",
+        medium: "Pastel",
+        dimensions: "",
+        price: 1950,
+        category: "painting",
+        image: null,
         heroImage: null,
         artistPage: "artists/patricia-savage.html",
         featured: false
