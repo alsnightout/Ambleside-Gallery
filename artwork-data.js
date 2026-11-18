@@ -1048,7 +1048,7 @@ window.artworks = [
         artist: "Guan Weixing",
         title: "Tajik Woman",
         medium: "Watercolor",
-        dimensions: "",
+        dimensions: null,
         price: "inquire for price",
         category: "watercolor",
         image: "images/weixing-tajit-woman.webp",
