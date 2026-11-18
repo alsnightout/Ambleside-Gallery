@@ -1051,7 +1051,7 @@ window.artworks = [
         dimensions: null,
         price: "inquire for price",
         category: "watercolor",
-        image: "images/weixing-tajit-woman.webp",
+        image: "images/weixing-tajik-woman.webp",
         heroImage: null,
         artistPage: "artists/guan-weixing.html",
         featured: false
