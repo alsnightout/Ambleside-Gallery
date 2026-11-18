@@ -986,8 +986,8 @@ window.artworks = [
         dimensions: '14" × 19"',
         price: "inquire for price",
         category: "watercolor",
-        image: "images/weixing-lexington-lady.png",
-        heroImage: "images/weixing-lexington-lady-hero.png",
+        image: "images/weixing-lexington-lady.webp",
+        heroImage: null,
         artistPage: "artists/guan-weixing.html",
         featured: true
     },
@@ -1051,7 +1051,7 @@ window.artworks = [
         dimensions: "",
         price: "inquire for price",
         category: "watercolor",
-        image: "images/weixing-tajit-girl.png",
+        image: "images/weixing-tajit-woman.webp",
         heroImage: null,
         artistPage: "artists/guan-weixing.html",
         featured: false
@@ -1064,7 +1064,7 @@ window.artworks = [
         dimensions: '17" × 22"',
         price: "inquire for price",
         category: "watercolor",
-        image: "images/weixing-vance.png",
+        image: "images/weixing-vance.webp",
         heroImage: null,
         artistPage: "artists/guan-weixing.html",
         featured: false
