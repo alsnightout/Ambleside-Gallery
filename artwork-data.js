@@ -921,10 +921,36 @@ window.artworks = [
         dimensions: '14" × 19"',
         price: "inquire for price",
         category: "painting",
-        image: "images/weixing-aged-farmer.png",
+        image: "images/weixing-aged-farmer-giclee.webp",
         heroImage: null,
         artistPage: "artists/guan-weixing.html",
-        featured: false
+        featured: true
+    },
+
+    {
+        artist: "Guan Weixing",
+        title: "African Girl",
+        medium: null,
+        dimensions: null,
+        price: "inquire for price",
+        category: "painting",
+        image: "images/weixing-african-girl.webp",
+        heroImage: null,
+        artistPage: "artists/guan-weixing.html",
+        featured: true
+    },
+
+    {
+        artist: "Guan Weixing",
+        title: "Miao Provenience",
+        medium: null,
+        dimensions: null,
+        price: "inquire for price",
+        category: "painting",
+        image: "images/weixing-miao-provenience.webp",
+        heroImage: null,
+        artistPage: "artists/guan-weixing.html",
+        featured: true
     },
 
     {
@@ -950,7 +976,7 @@ window.artworks = [
         image: "images/weixing-autumn-in-village.webp",
         heroImage: null,
         artistPage: "artists/guan-weixing.html",
-        featured: false
+        featured: true
     },
 
     {
@@ -960,7 +986,7 @@ window.artworks = [
         dimensions: '20" × 29"',
         price: "inquire for price",
         category: "painting",
-        image: "images/guan-weixing-autumn-rhythm-web.jpg",
+        image: "images/weixing-autumn-rhythm.webp",
         heroImage: null,
         artistPage: "artists/guan-weixing.html",
         featured: false
@@ -1028,7 +1054,7 @@ window.artworks = [
         image: "images/weixing-peasant-viewing-the-opera.webp",
         heroImage: null,
         artistPage: "artists/guan-weixing.html",
-        featured: false
+        featured: true
     },
 
     {
@@ -1041,7 +1067,7 @@ window.artworks = [
         image: "images/weixing-summer-night.webp",
         heroImage: null,
         artistPage: "artists/guan-weixing.html",
-        featured: false
+        featured: true
     },
 
     {
