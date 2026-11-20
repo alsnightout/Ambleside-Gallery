@@ -1171,7 +1171,7 @@ window.artworks = [
         title: "Two Squashes",
         medium: "Oil on canvas",
         dimensions: "",
-        price: 1550,
+        price: "sold",
         category: "painting",
         image: "images/wennergren-two-squashes-hero.webp",
         heroImage: null,
@@ -2231,7 +2231,7 @@ window.artworks = [
         dimensions: "",
         price: 3000,
         category: "painting",
-        image: null,
+        image: "images/savage-phantom-of-the-mist.webp",
         heroImage: null,
         artistPage: "artists/patricia-savage.html",
         featured: false
@@ -2243,7 +2243,7 @@ window.artworks = [
         dimensions: "",
         price: 1500,
         category: "painting",
-        image: null,
+        image: "images/savage-splash.webp",
         heroImage: null,
         artistPage: "artists/patricia-savage.html",
         featured: false
@@ -2255,7 +2255,7 @@ window.artworks = [
         dimensions: "",
         price: 1950,
         category: "painting",
-        image: null,
+        image: "images/savage-sea-smoke-hero.webp",
         heroImage: null,
         artistPage: "artists/patricia-savage.html",
         featured: false
