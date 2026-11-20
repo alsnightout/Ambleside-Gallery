@@ -934,7 +934,7 @@ window.artworks = [
         dimensions: '21" × 30"',
         price: "inquire for price",
         category: "painting",
-        image: "images/weixing-autumn-in-village-giclee.png",
+        image: null,
         heroImage: null,
         artistPage: "artists/guan-weixing.html",
         featured: false
@@ -947,7 +947,7 @@ window.artworks = [
         dimensions: '20" × 29"',
         price: "inquire for price",
         category: "watercolor",
-        image: null,
+        image: "images/weixing-autumn-in-village.webp",
         heroImage: null,
         artistPage: "artists/guan-weixing.html",
         featured: false
@@ -1025,7 +1025,7 @@ window.artworks = [
         dimensions: '26" × 40"',
         price: "inquire for price",
         category: "painting",
-        image: null,
+        image: "images/weixing-peasant-viewing-the-opera.webp",
         heroImage: null,
         artistPage: "artists/guan-weixing.html",
         featured: false
@@ -1038,7 +1038,7 @@ window.artworks = [
         dimensions: '29" × 19"',
         price: "inquire for price",
         category: "watercolor",
-        image: "images/weixing-summer-night.png",
+        image: "images/weixing-summer-night.webp",
         heroImage: null,
         artistPage: "artists/guan-weixing.html",
         featured: false
