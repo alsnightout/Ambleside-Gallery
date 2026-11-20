@@ -2255,7 +2255,7 @@ window.artworks = [
         dimensions: "",
         price: 1950,
         category: "painting",
-        image: "images/savage-sea-smoke-hero.webp",
+        image: "images/savage-sea-smoke.webp",
         heroImage: null,
         artistPage: "artists/patricia-savage.html",
         featured: false
